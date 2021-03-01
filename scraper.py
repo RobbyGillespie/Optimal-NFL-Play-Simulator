@@ -22,7 +22,7 @@ TEAM_ABBREVIATIONS = {'Browns' : ['CLE'], 'Ravens' : ['BAL'], 'Packers' : ['GNB'
                       'Jets' : ['NYJ'], 'Bills' : ['BUF'], 'Dolphins' : ['MIA'], 'Patriots' : ['NWE'],
                       'Colts' : ['IND'], 'Jaguars' : ['JAX'], 'Raiders' : ['OAK', 'RAI'], 'Panthers' : ['CAR'],
                       'Cardinals' : ['ARI'], '49ers' : ['SFO'], 'Cowboys' : ['DAL'], 'Rams' : ['STL', 'LAR'],
-                      'Titans' : ['TEN'], 'Broncos' : ['DEN']}
+                      'Titans' : ['TEN'], 'Broncos' : ['DEN'], 'Redskins' : ['WAS']}
 
 
 def extractor():
@@ -35,7 +35,24 @@ def extractor():
     teams = []
     for word in title_lst:
         if word in TEAM_ABBREVIATIONS.keys():
-            teams.append(word)
+            if word == 'Chargers':
+                if year < 2017:
+                    teams.append(TEAM_ABBREVIATIONS['Chargers'][0])
+                else:
+                    teams.append(TEAM_ABBREVIATIONS['Chargers'][1])
+            elif word == 'Raiders':
+                if year < 2020:
+                    teams.append(TEAM_ABBREVIATIONS['Raiders'][0])
+                else:
+                    teams.append(TEAM_ABBREVIATIONS['Raiders'][1])
+            elif word == 'Rams':
+                if year < 2016:
+                    teams.append(TEAM_ABBREVIATIONS['Rams'][0])
+                else:
+                    teams.append(TEAM_ABBREVIATIONS['Rams'][1])
+            else:
+                teams.append(TEAM_ABBREVIATIONS[word][0])
+                
 
     comments = soup.find_all(text=lambda text:isinstance(text, Comment))
 
