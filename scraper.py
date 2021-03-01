@@ -9,12 +9,27 @@ import queue
 import json
 import sys
 import csv
+import requests
+from bs4 import BeautifulSoup,Comment
 
 link = "https://www.pro-football-reference.com/boxscores/202102070tam.htm"
 
-request_obj = util.get_request(link)
-document = util.read_request(request_obj)
+request_obj = util_2.get_request(link)
+document = util_2.read_request(request_obj)
 soup = bs4.BeautifulSoup(document, "html5lib")
-main_title = tag.find("div", class_="table_container")
+comments = soup.find_all(text=lambda text:isinstance(text, Comment))
+
+for comment in comments:
+    main_title = tag.find("div", class_="table_container")
+# remove <!-- and the end portion
+# plug this code back into bs4
+comment=BeautifulSoup(str(comment), 'html.parser')
+    search_play = comment.find('table', {'id':'pbp'})
+    
+
+    if search_play:
+        play_to_play=search_play
+
+def craw
 
 #<div class="table_container" id="div_pbp">
