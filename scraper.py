@@ -3,7 +3,7 @@
 
 """
 import re
-import util
+import util_2
 import bs4
 import queue
 import json
@@ -17,19 +17,24 @@ link = "https://www.pro-football-reference.com/boxscores/202102070tam.htm"
 request_obj = util_2.get_request(link)
 document = util_2.read_request(request_obj)
 soup = bs4.BeautifulSoup(document, "html5lib")
+
 comments = soup.find_all(text=lambda text:isinstance(text, Comment))
 
+lst = []
 for comment in comments:
-    main_title = tag.find("div", class_="table_container")
-# remove <!-- and the end portion
-# plug this code back into bs4
-comment=BeautifulSoup(str(comment), 'html.parser')
+    comment_soup = bs4.BeautifulSoup(comment, "html5lib")
+    play_by_play = comment_soup.find("div", class_="table_container", id='div_pbp')
+    if play_by_play is not None:
+        break
+
+
+
+for comment in comments:
+    comment_soup = bs4.BeautifulSoup(comment, "html5lib")
+    main_title = comment_soup.find("div", class_="table_container", id='div_php')
+    comment = BeautifulSoup(str(comment), 'html.parser')
+
     search_play = comment.find('table', {'id':'pbp'})
-    
 
-    if search_play:
-        play_to_play=search_play
-
-def craw
 
 #<div class="table_container" id="div_pbp">
