@@ -68,8 +68,7 @@ def get_game_pages():
             games = week_page.find_all("td", class_="right gamelink")
             for game in games:
                 game_url = find_url(game, updated_week_url)
-                game_page, _ = create_soup_object(game_url)
-                game_pages.append((game_page, years.index(year)))
+                game_pages.append((game_url, years.index(year)))
     return game_pages
 
 
