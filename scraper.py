@@ -86,7 +86,7 @@ def extractor(link, year=2021):
     return play_by_play, possession, mapped_teams
 
 
-def scrape_one_row(play_by, teams):
+def scrape_all(play_by, teams):
     master_lst = []
     quarter_tags = play_by.find_all("th", scope="row", class_="center")
     for row in quarter_tags:
