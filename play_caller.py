@@ -69,7 +69,7 @@ def get_game_pages():
             for game in games:
                 game_url = find_url(game, updated_week_url)
                 game_page, _ = create_soup_object(game_url)
-                game_pages.append(game_page)
+                game_pages.append((game_page, years.index(year)))
     return game_pages
 
 
