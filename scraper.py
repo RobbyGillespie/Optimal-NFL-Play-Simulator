@@ -25,57 +25,66 @@ TEAM_ABBREVIATIONS = {'Browns' : ['CLE'], 'Ravens' : ['BAL'], 'Packers' : ['GNB'
                       'Cardinals' : ['ARI'], '49ers' : ['SFO'], 'Cowboys' : ['DAL'], 'Rams' : ['STL', 'LAR'],
                       'Titans' : ['TEN'], 'Broncos' : ['DEN'], 'Redskins' : ['WAS']}
 
-def team_mapper():
-    title_lst = soup.find("title").text.split()
+def team_mapper(year, soup, teams_raw):
     teams = []
-    for word in title_lst:
-        if word == 'Chargers':
+    for team in teams_raw:
+        if team == 'Chargers':
             if year < 2017:
                 teams.append(TEAM_ABBREVIATIONS['Chargers'][0])
             else:
                 teams.append(TEAM_ABBREVIATIONS['Chargers'][1])
-        elif word == 'Raiders':
+        elif team == 'Raiders':
             if year < 2020:
                 teams.append(TEAM_ABBREVIATIONS['Raiders'][0])
             else:
                 teams.append(TEAM_ABBREVIATIONS['Raiders'][1])
-        elif word == 'Rams':
+        elif team == 'Rams':
             if year < 2016:
                 teams.append(TEAM_ABBREVIATIONS['Rams'][0])
             else:
                 teams.append(TEAM_ABBREVIATIONS['Rams'][1])
         else:
-            teams.append(TEAM_ABBREVIATIONS[word][0])
+            teams.append(TEAM_ABBREVIATIONS[team][0])
     return teams
 
-def coin_flipper(link, teams):
-    #determine who starts with possession
 
-def extractor(link):
+def coin_flipper(coiner, teams_raw):
+    for word in coiner:
+        if word in teams_raw:
+            possession = word
+        if word == '(deferred)':
+            for x in teams_raw:
+                if x is not possession:
+                    possession = x
+                    break
+    return possession
+
+
+def extractor(link, year=2021):
     request_obj = util_2.get_request(link)
     document = util_2.read_request(request_obj)
     soup = bs4.BeautifulSoup(document, "html5lib")
+
+    title_lst = soup.find("title").text.split()
+    teams_raw = [word for word in title_lst if word in TEAM_ABBREVIATIONS.keys()]
+    mapped_teams = team_mapper(year, soup, teams_raw)
 
     comments = soup.find_all(text=lambda text:isinstance(text, Comment))
 
     for comment in comments:
         comment_soup = bs4.BeautifulSoup(comment, "html5lib")
         coin_toss = comment_soup.find("div", class_="table_container", id="div_game_info")
-        coiner = coin_toss.find_all("td", {"class":"center", "data-stat":"stat"})[0].text.split()
-        for word in coiner:
-            if word in teams:
-                possession = word
-            if word == '(deferred)':
-                for team in teams:
-                    if team is not word:
-                        possession = team
+        
+        if coin_toss is not None:
+            coiner = coin_toss.find_all("td", {"class":"center", "data-stat":"stat"})[0].text.split()
+            possession = coin_flipper(coiner, teams_raw)
 
-        #<td class="center" data-stat="stat">Chiefs (deferred)</td>
         play_by_play = comment_soup.find("div", class_="table_container", id='div_pbp')
         if play_by_play is not None:
             break
 
-    return play_by_play, possession
+    return play_by_play, possession, mapped_teams
+
 
 def scrape_one_row(play_by, teams):
     master_lst = []
@@ -123,14 +132,12 @@ def scrape_one_row(play_by, teams):
                 #print("at divider")
 
             master_lst.append(sub_lst)
-        else:
-            print("test")
     
-    return len(master_lst)
+    return master_lst
 
-    #return len(quarter_lst), len(times_lst), len(downs_lst), len(togo_lst)
 
 def play_classifier(numpy_array):
+    lst = ['deep left', 'deep middle', 'deep right', 'short left', 'short right', 'short middle']
 
     detail_column = numpy_array[:, 9].tolist()
     numpy_array = np.delete(numpy_array, 9, 1)
@@ -151,7 +158,7 @@ def play_classifier(numpy_array):
                 success = None
             if success == 'complete':
                 try:
-                    yardage = re.findall('((?<=for)[0-9]+(?=(yard|yards)|no gain)', play))[0]
+                    yardage = re.findall('((?<=for)[0-9]+(?=(yard|yards)|no gain)', play)[0]
                 except IndexError:
                     yardage = None
                 if yardage == None:
@@ -163,8 +170,7 @@ def play_classifier(numpy_array):
                         location = re.findall('(?<=complete)[a-z]+ [a-z]+', play)[0]
                     except IndexError:
                         location = None
-                    if location == ('deep left' or 'deep middle' or 'deep right'/
-                                    or 'short left' or 'short right' or 'short middle'):
+                    if location in lst:
                         play_info.append(location)
                         play_info.append(yardage)
                     else:
@@ -175,8 +181,7 @@ def play_classifier(numpy_array):
                     location = re.findall('(?<=complete)[a-z]+ [a-z]+', play)[0]
                 except IndexError:
                     location = None
-                if location == ('deep left' or 'deep middle' or 'deep right'/
-                                or 'short left' or 'short right' or 'short middle'):
+                if location in lst:
                     play_info.append(location)
                     play_info.append(str(yardage))
                 else:
@@ -189,7 +194,7 @@ def play_classifier(numpy_array):
                 play_type = 'middle'
             play_info.append(play_type)
             try:
-                yardage = re.findall('((?<=for)[0-9]+(?=(yard|yards)|no gain)', play))[0]
+                yardage = re.findall('((?<=for)[0-9]+(?=(yard|yards)|no gain)', play)[0]
             except IndexError:
                 yardage = None
             if yardage == None:
@@ -208,15 +213,3 @@ def play_classifier(numpy_array):
     detail_array = np.array(play_classify)
     master_array = np.concatenate(numpy_array, detail_array, axis=1)
 
-#<td class="left " data-stat="location" csk="77" >TAM 23</td>
-'''
-for comment in comments:
-    comment_soup = bs4.BeautifulSoup(comment, "html5lib")
-    main_title = comment_soup.find("div", class_="table_container", id='div_php')
-    comment = BeautifulSoup(str(comment), 'html.parser')
-
-    search_play = comment.find('table', {'id':'pbp'})
-'''
-
-#<div class="table_container" id="div_pbp">
-#<tr ><th scope="row" class="center " data-stat="quarter" >1</th><td class="center " data-stat="qtr_time_remain" ><a href="#pbp_63.000">14:56</a></td><td class="center " data-stat="down" >1</td><td class="center " data-stat="yds_to_go" >10</td><td class="left " data-stat="location" csk="77" >TAM 23</td><td class="left " data-stat="detail" ><a name="pbp_63.000"></a><a href="/players/B/BradTo00.htm">Tom Brady</a> pass complete short left to <a href="/players/G/GodwCh00.htm">Chris Godwin</a> for 1 yard (tackle by <a href="/players/B/BreeBa00.htm">Bashaud Breeland</a>)</td><td class="right iz" data-stat="pbp_score_aw" >0</td><td class="right iz" data-stat="pbp_score_hm" >0</td><td class="right " data-stat="exp_pts_before" >0.480</td><td class="right " data-stat="exp_pts_after" >0.070</td></tr>
