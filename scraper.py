@@ -11,6 +11,7 @@ import sys
 import csv
 import requests
 import numpy as np
+import re
 from bs4 import BeautifulSoup,Comment
 
 TEAM_ABBREVIATIONS = {'Browns' : ['CLE'], 'Ravens' : ['BAL'], 'Packers' : ['GNB'], 
@@ -24,35 +25,36 @@ TEAM_ABBREVIATIONS = {'Browns' : ['CLE'], 'Ravens' : ['BAL'], 'Packers' : ['GNB'
                       'Cardinals' : ['ARI'], '49ers' : ['SFO'], 'Cowboys' : ['DAL'], 'Rams' : ['STL', 'LAR'],
                       'Titans' : ['TEN'], 'Broncos' : ['DEN'], 'Redskins' : ['WAS']}
 
-
-def extractor():
-    link="https://www.pro-football-reference.com/boxscores/202102070tam.htm"
-    request_obj = util_2.get_request(link)
-    document = util_2.read_request(request_obj)
-    soup = bs4.BeautifulSoup(document, "html5lib")
-
+def team_mapper():
     title_lst = soup.find("title").text.split()
     teams = []
     for word in title_lst:
-        if word in TEAM_ABBREVIATIONS.keys():
-            if word == 'Chargers':
-                if year < 2017:
-                    teams.append(TEAM_ABBREVIATIONS['Chargers'][0])
-                else:
-                    teams.append(TEAM_ABBREVIATIONS['Chargers'][1])
-            elif word == 'Raiders':
-                if year < 2020:
-                    teams.append(TEAM_ABBREVIATIONS['Raiders'][0])
-                else:
-                    teams.append(TEAM_ABBREVIATIONS['Raiders'][1])
-            elif word == 'Rams':
-                if year < 2016:
-                    teams.append(TEAM_ABBREVIATIONS['Rams'][0])
-                else:
-                    teams.append(TEAM_ABBREVIATIONS['Rams'][1])
+        if word == 'Chargers':
+            if year < 2017:
+                teams.append(TEAM_ABBREVIATIONS['Chargers'][0])
             else:
-                teams.append(TEAM_ABBREVIATIONS[word][0])
-                
+                teams.append(TEAM_ABBREVIATIONS['Chargers'][1])
+        elif word == 'Raiders':
+            if year < 2020:
+                teams.append(TEAM_ABBREVIATIONS['Raiders'][0])
+            else:
+                teams.append(TEAM_ABBREVIATIONS['Raiders'][1])
+        elif word == 'Rams':
+            if year < 2016:
+                teams.append(TEAM_ABBREVIATIONS['Rams'][0])
+            else:
+                teams.append(TEAM_ABBREVIATIONS['Rams'][1])
+        else:
+            teams.append(TEAM_ABBREVIATIONS[word][0])
+    return teams
+
+def coin_flipper(link, teams):
+    #determine who starts with possession
+
+def extractor(link):
+    request_obj = util_2.get_request(link)
+    document = util_2.read_request(request_obj)
+    soup = bs4.BeautifulSoup(document, "html5lib")
 
     comments = soup.find_all(text=lambda text:isinstance(text, Comment))
 
@@ -127,6 +129,84 @@ def scrape_one_row(play_by, teams):
     return len(master_lst)
 
     #return len(quarter_lst), len(times_lst), len(downs_lst), len(togo_lst)
+
+def play_classifier(numpy_array):
+
+    detail_column = numpy_array[:, 9].tolist()
+    numpy_array = np.delete(numpy_array, 9, 1)
+    numpy_array = np.delete(numpy_array, 11, 1)
+
+    play_classify = []
+    for play in detail_column:
+        play_info = []
+        try:
+            play_type = re.findall('(?<=|||)[a-z]+', play)[0] #find a way to handle special cases
+        except IndexError:
+            play_type = None
+        if play_type == 'pass':
+            play_info.append('pass')
+            try:
+                success = re.findall('(?<=pass)[a-z]+', play)[0]
+            except IndexError:
+                success = None
+            if success == 'complete':
+                try:
+                    yardage = re.findall('((?<=for)[0-9]+(?=(yard|yards)|no gain)', play))[0]
+                except IndexError:
+                    yardage = None
+                if yardage == None:
+                    play_info += [''] * 2
+                else:
+                    if yardage == 'no gain':
+                        yardage = 0
+                    try:
+                        location = re.findall('(?<=complete)[a-z]+ [a-z]+', play)[0]
+                    except IndexError:
+                        location = None
+                    if location == ('deep left' or 'deep middle' or 'deep right'/
+                                    or 'short left' or 'short right' or 'short middle'):
+                        play_info.append(location)
+                        play_info.append(yardage)
+                    else:
+                        play_info += [''] * 2
+            elif success == 'incomplete':
+                yardage = '0'
+                try:
+                    location = re.findall('(?<=complete)[a-z]+ [a-z]+', play)[0]
+                except IndexError:
+                    location = None
+                if location == ('deep left' or 'deep middle' or 'deep right'/
+                                or 'short left' or 'short right' or 'short middle'):
+                    play_info.append(location)
+                    play_info.append(str(yardage))
+                else:
+                    play_info += [''] * 2
+            else:
+                play_info += [''] * 2
+        elif play_type == ('up' or 'left' or 'right'):
+            play_info.append('run')
+            if play_type == 'up':
+                play_type = 'middle'
+            play_info.append(play_type)
+            try:
+                yardage = re.findall('((?<=for)[0-9]+(?=(yard|yards)|no gain)', play))[0]
+            except IndexError:
+                yardage = None
+            if yardage == None:
+                play_info.append('')
+            else:
+                if yardage == 'no gain':
+                    yardage = 0
+                play_info.append(str(yardage))
+        else:
+            play_info += [''] * 3
+        no_play = re.findall('no play', play)
+        if no_play != []:
+            play_info = [''] * 3
+        play_classify.append(play_info)
+
+    detail_array = np.array(play_classify)
+    master_array = np.concatenate(numpy_array, detail_array, axis=1)
 
 #<td class="left " data-stat="location" csk="77" >TAM 23</td>
 '''
