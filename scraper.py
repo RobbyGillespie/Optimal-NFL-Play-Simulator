@@ -99,7 +99,6 @@ def scrape_rows(play_by, teams, possession):
             sub_lst.append(sub_play.nextSibling.nextSibling.text) # home score
             sub_lst.append(sub_play.nextSibling.nextSibling.nextSibling.text) # epb
             sub_lst.append(sub_play.nextSibling.nextSibling.nextSibling.nextSibling.text) # epa
-            sub_lst.append(teams[switch][0])
 
             try:
                 variable = row.parent['class']
@@ -111,7 +110,7 @@ def scrape_rows(play_by, teams, possession):
                 else:
                     switch = 0
             else:
-                sub_lst.append(teams[switch])
+                sub_lst.append(teams[switch][0])
                 #print("at divider")
 
             master_lst.append(sub_lst)
