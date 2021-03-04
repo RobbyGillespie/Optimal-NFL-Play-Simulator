@@ -103,8 +103,9 @@ def scrape_rows(play_by, teams, possession):
             try:
                 variable = row.parent['class']
             except KeyError:
-                variable = []
+                variable = None
             if variable is not None:
+                sub_lst.append('')
                 if switch == 0:
                     switch = 1
                 else:
@@ -118,7 +119,7 @@ def scrape_rows(play_by, teams, possession):
     master_array = np.array(master_lst)
     master_array = add_field_position(master_array, possession_lst)
     master_array = play_classifier(master_array)
-    return master_array
+    return master_array[:, 9]
 
     #return len(quarter_lst), len(times_lst), len(downs_lst), len(togo_lst)
 
