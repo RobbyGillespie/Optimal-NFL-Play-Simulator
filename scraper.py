@@ -205,7 +205,7 @@ def play_classifier(numpy_array):
 
     detail_array = np.array(play_classify)
     master_array = np.concatenate([numpy_array, detail_array], axis=1)
-    return master_array[:, -1]
+    return master_array
 
 #<td class="left " data-stat="location" csk="77" >TAM 23</td>
 '''
