@@ -119,7 +119,7 @@ def scrape_rows(play_by, teams, possession):
     master_array = np.array(master_lst)
     master_array = add_field_position(master_array, possession_lst)
     master_array = play_classifier(master_array)
-    return master_array[:, 9]
+    return master_array
 
     #return len(quarter_lst), len(times_lst), len(downs_lst), len(togo_lst)
 
@@ -134,7 +134,7 @@ def add_field_position(numpy_array, possession_lst):
 def play_classifier(numpy_array):
 
     detail_column = numpy_array[:, 6]
-    numpy_array = np.delete(numpy_array, [4, 9], 1)
+    numpy_array = np.delete(numpy_array, [4, 5], 1)
 
     play_classify = []
     for play in detail_column:
