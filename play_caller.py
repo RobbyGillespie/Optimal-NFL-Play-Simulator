@@ -4,6 +4,8 @@
 
 import util_2
 import bs4
+import scraper
+import numpy as np
 
 '''
 def crawl_pages():
@@ -68,10 +70,15 @@ def get_game_pages():
             games = week_page.find_all("td", class_="right gamelink")
             for game in games:
                 game_url = find_url(game, updated_week_url)
-                game_pages.append((game_url, years.index(year)))
+                game_pages.append(game_url)
     return game_pages
 
-
+def combine_games(game_pages):
+    all_games = scraper.extractor(game_pages[0])
+    for url in game_pages[1:]:
+        game = scraper.extractor(url)
+        all_games = np.concatenate((all_games, game), axis=1)
+    return all_games
 
 def find_url(tag, current_url):
     relative_url = tag.find_all("a")[0]["href"]
