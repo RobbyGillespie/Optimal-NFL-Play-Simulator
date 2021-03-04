@@ -73,11 +73,12 @@ def get_game_pages():
                 game_pages.append(game_url)
     return game_pages
 
-def combine_games(game_pages):
+def combine_games():
+    game_pages = get_game_pages()
     all_games = scraper.extractor(game_pages[0])
     for url in game_pages[1:]:
         game = scraper.extractor(url)
-        all_games = np.concatenate((all_games, game), axis=1)
+        all_games = np.concatenate((all_games, game), axis=0)
     return all_games
 
 def find_url(tag, current_url):
