@@ -66,6 +66,7 @@ def extractor(link):
 
 def scrape_rows(play_by, teams, possession):
     master_lst = []
+    print(teams)
     possession_lst = []
     switch = teams.index(possession)
     quarter_tags = play_by.find_all("th", scope="row", class_="center")
@@ -98,6 +99,7 @@ def scrape_rows(play_by, teams, possession):
             sub_lst.append(sub_play.nextSibling.nextSibling.text) # home score
             sub_lst.append(sub_play.nextSibling.nextSibling.nextSibling.text) # epb
             sub_lst.append(sub_play.nextSibling.nextSibling.nextSibling.nextSibling.text) # epa
+            sub_lst.append(teams[switch][0])
 
             try:
                 variable = row.parent['class']
@@ -114,21 +116,16 @@ def scrape_rows(play_by, teams, possession):
 
             master_lst.append(sub_lst)
         possession_lst.append(teams[switch])
-    
     master_array = np.array(master_lst)
-    possession_array = np.array([possession_lst])
-    possession_array = np.transpose(possession_array)
-    master_array = np.concatenate((master_array, possession_array), axis=1)
-    print(master_array[0, :])
-    master_array = add_field_position(master_array)
+    master_array = add_field_position(master_array, possession_lst)
     master_array = play_classifier(master_array)
     return master_array
 
     #return len(quarter_lst), len(times_lst), len(downs_lst), len(togo_lst)
 
-def add_field_position(numpy_array):
-    for row in numpy_array:
-        if row[4] in row[11]:
+def add_field_position(numpy_array, possession_lst):
+    for i, row in enumerate(numpy_array):
+        if row[4] in possession_lst[i]:
             field_position = 100 - int(row[5][0])
             row[5] = str(field_position)
     return numpy_array
@@ -154,7 +151,7 @@ def play_classifier(numpy_array):
                 success = None
             if success == 'complete':
                 try:
-                    yardage = re.findall('(?<=for )[0-9]+(?=( yard| yards)| no gain)', play)[0]
+                    yardage = re.findall('(?<=for )(-?[0-9]+| no gain)(?=yards | yard)', play)[0]
                 except IndexError:
                     yardage = None
                 if yardage == None:
@@ -190,7 +187,7 @@ def play_classifier(numpy_array):
                 play_type = 'middle'
             play_info.append(play_type)
             try:
-                yardage = re.findall('(?<=for )[0-9]+(?= (yard|yards)|no gain)', play)[0]
+                yardage = re.findall('(?<=for )(-?[0-9]+| no gain)(?=yards | yard)', play)[0]
             except IndexError:
                 yardage = None
             if yardage == None:
@@ -208,7 +205,7 @@ def play_classifier(numpy_array):
 
     detail_array = np.array(play_classify)
     master_array = np.concatenate([numpy_array, detail_array], axis=1)
-    return master_array
+    return master_array[:, -1]
 
 #<td class="left " data-stat="location" csk="77" >TAM 23</td>
 '''
