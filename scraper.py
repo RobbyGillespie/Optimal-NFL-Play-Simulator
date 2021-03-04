@@ -14,71 +14,60 @@ import numpy as np
 import re
 from bs4 import BeautifulSoup,Comment
 
-TEAM_ABBREVIATIONS = {'Browns' : ['CLE'], 'Ravens' : ['BAL'], 'Packers' : ['GNB'], 
-                      'Vikings' : ['MIN'], 'Texans' : ['HOU'], 'Chiefs' : ['KAN'], 
+TEAM_ABBREVIATIONS = {'Browns' : ['CLE'], 'Ravens' : ['BAL', 'RAV'], 'Packers' : ['GNB'], 
+                      'Vikings' : ['MIN'], 'Texans' : ['HOU', 'HTX'], 'Chiefs' : ['KAN'], 
                       'Seahawks' : ['SEA'], 'Falcons' : ['ATL'], 'Bears' : ['CHI'],
                       'Lions' : ['DET'], 'Chargers' : ['SDG', 'LAC'], 'Bengals' : ['CIN'],
                       'Buccaneers' : ['TAM'], 'Saints' : ['NOR'], 'Steelers' : ['PIT'],
                       'Giants' : ['NYG'], 'Football Team' : ['WAS'], 'Eagles' : ['PHI'],
                       'Jets' : ['NYJ'], 'Bills' : ['BUF'], 'Dolphins' : ['MIA'], 'Patriots' : ['NWE'],
-                      'Colts' : ['IND'], 'Jaguars' : ['JAX'], 'Raiders' : ['OAK', 'RAI'], 'Panthers' : ['CAR'],
-                      'Cardinals' : ['ARI'], '49ers' : ['SFO'], 'Cowboys' : ['DAL'], 'Rams' : ['STL', 'LAR'],
-                      'Titans' : ['TEN'], 'Broncos' : ['DEN'], 'Redskins' : ['WAS']}
+                      'Colts' : ['IND', 'CLT'], 'Jaguars' : ['JAX'], 'Raiders' : ['OAK', 'RAI', 'LVR'], 'Panthers' : ['CAR'],
+                      'Cardinals' : ['ARI', 'CRD'], '49ers' : ['SFO'], 'Cowboys' : ['DAL'], 'Rams' : ['STL', 'LAR', 'RAM'],
+                      'Titans' : ['TEN', 'OTI'], 'Broncos' : ['DEN'], 'Redskins' : ['WAS']}
+PASS_TYPES = {'deep left', 'deep middle', 'deep right', 'short left', 'short right', 'short middle'}
 
-def team_mapper():
+def team_mapper(soup):
     title_lst = soup.find("title").text.split()
+    team_lst = [x for x in title_lst if x in TEAM_ABBREVIATIONS]
     teams = []
-    for word in title_lst:
-        if word == 'Chargers':
-            if year < 2017:
-                teams.append(TEAM_ABBREVIATIONS['Chargers'][0])
-            else:
-                teams.append(TEAM_ABBREVIATIONS['Chargers'][1])
-        elif word == 'Raiders':
-            if year < 2020:
-                teams.append(TEAM_ABBREVIATIONS['Raiders'][0])
-            else:
-                teams.append(TEAM_ABBREVIATIONS['Raiders'][1])
-        elif word == 'Rams':
-            if year < 2016:
-                teams.append(TEAM_ABBREVIATIONS['Rams'][0])
-            else:
-                teams.append(TEAM_ABBREVIATIONS['Rams'][1])
-        else:
-            teams.append(TEAM_ABBREVIATIONS[word][0])
+    for word in team_lst:
+        teams.append(TEAM_ABBREVIATIONS[word])
     return teams
-
-def coin_flipper(link, teams):
-    #determine who starts with possession
 
 def extractor(link):
     request_obj = util_2.get_request(link)
     document = util_2.read_request(request_obj)
     soup = bs4.BeautifulSoup(document, "html5lib")
+    teams = team_mapper(soup)
 
     comments = soup.find_all(text=lambda text:isinstance(text, Comment))
 
     for comment in comments:
         comment_soup = bs4.BeautifulSoup(comment, "html5lib")
         coin_toss = comment_soup.find("div", class_="table_container", id="div_game_info")
-        coiner = coin_toss.find_all("td", {"class":"center", "data-stat":"stat"})[0].text.split()
-        for word in coiner:
-            if word in teams:
-                possession = word
-            if word == '(deferred)':
-                for team in teams:
-                    if team is not word:
-                        possession = team
+        if coin_toss is not None:
+            coiner = coin_toss.find_all("td", {"class":"center", "data-stat":"stat"})[0].text.split()
+            for word in coiner:
+                if word in teams:
+                    possession = word
+                if word == '(deferred)':
+                    for team in teams:
+                        if team is not word:
+                            possession = team
 
         #<td class="center" data-stat="stat">Chiefs (deferred)</td>
         play_by_play = comment_soup.find("div", class_="table_container", id='div_pbp')
         if play_by_play is not None:
             break
 
-    return play_by_play, possession
+    game_table = scrape_rows(play_by_play, teams, possession)
 
-def scrape_one_row(play_by, teams):
+    return game_table
+
+def scrape_rows(play_by, teams, possession):
     master_lst = []
+    possession_lst = []
+    switch = teams.index(possession)
     quarter_tags = play_by.find_all("th", scope="row", class_="center")
     for row in quarter_tags:
         if str(type(row)) == "<class 'bs4.element.Tag'>":
@@ -90,7 +79,7 @@ def scrape_one_row(play_by, teams):
             sub_lst.append(row.nextSibling.nextSibling.nextSibling.text) # togo
             location = row.nextSibling.nextSibling.nextSibling.nextSibling.text.split()
             if len(location) > 1:
-                sub_lst += ([location[0]], [location[1]]) # loc_team and loc_number
+                sub_lst += (str(location[0]), str(location[1])) # loc_team and loc_number
             else:
                 sub_lst += ['', '']
 
@@ -101,7 +90,7 @@ def scrape_one_row(play_by, teams):
                 if str(type(sub)) == "<class 'bs4.element.NavigableString'>":
                     string += sub
                 else:
-                    string += '!??!'
+                    string += 'pp'
 
             sub_lst.append(string)
 
@@ -119,39 +108,53 @@ def scrape_one_row(play_by, teams):
                     switch = 1
                 else:
                     switch = 0
-            sub_lst.append(teams[switch])
+            else:
+                sub_lst.append(teams[switch])
                 #print("at divider")
 
             master_lst.append(sub_lst)
-        else:
-            print("test")
+        possession_lst.append(teams[switch])
     
-    return len(master_lst)
+    master_array = np.array(master_lst)
+    possession_array = np.array([possession_lst])
+    possession_array = np.transpose(possession_array)
+    master_array = np.concatenate((master_array, possession_array), axis=1)
+    print(master_array[0, :])
+    master_array = add_field_position(master_array)
+    master_array = play_classifier(master_array)
+    return master_array
 
     #return len(quarter_lst), len(times_lst), len(downs_lst), len(togo_lst)
 
+def add_field_position(numpy_array):
+    for row in numpy_array:
+        if row[4] in row[11]:
+            field_position = 100 - int(row[5][0])
+            row[5] = str(field_position)
+    return numpy_array
+
+
 def play_classifier(numpy_array):
 
-    detail_column = numpy_array[:, 9].tolist()
-    numpy_array = np.delete(numpy_array, 9, 1)
-    numpy_array = np.delete(numpy_array, 11, 1)
+    detail_column = numpy_array[:, 6]
+    numpy_array = np.delete(numpy_array, [4, 9], 1)
 
     play_classify = []
     for play in detail_column:
         play_info = []
         try:
-            play_type = re.findall('(?<=|||)[a-z]+', play)[0] #find a way to handle special cases
+            play_type = re.findall('(?<=pppp )[a-z]+', play)[0] #find a way to handle special cases
         except IndexError:
             play_type = None
         if play_type == 'pass':
             play_info.append('pass')
             try:
-                success = re.findall('(?<=pass)[a-z]+', play)[0]
+                success = re.findall('(?<=pass )[a-z]+', play)[0]
             except IndexError:
                 success = None
             if success == 'complete':
                 try:
-                    yardage = re.findall('((?<=for)[0-9]+(?=(yard|yards)|no gain)', play))[0]
+                    yardage = re.findall('(?<=for )[0-9]+(?=( yard| yards)| no gain)', play)[0]
                 except IndexError:
                     yardage = None
                 if yardage == None:
@@ -160,11 +163,10 @@ def play_classifier(numpy_array):
                     if yardage == 'no gain':
                         yardage = 0
                     try:
-                        location = re.findall('(?<=complete)[a-z]+ [a-z]+', play)[0]
+                        location = re.findall('(?<=complete )[a-z]+ [a-z]+', play)[0]
                     except IndexError:
                         location = None
-                    if location == ('deep left' or 'deep middle' or 'deep right'/
-                                    or 'short left' or 'short right' or 'short middle'):
+                    if location in PASS_TYPES:
                         play_info.append(location)
                         play_info.append(yardage)
                     else:
@@ -172,24 +174,23 @@ def play_classifier(numpy_array):
             elif success == 'incomplete':
                 yardage = '0'
                 try:
-                    location = re.findall('(?<=complete)[a-z]+ [a-z]+', play)[0]
+                    location = re.findall('(?<=complete )[a-z]+ [a-z]+', play)[0]
                 except IndexError:
                     location = None
-                if location == ('deep left' or 'deep middle' or 'deep right'/
-                                or 'short left' or 'short right' or 'short middle'):
+                if location in PASS_TYPES:
                     play_info.append(location)
                     play_info.append(str(yardage))
                 else:
                     play_info += [''] * 2
             else:
                 play_info += [''] * 2
-        elif play_type == ('up' or 'left' or 'right'):
+        elif play_type in {'up', 'left', 'right'}:
             play_info.append('run')
             if play_type == 'up':
                 play_type = 'middle'
             play_info.append(play_type)
             try:
-                yardage = re.findall('((?<=for)[0-9]+(?=(yard|yards)|no gain)', play))[0]
+                yardage = re.findall('(?<=for )[0-9]+(?= (yard|yards)|no gain)', play)[0]
             except IndexError:
                 yardage = None
             if yardage == None:
@@ -206,7 +207,8 @@ def play_classifier(numpy_array):
         play_classify.append(play_info)
 
     detail_array = np.array(play_classify)
-    master_array = np.concatenate(numpy_array, detail_array, axis=1)
+    master_array = np.concatenate([numpy_array, detail_array], axis=1)
+    return master_array
 
 #<td class="left " data-stat="location" csk="77" >TAM 23</td>
 '''
