@@ -91,11 +91,11 @@ def scrape_rows(play_by, teams, teams_lst, possession, poss, year):
                 sub_lst.append('')
             else:
                 tg = int(togo)
-                if togo <= '3':
+                if tg <= 3:
                     sub_lst.append('short')
-                elif '4' <= togo <= '7':
+                elif 4 <= tg <= 7:
                     sub_lst.append('middle')
-                elif togo >= '8':
+                elif tg >= 8:
                     sub_lst.append('long')
 
             location = row.nextSibling.nextSibling.nextSibling.nextSibling.text.split()
