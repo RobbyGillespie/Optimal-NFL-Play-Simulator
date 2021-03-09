@@ -19,7 +19,7 @@ TEAM_ABBREVIATIONS = {'Browns' : ['CLE'], 'Ravens' : ['BAL', 'RAV'], 'Packers' :
                       'Seahawks' : ['SEA'], 'Falcons' : ['ATL'], 'Bears' : ['CHI'],
                       'Lions' : ['DET'], 'Chargers' : ['SDG', 'LAC'], 'Bengals' : ['CIN'],
                       'Buccaneers' : ['TAM'], 'Saints' : ['NOR'], 'Steelers' : ['PIT'],
-                      'Giants' : ['NYG'], 'Football Team' : ['WAS'], 'Eagles' : ['PHI'],
+                      'Giants' : ['NYG'], 'Football' : ['WAS'], 'Eagles' : ['PHI'],
                       'Jets' : ['NYJ'], 'Bills' : ['BUF'], 'Dolphins' : ['MIA'], 'Patriots' : ['NWE'],
                       'Colts' : ['IND', 'CLT'], 'Jaguars' : ['JAX'], 'Raiders' : ['OAK', 'RAI', 'LVR'], 'Panthers' : ['CAR'],
                       'Cardinals' : ['ARI', 'CRD'], '49ers' : ['SFO'], 'Cowboys' : ['DAL'], 'Rams' : ['STL', 'LAR', 'RAM'],
@@ -32,13 +32,13 @@ def team_mapper(soup):
     teams = []
     for word in team_lst:
         teams.append(TEAM_ABBREVIATIONS[word])
-    return teams
+    return teams, team_lst
 
 def extractor(link):
     request_obj = util_2.get_request(link)
     document = util_2.read_request(request_obj)
     soup = bs4.BeautifulSoup(document, "html5lib")
-    teams = team_mapper(soup)
+    teams, teams_lst = team_mapper(soup)
 
     comments = soup.find_all(text=lambda text:isinstance(text, Comment))
 
@@ -47,28 +47,32 @@ def extractor(link):
         coin_toss = comment_soup.find("div", class_="table_container", id="div_game_info")
         if coin_toss is not None:
             coiner = coin_toss.find_all("td", {"class":"center", "data-stat":"stat"})[0].text.split()
+            print(coiner)
             for word in coiner:
-                if word in teams:
-                    possession = word
+                if word in TEAM_ABBREVIATIONS.keys():
+                    poss = word
+                    possession = TEAM_ABBREVIATIONS[word]
                 if word == '(deferred)':
-                    for team in teams:
-                        if team is not word:
-                            possession = team
+                    for team in teams_lst:
+                        if team is not poss:
+                            possession = TEAM_ABBREVIATIONS[team]
+                            poss = team
+                            break
 
         #<td class="center" data-stat="stat">Chiefs (deferred)</td>
         play_by_play = comment_soup.find("div", class_="table_container", id='div_pbp')
         if play_by_play is not None:
             break
 
-    game_table = scrape_rows(play_by_play, teams, possession)
+    game_table = scrape_rows(play_by_play, teams, teams_lst, possession, poss)
 
     return game_table
 
-def scrape_rows(play_by, teams, possession):
+def scrape_rows(play_by, teams, teams_lst, possession, poss):
     master_lst = []
     print(teams)
     possession_lst = []
-    switch = teams.index(possession)
+    switch = teams_lst.index(poss)
     quarter_tags = play_by.find_all("th", scope="row", class_="center")
     for row in quarter_tags:
         if str(type(row)) == "<class 'bs4.element.Tag'>":
@@ -99,59 +103,74 @@ def scrape_rows(play_by, teams, possession):
             sub_lst.append(sub_play.nextSibling.nextSibling.text) # home score
             sub_lst.append(sub_play.nextSibling.nextSibling.nextSibling.text) # epb
             sub_lst.append(sub_play.nextSibling.nextSibling.nextSibling.nextSibling.text) # epa
-            sub_lst.append(teams[switch][0])
 
             try:
                 variable = row.parent['class']
             except KeyError:
-                variable = []
-            if variable is not None:
+                variable = None
+            if variable is not None and sub_lst[0] == '':
+                sub_lst.append('')
+                sub_lst.append('')
                 if switch == 0:
                     switch = 1
                 else:
                     switch = 0
             else:
-                sub_lst.append(teams[switch])
+                sub_lst.append(teams[switch][0])
+                sub_lst.append(teams[1 - switch][0])
                 #print("at divider")
-
             master_lst.append(sub_lst)
         possession_lst.append(teams[switch])
+
+    master_lst, detail_column = add_field_position(master_lst, possession_lst)
+    master_lst = play_classifier(master_lst, detail_column)
+    return master_lst
+    '''
     master_array = np.array(master_lst)
+    print(master_array[1])
     master_array = add_field_position(master_array, possession_lst)
     master_array = play_classifier(master_array)
     return master_array
-
+    '''
     #return len(quarter_lst), len(times_lst), len(downs_lst), len(togo_lst)
 
-def add_field_position(numpy_array, possession_lst):
-    for i, row in enumerate(numpy_array):
+def add_field_position(master_lst, possession_lst):
+    detail_column = []
+    for i, row in enumerate(master_lst):
         if row[4] in possession_lst[i]:
-            field_position = 100 - int(row[5][0])
+            field_position = 100 - int(row[5])
             row[5] = str(field_position)
-    return numpy_array
+        detail_column.append(row[6])
+        del row[6]
+        del row[4]
+    return master_lst, detail_column
 
 
-def play_classifier(numpy_array):
-
-    detail_column = numpy_array[:, 6]
-    numpy_array = np.delete(numpy_array, [4, 9], 1)
-
-    play_classify = []
-    for play in detail_column:
+def play_classifier(master_lst, detail_column):
+    for i, play in enumerate(detail_column):
         play_info = []
         try:
             play_type = re.findall('(?<=pppp )[a-z]+', play)[0] #find a way to handle special cases
         except IndexError:
             play_type = None
+        if play_type is not None:
+            try:
+                field_goal_distance = int(play_type)
+                play_info += ['field goal'] * 2
+                if len(re.findall('no good', play)) > 0:
+                    play_info.append('0')
+                else:
+                    play_info.append(str(field_goal_distance))
+            except ValueError:
+                pass
         if play_type == 'pass':
-            play_info.append('pass')
             try:
                 success = re.findall('(?<=pass )[a-z]+', play)[0]
             except IndexError:
                 success = None
             if success == 'complete':
                 try:
-                    yardage = re.findall('(?<=for )(-?[0-9]+| no gain)(?=yards | yard)', play)[0]
+                    yardage = re.findall('(?<=for )(-?[0-9]+(?=yards | yard)|no gain)', play)[0]
                 except IndexError:
                     yardage = None
                 if yardage == None:
@@ -164,7 +183,7 @@ def play_classifier(numpy_array):
                     except IndexError:
                         location = None
                     if location in PASS_TYPES:
-                        play_info.append(location)
+                        play_info.append('pass ' + location)
                         play_info.append(yardage)
                     else:
                         play_info += [''] * 2
@@ -175,17 +194,16 @@ def play_classifier(numpy_array):
                 except IndexError:
                     location = None
                 if location in PASS_TYPES:
-                    play_info.append(location)
+                    play_info.append('pass ' + location)
                     play_info.append(str(yardage))
                 else:
                     play_info += [''] * 2
             else:
                 play_info += [''] * 2
         elif play_type in {'up', 'left', 'right'}:
-            play_info.append('run')
             if play_type == 'up':
                 play_type = 'middle'
-            play_info.append(play_type)
+            play_info.append('run ' + play_type)
             try:
                 yardage = re.findall('(?<=for )(-?[0-9]+| no gain)(?=yards | yard)', play)[0]
             except IndexError:
@@ -196,16 +214,20 @@ def play_classifier(numpy_array):
                 if yardage == 'no gain':
                     yardage = 0
                 play_info.append(str(yardage))
+        elif play_type == 'punts':
+            play_info += ['punt']
+            try:
+                yardage = re.findall('(?<=punts )(-?[0-9]+| no gain)(?=yards | yard)', play)[0]
+            except IndexError:
+                play_info.append('')
+            play_info.append(str(yardage))
         else:
-            play_info += [''] * 3
+            play_info += [''] * 2
         no_play = re.findall('no play', play)
         if no_play != []:
-            play_info = [''] * 3
-        play_classify.append(play_info)
-
-    detail_array = np.array(play_classify)
-    master_array = np.concatenate([numpy_array, detail_array], axis=1)
-    return master_array
+            play_info = [''] * 2
+        master_lst[i] += play_info
+    return master_lst
 
 #<td class="left " data-stat="location" csk="77" >TAM 23</td>
 '''
@@ -220,4 +242,16 @@ for comment in comments:
 #<div class="table_container" id="div_pbp">
 #<tr ><th scope="row" class="center " data-stat="quarter" >1</th><td class="center " data-stat="qtr_time_remain" ><a href="#pbp_63.000">14:56</a></td><td class="center " data-stat="down" >1</td><td class="center " data-stat="yds_to_go" >10</td><td class="left " data-stat="location" csk="77" >TAM 23</td><td class="left " data-stat="detail" ><a name="pbp_63.000"></a><a href="/players/B/BradTo00.htm">Tom Brady</a> pass complete short left to <a href="/players/G/GodwCh00.htm">Chris Godwin</a> for 1 yard (tackle by <a href="/players/B/BreeBa00.htm">Bashaud Breeland</a>)</td><td class="right iz" data-stat="pbp_score_aw" >0</td><td class="right iz" data-stat="pbp_score_hm" >0</td><td class="right " data-stat="exp_pts_before" >0.480</td><td class="right " data-stat="exp_pts_after" >0.070</td></tr>
 
+
+'''
+Old Stuff
+'''
+
+'''
+master_array = np.array(master_lst)
+print(master_array[1])
+master_array = add_field_position(master_array, possession_lst)
+master_array = play_classifier(master_array)
+return master_array
+'''
 
