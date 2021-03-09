@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'simulation.urls'
+ROOT_URLCONF = 'simulation.urls' #makes django default to the urlpattern of our app, not admin
 
 TEMPLATES = [
     {
