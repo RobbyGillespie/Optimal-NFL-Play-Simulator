@@ -37,7 +37,17 @@ def simulator(plays_df, optimal_plays_df, team_1, team_2):
     field_pos = 75
     down = 1
     to_go = 10
-    
+
+    while quarter <= 4:
+        yards_gained, play_time = run_play(optimal_play_types_df, offense, defense, \
+            quarter, down, to_go, field_pos, score_diff, team_1_score, \
+            team_2_score, play_tracker, plays_df)
+        update_situation(quarter, time, play_time, to_go, yards_gained, down, \
+            offense, defense, team_1_score, team_2_score, team_1, team_2)
+
+
+def run_play(optimal_play_types_df, offense, defense, quarter, down, to_go, 
+field_pos, score_diff, team_1_score, team_2_score, play_tracker, plays_df):
     # Set conditions for current situation
     same_offense = optimal_play_types_df['Offense'] == offense
     same_quarter = optimal_play_types_df['Quarter'] == quarter
@@ -65,6 +75,8 @@ def simulator(plays_df, optimal_plays_df, team_1, team_2):
         same_field_pos & same_score_diff]
     yards_gained = past_plays.iloc[rand.randint(0, len(plays_df) - \
         1)]['Yards gained']
+    play_time = = past_plays.iloc[rand.randint(0, len(plays_df) - \
+        1)]['Play time']
 
     # Create location
     if field_pos >= 50:
@@ -78,3 +90,47 @@ def simulator(plays_df, optimal_plays_df, team_1, team_2):
     play = [quarter, time, down, to_go, location, team_1_score, team_2_score, \
         yards_gained]
     play_tracker.append(play)
+
+    return yards_gained, play_time
+
+
+def update_situation(quarter, time, play_time, to_go, yards_gained, down, 
+offense, defense, team_1_score, team_2_score, team_1, team_2):
+    # Update time
+    time = time - play_time
+    if time.days <= 0:
+        quarter += 1
+        if quarter == 5:
+            break
+        time = datetime.timedelta(minutes = 15)
+
+    # Update down and yards to go
+    to_go = to_go - yards_gained
+    if to_go <= 0:
+        to_go = 10
+        down = 1
+    else:
+        down = down - 1
+        if down == 0:
+            offense, defense = switch_possession(team_1, team_2, offense, \
+                defense)
+    
+    # Update field position and score
+    field_pos = field_pos - yards_gained
+    if field_pos <= 0:
+        if offense == team_1:
+            team_1_score += 7
+        else:
+            team_2_score += 7
+        offense, defense = switch_possession(team_1, team_2, offense, defense)
+
+
+def switch_possession (team_1, team_2, offense, defense):
+    if offense == team_1:
+        offense = team_2
+        defense = team_1
+    else:
+        offense = team_1
+        defense = team_2
+
+    return offense, defense
