@@ -26,6 +26,7 @@ TEAM_ABBREVIATIONS = {'Browns' : ['CLE'], 'Ravens' : ['BAL', 'RAV'], 'Packers' :
                       'Titans' : ['TEN', 'OTI'], 'Broncos' : ['DEN'], 'Redskins' : ['WAS']}
 PASS_TYPES = {'deep left', 'deep middle', 'deep right', 'short left', 'short right', 'short middle'}
 
+
 def team_mapper(soup):
     title_lst = soup.find("title").text.split()
     team_lst = [x for x in title_lst if x in TEAM_ABBREVIATIONS]
@@ -33,6 +34,7 @@ def team_mapper(soup):
     for word in team_lst:
         teams.append(TEAM_ABBREVIATIONS[word])
     return teams, team_lst
+
 
 def extractor(link):
     request_obj = util_2.get_request(link)
@@ -68,6 +70,7 @@ def extractor(link):
 
     return game_table
 
+
 def scrape_rows(play_by, teams, teams_lst, possession, poss):
     master_lst = []
     print(teams)
@@ -77,18 +80,30 @@ def scrape_rows(play_by, teams, teams_lst, possession, poss):
     for row in quarter_tags:
         if str(type(row)) == "<class 'bs4.element.Tag'>":
             sub_lst = []
+            quarter = row.text
+            sub_lst.append(quarter) # quarter 0
+            current_time = row.nextSibling.text
+            sub_lst.append(current_time) # time 1
+            sub_lst.append(row.nextSibling.nextSibling.text) # down 2
+            togo = row.nextSibling.nextSibling.nextSibling.text # togo (str) 3
+            sub_lst.append(togo)
+            # add yds_togo_category 4
+            if  togo == '':
+                sub_lst.append('')
+            elif togo <= '3':
+                sub_lst.append('short')
+            elif '4' <= togo <= '7':
+                sub_lst.append('middle')
+            elif togo >= '8':
+                sub_lst.append('long')
 
-            sub_lst.append(row.text) # quarter
-            sub_lst.append(row.nextSibling.text) # time
-            sub_lst.append(row.nextSibling.nextSibling.text) # down
-            sub_lst.append(row.nextSibling.nextSibling.nextSibling.text) # togo
             location = row.nextSibling.nextSibling.nextSibling.nextSibling.text.split()
             if len(location) > 1:
-                sub_lst += (str(location[0]), str(location[1])) # loc_team and loc_number
+                sub_lst += (str(location[0]), str(location[1])) # loc_team and loc_number 5, 6
             else:
                 sub_lst += ['', '']
 
-            # extracting the play info without player names
+            # extracting the play info without player names 7
             sub_play = row.nextSibling.nextSibling.nextSibling.nextSibling.nextSibling
             string = ''
             for sub in sub_play.contents:
@@ -99,16 +114,21 @@ def scrape_rows(play_by, teams, teams_lst, possession, poss):
 
             sub_lst.append(string)
 
-            sub_lst.append(sub_play.nextSibling.text) # away score
-            sub_lst.append(sub_play.nextSibling.nextSibling.text) # home score
-            sub_lst.append(sub_play.nextSibling.nextSibling.nextSibling.text) # epb
-            sub_lst.append(sub_play.nextSibling.nextSibling.nextSibling.nextSibling.text) # epa
-
+            sub_lst.append(sub_play.nextSibling.text) # away score 8
+            sub_lst.append(sub_play.nextSibling.nextSibling.text) # home score 9
+            epb = sub_play.nextSibling.nextSibling.nextSibling.text # epb 10
+            sub_lst.append(epb)
+            epa = sub_play.nextSibling.nextSibling.nextSibling.nextSibling.text # epa 11
+            sub_lst.append(epa)
+            
             try:
-                variable = row.parent['class']
+                variable = row.parent['class'] # success == at divider
             except KeyError:
                 variable = None
             if variable is not None and sub_lst[0] == '':
+                epc = float(epa) - float(epb) # calculate epc 12
+                sub_lst.append(str(epc))
+                # note: could do the epc calculation here and avoid if statement
                 sub_lst.append('')
                 sub_lst.append('')
                 if switch == 0:
@@ -116,11 +136,42 @@ def scrape_rows(play_by, teams, teams_lst, possession, poss):
                 else:
                     switch = 0
             else:
-                sub_lst.append(teams[switch][0])
-                sub_lst.append(teams[1 - switch][0])
-                #print("at divider")
+                sub_lst.append(teams[switch][0]) # 13 team 1
+                sub_lst.append(teams[1 - switch][0]) # 14 team 2
+
+            # calculate time_of_play
+            if len(master_lst) > 0:
+                if quarter == master_lst[-1][0]: # if on same quarter
+                    minute_sec = current_time.split(':')
+                    if minute_sec[0] == '' and minute_sec[0] != '':
+                        total_time = int(minute_sec[1])
+                    elif minute_sec[0] != '' and minute_sec[0] == '':
+                        total_time = int(minute_sec[0])
+                    elif minute_sec[0] != '' and minute_sec[1] != '':
+                        total_time = int(minute_sec[0])*60 + int(minute_sec[1]) # calc total time in s
+                    else:
+                        total_time = 0
+
+                    minute_sec_prev = master_lst[-1][1].split(':')
+                    total_time_prev = int(minute_sec_prev[0])*60 + int(minute_sec_prev[1])
+                    time_of_play = total_time_prev - total_time
+                    master_lst[-1].append(str(time_of_play)) # 15 time_of_play
+                else:
+                    minute_sec = current_time.split(':')
+                    if minute_sec[0] == '' and minute_sec[0] != '':
+                        total_time = int(minute_sec[1])
+                    elif minute_sec[0] != '' and minute_sec[0] == '':
+                        total_time = int(minute_sec[0])
+                    elif minute_sec[0] != '' and minute_sec[1] != '':
+                        total_time = int(minute_sec[0])*60 + int(minute_sec[1]) # calc total time in s
+                    else:
+                        total_time = 0
+                    master_lst[-1].append(str(total_time))
+
             master_lst.append(sub_lst)
         possession_lst.append(teams[switch])
+    # add final time_of_play
+    master_lst[-1].append(str(total_time))
 
     master_lst, detail_column = add_field_position(master_lst, possession_lst)
     master_lst = play_classifier(master_lst, detail_column)
@@ -136,13 +187,27 @@ def scrape_rows(play_by, teams, teams_lst, possession, poss):
 
 def add_field_position(master_lst, possession_lst):
     detail_column = []
+    field_position = None
     for i, row in enumerate(master_lst):
-        if row[4] in possession_lst[i]:
-            field_position = 100 - int(row[5])
-            row[5] = str(field_position)
-        detail_column.append(row[6])
-        del row[6]
-        del row[4]
+        if row[5] in possession_lst[i]:
+            field_position = 100 - int(row[6])
+            row[6] = str(field_position)
+        # adding field_category
+        if field_position is not None:
+            if field_position <= 25:
+                row.append('red zone')
+            elif 25 < field_position <= 50:
+                row.append('green zone')
+            elif 50 < field_position <= 75:
+                row.append('grey zone')
+            elif field_position > 75:
+                row.append('black zone')
+        else:
+            row.append('')
+
+        detail_column.append(row[7])
+        del row[7]
+        del row[5]
     return master_lst, detail_column
 
 
