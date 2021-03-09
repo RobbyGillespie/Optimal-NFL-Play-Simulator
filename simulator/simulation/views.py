@@ -14,7 +14,11 @@ def get_teams(request):
     if request.method == 'POST':
         form = FootballTeamsForm(request.POST)
         if form.is_valid(): #checks that a valid input has been given
-            team1, year1, team2, year2 = form.cleaned_data
+            year1 = form.cleaned_data['year_1']
+            team1 = form.cleaned_data['team_1']
+            year2 = form.cleaned_data['year_2']
+            team2 = form.cleaned_data['team_2']
+            print(form.cleaned_data)
             t1 = Team(team_name=team1, team_year=year1)
             t2 = Team(team_name=team2, team_year=year2)
             t1.save()
@@ -32,7 +36,7 @@ def simulate(request):
     #get team names and years
     teams = []
     for t in Team.objects.all():
-        team = t.get()
+        team = t.get(pk=1)
         teams.append((team.team_name, team.team_year))
     #get correct csv files for these years
 
