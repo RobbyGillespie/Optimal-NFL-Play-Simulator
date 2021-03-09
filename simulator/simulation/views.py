@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from django.urls import reverse
-import csv
+import pandas as pd
 
 from .forms import FootballTeamsForm, WelcomeForm
 from .models import Team
@@ -36,15 +36,19 @@ def simulate(request):
     #get team names and years
     teams = []
     for t in Team.objects.all():
-        team = t.get(pk=1)
-        teams.append((team.team_name, team.team_year))
-    #get correct csv files for these years
-
+        teams.append((t.team_name, t.team_year))
+    #get correct data from the csv for these years
+        all_df = pd.read_csv('out.csv')
+        year1 = teams[0][1]
+        year2 = teams[1][1]
+        right_year = all_df['year'] == year1 or year2
+        plays_df = all_df[right_year]
     #run csv through find_optimal_plays for dataframe of plays and best scenarios
-
+        
     #run through simulator with the plays and scenarios and two team names
 
-    return render(request, 'simulate.html') #render the list of lists output of simulator
+    #render the list of lists output of simulator
+    return render(request, 'simulate.html', {'team_1': teams[1], 'team_2': teams[2], 'simulation': sim})
 
 def welcome(request):
     if request.method == 'POST':
