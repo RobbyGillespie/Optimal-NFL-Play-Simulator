@@ -38,11 +38,20 @@ def simulate(request):
     for t in Team.objects.all():
         teams.append((t.team_name, t.team_year))
     #get correct data from the csv for these years
-        all_df = pd.read_csv('out.csv')
+        labels = ['quarter', 'time', 'down', 'togo', 
+        'togo_cat', 'position', 'epc', 'offense',
+        'defense', 'score_difference', 'time_of_play',
+        'field_position_cat', 'play_type', 'yardage', 'year']
+        all_df = pd.read_csv('out.csv', names=labels)
         year1 = teams[0][1]
         year2 = teams[1][1]
         right_year = all_df['year'] == year1 or year2
-        plays_df = all_df[right_year]
+        plays_df_allteams = all_df[right_year]
+        team1 = teams[0][0]
+        team2 = teams[1][0]
+        right_team = (plays_df_allteams['offense'] == team1 or team2) or (plays_df_allteams['defense'] == team1 or team2)
+        plays_df = plays_df_allteams[right_team]
+    #create another dataframe for the offensive and defensive epcs
     #run csv through find_optimal_plays for dataframe of plays and best scenarios
         
     #run through simulator with the plays and scenarios and two team names
