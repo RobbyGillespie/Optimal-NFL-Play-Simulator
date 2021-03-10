@@ -1,3 +1,30 @@
 Running a simulation for {{ team_1 }} vs {{ team_2 }}
-{% for play, quarter, time in {{ simulation }} %}
-
+{% with old_score_1=0 and old_score_2=0 %}
+<table>
+    <tr>
+        <th>Quarter</th>
+        <th>Time</th>
+        <th>Down</th>
+        <th>ToGo</th>
+        <th>Location</th>
+        <th>Score</th>
+        <th>Detail</th>
+    </tr>
+{% for quarter, time, down, to_go, location, team_1_score, team_2_score, yards_gained in {{ simulation }} %}
+    <tr>
+        <th>{{ quarter }}</th>
+        <th>{{ time }}</th>
+        <th>{{ down }}</th>
+        <th>{{ to_go }}</th>
+        <th>{{ location }}</th>
+        <th>{{ team_1_score }} vs. {{ team_2_score }}</th>
+        {% if team_1_score != old_score_1 %}
+            <th>{{ team_1 }} scores {{ team_1_score - old_score_1 }} points!</th>
+        {% elif team_2_score != old_score_2 %}
+            <th>{{ team_2 }} scores {{ team_2_score - old_score_2 }} points!</th>
+        {% else %}
+            <th></th>
+        {% endif %}
+{% endfor %}
+    </tr>
+</table>
