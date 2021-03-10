@@ -309,7 +309,6 @@ def play_classifier(master_lst, detail_column, year):
                 play_info.append(str(yardage))
             except IndexError:
                 play_info.append('')
-            play_info.append(str(yardage))
         elif play_type == 'kicks':
             kickoff_check = re.findall('(?<=kicks )extra point', play)
             if len(kickoff_check) > 0:
@@ -319,17 +318,18 @@ def play_classifier(master_lst, detail_column, year):
                     play_info.append('success')
                 else:
                     play_info.append('failure')
-                play_info.append('')
+            else:
+                play_info += [''] * 2
         else:
             if len(play_info) == 0:
                 play_info += [''] * 2
         fumble_check = re.findall('fumbles', play)
-        if len(fumble_check) > 0 and play_info[-2] != 'punt':
+        if len(fumble_check) > 0:
             recovery_check = re.findall('recovered', play)
             if len(recovery_check) == 0:
                 play_info[-1] = 'fumble'
         no_play = re.findall('no play', play)
-        if no_play != []:
+        if len(no_play) > 0:
             play_info = [''] * 2
         master_lst[i] += play_info
         master_lst[i] += [str(year)]

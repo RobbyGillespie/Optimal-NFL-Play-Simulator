@@ -7,6 +7,7 @@ import bs4
 import scraper
 import numpy as np
 import pandas as pd
+import csv
 
 
 def get_game_pages():
