@@ -28,6 +28,8 @@ PASS_TYPES = {'deep left', 'deep middle', 'deep right', 'short left', 'short rig
 
 
 def team_mapper(soup):
+    '''
+    '''
     title_lst = soup.find("title").text.split()
     team_lst = [x for x in title_lst if x in TEAM_ABBREVIATIONS]
     teams = []
@@ -37,13 +39,13 @@ def team_mapper(soup):
 
 
 def extractor(link, year):
+    '''
+    '''
     request_obj = util_2.get_request(link)
     document = util_2.read_request(request_obj)
     soup = bs4.BeautifulSoup(document, "html5lib")
     teams, teams_lst = team_mapper(soup)
-
     comments = soup.find_all(text=lambda text:isinstance(text, Comment))
-
     for comment in comments:
         comment_soup = bs4.BeautifulSoup(comment, "html5lib")
         coin_toss = comment_soup.find("div", class_="table_container", id="div_game_info")
@@ -59,8 +61,6 @@ def extractor(link, year):
                             possession = TEAM_ABBREVIATIONS[team]
                             poss = team
                             break
-
-        #<td class="center" data-stat="stat">Chiefs (deferred)</td>
         play_by_play = comment_soup.find("div", class_="table_container", id='div_pbp')
         if play_by_play is not None:
             break
@@ -71,6 +71,8 @@ def extractor(link, year):
 
 
 def scrape_rows(play_by, teams, teams_lst, possession, poss, year):
+    '''
+    '''
     master_lst = []
     possession_lst = []
     switch = teams_lst.index(poss)
@@ -188,16 +190,10 @@ def scrape_rows(play_by, teams, teams_lst, possession, poss, year):
     master_lst, detail_column = add_field_position(master_lst, possession_lst)
     master_lst = play_classifier(master_lst, detail_column, year)
     return master_lst
-    '''
-    master_array = np.array(master_lst)
-    print(master_array[1])
-    master_array = add_field_position(master_array, possession_lst)
-    master_array = play_classifier(master_array)
-    return master_array
-    '''
-    #return len(quarter_lst), len(times_lst), len(downs_lst), len(togo_lst)
 
 def add_field_position(master_lst, possession_lst):
+    '''
+    '''
     detail_column = []
     field_position = None
     for i, row in enumerate(master_lst):
@@ -224,10 +220,12 @@ def add_field_position(master_lst, possession_lst):
 
 
 def play_classifier(master_lst, detail_column, year):
+    '''
+    '''
     for i, play in enumerate(detail_column):
         play_info = []
         try:
-            play_type = re.findall('(?<=pppp )[a-z]+', play)[0] #find a way to handle special cases
+            play_type = re.findall('(?<=pppp )[a-z]+', play)[0]
         except IndexError:
             play_type = None
             field_goal_check = re.findall('field goal', play)
@@ -334,30 +332,3 @@ def play_classifier(master_lst, detail_column, year):
         master_lst[i] += play_info
         master_lst[i] += [str(year)]
     return master_lst
-
-#<td class="left " data-stat="location" csk="77" >TAM 23</td>
-'''
-for comment in comments:
-    comment_soup = bs4.BeautifulSoup(comment, "html5lib")
-    main_title = comment_soup.find("div", class_="table_container", id='div_php')
-    comment = BeautifulSoup(str(comment), 'html.parser')
-
-    search_play = comment.find('table', {'id':'pbp'})
-'''
-
-#<div class="table_container" id="div_pbp">
-#<tr ><th scope="row" class="center " data-stat="quarter" >1</th><td class="center " data-stat="qtr_time_remain" ><a href="#pbp_63.000">14:56</a></td><td class="center " data-stat="down" >1</td><td class="center " data-stat="yds_to_go" >10</td><td class="left " data-stat="location" csk="77" >TAM 23</td><td class="left " data-stat="detail" ><a name="pbp_63.000"></a><a href="/players/B/BradTo00.htm">Tom Brady</a> pass complete short left to <a href="/players/G/GodwCh00.htm">Chris Godwin</a> for 1 yard (tackle by <a href="/players/B/BreeBa00.htm">Bashaud Breeland</a>)</td><td class="right iz" data-stat="pbp_score_aw" >0</td><td class="right iz" data-stat="pbp_score_hm" >0</td><td class="right " data-stat="exp_pts_before" >0.480</td><td class="right " data-stat="exp_pts_after" >0.070</td></tr>
-
-
-'''
-Old Stuff
-'''
-
-'''
-master_array = np.array(master_lst)
-print(master_array[1])
-master_array = add_field_position(master_array, possession_lst)
-master_array = play_classifier(master_array)
-return master_array
-'''
-
