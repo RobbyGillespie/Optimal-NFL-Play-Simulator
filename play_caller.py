@@ -35,7 +35,7 @@ def get_game_pages():
     return game_pages
 
 def combine_games():
-    for year in range(2010, 2021):
+    for year in range(2020, 2021):
         game_pages = get_game_pages()
         season_game_pages = [x[0] for x in game_pages if x[1] == str(year)]
         game_list = []

@@ -1,6 +1,6 @@
 """
-<tr ><th scope="row" class="center " data-stat="quarter" >1</th><td class="center " data-stat="qtr_time_remain" ><a href="#pbp_41.000">15:00</a></td><td class="center iz" data-stat="down" ></td><td class="center iz" data-stat="yds_to_go" ></td><td class="left " data-stat="location" csk="35" >KAN 35</td><td class="left " data-stat="detail" ><a name="pbp_41.000"></a><a href="/players/B/ButkHa00.htm">Harrison Butker</a> kicks off 68 yards, returned by <a href="/players/M/MickJa01.htm">Jaydon Mickens</a> for 26 yards (tackle by <a href="/players/O/ODanDo00.htm">Dorian O'Daniel</a>)</td><td class="right iz" data-stat="pbp_score_aw" >0</td><td class="right iz" data-stat="pbp_score_hm" >0</td><td class="right " data-stat="exp_pts_before" >0.000</td><td class="right " data-stat="exp_pts_after" >0.480</td></tr>
-
+Columns: [Quarter, Time, Down, Yards to go, Yards to go category, Field position, EPC, Offense, Defense,
+          Score difference, Time of play, Field position category, Play type, Yardage, Year]
 """
 import re
 import util_2
@@ -72,7 +72,6 @@ def extractor(link, year):
 
 def scrape_rows(play_by, teams, teams_lst, possession, poss, year):
     master_lst = []
-    print(teams)
     possession_lst = []
     switch = teams_lst.index(poss)
     quarter_tags = play_by.find_all("th", scope="row", class_="center")
@@ -115,31 +114,34 @@ def scrape_rows(play_by, teams, teams_lst, possession, poss, year):
 
             sub_lst.append(string)
 
-            sub_lst.append(sub_play.nextSibling.text) # away score 8
-            sub_lst.append(sub_play.nextSibling.nextSibling.text) # home score 9
-            epb = sub_play.nextSibling.nextSibling.nextSibling.text # epb 10
-            sub_lst.append(epb)
-            epa = sub_play.nextSibling.nextSibling.nextSibling.nextSibling.text # epa 11
-            sub_lst.append(epa)
+            away_score = sub_play.nextSibling.text # away score
+            home_score = sub_play.nextSibling.nextSibling.text # home score
+            epb = sub_play.nextSibling.nextSibling.nextSibling.text # epb
+            epa = sub_play.nextSibling.nextSibling.nextSibling.nextSibling.text # epa
             
             if epa != '' and epb != '':
-                epc = float(epa) - float(epb) # calculate epc 12
+                epc = float(epa) - float(epb) # calculate epc 8
                 sub_lst.append(str(epc))
             try:
                 variable = row.parent['class'] # success == at divider
             except KeyError:
                 variable = None
-            if variable is not None and sub_lst[0] == '':
+            if variable is not None:
                 # note: could do the epc calculation here and avoid if statement
-                sub_lst.append('')
-                sub_lst.append('')
                 if switch == 0:
                     switch = 1
                 else:
                     switch = 0
+            sub_lst.append(teams[switch][0]) # 9 offense
+            sub_lst.append(teams[1 - switch][0]) # 10 defense
+            if away_score == '' or home_score == '':
+                sub_lst.append('')
             else:
-                sub_lst.append(teams[switch][0]) # 13 team 1
-                sub_lst.append(teams[1 - switch][0]) # 14 team 2
+                if teams[switch] == teams[0]:
+                    score_diff = int(away_score) - int(home_score)
+                else:
+                    score_diff = int(home_score) - int(away_score)
+                sub_lst.append(str(score_diff))
 
             # calculate time_of_play
             if len(master_lst) > 0:
@@ -165,7 +167,7 @@ def scrape_rows(play_by, teams, teams_lst, possession, poss, year):
                         total_time_prev = 0
 
                     time_of_play = total_time_prev - total_time
-                    master_lst[-1].append(str(time_of_play)) # 15 time_of_play
+                    master_lst[-1].append(str(time_of_play)) # 12 time_of_play
                 else:
                     minute_sec = current_time.split(':')
                     if minute_sec[0] == '' and minute_sec[0] != '':
@@ -228,16 +230,14 @@ def play_classifier(master_lst, detail_column, year):
             play_type = re.findall('(?<=pppp )[a-z]+', play)[0] #find a way to handle special cases
         except IndexError:
             play_type = None
-        if play_type is not None:
-            try:
-                field_goal_distance = int(play_type)
-                play_info += ['field goal'] * 2
-                if len(re.findall('no good', play)) > 0:
-                    play_info.append('0')
+            field_goal_check = re.findall('field goal', play)
+            if len(field_goal_check) > 0:
+                play_info.append('field goal')
+                success_check = re.findall('(?<=field goal )no good', play)
+                if len(success_check) > 0:
+                    play_info.append('failure')
                 else:
-                    play_info.append(str(field_goal_distance))
-            except ValueError:
-                pass
+                    play_info.append('success')
         if play_type == 'pass':
             try:
                 success = re.findall('(?<=pass )[a-z]+', play)[0]
@@ -273,6 +273,16 @@ def play_classifier(master_lst, detail_column, year):
                     play_info.append(str(yardage))
                 else:
                     play_info += [''] * 2
+            elif len(re.findall('is intercepted', play)) > 0:
+                try:
+                    location = re.findall('(?<=pass )[a-z]+ [a-z]+', play)[0]
+                except IndexError:
+                    location = None
+                if location in PASS_TYPES:
+                    play_info.append('pass ' + location)
+                else:
+                    play_info.append('')
+                play_info.append('interception')
             else:
                 play_info += [''] * 2
         elif play_type in {'up', 'left', 'right'}:
@@ -293,11 +303,31 @@ def play_classifier(master_lst, detail_column, year):
             play_info += ['punt']
             try:
                 yardage = re.findall('(?<=punts )(-?[0-9]+| no gain)(?=yards | yard)', play)[0]
+                return_yardage = re.findall('(?<=for )(-?[0-9]+)(?=yards | yard)', play)
+                if len(return_yardage) > 0:
+                    yardage = int(yardage) - int(return_yardage[0])
+                play_info.append(str(yardage))
             except IndexError:
                 play_info.append('')
             play_info.append(str(yardage))
+        elif play_type == 'kicks':
+            kickoff_check = re.findall('(?<=kicks )extra point', play)
+            if len(kickoff_check) > 0:
+                play_info.append('extra point')
+                success_check = re.findall('(?<=extra point )good', play)
+                if len(success_check) > 0:
+                    play_info.append('success')
+                else:
+                    play_info.append('failure')
+                play_info.append('')
         else:
-            play_info += [''] * 2
+            if len(play_info) == 0:
+                play_info += [''] * 2
+        fumble_check = re.findall('fumbles', play)
+        if len(fumble_check) > 0 and play_info[-2] != 'punt':
+            recovery_check = re.findall('recovered', play)
+            if len(recovery_check) == 0:
+                play_info[-1] = 'fumble'
         no_play = re.findall('no play', play)
         if no_play != []:
             play_info = [''] * 2
