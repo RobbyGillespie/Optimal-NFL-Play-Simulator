@@ -36,7 +36,7 @@ def team_mapper(soup):
     return teams, team_lst
 
 
-def extractor(link):
+def extractor(link, year):
     request_obj = util_2.get_request(link)
     document = util_2.read_request(request_obj)
     soup = bs4.BeautifulSoup(document, "html5lib")
@@ -49,7 +49,6 @@ def extractor(link):
         coin_toss = comment_soup.find("div", class_="table_container", id="div_game_info")
         if coin_toss is not None:
             coiner = coin_toss.find_all("td", {"class":"center", "data-stat":"stat"})[0].text.split()
-            print(coiner)
             for word in coiner:
                 if word in TEAM_ABBREVIATIONS.keys():
                     poss = word
@@ -66,12 +65,12 @@ def extractor(link):
         if play_by_play is not None:
             break
 
-    game_table = scrape_rows(play_by_play, teams, teams_lst, possession, poss)
+    game_table = scrape_rows(play_by_play, teams, teams_lst, possession, poss, year)
 
     return game_table
 
 
-def scrape_rows(play_by, teams, teams_lst, possession, poss):
+def scrape_rows(play_by, teams, teams_lst, possession, poss, year):
     master_lst = []
     print(teams)
     possession_lst = []
@@ -88,14 +87,16 @@ def scrape_rows(play_by, teams, teams_lst, possession, poss):
             togo = row.nextSibling.nextSibling.nextSibling.text # togo (str) 3
             sub_lst.append(togo)
             # add yds_togo_category 4
-            if  togo == '':
+            if  togo == '' or togo is None:
                 sub_lst.append('')
-            elif togo <= '3':
-                sub_lst.append('short')
-            elif '4' <= togo <= '7':
-                sub_lst.append('middle')
-            elif togo >= '8':
-                sub_lst.append('long')
+            else:
+                tg = int(togo)
+                if tg <= 3:
+                    sub_lst.append('short')
+                elif 4 <= tg <= 7:
+                    sub_lst.append('middle')
+                elif tg >= 8:
+                    sub_lst.append('long')
 
             location = row.nextSibling.nextSibling.nextSibling.nextSibling.text.split()
             if len(location) > 1:
@@ -121,13 +122,14 @@ def scrape_rows(play_by, teams, teams_lst, possession, poss):
             epa = sub_play.nextSibling.nextSibling.nextSibling.nextSibling.text # epa 11
             sub_lst.append(epa)
             
+            if epa != '' and epb != '':
+                epc = float(epa) - float(epb) # calculate epc 12
+                sub_lst.append(str(epc))
             try:
                 variable = row.parent['class'] # success == at divider
             except KeyError:
                 variable = None
             if variable is not None and sub_lst[0] == '':
-                epc = float(epa) - float(epb) # calculate epc 12
-                sub_lst.append(str(epc))
                 # note: could do the epc calculation here and avoid if statement
                 sub_lst.append('')
                 sub_lst.append('')
@@ -151,9 +153,17 @@ def scrape_rows(play_by, teams, teams_lst, possession, poss):
                         total_time = int(minute_sec[0])*60 + int(minute_sec[1]) # calc total time in s
                     else:
                         total_time = 0
-
+                    
                     minute_sec_prev = master_lst[-1][1].split(':')
-                    total_time_prev = int(minute_sec_prev[0])*60 + int(minute_sec_prev[1])
+                    if minute_sec_prev[0] == '' and minute_sec_prev[0] != '':
+                        total_time_prev = int(minute_sec_prev[1])
+                    elif minute_sec_prev[0] != '' and minute_sec_prev[0] == '':
+                        total_time_prev = int(minute_sec_prev[0])
+                    elif minute_sec_prev[0] != '' and minute_sec_prev[1] != '':
+                        total_time_prev = int(minute_sec_prev[0])*60 + int(minute_sec_prev[1]) # calc total time in s
+                    else:
+                        total_time_prev = 0
+
                     time_of_play = total_time_prev - total_time
                     master_lst[-1].append(str(time_of_play)) # 15 time_of_play
                 else:
@@ -174,7 +184,7 @@ def scrape_rows(play_by, teams, teams_lst, possession, poss):
     master_lst[-1].append(str(total_time))
 
     master_lst, detail_column = add_field_position(master_lst, possession_lst)
-    master_lst = play_classifier(master_lst, detail_column)
+    master_lst = play_classifier(master_lst, detail_column, year)
     return master_lst
     '''
     master_array = np.array(master_lst)
@@ -211,7 +221,7 @@ def add_field_position(master_lst, possession_lst):
     return master_lst, detail_column
 
 
-def play_classifier(master_lst, detail_column):
+def play_classifier(master_lst, detail_column, year):
     for i, play in enumerate(detail_column):
         play_info = []
         try:
@@ -292,6 +302,7 @@ def play_classifier(master_lst, detail_column):
         if no_play != []:
             play_info = [''] * 2
         master_lst[i] += play_info
+        master_lst[i] += [str(year)]
     return master_lst
 
 #<td class="left " data-stat="location" csk="77" >TAM 23</td>
