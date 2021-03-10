@@ -12,6 +12,7 @@ import csv
 import requests
 import numpy as np
 import re
+import datetime
 from bs4 import BeautifulSoup,Comment
 
 TEAM_ABBREVIATIONS = {'Browns' : ['CLE'], 'Ravens' : ['BAL', 'RAV'], 'Packers' : ['GNB'], 
@@ -35,6 +36,7 @@ def team_mapper(soup):
     teams = []
     for word in team_lst:
         teams.append(TEAM_ABBREVIATIONS[word])
+    print(teams)
     return teams, team_lst
 
 
@@ -139,7 +141,7 @@ def scrape_rows(play_by, teams, teams_lst, possession, poss, year):
             if away_score == '' or home_score == '':
                 sub_lst.append('')
             else:
-                if teams[switch] == teams[0]:
+                if switch == 0:
                     score_diff = int(away_score) - int(home_score)
                 else:
                     score_diff = int(home_score) - int(away_score)
@@ -181,8 +183,8 @@ def scrape_rows(play_by, teams, teams_lst, possession, poss, year):
                     else:
                         total_time = 0
                     master_lst[-1].append(str(total_time))
-
-            master_lst.append(sub_lst)
+            if sub_lst[0] != '' and sub_lst[-1] != '':
+                master_lst.append(sub_lst)
         possession_lst.append(teams[switch])
     # add final time_of_play
     master_lst[-1].append(str(total_time))
