@@ -1,5 +1,5 @@
 Running a simulation for {{ team_1 }} vs {{ team_2 }}
-{% with old_score_1=0 and old_score_2=0 %}
+{% load simulation_extras %}
 <table>
     <tr>
         <th>Quarter</th>
@@ -10,21 +10,49 @@ Running a simulation for {{ team_1 }} vs {{ team_2 }}
         <th>Score</th>
         <th>Detail</th>
     </tr>
-{% for quarter, time, down, to_go, location, team_1_score, team_2_score, yards_gained in {{ simulation }} %}
+{% for quarter, time, down, to_go, location, team_1_score, team_2_score, yards_gained, play_type in {{ simulation }} %}
     <tr>
         <th>{{ quarter }}</th>
         <th>{{ time }}</th>
         <th>{{ down }}</th>
         <th>{{ to_go }}</th>
         <th>{{ location }}</th>
-        <th>{{ team_1_score }} vs. {{ team_2_score }}</th>
+        <th>{{ team_1_score }} vs. {{ team_2_score }}</th> 
+        {% comment %} first check for the scoring, then offensive team, then sort by play type {% endcomment %}
         {% if team_1_score != old_score_1 %}
-            <th>{{ team_1 }} scores {{ team_1_score - old_score_1 }} points!</th>
+            {% update_var True as scored %}
+            {% update_var team_1_score as old_score_1 %}
         {% elif team_2_score != old_score_2 %}
-            <th>{{ team_2 }} scores {{ team_2_score - old_score_2 }} points!</th>
-        {% else %}
-            <th></th>
+            {% update_var True as scored %} 
+            {% update_var team_2_score as old_score_2 %}
         {% endif %}
+        {% if team_1 == offense %}
+            {% if 'pass' in play_type %}
+                <th>{{ roster_1['qb'] }} passes {{ yards_gained }} yards to {{ roster_1['wr']}} {% if scored %} and scored! {% endif %}</th>
+            {% elif 'run' in play_type %}
+                <th>{{ roster_1['rb'] }} runs {{ yards_gained }} yards {% if scored %} and scored! {% endif %}</th>
+            {% elif 'punt' in play_type %}
+                <th>{{ roster_1['kicker'] }} punted {{ yards_gained }} yards</th>
+            {% elif yards_gained == 'success' %}
+                <th>{{ roster_1['kicker'] }} made a field goal</th>
+            {% else %}
+                <th>{{ roster_1['kicker'] }} missed a field goal</th>
+            {% endif %}
+        {% elif team_2 == offense %}
+            {% if 'pass' in play_type %}
+                <th>{{ roster_2['qb'] }} passes {{ yards_gained }} yards to {{ roster_2['wr']}}</th>
+            {% elif 'run' in play_type %}
+                <th>{{ roster_2['rb'] }} runs {{ yards_gained }} yards</th>
+            {% elif 'punt' in play_type %}
+                <th>{{ roster_2['kicker'] }} punted {{ yards_gained }} yards</th>
+            {% elif yards_gained == 'success' %}
+                <th>{{ roster_2['kicker'] }} made a field goal</th>
+            {% else %}
+                <th>{{ roster_2['kicker'] }} missed a field goal</th>
+            {% endif %}
+        {% endif %}
+        {% update_var False as scored %}
+
 {% endfor %}
     </tr>
 </table>

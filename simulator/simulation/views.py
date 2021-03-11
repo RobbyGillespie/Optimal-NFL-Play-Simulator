@@ -38,26 +38,36 @@ def simulate(request):
     for t in Team.objects.all():
         teams.append((t.team_name, t.team_year))
     #get correct data from the csv for these years
-        labels = ['quarter', 'time', 'down', 'togo', 
-        'togo_cat', 'position', 'epc', 'offense',
-        'defense', 'score_difference', 'time_of_play',
-        'field_position_cat', 'play_type', 'yardage', 'year']
-        all_df = pd.read_csv('out.csv', names=labels)
-        year1 = teams[0][1]
-        year2 = teams[1][1]
-        right_year = all_df['year'] == year1 or year2
-        plays_df_allteams = all_df[right_year]
-        team1 = teams[0][0]
-        team2 = teams[1][0]
-        right_team = (plays_df_allteams['offense'] == team1 or team2) or (plays_df_allteams['defense'] == team1 or team2)
-        plays_df = plays_df_allteams[right_team]
+    labels = ['quarter', 'time', 'down', 'togo', 
+    'togo_cat', 'position', 'epc', 'offense',
+    'defense', 'score_difference', 'time_of_play',
+    'field_position_cat', 'play_type', 'yardage', 'year']
+    all_df = pd.read_csv('out.csv', names=labels)
+    year1 = teams[0][1]
+    year2 = teams[1][1]
+    right_year = all_df['year'] == year1 or year2
+    plays_df_allteams = all_df[right_year]
+    team1 = teams[0][0]
+    team2 = teams[1][0]
+    right_team = (plays_df_allteams['offense'] == team1 or team2) or (plays_df_allteams['defense'] == team1 or team2)
+    plays_df = plays_df_allteams[right_team]
     #create another dataframe for the offensive and defensive epcs
+    offense_df = plays_df[plays_df['epc'] == plays_df.groupby(['offense', 'field_position_cat', 'togo_cat', 'down', 'play_type'])].transform(statistics.mean)
+    defense_df = plays_df[plays_df['epc'] == plays_df.groupby(['defense', 'field_position_cat', 'togo_cat', 'down', 'play_type'])].transform(statistics.mean)
+    
     #run csv through find_optimal_plays for dataframe of plays and best scenarios
         
     #run through simulator with the plays and scenarios and two team names
 
+    #get the rosters for the two teams input by the user
+    roster1 = get_roster(team1, year1)
+    roster2 = get_roster(team2, year2)
     #render the list of lists output of simulator
-    return render(request, 'simulate.html', {'team_1': teams[1], 'team_2': teams[2], 'simulation': sim})
+    dct = {'team_1': teams[0], 'team_2': teams[1], 
+    'simulation': sim, 'roster_1': roster1, 
+    'roster_2': roster2, 'old_score_1': 0, 
+    'old_score_2': 0, 'scored': False}
+    return render(request, 'simulate.html', dct)
 
 def welcome(request):
     if request.method == 'POST':
