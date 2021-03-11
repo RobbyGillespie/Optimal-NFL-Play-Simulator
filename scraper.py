@@ -199,9 +199,11 @@ def add_field_position(master_lst, possession_lst):
     detail_column = []
     field_position = None
     for i, row in enumerate(master_lst):
+        print(possession_lst[i], row[5], row[6])
         if row[5] in possession_lst[i]:
             field_position = 100 - int(row[6])
             row[6] = str(field_position)
+        print(row[6])
         # adding field_category
         if field_position is not None:
             if field_position <= 25:
@@ -214,6 +216,7 @@ def add_field_position(master_lst, possession_lst):
                 row.append('black zone')
         else:
             row.append('')
+        print(row[-1])
 
         detail_column.append(row[7])
         del row[7]
