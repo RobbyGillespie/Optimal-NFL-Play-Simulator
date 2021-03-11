@@ -36,27 +36,27 @@ def get_game_pages():
     return game_pages
 
 def combine_games():
+    '''
     for year in range(2018, 2020):
-        game_pages = get_game_pages()
+        
         season_game_pages = [x[0] for x in game_pages if x[1] == str(year)]
-        game_list = []
-        for y in season_game_pages:
-            game_log = scraper.extractor(y, year)
-            game_list += game_log
+    '''
+    print("test1")
+    game_pages = get_game_pages()
+    game_list = []
+    for y in game_pages:
+        game_log = scraper.extractor(y)
+        game_list += game_log
+
     write_to_csv(game_list)
 
     return game_list
-    '''
-    df = pd.DataFrame(game_list, columns = ['Quarter', 'Time', 'Down', \
-        'To go', 'Field position', 'Away score', 'Home score', \
-        'EPB', 'EPA', 'Team?', 'Play type', 'Direction', 'Yards gained'])
-    '''
 
 def write_to_csv(game_list):
     with open("out.csv", "w", newline="") as f:
         writer = csv.writer(f)
         writer.writerows(game_list)
-    print("lil test")
+    print("test")
 
 def find_url(tag, current_url):
     relative_url = tag.find_all("a")[0]["href"]
