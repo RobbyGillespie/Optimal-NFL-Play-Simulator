@@ -36,7 +36,6 @@ def team_mapper(soup):
     teams = []
     for word in team_lst:
         teams.append(TEAM_ABBREVIATIONS[word])
-    print(teams)
     return teams, team_lst
 
 
@@ -47,6 +46,7 @@ def extractor(link, year):
     document = util_2.read_request(request_obj)
     soup = bs4.BeautifulSoup(document, "html5lib")
     teams, teams_lst = team_mapper(soup)
+    print(teams, year)
     comments = soup.find_all(text=lambda text:isinstance(text, Comment))
     for comment in comments:
         comment_soup = bs4.BeautifulSoup(comment, "html5lib")
@@ -81,111 +81,94 @@ def scrape_rows(play_by, teams, teams_lst, possession, poss, year):
     quarter_tags = play_by.find_all("th", scope="row", class_="center")
     for row in quarter_tags:
         if str(type(row)) == "<class 'bs4.element.Tag'>":
-            sub_lst = []
-            quarter = row.text
-            sub_lst.append(quarter) # quarter 0
-            current_time = row.nextSibling.text
-            sub_lst.append(current_time) # time 1
-            sub_lst.append(row.nextSibling.nextSibling.text) # down 2
-            togo = row.nextSibling.nextSibling.nextSibling.text # togo (str) 3
-            sub_lst.append(togo)
-            # add yds_togo_category 4
-            if  togo == '' or togo is None:
-                sub_lst.append('')
-            else:
-                tg = int(togo)
-                if tg <= 3:
-                    sub_lst.append('short')
-                elif 4 <= tg <= 7:
-                    sub_lst.append('middle')
-                elif tg >= 8:
-                    sub_lst.append('long')
-
-            location = row.nextSibling.nextSibling.nextSibling.nextSibling.text.split()
-            if len(location) > 1:
-                sub_lst += (str(location[0]), str(location[1])) # loc_team and loc_number 5, 6
-            else:
-                sub_lst += ['', '']
-
-            # extracting the play info without player names 7
-            sub_play = row.nextSibling.nextSibling.nextSibling.nextSibling.nextSibling
-            string = ''
-            for sub in sub_play.contents:
-                if str(type(sub)) == "<class 'bs4.element.NavigableString'>":
-                    string += sub
-                else:
-                    string += 'pp'
-
-            sub_lst.append(string)
-
-            away_score = sub_play.nextSibling.text # away score
-            home_score = sub_play.nextSibling.nextSibling.text # home score
-            epb = sub_play.nextSibling.nextSibling.nextSibling.text # epb
-            epa = sub_play.nextSibling.nextSibling.nextSibling.nextSibling.text # epa
-            
-            if epa != '' and epb != '':
-                epc = float(epa) - float(epb) # calculate epc 8
-                sub_lst.append(str(epc))
             try:
-                variable = row.parent['class'] # success == at divider
+                variable = row.parent['class'][0] # success == at divider # variable is 'divider'
             except KeyError:
                 variable = None
-            if variable is not None:
-                # note: could do the epc calculation here and avoid if statement
+            if variable == 'divider':
                 if switch == 0:
                     switch = 1
                 else:
                     switch = 0
-            sub_lst.append(teams[switch][0]) # 9 offense
-            sub_lst.append(teams[1 - switch][0]) # 10 defense
-            if away_score == '' or home_score == '':
-                sub_lst.append('')
-            else:
-                if switch == 0:
-                    score_diff = int(away_score) - int(home_score)
-                else:
-                    score_diff = int(home_score) - int(away_score)
-                sub_lst.append(str(score_diff))
+            quarter = row.text
+            current_time = row.nextSibling.text
+            down = row.nextSibling.nextSibling.text
+            togo = row.nextSibling.nextSibling.nextSibling.text 
+            location = row.nextSibling.nextSibling.nextSibling.nextSibling.text.split()
+            sub_play = row.nextSibling.nextSibling.nextSibling.nextSibling.nextSibling
+            epb = sub_play.nextSibling.nextSibling.nextSibling.text # epb
+            epa = sub_play.nextSibling.nextSibling.nextSibling.nextSibling.text # epa
+            if quarter != '':
+                if epb != '' and epa != '' and len(location) > 1:
+                    if current_time != '' and down != '' and togo != '':
+                        sub_lst = []
+                        sub_lst.append(quarter) # quarter 0
+                        sub_lst.append(current_time) # time 1
+                        sub_lst.append(down) # down 2
+                        sub_lst.append(togo) # togo (str) 3
+                        # add yds_togo_category 4
+                        if  togo == '' or togo is None:
+                            sub_lst.append('')
+                        else:
+                            tg = int(togo)
+                            if tg <= 3:
+                                sub_lst.append('short')
+                            elif 4 <= tg <= 7:
+                                sub_lst.append('middle')
+                            elif tg >= 8:
+                                sub_lst.append('long')
 
-            # calculate time_of_play
-            if len(master_lst) > 0:
-                if quarter == master_lst[-1][0]: # if on same quarter
-                    minute_sec = current_time.split(':')
-                    if minute_sec[0] == '' and minute_sec[0] != '':
-                        total_time = int(minute_sec[1])
-                    elif minute_sec[0] != '' and minute_sec[0] == '':
-                        total_time = int(minute_sec[0])
-                    elif minute_sec[0] != '' and minute_sec[1] != '':
-                        total_time = int(minute_sec[0])*60 + int(minute_sec[1]) # calc total time in s
-                    else:
-                        total_time = 0
-                    
-                    minute_sec_prev = master_lst[-1][1].split(':')
-                    if minute_sec_prev[0] == '' and minute_sec_prev[0] != '':
-                        total_time_prev = int(minute_sec_prev[1])
-                    elif minute_sec_prev[0] != '' and minute_sec_prev[0] == '':
-                        total_time_prev = int(minute_sec_prev[0])
-                    elif minute_sec_prev[0] != '' and minute_sec_prev[1] != '':
-                        total_time_prev = int(minute_sec_prev[0])*60 + int(minute_sec_prev[1]) # calc total time in s
-                    else:
-                        total_time_prev = 0
+                        if len(location) > 1:
+                            sub_lst += (str(location[0]), str(location[1])) # loc_team and loc_number 5, 6
+                        else:
+                            sub_lst += ['', '']
 
-                    time_of_play = total_time_prev - total_time
-                    master_lst[-1].append(str(time_of_play)) # 12 time_of_play
-                else:
-                    minute_sec = current_time.split(':')
-                    if minute_sec[0] == '' and minute_sec[0] != '':
-                        total_time = int(minute_sec[1])
-                    elif minute_sec[0] != '' and minute_sec[0] == '':
-                        total_time = int(minute_sec[0])
-                    elif minute_sec[0] != '' and minute_sec[1] != '':
-                        total_time = int(minute_sec[0])*60 + int(minute_sec[1]) # calc total time in s
-                    else:
-                        total_time = 0
-                    master_lst[-1].append(str(total_time))
-            if sub_lst[0] != '' and sub_lst[-1] != '':
-                master_lst.append(sub_lst)
-        possession_lst.append(teams[switch])
+                        # extracting the play info without player names 7
+                        string = ''
+                        for sub in sub_play.contents:
+                            if str(type(sub)) == "<class 'bs4.element.NavigableString'>":
+                                string += sub
+                            else:
+                                string += 'pp'
+
+                        sub_lst.append(string)
+
+                        away_score = sub_play.nextSibling.text # away score
+                        home_score = sub_play.nextSibling.nextSibling.text # home score
+                        
+                        if epa != '' and epb != '':
+                            epc = float(epa) - float(epb) # calculate epc 8
+                            sub_lst.append(str(epc))
+                        sub_lst.append(teams[switch][0]) # 9 offense
+                        sub_lst.append(teams[1 - switch][0]) # 10 defense
+
+                        if away_score == '' or home_score == '': # calc score diff
+                            sub_lst.append('')
+                        else:
+                            if switch == 0:
+                                score_diff = int(away_score) - int(home_score)
+                            else:
+                                score_diff = int(home_score) - int(away_score)
+                            sub_lst.append(str(score_diff))
+
+                        # calculate time_of_play
+                        if len(master_lst) > 0:
+                            if quarter == master_lst[-1][0]: # if on same quarter as previous
+                                minute_sec = current_time.split(':')
+                                #if len(minute_sec) == 2:
+                                total_time = datetime.timedelta(minutes = int(minute_sec[0]), seconds = int(minute_sec[1])) #convert 
+
+                                minute_sec_prev = master_lst[-1][1].split(':')
+
+                                total_time_prev = datetime.timedelta(minutes = int(minute_sec_prev[0]), seconds = int(minute_sec_prev[1]))# calc total time in s
+                                time_of_play = (total_time_prev - total_time).seconds
+                                master_lst[-1].append(str(time_of_play)) # 12 time_of_play
+
+                            else: # case in which you are at new quarter
+                                total_time = datetime.timedelta(minutes = int(minute_sec[0]), seconds = int(minute_sec[1]))
+                                master_lst[-1].append(str(total_time.seconds))
+                        master_lst.append(sub_lst)
+                        possession_lst.append(teams[switch])
     # add final time_of_play
     master_lst[-1].append(str(total_time))
 
@@ -199,13 +182,10 @@ def add_field_position(master_lst, possession_lst):
     detail_column = []
     field_position = None
     for i, row in enumerate(master_lst):
-        print(possession_lst[i], row[5], row[6])
         if row[5] in possession_lst[i]:
             field_position = 100 - int(row[6])
             row[6] = str(field_position)
-        else:
-            field_position = int(row[6])
-        print(row[6])
+        field_position = int(row[6])
         # adding field_category
         if field_position is not None:
             if field_position <= 25:
@@ -218,7 +198,6 @@ def add_field_position(master_lst, possession_lst):
                 row.append('black zone')
         else:
             row.append('')
-        print(row[-1])
 
         detail_column.append(row[7])
         del row[7]
