@@ -16,7 +16,7 @@ from bs4 import BeautifulSoup,Comment
 YEAR=["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"]
 
 def crawl_roster():
-    roster_pages = []
+    roster_pages = {}
     teams_page, teams_url = play_caller.create_soup_object("https://www.profootballarchives.com/teams.html")
     teams = teams_page.find_all("a")
     for team in teams[0:32]:
@@ -27,7 +27,9 @@ def crawl_roster():
         for year in years:
             old_roster_url = year["href"]
             roster_url = util_2.convert_if_relative_url(team_url, old_roster_url)
-            roster_pages.append(roster_url)
+            inner = {}
+            inner[year] = roster_url
+            roster_pages[team] = inner
     return roster_pages
 
 def extractor(link):
