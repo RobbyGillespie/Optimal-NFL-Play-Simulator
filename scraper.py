@@ -39,9 +39,10 @@ def team_mapper(soup):
     return teams, team_lst
 
 
-def extractor(link, year):
+def extractor(link_year):
     '''
     '''
+    link, year = link_year
     request_obj = util_2.get_request(link)
     document = util_2.read_request(request_obj)
     soup = bs4.BeautifulSoup(document, "html5lib")
@@ -170,11 +171,15 @@ def scrape_rows(play_by, teams, teams_lst, possession, poss, year):
                         master_lst.append(sub_lst)
                         possession_lst.append(teams[switch])
     # add final time_of_play
-    master_lst[-1].append(str(total_time))
+    if len(master_lst) <= 1:
+        return([])
+    else:
+        master_lst[-1].append(str(total_time))
 
     master_lst, detail_column = add_field_position(master_lst, possession_lst)
     master_lst = play_classifier(master_lst, detail_column, year)
     return master_lst
+
 
 def add_field_position(master_lst, possession_lst):
     '''
