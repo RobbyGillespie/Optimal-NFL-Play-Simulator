@@ -4,13 +4,32 @@ import datetime
 
 def find_optimal_plays():
     # Get past plays dataframe
-    # Needed columns: year, team on offense and their score difference, EPC,
-    # and field goals
     plays_df = pd.read_csv('out.csv', names = ['Quarter', 'Time', 'Down', \
-        'To go', 'To go category', 'Field position', 'Away score', \
-        'Home score', 'Score difference', 'EPB', 'EPA', 'Team 1', 'Team 2', \
-        'Field zone', 'Seconds', 'Play type', 'Yards'])
+        'To go', 'To go category', 'Field position', 'EPC', 'Offense', \
+        'Defense', 'Score difference', 'Play time', 'Field zone', \
+        'Play type', 'Yards gained', 'Year'])
 
+    # Create dataframe of offensive plays
+    team_1_is_offense = plays_df['Offense'] == team_1
+    team_2_is_offense = plays_df['Offense'] == team_2
+    offense_df = plays_df[team_1_is_offense | team_2_is_offense]
+
+    # Create dataframe of defensive plays
+    team_1_is_defense = = plays_df['Defense'] == team_1
+    team_2_is_defense = = plays_df['Defense'] == team_2
+    defense_df = plays_df[team_1_is_defense | team_2_is_defense]
+
+    # Create optimal plays 
+    mean_performances = offense_df.groupby(['Offese', 'Down', \
+        'To go category', 'Field zone', 'Play type']).mean()
+    
+    # Don't think I should actually do this
+    optimal_plays = mean_performances[mean_performances['EPC'] == \
+        mean_performances.groupby(['Offense', 'Down', \
+        'To go category', 'Field zone'])['EPC'].transform(max)]
+
+
+'''
     # Create dataframe with average EPC for each play type in each situation
     # I don't think this will work because the average doesn't exist
     scenarios_df = plays_df[plays_df['EPC sum'] == plays_df.groupby(['Quater', \
@@ -23,6 +42,7 @@ def find_optimal_plays():
         'Field zone', 'Score difference', 'Play type'])['EPC sum'].transform(max)]
 
     return optimal_play_types_df
+'''
 
 def simulator(plays_df, optimal_plays_df, team_1, team_2):
     '''
@@ -140,7 +160,7 @@ field_pos_cat, score_diff, team_1_score, team_2_score, play_tracker, plays_df):
     # Create play
     # Could also extract and add play detail
     play = [quarter, time, down, to_go, location, team_1_score, team_2_score, \
-        yards_gained]
+        yards_gained, optimal_play_type]
     play_tracker.append(play)
 
     return yards_gained, play_time, optimal_play_type
