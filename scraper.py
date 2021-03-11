@@ -12,6 +12,7 @@ import csv
 import requests
 import numpy as np
 import re
+import datetime
 from bs4 import BeautifulSoup,Comment
 
 TEAM_ABBREVIATIONS = {'Browns' : ['CLE'], 'Ravens' : ['BAL', 'RAV'], 'Packers' : ['GNB'], 
@@ -35,6 +36,7 @@ def team_mapper(soup):
     teams = []
     for word in team_lst:
         teams.append(TEAM_ABBREVIATIONS[word])
+    print(teams)
     return teams, team_lst
 
 
@@ -139,7 +141,7 @@ def scrape_rows(play_by, teams, teams_lst, possession, poss, year):
             if away_score == '' or home_score == '':
                 sub_lst.append('')
             else:
-                if teams[switch] == teams[0]:
+                if switch == 0:
                     score_diff = int(away_score) - int(home_score)
                 else:
                     score_diff = int(home_score) - int(away_score)
@@ -181,8 +183,8 @@ def scrape_rows(play_by, teams, teams_lst, possession, poss, year):
                     else:
                         total_time = 0
                     master_lst[-1].append(str(total_time))
-
-            master_lst.append(sub_lst)
+            if sub_lst[0] != '' and sub_lst[-1] != '':
+                master_lst.append(sub_lst)
         possession_lst.append(teams[switch])
     # add final time_of_play
     master_lst[-1].append(str(total_time))
@@ -197,9 +199,11 @@ def add_field_position(master_lst, possession_lst):
     detail_column = []
     field_position = None
     for i, row in enumerate(master_lst):
+        print(possession_lst[i], row[5], row[6])
         if row[5] in possession_lst[i]:
             field_position = 100 - int(row[6])
             row[6] = str(field_position)
+        print(row[6])
         # adding field_category
         if field_position is not None:
             if field_position <= 25:
@@ -212,6 +216,7 @@ def add_field_position(master_lst, possession_lst):
                 row.append('black zone')
         else:
             row.append('')
+        print(row[-1])
 
         detail_column.append(row[7])
         del row[7]
