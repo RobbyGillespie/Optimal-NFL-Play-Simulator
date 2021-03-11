@@ -203,6 +203,8 @@ def add_field_position(master_lst, possession_lst):
         if row[5] in possession_lst[i]:
             field_position = 100 - int(row[6])
             row[6] = str(field_position)
+        else:
+            field_position = int(row[6])
         print(row[6])
         # adding field_category
         if field_position is not None:
