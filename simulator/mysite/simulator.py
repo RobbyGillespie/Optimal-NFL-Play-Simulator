@@ -6,11 +6,24 @@ import math
 import os
 
 def get_dataframes(team_1_info, team_2_info):
+    '''
+    Create dataframes with all relevant past plays and the optimal play type 
+    for each team.
 
-    team_1, team_1_year = team_1_info
-    team_2, team_2_year = team_2_info
+    Inputs:
+        team_1_info (tuple): team 1 abbreviation and season of interest
+        team_2_info (tuple): team 1 abbreviation and season of interest
 
-    # Get past plays dataframe
+    Outputs:
+        team_1 (string): team 1 abbreviation
+        team_2 (string): team 2 abbreviation
+        t1_optimal_plays: dataframe with team 1's optimal play per scenario
+        t2_optimal_plays: dataframe with team 2's optimal play per scenario
+        plays_df: dataframe of past plays where each team is on offense or
+            defense during their season
+    '''
+
+    # Get dataframe of every play in the last 11 seasons
     csv_path = os.path.join(os.path.dirname(__file__), 'allgames.csv')
     all_plays_df = pd.read_csv(csv_path, names = ['Quarter', 'Time', 'Down', \
         'To go', 'To go category', 'Field position', 'EPC', 'Offense', \
@@ -31,24 +44,45 @@ def get_dataframes(team_1_info, team_2_info):
 
 
 def create_optimal_plays(team_A_info, team_B_info, all_plays_df):
+    '''
+    Create a dataframe with the optimal offensive play for a team on offense
+    against another team on defense.
 
+    Inputs:
+        team_A_info (tuple): team 1 abbreviation and season of interest
+        team_B_info (tuple): team 1 abbreviation and season of interest
+        all_plays_df: dataframe of every play in the last 11 seasons
+
+    Outputs:
+        team_A (string): team A abbreviation
+        tA_optimal_plays: dataframe of team A's best plays vs team B's defense
+        team_A_is_offense: column of booleans that are True where Team A is off
+        team_B_is_defense: column of booleans that are True where Team B is off
+    '''
+
+    # Load in team information
     team_A, team_A_year = team_A_info
     team_B, team_B_year = team_B_info
 
+    # Create dataframes of team A's offensive plays and team B's defensive plays
     team_A_is_offense = (all_plays_df['Offense'] == team_A) & \
         (all_plays_df['Year'] == team_A_year)
     tAo_plays = all_plays_df[team_A_is_offense]
     team_B_is_defense = (all_plays_df['Defense'] == team_B) & \
         (all_plays_df['Year'] == team_B_year)
     tBd_plays = all_plays_df[team_B_is_defense]
+
+    # Create a column for the mean EPC per play type in each scenario for each
+    # team, as well as the count of each play type per scenario, then merge
     tAo_means = tAo_plays.groupby(['Offense', 'Down', \
         'To go category', 'Field zone', 'Play type'])['EPC'].agg(['mean', 'count'])
     tBd_means = tBd_plays.groupby(['Defense', 'Down', \
         'To go category', 'Field zone', 'Play type'])['EPC'].agg(['mean', 'count'])
     tAo_v_tBd = pd.merge(tAo_means, tBd_means, on = ['Down', 'To go category', \
         'Field zone', 'Play type'])
-    sum_EPC = tAo_v_tBd['mean_x'] + tAo_v_tBd['mean_y']
-    tAo_v_tBd['EPC_sum'] = sum_EPC
+    
+    # Create a column for the sum of each team's EPC, weighted by how often
+    # that play was run, and make the optimal play the one with the highest val
     sum_weighted_EPC = ((tAo_v_tBd['count_x']**2) * tAo_v_tBd['mean_x']) + \
         ((tAo_v_tBd['count_y']**2) * tAo_v_tBd['mean_y'])
     tAo_v_tBd['sum_weighted_EPC'] = sum_weighted_EPC
@@ -61,7 +95,14 @@ def create_optimal_plays(team_A_info, team_B_info, all_plays_df):
 
 def simulator(team_1_info, team_2_info):
     '''
-    Simulates game.
+    Simulates game from coin toss to the end of the fourth quarter.
+
+    Inputs:
+        team_1_info (string): team 1 abbreviation
+        team_2_info (string): team 2 abbreviation
+
+    Outputs:
+        play_tracker: list of each play throughout the game
     '''
     # Get dataframes and teams
     team_1, team_2, t1_optimal_plays, t2_optimal_plays, plays_df = \
@@ -78,7 +119,7 @@ def simulator(team_1_info, team_2_info):
         offense = team_2
         defense = team_1
 
-    # Initialize game-long variables
+    # Initialize game-long variable
     play_tracker = []
 
     # Initialize game situation - skip kickoff and go to 1st and 10
@@ -90,6 +131,7 @@ def simulator(team_1_info, team_2_info):
     down = 1
     to_go = 10
 
+    # Play until the fourth quarter ends
     while quarter <= 4:
         # Categorize yards to go and field position
         to_go_cat = categorize_to_go(to_go)
@@ -116,7 +158,13 @@ def simulator(team_1_info, team_2_info):
 
 def categorize_to_go(to_go):
     '''
-    Categorizes yards to go into one of three categories.
+    Categorize yards to go into one of three categories.
+
+    Inputs:
+        to_go (int): yards until a first down
+    
+    Outputs:
+        to_go_cat (string): category of yards to go
     '''
     if to_go <= 3:
         to_go_cat = 'short'
@@ -129,6 +177,15 @@ def categorize_to_go(to_go):
 
 
 def categorize_field_pos(field_pos):
+    '''
+    Categorize field position into four different zones.
+
+    Inputs:
+        field_pos (int): offense's distance from a touchdown
+
+    Outputs:
+        field_zone (string): field position category
+    '''
     if field_pos <= 25:
         field_zone = 'red zone'
     elif 25 < field_pos <= 50:
@@ -141,8 +198,37 @@ def categorize_field_pos(field_pos):
     return field_zone
 
 
-def run_play(optimal_plays_df, offense, defense, quarter, down, time, to_go, to_go_cat, 
-field_pos, field_pos_cat, team_1_score, team_2_score, play_tracker, plays_df):
+def run_play(optimal_plays_df, offense, defense, quarter, down, time, to_go,
+to_go_cat, field_pos, field_pos_cat, team_1_score, team_2_score, play_tracker,
+plays_df):
+    '''
+    Simulate a play from the offense or defense's past plays in their
+    respective season, chosen based on the optimal play type.
+
+    Inputs:
+        optimal_plays_df: dataframe of optimal play per situation
+        offense (string): team currently on offense
+        defense (string): team currently on defense
+        quarter (int): one of four quarters of the game
+        down (int): one of four downs
+        time: datetime object representing the number of minutes and seconds
+            left in the quarter
+        to_go (int): number of yards to go until a first down or touchdown
+        to_go_cat (string): category of yards to go
+        field_pos (int): yards until the offense reaches a touchdown
+        field_pos_cat (string): category of field position
+        team_1_score (int): team 1's total points in the game
+        team_2_score (int): team 2's total points in the game
+        play_tracker: list of plays previously ran
+        play_df: dataframe of each team's past plays in their respective season
+
+    Outputs:
+        yards_gained: number of yards on a play, or the success/failure of a
+            field goal
+        play_time (int): the number of seconds the play took
+        optimal_play: the best play choice in the given scenario
+        play_tracker: list of plays previously ran
+    '''
     
     # Get play optimal play type for current situation
     try:
@@ -164,33 +250,34 @@ field_pos, field_pos_cat, team_1_score, team_2_score, play_tracker, plays_df):
         same_field_pos = plays_df['Field zone'] == field_pos_cat
         same_play = plays_df['Play type'] == optimal_play
 
-        # Get play outcome
+        # Find plays in this situation from offensie or defensie play history
         past_plays = plays_df[same_team & same_down & same_to_go & \
             same_field_pos & same_play]
     
-    # A team did not encounter this situation all season
+    # A team did not encounter this situation all season, so find all plays
+    # that were a pass or run.
     except KeyError:
         past_plays = plays_df[(plays_df['Play type'].str.contains('pass')) | \
             (plays_df['Play type'].str.contains('run'))]
 
+    # Choose random play outcome from the previous plays of the same play type
     play_outcome = past_plays.iloc[random.randint(0, len(past_plays) - \
         1)]
     optimal_play = play_outcome['Play type']
     yards_gained = play_outcome['Yards gained']
     play_time = play_outcome['Play time']
 
+    # If there was no value for yards gained, the offense gained 0 yards
     if type(yards_gained) is float:
         yards_gained = 0
 
     # Create location
     if field_pos >= 50:
-        # Not sure if offense is a string or list
         location = offense + ' ' + str(100 - field_pos)
     else:
         location = defense + ' ' + str(field_pos)
 
     # Create play
-    # Could also extract and add play detail
     play = [quarter, time, down, to_go, location, optimal_play, yards_gained, \
         offense]
     play_tracker.append(play)
@@ -201,27 +288,61 @@ field_pos, field_pos_cat, team_1_score, team_2_score, play_tracker, plays_df):
 def update_situation(quarter, time, play_time, to_go, yards_gained, down, 
 offense, defense, team_1_score, team_2_score, team_1, team_2, play_type,
 field_pos, ball_first, play_tracker):
+    '''
+    Update the game conditions in response to the previous play.
+
+    Inputs:
+        quarter (int): one of four quarters of the game
+        time: datetime object representing the number of minutes and seconds
+            left in the quarter
+        play_time (int): number of seconds to complete the previous play
+        to_go (int): number of yards to go until a first down or touchdown
+        yards_gained: number of yards on a play, or the success/failure of a
+            field goal
+        down (int): one of four downs
+        offense (string): team currently on offense
+        defense (string): team currently on defense
+        field_pos (int): yards until the offense reaches a touchdown
+        team_1_score (int): team 1's total points in the game
+        team_2_score (int): team 2's total points in the game
+        team_1 (string): team 1 abbreviation
+        team_2 (string): abbreviation
+        play_type (string): the type of play previously ran
+        ball_first (sring): the team that started the game with possession
+        play_tracker: list of plays previously ran
+
+    Outputs:
+        quarter (int): one of four quarters of the game
+        time: datetime object representing the number of minutes and seconds
+            left in the quarter
+        to_go (int): number of yards to go until a first down or touchdown
+        field_pos (int): yards until the offense reaches a touchdown
+        down (int): one of four downs
+        offense (string): team currently on offense
+        defense (string): team currently on defense
+        team_1_score (int): team 1's total points in the game
+        team_2_score (int): team 2's total points in the game
+    '''
     # Update time
     play_time = datetime.timedelta(seconds = int(play_time))
     time = time - play_time
     if time.days < 0 or time.seconds == 0:
         # Halftime
         if quarter == 2:
-            # Team that didn't start on offense starts second half on offense 
+            # Team that didn't start on offense starts second half on offense
+            # with restarted field position
             if ball_first == offense:
                 offense, defense, down, to_go = switch_possession(team_1, \
                     team_2, offense, defense)
                 field_pos = 75
         # Next quarter
         quarter += 1
-        # Simulating regular season games, so no overtime
         time = datetime.timedelta(minutes = 15)
 
-
-    # Update field position and score
-    # Play gained or lost yards - regular offensive play or punt
+    # Assume a touchdown was not scored
     touchdown = False
     try:
+        # Update field position
         yardage = int(yards_gained)
         field_pos = field_pos - yardage
         if field_pos <= 0:
@@ -233,11 +354,11 @@ field_pos, ball_first, play_tracker):
             # Touchback, so switch possession and change field position
             offense, defense, down, to_go = switch_possession(team_1, team_2, offense, defense)
             field_pos = 75
-        # Regular punt
+        # A punt that did not result in a touchback
         elif play_type == 'punt':
             offense, defense = switch_possession(team_1, team_2, offense, defense)
             field_pos = 100 - field_pos
-        # Continue offensive drive
+        # Continuation of offensive drive
         else:
             to_go = to_go - yardage
             if to_go <= 0:
@@ -252,7 +373,8 @@ field_pos, ball_first, play_tracker):
                 # Turnover on downs
                 if down == 5:
                     offense, defense, field_pos, down, to_go = \
-                        turnover_on_downs(team_1, team_2, offense, defense, field_pos)
+                        turnover_on_downs(team_1, team_2, offense, defense, \
+                        field_pos)
 
     # Play was a field goal, fumble, or interception
     except ValueError:
@@ -263,17 +385,35 @@ field_pos, ball_first, play_tracker):
             offense, defense, down, to_go = switch_possession (team_1, \
                 team_2, offense, defense)
             field_pos = 75
-        # Unsuccessful field goal, fumble or interception, causing a possession change
+        # Unsuccessful field goal, fumble or interception, so possession changes
         else:
             offense, defense, field_pos, down, to_go = turnover_on_downs(team_1, \
                 team_2, offense, defense, field_pos)
 
-    [play_tracker[-1].append(stat) for stat in [team_1_score, team_2_score, touchdown]]
+    # Add updated scores and whether a touchdown waas scored to the previous play
+    [play_tracker[-1].append(stat) for stat in [team_1_score, team_2_score, \
+        touchdown]]
 
-    return quarter, time, to_go, field_pos, down, offense, defense, team_1_score, team_2_score
+    return quarter, time, to_go, field_pos, down, offense, defense, \
+        team_1_score, team_2_score
 
 
 def switch_possession (team_1, team_2, offense, defense):
+    '''
+    Switch team that is on offense to defense and vice versa.
+
+    Inputs:
+        team_1 (string): team 1 abbreviation
+        team_2 (string): team 2 abbreviation
+        offense (string): team that was on offenes previously
+        defense (string): team that was on defense previously
+
+    Outputs:
+        offense (string): team that was on offenes previously
+        defense (string): team that was on defense previously
+        down (int): one of four downs
+        to_go (int): yards to go until a first down
+    '''
     if offense == team_1:
         offense = team_2
         defense = team_1
@@ -281,13 +421,31 @@ def switch_possession (team_1, team_2, offense, defense):
         offense = team_1
         defense = team_2
 
+    # New offensive team starts with first down and 10 yards to go
     down = 1
     to_go = 10
 
     return offense, defense, down, to_go
 
 
-def score_change(team_1_score, team_2_score, team_1, team_2, offense, defense, points):
+def score_change(team_1_score, team_2_score, team_1, team_2, offense, 
+defense, points):
+    '''
+    Add points to the offensive team's score
+
+    Inputs:
+        team_1_score (int): team 1's points
+        team_2_score (int): team 2's points
+        team_1 (string): team 1 abbreviation
+        team_2 (string): team 2 abbreviation
+        offense (string): team that was on offenes previously
+        defense (string): team that was on defense previously
+        points (int): number of points to be added to offense's score
+
+    Outputs:
+        team_1_score (int): team 1's points
+        team_2_score (int): team 2's points
+    '''
     if offense == team_1:
         team_1_score += points
     else:
@@ -297,7 +455,25 @@ def score_change(team_1_score, team_2_score, team_1, team_2, offense, defense, p
 
 
 def turnover_on_downs(team_1, team_2, offense, defense, field_pos):
-    offense, defense, down, to_go = switch_possession(team_1, team_2, offense, defense)
+    '''
+    Update scenario when a team fails to convert a fourth down to a first down
+
+    Inputs:
+        team_1 (string): team 1 abbreviation
+        team_2 (string): team 2 abbreviation
+        offense (string): team that was on offenes previously
+        defense (string): team that was on defense previously
+        field_pos (int): field position of team that was on offense
+
+    Outputs:
+        offense (string): team that is now on offense
+        defense (string): team that is now on offense
+        field_pos (int): field position of team that is now on offense
+        down (int): down out of four possibilities
+        to_go (int): yards to go until the offense reaches a first down
+    '''
+    offense, defense, down, to_go = switch_possession(team_1, team_2, \
+        offense, defense)
     field_pos = 100 - field_pos
     
     return offense, defense, field_pos, down, to_go
