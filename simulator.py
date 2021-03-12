@@ -178,8 +178,6 @@ field_pos, field_pos_cat, team_1_score, team_2_score, play_tracker, plays_df):
         optimal_play, yards_gained]
     play_tracker.append(play)
 
-    print(play_tracker)
-
     return yards_gained, play_time, optimal_play
 
 
@@ -188,9 +186,7 @@ offense, defense, team_1_score, team_2_score, team_1, team_2, play_type,
 field_pos, ball_first):
     # Update time
     play_time = datetime.timedelta(seconds = int(play_time))
-    print(play_time)
     time = time - play_time
-    print(time.days)
     if time.days < 0 or time.seconds == 0:
         # Halftime
         if quarter == 2:
@@ -209,6 +205,8 @@ field_pos, ball_first):
     # Play gained or lost yards - regular offensive play or punt
     if type(yards_gained) is int:
         field_pos = field_pos - yards_gained
+        print(yards_gained)
+        print(field_pos)
         if field_pos <= 0:
             # Touchdown
             if play_type != 'punt':
