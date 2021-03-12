@@ -28,27 +28,27 @@ Running a simulation for {{ team_1 }} vs {{ team_2 }}
         {% endif %}
         {% if team_1 == offense %}
             {% if 'pass' in play_type %}
-                <th>{{ roster_1['qb'] }} passes {{ yards_gained }} yards to {{ roster_1['wr']}} {% if scored %} and scored! {% endif %}</th>
+                <th>{% find_player roster_1['QB'] %} passes {{ yards_gained }} yards to {% find_player roster_1['WR'] %} {% if scored %} and scored! {% endif %}</th>
             {% elif 'run' in play_type %}
-                <th>{{ roster_1['rb'] }} runs {{ yards_gained }} yards {% if scored %} and scored! {% endif %}</th>
+                <th>{% find_player roster_1['RB'] %} runs {{ yards_gained }} yards {% if scored %} and scored! {% endif %}</th>
             {% elif 'punt' in play_type %}
-                <th>{{ roster_1['kicker'] }} punted {{ yards_gained }} yards</th>
+                <th>{% find_player roster_1['kicker'] %} punted {{ yards_gained }} yards</th>
             {% elif yards_gained == 'success' %}
-                <th>{{ roster_1['kicker'] }} made a field goal</th>
+                <th>{% find_player roster_1['kicker'] %} made a field goal</th>
             {% else %}
-                <th>{{ roster_1['kicker'] }} missed a field goal</th>
+                <th>{% find_player roster_1['kicker'] %} missed a field goal</th>
             {% endif %}
         {% elif team_2 == offense %}
             {% if 'pass' in play_type %}
-                <th>{{ roster_2['qb'] }} passes {{ yards_gained }} yards to {{ roster_2['wr']}}</th>
+                <th>{% find_player roster_2['QB'] %} passes {{ yards_gained }} yards to {% find_player roster_2['WR'] %} {% if scored %} and scored! {% endif %}</th>
             {% elif 'run' in play_type %}
-                <th>{{ roster_2['rb'] }} runs {{ yards_gained }} yards</th>
+                <th>{% find_player roster_2['RB'] %} runs {{ yards_gained }} yards {% if scored %} and scored! {% endif %}</th>
             {% elif 'punt' in play_type %}
-                <th>{{ roster_2['kicker'] }} punted {{ yards_gained }} yards</th>
+                <th>{% find_player roster_2['kicker'] %} punted {{ yards_gained }} yards</th>
             {% elif yards_gained == 'success' %}
-                <th>{{ roster_2['kicker'] }} made a field goal</th>
+                <th>{% find_player roster_2['kicker'] %} made a field goal</th>
             {% else %}
-                <th>{{ roster_2['kicker'] }} missed a field goal</th>
+                <th>{% find_player roster_2['kicker'] %} missed a field goal</th>
             {% endif %}
         {% endif %}
         {% update_var False as scored %}
