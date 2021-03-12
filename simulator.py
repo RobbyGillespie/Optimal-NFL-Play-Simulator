@@ -203,7 +203,8 @@ field_pos, ball_first):
 
     # Update field position and score
     # Play gained or lost yards - regular offensive play or punt
-    if type(yards_gained) is int:
+    try:
+        yards_gained = int(yards_gained)
         field_pos = field_pos - yards_gained
         print(yards_gained)
         print(field_pos)
@@ -237,7 +238,7 @@ field_pos, ball_first):
                         turnover_on_downs(team_1, team_2, offense, defense, field_pos)
 
     # Play was a field goal, fumble, or interception
-    else:
+    except ValueError:
         # Successful field goal
         if play_type == 'field goal' and yards_gained == 'success':
             team_1_score, team_2_score = score_change(team_1_score, \
