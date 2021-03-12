@@ -10,7 +10,7 @@ Running a simulation for {{ team_1 }} vs {{ team_2 }}
         <th>Score</th>
         <th>Detail</th>
     </tr>
-{% for quarter, time, down, to_go, location, team_1_score, team_2_score, play_type, yards_gained, offense in simulation %}
+{% for quarter, time, down, to_go, location, play_type, yards_gained, offense, team_1_score, team_2_score, scored in simulation %}
     <tr>
         <th>{{ quarter }}</th>
         <th>{{ time }}</th>
