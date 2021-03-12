@@ -9,7 +9,7 @@ Columns: [Quarter, Time, Down, Yards to go, Yards to go category, Field position
           category, Play type, Yardage, Year]
 """
 import re
-import util_2
+from . import util_2
 import bs4
 import queue
 import json
@@ -263,6 +263,16 @@ def add_field_position(master_lst, possession_lst):
 
 def play_classifier(master_lst, detail_column, year):
     '''
+    Classifies plays based on the play detail provided. 
+
+    Input:
+     master_lst (lst of lsts): the full play by play
+     detail_column (lst): list of the detail column
+      corresponding to the play by play
+     year: the year of the game
+
+     Output:
+      master_lst (lst of lsts)
     '''
     for i, play in enumerate(detail_column):
         play_info = []
