@@ -87,7 +87,7 @@ def simulator(team_1_info, team_2_info):
     while quarter <= 4:
         # Categorize yards to go and field position
         to_go_cat = categorize_to_go(to_go)
-        field_zone = categorize_field_pos(field_pos)
+        field_pos_cat = categorize_field_pos(field_pos)
 
         # Run play
         if offense == team_1:
@@ -96,14 +96,14 @@ def simulator(team_1_info, team_2_info):
             optimal_plays_df = t2_optimal_plays
         
         yards_gained, play_time, play_type = run_play(optimal_plays_df, offense, defense, \
-            quarter, down, to_go_cat, field_pos_cat, team_1_score, \
+            quarter, down, time, to_go, to_go_cat, field_pos, field_pos_cat, team_1_score, \
             team_2_score, play_tracker, plays_df)
 
         # Update simulation after play
-        quarter, time, to_go, down, offense, defense, team_1_score, \
+        quarter, time, to_go, field_pos, down, offense, defense, team_1_score, \
             team_2_score = update_situation(quarter, time, play_time, to_go, \
             yards_gained, down, offense, defense, team_1_score, team_2_score, \
-            team_1, team_2, play_type)
+            team_1, team_2, play_type, field_pos, ball_first)
 
     return play_tracker
 
@@ -135,18 +135,12 @@ def categorize_field_pos(field_pos):
     return field_zone
 
 
-def run_play(optimal_plays_df, offense, defense, quarter, down, to_go_cat, 
-field_pos_cat, team_1_score, team_2_score, play_tracker, plays_df):
-    # Set conditions for current situation
-    same_offense = optimal_plays_df['Offense'] == offense
-    same_down = optimal_plays_df['Down'] == down
-    same_to_go = optimal_plays_df['To go category'] == to_go_cat
-    same_field_pos = optimal_plays_df['Field zone'] = field_pos_cat
-
+def run_play(optimal_plays_df, offense, defense, quarter, down, time, to_go, to_go_cat, 
+field_pos, field_pos_cat, team_1_score, team_2_score, play_tracker, plays_df):
+    
     # Get play optimal play type for current situation
-    optimal_play_row = optimal_plays_df[same_offense & \
-        same_down & same_to_go & same_field_pos]
-    optimal_play = optimal_play_row.iloc[0]['Play type']
+    optimal_play_row = optimal_plays_df.loc[down, to_go_cat, field_pos_cat]
+    optimal_play = optimal_play_row.index[0]
 
     # Call random play of this type using outcome from offense or defense
     team_to_use = random.randint(0, 1)
@@ -157,35 +151,43 @@ field_pos_cat, team_1_score, team_2_score, play_tracker, plays_df):
     else:
         same_team = plays_df['Defense'] == defense
 
+    # Set conditions for current situation
+    same_down = plays_df['Down'] == down
+    same_to_go = plays_df['To go category'] == to_go_cat
+    same_field_pos = plays_df['Field zone'] == field_pos_cat
+    same_play = plays_df['Play type'] == optimal_play
+
     # Get play outcome
     past_plays = plays_df[same_team & same_down & same_to_go & \
-        same_field_pos]
-    yards_gained = past_plays.iloc[rand.randint(0, len(plays_df) - \
-        1)]['Yards gained']
-    play_time = past_plays.iloc[rand.randint(0, len(plays_df) - \
-        1)]['Play time']
+        same_field_pos & same_play]
+    play_outcome = past_plays.iloc[random.randint(0, len(past_plays) - \
+        1)]
+    yards_gained = play_outcome['Yards gained']
+    play_time = play_outcome['Play time']
 
     # Create location
     if field_pos >= 50:
         # Not sure if offense is a string or list
-        location = offense[0] + ' ' + str(100 - field_pos)
+        location = offense + ' ' + str(100 - field_pos)
     else:
-        location = defense[0] + ' ' + str(field_pos)
+        location = defense + ' ' + str(field_pos)
     
     # Create play
     # Could also extract and add play detail
     play = [quarter, time, down, to_go, location, team_1_score, team_2_score, \
-        yards_gained, optimal_play]
+        optimal_play, yards_gained]
     play_tracker.append(play)
 
     return yards_gained, play_time, optimal_play
 
 
 def update_situation(quarter, time, play_time, to_go, yards_gained, down, 
-offense, defense, team_1_score, team_2_score, team_1, team_2, play_type):
+offense, defense, team_1_score, team_2_score, team_1, team_2, play_type,
+field_pos, ball_first):
     # Update time
+    play_time = datetime.timedelta(seconds = int(play_time))
     time = time - play_time
-    if time.days <= 0:
+    if time.days < 0 or time.seconds == 0:
         # Halftime
         if quarter == 2:
             # Team that didn't start on offense starts second half on offense 
@@ -203,6 +205,8 @@ offense, defense, team_1_score, team_2_score, team_1, team_2, play_type):
     # Play gained or lost yards - regular offensive play or punt
     if type(yards_gained) is int:
         field_pos = field_pos - yards_gained
+        print(yards_gained)
+        print(field_pos)
         if field_pos <= 0:
             # Touchdown
             if play_type != 'punt':
@@ -243,7 +247,7 @@ offense, defense, team_1_score, team_2_score, team_1, team_2, play_type):
         offense, defense, field_pos, down, to_go = turnover_on_downs(team_1, \
             team_2, offense, defense, field_pos)
 
-    return quarter, time, to_go, down, offense, defense, team_1_score, team_2_score
+    return quarter, time, to_go, field_pos, down, offense, defense, team_1_score, team_2_score
 
 
 def switch_possession (team_1, team_2, offense, defense):
@@ -270,9 +274,7 @@ def score_change(team_1_score, team_2_score, team_1, team_2, offense, defense, p
 
 
 def turnover_on_downs(team_1, team_2, offense, defense, field_pos):
-    offense, defense = switch_possession(team_1, team_2, offense, defense)
+    offense, defense, down, to_go = switch_possession(team_1, team_2, offense, defense)
     field_pos = 100 - field_pos
-    down = 1
-    to_go = 10
     
     return offense, defense, field_pos, down, to_go

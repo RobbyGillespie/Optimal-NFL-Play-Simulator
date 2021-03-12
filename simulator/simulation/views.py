@@ -2,7 +2,9 @@ from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 import pandas as pd
-from simulator.py import simulator, get_optimal_plays
+import os
+
+#from simulator.py import simulator, get_optimal_plays
 
 from .forms import FootballTeamsForm, WelcomeForm
 from .models import Team
@@ -54,7 +56,8 @@ def simulate(request):
     'togo_cat', 'position', 'epc', 'offense',
     'defense', 'score_difference', 'time_of_play',
     'field_position_cat', 'play_type', 'yardage', 'year']
-    all_df = pd.read_csv('out.csv', names=labels)
+    workpath = os.path.dirname(os.path.abspath(__file__))
+    all_df = pd.read_csv(os.path.join(workpath, 'out.csv'), names=labels)
     year1 = teams[0][1]
     year2 = teams[1][1]
     right_year = all_df['year'] == year1 or year2
@@ -64,26 +67,22 @@ def simulate(request):
     right_team = (plays_df_allteams['offense'] == team1 or team2) or (plays_df_allteams['defense'] == team1 or team2)
     plays_df = plays_df_allteams[right_team]
     #get optimal plays from simulator.py
-    optimal_plays_df = get_optimal_plays()
+    #optimal_plays_df = get_optimal_plays()
     #run through simulator with the plays and scenarios and two team names
-    sim = simulator(plays_df, optimal_plays_df, teams[0], teams[1])
+    #sim = simulator(plays_df, optimal_plays_df, teams[0], teams[1])
     #convert team names for the roster
     team1_name = TEAM_NAMES[team1]
     team2_name = TEAM_NAMES[team2]
     #get the rosters for the two teams input by the user from rosters.csv
-    rosters_df = pd.read_csv('rosters.csv', names=['team', 'year', 'position', 'player'])
-    roster1_check = rosters_df['team'] == team1_name and rosters_df['year'] == year1
-    roster1_df = rosters_df[roster1_check]
-    roster2_check = rosters_df['team'] == team2_name and rosters_df['year'] == year2 
-    roster2_df = rosters_df[roster2_check]
-    roster1_df.drop(columns=['team', 'year'])
-    roster2_df.drop(columns=['team', 'year'])
-    roster1 = {}
-    roster2 = {}
-    for i in roster1_df['position'].unique(): #creates roster dictionaries of unique positions
-        roster1[i] = [roster1_df[i][j] for j in roster1_df[roster1_df['position'==i]]['position']]
-    for i in roster2_df['position'].unique():
-        roster2[i] = [roster2_df[i][j] for j in roster2_df[roster2_df['position'==i]]['position']]
+    rosters_df = pd.read_csv('rosters.csv')
+    roster1_df = rosters_df[(rosters_df['Name'] == team1_name) & (rosters_df['Year'] == year1)]
+    roster2_df = rosters_df[(rosters_df['Name'] == team2_name) & (rosters_df['Year'] == year2)]
+    players_positions1 = roster1_df[['player1', 'player2', 'player3', 'Pos']]
+    players_positions2 = roster2_df[['player1', 'player2', 'player3', 'Pos']]
+    roster1 = players_positions1.set_index('Pos').to_dict('index')
+    roster2 = players_positions2.set_index('Pos').to_dict('index')
+    print(roster1)
+    print(roster2)
     #render the list of lists output of simulator
     dct = {'team_1': teams[0], 'team_2': teams[1], 
     'simulation': sim, 'roster_1': roster1, 
