@@ -45,8 +45,9 @@ def combine_games():
     game_pages = get_game_pages()
     game_list = []
     for y in game_pages:
-        game_log = scraper.extractor(y)
-        game_list += game_log
+        if y[1] == '2020':
+            game_log = scraper.extractor(y)
+            game_list += game_log
 
     write_to_csv(game_list)
 

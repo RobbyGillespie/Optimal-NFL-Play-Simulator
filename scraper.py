@@ -47,7 +47,6 @@ def extractor(link_year):
     document = util_2.read_request(request_obj)
     soup = bs4.BeautifulSoup(document, "html5lib")
     teams, teams_lst = team_mapper(soup)
-    print(teams, year)
     comments = soup.find_all(text=lambda text:isinstance(text, Comment))
     for comment in comments:
         comment_soup = bs4.BeautifulSoup(comment, "html5lib")
@@ -60,12 +59,12 @@ def extractor(link_year):
                     possession = TEAM_ABBREVIATIONS[word]
                 if word == '(deferred)':
                     for team in teams_lst:
-                        if team is not poss:
+                        if team != poss:
                             possession = TEAM_ABBREVIATIONS[team]
                             poss = team
                             break
         play_by_play = comment_soup.find("div", class_="table_container", id='div_pbp')
-        if play_by_play is not None:
+        if play_by_play != None:
             break
 
     game_table = scrape_rows(play_by_play, teams, teams_lst, possession, poss, year)
@@ -80,8 +79,11 @@ def scrape_rows(play_by, teams, teams_lst, possession, poss, year):
     possession_lst = []
     switch = teams_lst.index(poss)
     quarter_tags = play_by.find_all("th", scope="row", class_="center")
+    print(teams, year, poss)
     for row in quarter_tags:
         if str(type(row)) == "<class 'bs4.element.Tag'>":
+            variable = None
+            
             try:
                 variable = row.parent['class'][0] # success == at divider # variable is 'divider'
             except KeyError:
