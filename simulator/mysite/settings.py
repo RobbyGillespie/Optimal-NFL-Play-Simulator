@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = 'simulator/mysite'
 
 
 # Quick-start development settings - unsuitable for production
@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'simulation.urls' #makes django default to the urlpattern of our app, not admin
+ROOT_URLCONF = 'mysite.urls' #makes django default to the urlpattern of our app, not admin
 
 TEMPLATES = [
     {

@@ -16,7 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 
-urlpatterns = [
+urlpatterns = ['', 
+    (r'^$', lambda r: HttpResponseRedirect('simulation/')), #immediately paths to simulation
     path('simulation/', include('simulation.urls')), #path for all parts of our simulation app
     path('admin/', admin.site.urls),
 ]
