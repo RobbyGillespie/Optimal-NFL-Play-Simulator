@@ -136,7 +136,7 @@
 4,0:33,4,1,short,1,-0.5499999999999998,KAN,HOU,14,3,red zone,field goal,success,2020
 4,0:30,1,10,long,75,0.26,HOU,KAN,-14,24,grey zone,pass short left,6,2020
 4,0:06,2,4,middle,69,-0.7,HOU,KAN,-14,4,grey zone,pass short middle,0,2020
-4,0:02,3,4,middle,69,-1.54,HOU,KAN,-14,0:00:02,grey zone,,,2020
+4,0:02,3,4,middle,69,-1.54,HOU,KAN,-14,2,grey zone,,,2020
 1,14:52,1,10,long,91,-0.4,NYJ,BUF,0,5,black zone,pass deep right,0,2020
 1,14:47,2,10,long,91,-0.29000000000000004,NYJ,BUF,0,44,black zone,run middle,3,2020
 1,14:03,3,7,middle,88,-1.4200000000000002,NYJ,BUF,0,5,black zone,pass short right,0,2020
@@ -294,7 +294,7 @@
 4,1:03,1,2,short,2,-1.0200000000000005,NYJ,BUF,-17,6,red zone,pass short right,0,2020
 4,0:57,2,2,short,2,1.2800000000000002,NYJ,BUF,-11,4,red zone,run middle,2,2020
 4,0:53,1,10,long,47,-0.6799999999999999,BUF,NYJ,10,22,green zone,,,2020
-4,0:31,2,11,long,48,-0.8200000000000001,BUF,NYJ,10,0:00:31,green zone,,,2020
+4,0:31,2,11,long,48,-0.8200000000000001,BUF,NYJ,10,31,green zone,,,2020
 1,15:00,1,10,long,75,0.13,ATL,SEA,0,34,grey zone,run left,5,2020
 1,14:26,2,5,middle,70,1.19,ATL,SEA,0,36,grey zone,run right,15,2020
 1,13:50,1,10,long,55,-0.6799999999999999,ATL,SEA,0,41,grey zone,run left,-1,2020
@@ -448,7 +448,7 @@
 4,0:39,3,7,middle,7,3.19,ATL,SEA,-14,6,red zone,pass short right,7,2020
 4,0:33,1,10,long,54,1.0599999999999998,ATL,SEA,-13,5,grey zone,pass deep left,16,2020
 4,0:28,1,10,long,38,-3.33,ATL,SEA,-13,9,green zone,pass deep left,interception,2020
-4,0:19,1,10,long,80,-0.74,SEA,ATL,13,0:00:19,black zone,,,2020
+4,0:19,1,10,long,80,-0.74,SEA,ATL,13,19,black zone,,,2020
 1,15:00,1,10,long,75,-0.27999999999999997,WAS,PHI,0,34,grey zone,run left,2,2020
 1,14:26,2,8,long,73,-1.09,WAS,PHI,0,31,grey zone,run left,-3,2020
 1,13:55,3,11,long,76,-1.01,WAS,PHI,0,5,black zone,pass short left,0,2020
@@ -608,7 +608,7 @@
 4,0:31,4,11,long,11,-2.42,WAS,PHI,10,2,red zone,,,2020
 4,0:29,1,10,long,86,0.56,PHI,WAS,-10,4,black zone,pass short right,7,2020
 4,0:25,2,3,short,79,0.59,PHI,WAS,-10,24,black zone,pass short left,8,2020
-4,0:01,1,10,long,71,-0.54,PHI,WAS,-10,0:00:01,grey zone,pass short left,0,2020
+4,0:01,1,10,long,71,-0.54,PHI,WAS,-10,1,grey zone,pass short left,0,2020
 1,15:00,1,10,long,75,0.7200000000000001,CLE,BAL,0,33,grey zone,run left,11,2020
 1,14:27,1,10,long,64,0.1399999999999999,CLE,BAL,0,40,grey zone,pass short middle,5,2020
 1,13:47,2,5,middle,59,0.5900000000000001,CLE,BAL,0,37,grey zone,pass short left,6,2020
@@ -753,7 +753,7 @@
 4,2:42,1,10,long,63,-0.6799999999999999,BAL,CLE,32,42,grey zone,run left,-1,2020
 4,2:00,2,11,long,64,-0.15999999999999992,BAL,CLE,32,44,grey zone,run right,4,2020
 4,1:16,3,7,middle,60,1.63,BAL,CLE,32,43,grey zone,pass short left,9,2020
-4,0:33,1,10,long,51,-0.6799999999999999,BAL,CLE,32,0:00:33,grey zone,,,2020
+4,0:33,1,10,long,51,-0.6799999999999999,BAL,CLE,32,33,grey zone,,,2020
 1,15:00,1,10,long,75,-0.010000000000000009,MIA,NWE,0,30,grey zone,run right,4,2020
 1,14:30,2,6,middle,71,-0.42999999999999994,MIA,NWE,0,39,grey zone,run middle,2,2020
 1,13:51,3,4,middle,69,-1.28,MIA,NWE,0,45,grey zone,pass short right,3,2020
@@ -887,7 +887,7 @@
 4,1:36,3,6,middle,10,-4.1,MIA,NWE,-10,8,red zone,pass deep right,interception,2020
 4,1:28,1,10,long,80,-0.74,NWE,MIA,10,5,black zone,run middle,-1,2020
 4,1:23,2,11,long,81,1.4,NWE,MIA,10,46,black zone,run left,11,2020
-4,0:37,1,10,long,70,-0.6799999999999999,NWE,MIA,10,0:00:37,grey zone,,,2020
+4,0:37,1,10,long,70,-0.6799999999999999,NWE,MIA,10,37,grey zone,,,2020
 1,15:00,1,10,long,75,-0.27999999999999997,GNB,MIN,0,44,grey zone,run left,2,2020
 1,14:16,2,8,long,73,-0.16,GNB,MIN,0,41,grey zone,run right,4,2020
 1,13:35,3,4,middle,69,1.1600000000000001,GNB,MIN,0,11,grey zone,,,2020
@@ -1024,7 +1024,7 @@
 4,1:30,1,10,long,31,0.7999999999999998,MIN,GNB,-17,5,green zone,pass short right,12,2020
 4,1:25,1,10,long,19,2.6900000000000004,MIN,GNB,-11,5,red zone,pass deep right,19,2020
 4,1:20,1,10,long,51,-0.6799999999999999,GNB,MIN,9,41,grey zone,,,2020
-4,0:39,2,11,long,52,-0.81,GNB,MIN,9,0:00:39,grey zone,,,2020
+4,0:39,2,11,long,52,-0.81,GNB,MIN,9,39,grey zone,,,2020
 1,14:55,1,10,long,63,0.54,IND,JAX,0,34,grey zone,pass short left,8,2020
 1,14:21,2,2,short,55,1.37,IND,JAX,0,28,grey zone,pass short middle,21,2020
 1,13:53,1,10,long,34,0.54,IND,JAX,0,25,green zone,run middle,-43,2020
@@ -1157,7 +1157,7 @@
 4,0:59,2,5,middle,26,-0.7000000000000002,IND,JAX,-7,5,green zone,pass deep left,0,2020
 4,0:54,3,5,middle,26,-1.15,IND,JAX,-7,5,green zone,pass deep left,0,2020
 4,0:49,4,5,middle,26,-2.46,IND,JAX,-7,5,green zone,pass short right,0,2020
-4,0:44,1,10,long,74,-0.9500000000000001,JAX,IND,7,0:00:44,grey zone,,,2020
+4,0:44,1,10,long,74,-0.9500000000000001,JAX,IND,7,44,grey zone,,,2020
 1,15:00,1,10,long,75,0.26,CHI,DET,0,34,grey zone,run left,6,2020
 1,14:26,2,4,middle,69,-0.30999999999999994,CHI,DET,0,20,grey zone,run right,3,2020
 1,14:06,3,1,short,66,-1.6700000000000002,CHI,DET,0,86380,grey zone,run middle,,2020
@@ -1319,7 +1319,7 @@
 4,0:28,3,7,middle,48,3.1499999999999995,DET,CHI,-4,16,green zone,pass deep middle,32,2020
 4,0:12,1,10,long,16,-0.6099999999999999,DET,CHI,-4,1,red zone,,,2020
 4,0:11,2,10,long,16,-0.8199999999999998,DET,CHI,-4,5,red zone,pass deep left,0,2020
-4,0:06,3,10,long,16,-0.7000000000000002,DET,CHI,-4,0:00:06,red zone,pass deep left,0,2020
+4,0:06,3,10,long,16,-0.7000000000000002,DET,CHI,-4,6,red zone,pass deep left,0,2020
 1,15:00,1,10,long,75,0.13,OAK,CAR,0,30,grey zone,run right,5,2020
 1,14:30,2,5,middle,70,-0.7,OAK,CAR,0,8,grey zone,pass deep right,0,2020
 1,14:22,3,5,middle,70,-1.4100000000000001,OAK,CAR,0,5,grey zone,pass short right,0,2020
@@ -1459,7 +1459,7 @@
 4,0:14,4,2,short,46,-0.33,OAK,CAR,4,0,green zone,,,2020
 4,0:14,4,7,middle,51,-0.61,OAK,CAR,4,6,grey zone,punt,24,2020
 4,0:08,1,10,long,73,-0.54,CAR,OAK,-4,6,grey zone,pass deep right,0,2020
-4,0:02,2,10,long,73,1.79,CAR,OAK,-4,0:00:02,grey zone,pass deep right,19,2020
+4,0:02,2,10,long,73,1.79,CAR,OAK,-4,2,grey zone,pass deep right,19,2020
 1,15:00,1,10,long,75,-0.27999999999999997,CIN,SDG,0,36,grey zone,pass short right,2,2020
 1,14:24,2,8,long,73,-0.29000000000000004,CIN,SDG,0,32,grey zone,run right,3,2020
 1,13:52,3,5,middle,70,-1.4100000000000001,CIN,SDG,0,3,grey zone,pass short right,0,2020
@@ -1625,7 +1625,7 @@
 4,0:18,2,10,long,13,2.46,CIN,SDG,-3,6,red zone,pass short right,10,2020
 4,0:12,1,3,short,3,-1.9799999999999995,CIN,SDG,-3,5,red zone,,,2020
 4,0:07,1,13,long,13,-4.87,CIN,SDG,-3,5,red zone,field goal,failure,2020
-4,0:02,1,10,long,79,-0.68,SDG,CIN,3,0:00:02,black zone,,,2020
+4,0:02,1,10,long,79,-0.68,SDG,CIN,3,2,black zone,,,2020
 1,15:00,1,10,long,75,1.3199999999999998,SFO,ARI,0,18,grey zone,pass short right,5,2020
 1,14:42,1,10,long,55,0.9200000000000002,SFO,ARI,0,43,grey zone,run right,14,2020
 1,13:59,1,10,long,41,-0.27,SFO,ARI,0,38,green zone,run left,2,2020
@@ -1786,7 +1786,7 @@
 4,0:33,1,10,long,84,0.83,ARI,SFO,4,7,black zone,run left,9,2020
 4,0:26,2,1,short,75,0.050000000000000044,ARI,SFO,4,7,grey zone,run right,2,2020
 4,0:19,1,10,long,73,-1.22,ARI,SFO,4,1,grey zone,,,2020
-4,0:18,2,15,long,78,-1.4,ARI,SFO,4,0:00:18,black zone,,,2020
+4,0:18,2,15,long,78,-1.4,ARI,SFO,4,18,black zone,,,2020
 1,15:00,1,10,long,75,0.92,NOR,TAM,0,30,grey zone,pass short right,14,2020
 1,14:30,1,10,long,61,0.0,NOR,TAM,0,36,grey zone,run right,4,2020
 1,13:54,2,6,middle,57,-0.97,NOR,TAM,0,42,grey zone,pass short left,-2,2020
@@ -1942,7 +1942,7 @@
 4,2:00,2,5,middle,5,-1.3400000000000003,NOR,TAM,11,44,red zone,run left,-2,2020
 4,1:16,3,7,middle,7,-0.56,NOR,TAM,11,49,red zone,run right,5,2020
 4,0:27,4,2,short,2,-2.87,NOR,TAM,11,4,red zone,run left,1,2020
-4,0:23,1,10,long,99,0.030000000000000027,TAM,NOR,-11,0:00:23,black zone,run right,11,2020
+4,0:23,1,10,long,99,0.030000000000000027,TAM,NOR,-11,23,black zone,run right,11,2020
 1,15:00,1,10,long,75,0.7300000000000001,STL,DAL,0,0,grey zone,,,2020
 1,15:00,1,5,middle,70,0.9199999999999997,STL,DAL,0,35,grey zone,pass short left,20,2020
 1,14:25,1,10,long,50,-0.009999999999999787,STL,DAL,0,45,green zone,run left,4,2020
@@ -2104,7 +2104,7 @@
 4,0:31,3,10,long,66,-1.32,DAL,STL,-3,10,grey zone,,,2020
 4,0:21,3,20,long,76,-0.41999999999999993,DAL,STL,-3,8,black zone,pass deep right,0,2020
 4,0:13,4,20,long,76,-2.2,DAL,STL,-3,7,black zone,pass deep left,0,2020
-4,0:06,1,10,long,24,-0.6700000000000004,STL,DAL,3,0:00:06,red zone,,,2020
+4,0:06,1,10,long,24,-0.6700000000000004,STL,DAL,3,6,red zone,,,2020
 1,15:00,1,10,long,75,0.86,NYG,PIT,0,25,grey zone,pass short left,13,2020
 1,14:35,1,10,long,62,-0.6799999999999999,NYG,PIT,0,33,grey zone,run right,-1,2020
 1,14:02,2,11,long,63,-0.6900000000000001,NYG,PIT,0,7,grey zone,pass short left,0,2020
@@ -2251,7 +2251,7 @@
 4,1:48,2,9,long,45,0.2400000000000002,PIT,NYG,10,6,green zone,run left,7,2020
 4,1:42,3,2,short,38,-1.56,PIT,NYG,10,47,green zone,run right,1,2020
 4,0:55,4,1,short,37,2.85,PIT,NYG,10,36,green zone,run left,8,2020
-4,0:19,1,10,long,29,-0.81,PIT,NYG,10,0:00:19,green zone,,,2020
+4,0:19,1,10,long,29,-0.81,PIT,NYG,10,19,green zone,,,2020
 1,14:54,1,10,long,80,0.72,TEN,DEN,0,32,black zone,run right,11,2020
 1,14:22,1,10,long,69,-0.32999999999999996,TEN,DEN,0,17,grey zone,,,2020
 1,14:05,1,15,long,74,-0.89,TEN,DEN,0,7,grey zone,pass short left,0,2020
@@ -2408,7 +2408,7 @@
 4,0:20,4,1,short,7,-0.009999999999999787,TEN,DEN,2,3,red zone,field goal,success,2020
 4,0:17,1,10,long,75,-0.55,DEN,TEN,-2,8,grey zone,pass deep right,0,2020
 4,0:09,2,10,long,75,1.74,DEN,TEN,-2,7,grey zone,pass deep right,18,2020
-4,0:02,1,10,long,57,-0.55,DEN,TEN,-2,0:00:02,grey zone,pass short right,0,2020
+4,0:02,1,10,long,57,-0.55,DEN,TEN,-2,2,grey zone,pass short right,0,2020
 1,14:54,1,10,long,61,-0.54,CIN,CLE,0,5,grey zone,pass deep left,0,2020
 1,14:49,2,10,long,61,1.2,CIN,CLE,0,40,grey zone,pass short right,10,2020
 1,14:09,1,10,long,51,-0.27,CIN,CLE,0,33,grey zone,run middle,2,2020
@@ -2566,7 +2566,7 @@
 4,0:57,1,9,long,9,-0.7599999999999998,CIN,CLE,-12,5,red zone,pass short middle,0,2020
 4,0:52,2,9,long,9,-1.02,CIN,CLE,-12,4,red zone,pass short right,0,2020
 4,0:48,3,9,long,9,3.64,CIN,CLE,-6,6,red zone,pass short middle,9,2020
-4,0:42,1,10,long,46,-0.81,CLE,CIN,5,0:00:42,green zone,,,2020
+4,0:42,1,10,long,46,-0.81,CLE,CIN,5,42,green zone,,,2020
 1,14:54,1,10,long,78,-0.54,MIN,IND,0,38,black zone,pass short left,0,2020
 1,14:16,2,10,long,78,1.73,MIN,IND,0,38,black zone,pass deep right,18,2020
 1,13:38,1,10,long,60,-0.55,MIN,IND,0,6,grey zone,pass short right,0,2020
@@ -2705,7 +2705,7 @@
 4,2:22,3,1,short,21,0.7100000000000004,IND,MIN,17,22,red zone,run middle,1,2020
 4,2:00,1,10,long,20,-0.5500000000000003,IND,MIN,17,41,red zone,,,2020
 4,1:19,2,10,long,20,-0.6800000000000002,IND,MIN,17,41,red zone,,,2020
-4,0:38,3,10,long,20,-0.8899999999999997,IND,MIN,17,0:00:38,red zone,,,2020
+4,0:38,3,10,long,20,-0.8899999999999997,IND,MIN,17,38,red zone,,,2020
 1,14:55,1,10,long,82,-0.03,CHI,NYG,0,39,black zone,run right,3,2020
 1,14:16,2,7,middle,79,-0.54,CHI,NYG,0,41,black zone,run left,2,2020
 1,13:35,3,5,middle,77,2.13,CHI,NYG,0,40,black zone,pass deep middle,17,2020
@@ -2847,7 +2847,7 @@
 4,0:21,4,1,short,17,2.1900000000000004,NYG,CHI,-4,12,red zone,pass short middle,3,2020
 4,0:09,1,10,long,14,-0.6500000000000004,NYG,CHI,-4,1,red zone,,,2020
 4,0:08,2,10,long,14,-0.18000000000000016,NYG,CHI,-4,4,red zone,pass short left,4,2020
-4,0:04,3,6,middle,10,-1.0299999999999998,NYG,CHI,-4,0:00:04,red zone,,,2020
+4,0:04,3,6,middle,10,-1.0299999999999998,NYG,CHI,-4,4,red zone,,,2020
 1,15:00,1,10,long,75,0.26,TAM,CAR,0,20,grey zone,pass short left,6,2020
 1,14:40,2,4,middle,69,-0.7,TAM,CAR,0,38,grey zone,run right,,2020
 1,14:02,3,4,middle,69,-1.48,TAM,CAR,0,6,grey zone,pass short right,0,2020
@@ -2994,7 +2994,7 @@
 4,0:40,3,9,long,38,2.0300000000000002,CAR,TAM,-14,18,green zone,pass short middle,13,2020
 4,0:22,1,10,long,25,0.45999999999999996,CAR,TAM,-14,6,red zone,pass short left,7,2020
 4,0:16,2,3,short,18,-0.71,CAR,TAM,-14,7,red zone,pass deep left,0,2020
-4,0:09,3,3,short,18,-0.20999999999999996,CAR,TAM,-14,0:00:09,red zone,pass short left,14,2020
+4,0:09,3,3,short,18,-0.20999999999999996,CAR,TAM,-14,9,red zone,pass short left,14,2020
 1,14:56,1,10,long,80,1.32,DEN,PIT,0,26,black zone,pass deep left,20,2020
 1,14:30,1,10,long,60,-0.55,DEN,PIT,0,6,grey zone,pass short middle,0,2020
 1,14:24,2,10,long,60,0.24,DEN,PIT,0,37,grey zone,run left,7,2020
@@ -3152,7 +3152,7 @@
 4,1:47,2,5,middle,69,4.1,PIT,DEN,5,17,grey zone,run right,59,2020
 4,1:30,1,10,long,10,0.040000000000000036,PIT,DEN,5,6,red zone,run right,4,2020
 4,1:24,2,6,middle,6,-0.9100000000000001,PIT,DEN,5,45,red zone,run left,,2020
-4,0:39,3,6,middle,6,-1.0699999999999998,PIT,DEN,5,0:00:39,red zone,,,2020
+4,0:39,3,6,middle,6,-1.0699999999999998,PIT,DEN,5,39,red zone,,,2020
 1,14:55,1,10,long,79,-0.27,PHI,STL,0,37,black zone,run right,2,2020
 1,14:18,2,8,long,77,1.2,PHI,STL,0,35,black zone,pass short left,12,2020
 1,13:43,1,10,long,65,-4.12,PHI,STL,0,6,grey zone,run left,3,2020
@@ -3301,7 +3301,7 @@
 4,2:19,3,1,short,33,0.8999999999999999,STL,PHI,18,19,green zone,run left,4,2020
 4,2:00,1,10,long,29,-0.6699999999999999,STL,PHI,18,41,green zone,,,2020
 4,1:19,2,11,long,30,-0.8200000000000003,STL,PHI,18,41,green zone,,,2020
-4,0:38,3,12,long,31,-0.9099999999999999,STL,PHI,18,0:00:38,green zone,,,2020
+4,0:38,3,12,long,31,-0.9099999999999999,STL,PHI,18,38,green zone,,,2020
 1,14:52,1,10,long,77,4.17,TEN,JAX,0,43,black zone,pass deep left,63,2020
 1,14:09,1,10,long,14,-0.4900000000000002,TEN,JAX,0,41,red zone,run middle,1,2020
 1,13:28,2,9,long,13,2.84,TEN,JAX,6,6,red zone,pass short right,13,2020
@@ -3452,7 +3452,7 @@
 4,1:11,1,10,long,64,0.6799999999999997,JAX,TEN,-3,20,grey zone,pass short right,9,2020
 4,0:51,2,1,short,55,-4.99,JAX,TEN,-3,4,grey zone,pass short middle,interception,2020
 4,0:47,1,10,long,39,-0.6800000000000002,TEN,JAX,3,23,green zone,,,2020
-4,0:24,2,11,long,40,-0.8099999999999998,TEN,JAX,3,0:00:24,green zone,,,2020
+4,0:24,2,11,long,40,-0.8099999999999998,TEN,JAX,3,24,green zone,,,2020
 1,14:53,1,10,long,80,6.72,SFO,NYJ,6,16,black zone,run right,80,2020
 1,14:37,1,10,long,73,0.13,NYJ,SFO,-7,35,grey zone,run right,5,2020
 1,14:02,2,5,middle,68,-0.7,NYJ,SFO,-7,4,grey zone,pass short right,0,2020
@@ -3591,7 +3591,7 @@
 4,2:00,2,5,middle,35,0.5300000000000002,NYJ,SFO,-25,27,green zone,pass short middle,5,2020
 4,1:33,1,10,long,30,3.42,NYJ,SFO,-19,10,green zone,pass deep left,30,2020
 4,1:23,1,10,long,75,-0.6799999999999999,SFO,NYJ,18,43,grey zone,,,2020
-4,0:40,2,11,long,76,-0.8200000000000001,SFO,NYJ,18,0:00:40,black zone,,,2020
+4,0:40,2,11,long,76,-0.8200000000000001,SFO,NYJ,18,40,black zone,,,2020
 1,15:00,1,10,long,75,0.92,BUF,MIA,0,34,grey zone,run middle,14,2020
 1,14:26,1,10,long,61,-0.14000000000000012,BUF,MIA,0,29,grey zone,run left,3,2020
 1,13:57,2,7,middle,58,-0.029999999999999805,BUF,MIA,0,42,grey zone,pass short right,5,2020
@@ -3740,7 +3740,7 @@
 4,1:17,1,10,long,15,0.6399999999999997,MIA,BUF,-11,23,red zone,run right,7,2020
 4,0:54,2,3,short,8,1.7800000000000002,MIA,BUF,-5,6,red zone,pass short middle,8,2020
 4,0:48,1,10,long,50,-0.5499999999999998,BUF,MIA,3,18,green zone,,,2020
-4,0:30,2,10,long,50,-0.82,BUF,MIA,3,0:00:30,green zone,,,2020
+4,0:30,2,10,long,50,-0.82,BUF,MIA,3,30,green zone,,,2020
 1,15:00,1,10,long,75,0.13,DET,GNB,0,31,grey zone,pass short middle,5,2020
 1,14:29,2,5,middle,70,2.1100000000000003,DET,GNB,0,38,grey zone,pass short left,29,2020
 1,13:51,1,10,long,41,0.0,DET,GNB,0,34,green zone,run middle,4,2020
@@ -3885,7 +3885,7 @@
 4,2:00,2,11,long,41,-0.6900000000000002,GNB,DET,21,6,green zone,run right,,2020
 4,1:54,3,11,long,41,2.09,GNB,DET,21,46,green zone,run right,12,2020
 4,1:08,1,10,long,29,-0.6699999999999999,GNB,DET,21,33,green zone,,,2020
-4,0:35,2,11,long,30,-0.6900000000000004,GNB,DET,21,0:00:35,green zone,,,2020
+4,0:35,2,11,long,30,-0.6900000000000004,GNB,DET,21,35,green zone,,,2020
 1,15:00,1,10,long,75,-0.14,ATL,DAL,0,37,grey zone,run right,3,2020
 1,14:23,2,7,middle,72,-0.03999999999999998,ATL,DAL,0,38,grey zone,run left,5,2020
 1,13:45,3,2,short,67,-1.6099999999999999,ATL,DAL,0,3,grey zone,pass short middle,0,2020
@@ -4057,7 +4057,7 @@
 4,1:15,1,10,long,30,-0.28000000000000025,DAL,ATL,-2,33,green zone,run left,2,2020
 4,0:42,2,8,long,28,-0.69,DAL,ATL,-2,37,green zone,run right,,2020
 4,0:05,3,8,long,28,-1.0199999999999998,DAL,ATL,-2,1,green zone,,,2020
-4,0:04,4,8,long,28,1.41,DAL,ATL,1,0:00:04,green zone,field goal,success,2020
+4,0:04,4,8,long,28,1.41,DAL,ATL,1,4,green zone,field goal,success,2020
 1,14:55,1,10,long,92,-0.10999999999999999,WAS,ARI,0,33,black zone,pass short left,4,2020
 1,14:22,2,6,middle,88,-0.5800000000000001,WAS,ARI,0,34,black zone,run right,-1,2020
 1,13:48,3,7,middle,89,-1.4200000000000002,WAS,ARI,0,5,black zone,pass deep right,0,2020
@@ -4217,7 +4217,7 @@
 4,2:00,2,6,middle,14,-0.16999999999999993,ARI,WAS,12,45,red zone,run middle,3,2020
 4,1:15,3,3,short,11,-1.3699999999999997,ARI,WAS,12,45,red zone,run right,1,2020
 4,0:30,4,2,short,10,0.10999999999999988,ARI,WAS,15,4,red zone,field goal,success,2020
-4,0:26,1,10,long,75,-0.41,WAS,ARI,-15,0:00:26,grey zone,run middle,1,2020
+4,0:26,1,10,long,75,-0.41,WAS,ARI,-15,26,grey zone,run middle,1,2020
 1,14:54,1,10,long,79,0.6799999999999999,SDG,KAN,0,34,black zone,run middle,9,2020
 1,14:20,2,1,short,70,0.51,SDG,KAN,0,34,grey zone,run middle,9,2020
 1,13:46,1,10,long,61,-0.54,SDG,KAN,0,6,grey zone,pass deep right,0,2020
@@ -4393,7 +4393,7 @@ OT,3:25,1,10,long,44,-0.54,KAN,SDG,0,7,green zone,pass short middle,0,2020
 OT,3:18,2,10,long,44,-0.029999999999999805,KAN,SDG,0,41,green zone,pass short middle,5,2020
 OT,2:37,3,5,middle,39,-1.08,KAN,SDG,0,37,green zone,pass short middle,4,2020
 OT,2:00,4,1,short,35,-0.41000000000000003,KAN,SDG,0,0,green zone,,,2020
-OT,2:00,4,6,middle,40,2.41,KAN,SDG,3,0:02:00,green zone,field goal,success,2020
+OT,2:00,4,6,middle,40,2.41,KAN,SDG,3,120,green zone,field goal,success,2020
 1,15:00,1,10,long,75,-0.41,HOU,BAL,0,30,grey zone,run right,1,2020
 1,14:30,2,9,long,74,-0.16,HOU,BAL,0,41,grey zone,run left,4,2020
 1,13:49,3,5,middle,70,-1.1500000000000001,HOU,BAL,0,45,grey zone,pass short left,4,2020
@@ -4532,7 +4532,7 @@ OT,2:00,4,6,middle,40,2.41,KAN,SDG,3,0:02:00,green zone,field goal,success,2020
 4,2:23,1,10,long,71,2.9099999999999997,BAL,HOU,17,23,grey zone,run left,44,2020
 4,2:00,1,10,long,27,-0.6799999999999997,BAL,HOU,17,44,green zone,,,2020
 4,1:16,2,11,long,28,-0.8200000000000003,BAL,HOU,17,42,green zone,,,2020
-4,0:34,3,12,long,29,-0.8699999999999999,BAL,HOU,17,0:00:34,green zone,,,2020
+4,0:34,3,12,long,29,-0.8699999999999999,BAL,HOU,17,34,green zone,,,2020
 1,15:00,1,10,long,75,0.67,SEA,NWE,0,28,grey zone,pass short middle,9,2020
 1,14:32,2,1,short,66,0.18999999999999995,SEA,NWE,0,44,grey zone,run right,4,2020
 1,13:48,1,10,long,62,-8.47,SEA,NWE,-6,18,grey zone,pass short left,interception,2020
@@ -4677,7 +4677,7 @@ OT,2:00,4,6,middle,40,2.41,KAN,SDG,3,0:02:00,green zone,field goal,success,2020
 4,0:36,1,10,long,31,1.2000000000000002,NWE,SEA,-5,23,green zone,pass deep left,18,2020
 4,0:13,1,10,long,13,-0.6600000000000001,NWE,SEA,-5,4,red zone,pass short middle,0,2020
 4,0:09,2,10,long,13,2.92,NWE,SEA,-5,6,red zone,pass short left,12,2020
-4,0:03,1,1,short,1,-1.25,NWE,SEA,-5,0:00:03,red zone,run left,-1,2020
+4,0:03,1,1,short,1,-1.25,NWE,SEA,-5,3,red zone,run left,-1,2020
 1,15:00,1,10,long,75,0.7200000000000001,NOR,OAK,0,38,grey zone,run left,11,2020
 1,14:22,1,10,long,64,-0.54,NOR,OAK,0,4,grey zone,pass deep left,0,2020
 1,14:18,2,10,long,64,0.3699999999999999,NOR,OAK,0,39,grey zone,run left,8,2020
@@ -4825,7 +4825,7 @@ OT,2:00,4,6,middle,40,2.41,KAN,SDG,3,0:02:00,green zone,field goal,success,2020
 4,0:47,1,10,long,57,-0.55,NOR,OAK,-10,5,grey zone,pass short right,0,2020
 4,0:42,2,10,long,57,0.3700000000000001,NOR,OAK,-10,22,grey zone,pass short left,8,2020
 4,0:20,3,2,short,49,1.17,NOR,OAK,-10,19,green zone,pass short middle,7,2020
-4,0:01,1,10,long,42,-0.99,NOR,OAK,-10,0:00:01,green zone,pass short middle,15,2020
+4,0:01,1,10,long,42,-0.99,NOR,OAK,-10,1,green zone,pass short middle,15,2020
 1,14:55,1,10,long,84,0.56,MIA,JAX,0,35,black zone,pass short left,7,2020
 1,14:20,2,3,short,77,0.6500000000000001,MIA,JAX,0,42,black zone,run middle,9,2020
 1,13:38,1,10,long,68,1.32,MIA,JAX,0,33,grey zone,pass deep middle,20,2020
@@ -4964,7 +4964,7 @@ OT,2:00,4,6,middle,40,2.41,KAN,SDG,3,0:02:00,green zone,field goal,success,2020
 4,2:27,1,10,long,97,-0.32999999999999996,MIA,JAX,18,27,black zone,run middle,1,2020
 4,2:00,2,9,long,96,-0.48,MIA,JAX,18,44,black zone,run middle,1,2020
 4,1:16,3,8,long,95,1.47,MIA,JAX,18,42,black zone,run middle,15,2020
-4,0:34,1,10,long,80,-0.74,MIA,JAX,18,0:00:34,black zone,,,2020
+4,0:34,1,10,long,80,-0.74,MIA,JAX,18,34,black zone,,,2020
 1,14:50,1,10,long,58,-0.4099999999999999,BUF,STL,0,35,grey zone,run middle,1,2020
 1,14:15,2,9,long,57,-0.6900000000000001,BUF,STL,0,6,grey zone,pass short left,0,2020
 1,14:09,3,9,long,57,-1.15,BUF,STL,0,7,grey zone,pass deep right,0,2020
@@ -5099,7 +5099,7 @@ OT,2:00,4,6,middle,40,2.41,KAN,SDG,3,0:02:00,green zone,field goal,success,2020
 4,0:31,3,25,long,30,1.2199999999999998,BUF,STL,-4,6,green zone,pass deep middle,17,2020
 4,0:25,4,8,long,13,3.94,BUF,STL,-4,4,red zone,,,2020
 4,0:21,1,3,short,3,0.4900000000000002,BUF,STL,2,11,red zone,pass short left,3,2020
-4,0:10,1,10,long,75,-0.61,STL,BUF,-3,0:00:10,grey zone,pass short right,12,2020
+4,0:10,1,10,long,75,-0.61,STL,BUF,-3,10,grey zone,pass short right,12,2020
 1,14:55,1,10,long,75,0.26,CHI,ATL,0,36,grey zone,run right,6,2020
 1,14:19,2,4,middle,69,0.66,CHI,ATL,0,34,grey zone,pass short right,8,2020
 1,13:45,1,10,long,61,0.7299999999999998,CHI,ATL,0,41,grey zone,pass short left,11,2020
@@ -5268,7 +5268,7 @@ OT,2:00,4,6,middle,40,2.41,KAN,SDG,3,0:02:00,green zone,field goal,success,2020
 4,1:06,1,10,long,60,0.7199999999999998,CHI,ATL,4,7,grey zone,run right,11,2020
 4,0:59,1,10,long,49,-0.6699999999999999,CHI,ATL,4,3,green zone,,,2020
 4,0:56,2,11,long,50,-0.82,CHI,ATL,4,26,green zone,,,2020
-4,0:30,3,12,long,51,-1.02,CHI,ATL,4,0:00:30,grey zone,,,2020
+4,0:30,3,12,long,51,-1.02,CHI,ATL,4,30,grey zone,,,2020
 1,15:00,1,10,long,75,-0.55,HOU,PIT,0,3,grey zone,pass short right,0,2020
 1,14:57,2,10,long,75,-0.019999999999999997,HOU,PIT,0,36,grey zone,run right,5,2020
 1,14:21,3,5,middle,70,-1.4100000000000001,HOU,PIT,0,4,grey zone,pass short middle,0,2020
@@ -5408,7 +5408,7 @@ OT,2:00,4,6,middle,40,2.41,KAN,SDG,3,0:02:00,green zone,field goal,success,2020
 4,2:19,3,9,long,27,3.9,PIT,HOU,7,19,green zone,pass short left,fumble,2020
 4,2:00,1,3,short,3,-1.3599999999999994,PIT,HOU,7,40,red zone,,,2020
 4,1:20,2,5,middle,5,-1.1100000000000003,PIT,HOU,7,46,red zone,,,2020
-4,0:34,3,6,middle,6,-1.0699999999999998,PIT,HOU,7,0:00:34,red zone,,,2020
+4,0:34,3,6,middle,6,-1.0699999999999998,PIT,HOU,7,34,red zone,,,2020
 1,15:00,1,10,long,75,0.7200000000000001,CIN,PHI,0,24,grey zone,run left,11,2020
 1,14:36,1,10,long,64,0.54,CIN,PHI,0,42,grey zone,pass short right,8,2020
 1,13:54,2,2,short,56,0.11999999999999988,CIN,PHI,0,43,grey zone,run right,2,2020
@@ -5598,7 +5598,7 @@ OT,0:23,3,7,middle,41,-1.29,PHI,CIN,0,4,green zone,,,2020
 OT,0:19,4,7,middle,41,-0.33,PHI,CIN,0,0,green zone,,,2020
 OT,0:19,4,12,long,46,-0.33,PHI,CIN,0,0,green zone,,,2020
 OT,0:19,4,17,long,51,0.5,PHI,CIN,0,6,grey zone,punt,40,2020
-OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
+OT,0:13,1,10,long,89,0.37,CIN,PHI,0,13,black zone,run middle,9,2020
 1,15:00,1,10,long,75,-0.14,SFO,NYG,0,38,grey zone,run right,3,2020
 1,14:22,2,7,middle,72,-0.57,SFO,NYG,0,42,grey zone,run left,1,2020
 1,13:40,3,6,middle,71,2.29,SFO,NYG,0,44,grey zone,pass short middle,20,2020
@@ -5738,7 +5738,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,2:00,2,6,middle,41,-2.73,NYG,SFO,-27,11,green zone,pass deep middle,22,2020
 4,1:49,1,10,long,81,-0.7100000000000001,SFO,NYG,27,43,black zone,,,2020
 4,1:06,2,11,long,82,-0.8599999999999999,SFO,NYG,27,42,black zone,,,2020
-4,0:24,3,12,long,83,-0.9700000000000002,SFO,NYG,27,0:00:24,black zone,,,2020
+4,0:24,3,12,long,83,-0.9700000000000002,SFO,NYG,27,24,black zone,,,2020
 1,15:00,1,10,long,75,-0.010000000000000009,NWE,OAK,0,34,grey zone,run right,4,2020
 1,14:26,2,6,middle,71,-0.7,NWE,OAK,0,45,grey zone,run left,,2020
 1,13:41,3,6,middle,71,-1.3399999999999999,NWE,OAK,0,4,grey zone,pass short middle,0,2020
@@ -5879,7 +5879,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,2:00,1,10,long,13,2.29,OAK,NWE,-17,7,red zone,pass short left,13,2020
 4,1:53,1,10,long,45,-0.4099999999999997,NWE,OAK,16,44,green zone,run middle,1,2020
 4,1:09,2,9,long,44,-0.8200000000000001,NWE,OAK,16,35,green zone,,,2020
-4,0:34,3,10,long,45,-1.1600000000000001,NWE,OAK,16,0:00:34,green zone,,,2020
+4,0:34,3,10,long,45,-1.1600000000000001,NWE,OAK,16,34,green zone,,,2020
 1,15:00,1,10,long,75,0.13,TEN,MIN,0,35,grey zone,run left,5,2020
 1,14:25,2,5,middle,70,3.0999999999999996,TEN,MIN,0,45,grey zone,pass deep left,44,2020
 1,13:40,1,10,long,26,-0.6599999999999997,TEN,MIN,0,12,green zone,,,2020
@@ -6034,7 +6034,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,1:15,3,24,long,74,-0.1499999999999999,MIN,TEN,-1,6,grey zone,pass short middle,0,2020
 4,1:09,4,24,long,74,0.5599999999999998,MIN,TEN,-1,11,grey zone,pass deep right,interception,2020
 4,0:58,1,10,long,68,-0.54,TEN,MIN,1,23,grey zone,,,2020
-4,0:35,2,10,long,68,-0.8200000000000001,TEN,MIN,1,0:00:35,grey zone,,,2020
+4,0:35,2,10,long,68,-0.8200000000000001,TEN,MIN,1,35,grey zone,,,2020
 1,15:00,1,10,long,75,0.66,CLE,WAS,0,28,grey zone,pass short left,10,2020
 1,14:32,1,10,long,65,-0.28,CLE,WAS,0,30,grey zone,run left,2,2020
 1,14:02,2,8,long,63,1.2,CLE,WAS,0,37,grey zone,pass short right,12,2020
@@ -6175,7 +6175,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,1:59,3,5,middle,8,-1.4699999999999998,CLE,WAS,11,46,red zone,run right,-4,2020
 4,1:13,4,9,long,12,0.3700000000000001,CLE,WAS,14,3,red zone,field goal,success,2020
 4,1:10,1,10,long,75,-0.14,WAS,CLE,-14,27,grey zone,run right,3,2020
-4,0:43,2,7,middle,72,-0.57,WAS,CLE,-14,0:00:43,grey zone,run right,1,2020
+4,0:43,2,7,middle,72,-0.57,WAS,CLE,-14,43,grey zone,run right,1,2020
 1,15:00,1,10,long,75,-0.55,CAR,SDG,0,5,grey zone,pass short right,0,2020
 1,14:55,2,10,long,75,-0.42,CAR,SDG,0,39,grey zone,run middle,2,2020
 1,14:16,3,8,long,73,-1.21,CAR,SDG,0,5,grey zone,pass deep middle,0,2020
@@ -6321,7 +6321,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,0:13,1,10,long,23,-0.54,SDG,CAR,-5,1,red zone,,,2020
 4,0:12,2,10,long,23,-0.6800000000000002,SDG,CAR,-5,0,red zone,,,2020
 4,0:12,2,15,long,28,-0.6699999999999999,SDG,CAR,-5,6,green zone,pass deep right,0,2020
-4,0:06,3,15,long,28,-2.15,SDG,CAR,-5,0:00:06,green zone,pass short left,9,2020
+4,0:06,3,15,long,28,-2.15,SDG,CAR,-5,6,green zone,pass short left,9,2020
 1,14:54,1,10,long,79,-0.27,NYJ,IND,0,29,black zone,run left,2,2020
 1,14:25,2,8,long,77,-0.8300000000000001,NYJ,IND,0,38,black zone,run middle,-1,2020
 1,13:47,3,9,long,78,1.83,NYJ,IND,0,4,black zone,,,2020
@@ -6457,7 +6457,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,1:32,3,5,middle,70,-1.4100000000000001,NYJ,IND,-29,8,grey zone,pass short left,0,2020
 4,1:24,4,5,middle,70,-2.21,NYJ,IND,-29,11,grey zone,pass deep left,0,2020
 4,1:13,1,10,long,30,-0.5500000000000003,IND,NYJ,29,33,green zone,,,2020
-4,0:40,2,10,long,30,-0.69,IND,NYJ,29,0:00:40,green zone,,,2020
+4,0:40,2,10,long,30,-0.69,IND,NYJ,29,40,green zone,,,2020
 1,15:00,1,10,long,75,-0.55,SEA,DAL,0,2,grey zone,pass short left,0,2020
 1,14:58,2,10,long,75,-1.57,SEA,DAL,0,36,grey zone,,,2020
 1,14:22,3,16,long,81,0.19999999999999996,SEA,DAL,0,40,black zone,run right,12,2020
@@ -6630,7 +6630,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,0:26,1,10,long,22,-0.5500000000000003,DAL,SEA,-7,4,red zone,pass short left,0,2020
 4,0:22,2,10,long,22,-1.21,DAL,SEA,-7,6,red zone,,,2020
 4,0:16,3,14,long,26,-2.63,DAL,SEA,-7,10,green zone,,interception,2020
-4,0:06,1,10,long,80,-0.74,SEA,DAL,7,0:00:06,black zone,,,2020
+4,0:06,1,10,long,80,-0.74,SEA,DAL,7,6,black zone,,,2020
 1,15:00,1,10,long,75,-0.010000000000000009,DEN,TAM,0,36,grey zone,run right,4,2020
 1,14:24,2,6,middle,71,-1.4100000000000001,DEN,TAM,0,27,grey zone,,,2020
 1,13:57,2,16,long,81,0.5800000000000001,DEN,TAM,0,41,black zone,pass short left,9,2020
@@ -6779,7 +6779,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,2:00,2,6,middle,52,-0.040000000000000036,TAM,DEN,18,6,grey zone,run right,5,2020
 4,1:54,3,1,short,47,0.9000000000000001,TAM,DEN,18,46,green zone,run middle,4,2020
 4,1:08,1,10,long,43,-0.54,TAM,DEN,18,33,green zone,,,2020
-4,0:35,2,10,long,43,-0.8200000000000001,TAM,DEN,18,0:00:35,green zone,,,2020
+4,0:35,2,10,long,43,-0.8200000000000001,TAM,DEN,18,35,green zone,,,2020
 1,15:00,1,10,long,75,1.19,DET,ARI,0,27,grey zone,pass short left,17,2020
 1,14:33,1,10,long,57,1.78,DET,ARI,0,41,grey zone,run middle,27,2020
 1,13:52,1,10,long,30,-0.28000000000000025,DET,ARI,0,45,green zone,run middle,2,2020
@@ -6926,7 +6926,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,1:03,1,10,long,38,-0.54,DET,ARI,0,5,green zone,run middle,,2020
 4,0:58,2,10,long,38,1.8600000000000003,DET,ARI,0,46,green zone,pass short right,20,2020
 4,0:12,1,10,long,18,-0.9500000000000002,DET,ARI,0,8,red zone,run left,-3,2020
-4,0:04,2,13,long,21,-0.41999999999999993,DET,ARI,3,0:00:04,red zone,field goal,success,2020
+4,0:04,2,13,long,21,-0.41999999999999993,DET,ARI,3,4,red zone,field goal,success,2020
 1,14:55,1,10,long,75,-0.010000000000000009,NOR,GNB,0,33,grey zone,run right,4,2020
 1,14:22,2,6,middle,71,-0.42999999999999994,NOR,GNB,0,31,grey zone,run left,2,2020
 1,13:51,3,4,middle,69,-1.28,NOR,GNB,0,35,grey zone,pass short right,3,2020
@@ -7061,7 +7061,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,1:02,3,10,long,44,-0.41999999999999993,NOR,GNB,-10,21,green zone,pass short left,9,2020
 4,0:41,4,1,short,35,3.51,NOR,GNB,-10,6,green zone,pass short middle,19,2020
 4,0:35,1,10,long,16,-1.5099999999999998,NOR,GNB,-7,3,red zone,field goal,success,2020
-4,0:32,1,10,long,43,-0.6800000000000002,GNB,NOR,7,0:00:32,green zone,,,2020
+4,0:32,1,10,long,43,-0.6800000000000002,GNB,NOR,7,32,green zone,,,2020
 1,15:00,1,10,long,75,0.13,BAL,KAN,0,41,grey zone,run right,5,2020
 1,14:19,2,5,middle,70,-0.31,BAL,KAN,0,46,grey zone,run left,3,2020
 1,13:33,3,2,short,67,2.69,BAL,KAN,0,42,grey zone,run right,30,2020
@@ -7204,7 +7204,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,2:00,2,8,long,35,-0.4299999999999997,KAN,BAL,14,45,green zone,run right,2,2020
 4,1:15,3,6,middle,33,-0.6900000000000002,KAN,BAL,14,47,green zone,run right,5,2020
 4,0:28,4,1,short,28,-2.59,KAN,BAL,14,5,green zone,pass short right,0,2020
-4,0:23,1,10,long,71,-0.6799999999999999,BAL,KAN,-14,0:00:23,grey zone,,,2020
+4,0:23,1,10,long,71,-0.6799999999999999,BAL,KAN,-14,23,grey zone,,,2020
 1,15:00,1,10,long,75,-0.6799999999999999,NYJ,DEN,0,18,grey zone,run middle,-1,2020
 1,14:42,2,11,long,76,0.6300000000000001,NYJ,DEN,0,35,black zone,pass short right,10,2020
 1,14:07,3,1,short,66,0.8399999999999999,NYJ,DEN,0,35,grey zone,run middle,3,2020
@@ -7367,7 +7367,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,0:13,4,13,long,34,-0.4,DEN,NYJ,9,0,green zone,,,2020
 4,0:13,4,18,long,39,0.4,DEN,NYJ,9,5,green zone,,,2020
 4,0:08,4,13,long,34,3.2499999999999996,DEN,NYJ,9,5,green zone,,,2020
-4,0:03,1,10,long,19,-0.6799999999999997,DEN,NYJ,9,0:00:03,red zone,,,2020
+4,0:03,1,10,long,19,-0.6799999999999997,DEN,NYJ,9,3,red zone,,,2020
 1,14:54,1,10,long,82,-0.17,CHI,IND,0,38,black zone,run right,2,2020
 1,14:16,2,8,long,80,0.9400000000000001,CHI,IND,0,45,black zone,pass short right,8,2020
 1,13:31,1,10,long,72,-0.28,CHI,IND,0,39,grey zone,run left,2,2020
@@ -7521,7 +7521,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,1:34,1,10,long,46,-0.41000000000000014,IND,CHI,8,6,green zone,run right,1,2020
 4,1:28,2,9,long,45,-0.8199999999999998,IND,CHI,8,43,green zone,,,2020
 4,0:45,3,10,long,46,-1.22,IND,CHI,8,44,green zone,,,2020
-4,0:01,4,12,long,48,1.99,IND,CHI,8,0:00:01,green zone,,,2020
+4,0:01,4,12,long,48,1.99,IND,CHI,8,1,green zone,,,2020
 1,15:00,1,10,long,75,0.67,ARI,CAR,0,29,grey zone,run right,9,2020
 1,14:31,2,1,short,66,-0.010000000000000009,ARI,CAR,0,28,grey zone,run right,1,2020
 1,14:03,1,10,long,65,-0.55,ARI,CAR,0,6,grey zone,pass deep middle,0,2020
@@ -7669,7 +7669,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,2:13,1,10,long,39,-0.27,CAR,ARI,10,13,green zone,run left,2,2020
 4,2:00,2,8,long,37,1.0,CAR,ARI,10,45,green zone,run right,9,2020
 4,1:15,1,10,long,28,-0.6800000000000002,CAR,ARI,10,42,green zone,,,2020
-4,0:33,2,11,long,29,-0.8199999999999998,CAR,ARI,10,0:00:33,green zone,,,2020
+4,0:33,2,11,long,29,-0.8199999999999998,CAR,ARI,10,33,green zone,,,2020
 1,15:00,1,10,long,75,-0.41,WAS,BAL,0,34,grey zone,run right,1,2020
 1,14:26,2,9,long,74,0.8,WAS,BAL,0,18,grey zone,,,2020
 1,14:08,1,10,long,69,0.6599999999999999,WAS,BAL,0,37,grey zone,run left,10,2020
@@ -7812,7 +7812,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,1:42,3,6,middle,45,-1.0300000000000002,BAL,WAS,14,9,green zone,run right,5,2020
 4,1:33,4,1,short,40,2.46,BAL,WAS,14,46,green zone,run left,2,2020
 4,0:47,1,10,long,38,-0.6799999999999997,BAL,WAS,14,40,green zone,,,2020
-4,0:07,2,11,long,39,-0.8200000000000001,BAL,WAS,14,0:00:07,green zone,,,2020
+4,0:07,2,11,long,39,-0.8200000000000001,BAL,WAS,14,7,green zone,,,2020
 1,15:00,1,10,long,75,-0.14,TAM,SDG,0,35,grey zone,pass short left,3,2020
 1,14:25,2,7,middle,72,0.9299999999999999,TAM,SDG,0,31,grey zone,run left,9,2020
 1,13:54,1,10,long,63,0.40000000000000013,TAM,SDG,0,38,grey zone,pass short left,7,2020
@@ -7954,7 +7954,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,2:17,2,8,long,57,1.3300000000000003,TAM,SDG,7,17,grey zone,run right,14,2020
 4,2:00,1,10,long,43,-0.6800000000000002,TAM,SDG,7,41,green zone,,,2020
 4,1:19,2,11,long,44,-0.8200000000000001,TAM,SDG,7,40,green zone,,,2020
-4,0:39,3,12,long,45,-1.02,TAM,SDG,7,0:00:39,green zone,,,2020
+4,0:39,3,12,long,45,-1.02,TAM,SDG,7,39,green zone,,,2020
 1,15:00,1,10,long,75,0.67,MIA,SEA,0,38,grey zone,pass short left,9,2020
 1,14:22,2,1,short,66,0.11999999999999988,MIA,SEA,0,37,grey zone,run right,3,2020
 1,13:45,1,10,long,63,0.13000000000000012,MIA,SEA,0,42,grey zone,pass short right,5,2020
@@ -8096,7 +8096,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,1:42,3,3,short,50,0.97,SEA,MIA,8,6,green zone,run right,3,2020
 4,1:36,1,10,long,47,-0.6799999999999999,SEA,MIA,8,42,green zone,,,2020
 4,0:54,2,11,long,48,-0.8200000000000001,SEA,MIA,8,42,green zone,,,2020
-4,0:12,3,12,long,49,-1.02,SEA,MIA,8,0:00:12,green zone,,,2020
+4,0:12,3,12,long,49,-1.02,SEA,MIA,8,12,green zone,,,2020
 1,15:00,1,10,long,75,-0.27999999999999997,HOU,MIN,0,24,grey zone,run left,2,2020
 1,14:36,2,8,long,73,0.09999999999999998,HOU,MIN,0,39,grey zone,pass short right,6,2020
 1,13:57,3,2,short,67,-1.6099999999999999,HOU,MIN,0,4,grey zone,pass short middle,0,2020
@@ -8241,7 +8241,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,1:18,3,1,short,1,-2.16,HOU,MIN,-8,3,red zone,,,2020
 4,1:15,4,5,middle,5,-2.63,HOU,MIN,-8,3,red zone,pass short left,0,2020
 4,1:12,1,10,long,95,-0.47,MIN,HOU,8,34,black zone,,,2020
-4,0:38,2,11,long,96,-0.7999999999999999,MIN,HOU,8,0:00:38,black zone,,,2020
+4,0:38,2,11,long,96,-0.7999999999999999,MIN,HOU,8,38,black zone,,,2020
 1,14:54,1,10,long,77,-0.55,DET,NOR,0,5,black zone,pass deep middle,0,2020
 1,14:49,2,10,long,77,-0.69,DET,NOR,0,5,black zone,pass short left,0,2020
 1,14:44,3,10,long,77,2.0300000000000002,DET,NOR,0,33,black zone,run middle,12,2020
@@ -8378,7 +8378,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,2:00,3,3,short,47,1.1,NOR,DET,6,5,green zone,run left,5,2020
 4,1:55,1,10,long,42,-0.6800000000000002,NOR,DET,6,40,green zone,,,2020
 4,1:15,2,11,long,43,-0.8199999999999998,NOR,DET,6,38,green zone,,,2020
-4,0:37,3,12,long,44,-1.02,NOR,DET,6,0:00:37,green zone,,,2020
+4,0:37,3,12,long,44,-1.02,NOR,DET,6,37,green zone,,,2020
 1,15:00,1,10,long,75,-0.010000000000000009,DAL,CLE,0,33,grey zone,run left,4,2020
 1,14:27,2,6,middle,71,-2.32,DAL,CLE,0,41,grey zone,,,2020
 1,13:46,3,17,long,82,0.34999999999999987,DAL,CLE,0,17,black zone,pass short right,12,2020
@@ -8544,7 +8544,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,1:36,1,10,long,96,0.18,CLE,DAL,11,6,black zone,run middle,8,2020
 4,1:30,2,2,short,88,0.06,CLE,DAL,11,46,black zone,run middle,4,2020
 4,0:44,1,10,long,84,-0.64,CLE,DAL,11,19,black zone,,,2020
-4,0:25,2,11,long,85,-0.8300000000000001,CLE,DAL,11,0:00:25,black zone,,,2020
+4,0:25,2,11,long,85,-0.8300000000000001,CLE,DAL,11,25,black zone,,,2020
 1,15:00,1,10,long,75,-0.010000000000000009,JAX,CIN,0,35,grey zone,run middle,4,2020
 1,14:25,2,6,middle,71,0.7999999999999999,JAX,CIN,0,38,grey zone,run left,8,2020
 1,13:47,1,10,long,63,-0.5399999999999999,JAX,CIN,0,6,grey zone,pass deep right,0,2020
@@ -8698,7 +8698,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,0:41,2,1,short,22,0.6000000000000005,JAX,CIN,-11,25,red zone,pass short middle,10,2020
 4,0:16,1,10,long,12,-0.6800000000000006,JAX,CIN,-11,4,red zone,pass short right,0,2020
 4,0:12,2,10,long,12,-1.0999999999999996,JAX,CIN,-8,5,red zone,field goal,success,2020
-4,0:07,1,10,long,45,-0.6799999999999999,CIN,JAX,8,0:00:07,green zone,,,2020
+4,0:07,1,10,long,45,-0.6799999999999999,CIN,JAX,8,7,green zone,,,2020
 1,14:54,1,10,long,69,-0.54,NYG,STL,0,5,grey zone,pass short right,0,2020
 1,14:49,2,10,long,69,-0.95,NYG,STL,0,45,grey zone,,,2020
 1,14:04,3,12,long,71,-1.41,NYG,STL,0,30,grey zone,pass short right,-7,2020
@@ -8727,7 +8727,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 1,2:04,2,7,middle,31,1.4700000000000002,NYG,STL,-7,43,green zone,pass deep middle,17,2020
 1,1:21,1,10,long,14,0.05999999999999961,NYG,STL,-7,42,red zone,run left,4,2020
 1,0:39,2,6,middle,10,-1.2799999999999998,NYG,STL,-7,38,red zone,pass short right,-2,2020
-1,0:01,3,8,long,12,-3.43,NYG,STL,-7,0:00:01,red zone,,,2020
+1,0:01,3,8,long,12,-3.43,NYG,STL,-7,1,red zone,,,2020
 1,15:00,1,10,long,75,-0.95,BUF,OAK,0,37,grey zone,run right,-3,2020
 1,14:23,2,13,long,78,-0.42,BUF,OAK,0,45,black zone,pass short right,2,2020
 1,13:38,3,11,long,76,0.66,BUF,OAK,0,21,black zone,,,2020
@@ -8872,7 +8872,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,1:36,4,1,short,7,3.99,OAK,BUF,-8,8,red zone,pass short left,7,2020
 4,1:28,1,10,long,43,-0.8100000000000003,BUF,OAK,7,4,green zone,run left,-2,2020
 4,1:24,2,12,long,45,0.7700000000000002,BUF,OAK,7,47,green zone,run left,11,2020
-4,0:37,3,1,short,34,-1.6900000000000002,BUF,OAK,7,0:00:37,green zone,,,2020
+4,0:37,3,1,short,34,-1.6900000000000002,BUF,OAK,7,37,green zone,,,2020
 1,15:00,1,10,long,75,-0.27999999999999997,PHI,SFO,0,32,grey zone,run right,2,2020
 1,14:28,2,8,long,73,-0.69,PHI,SFO,0,37,grey zone,run middle,,2020
 1,13:51,3,8,long,73,-1.21,PHI,SFO,0,4,grey zone,pass short left,0,2020
@@ -9019,7 +9019,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,0:18,1,10,long,33,-0.54,SFO,PHI,-5,1,green zone,,,2020
 4,0:17,2,10,long,33,-0.69,SFO,PHI,-5,5,green zone,pass short right,0,2020
 4,0:12,3,10,long,33,-1.0,SFO,PHI,-5,5,green zone,pass short right,0,2020
-4,0:07,4,10,long,33,-0.010000000000000009,SFO,PHI,-5,0:00:07,green zone,pass deep right,0,2020
+4,0:07,4,10,long,33,-0.010000000000000009,SFO,PHI,-5,7,green zone,pass deep right,0,2020
 1,15:00,1,10,long,75,0.26,KAN,NWE,0,35,grey zone,run middle,6,2020
 1,14:25,2,4,middle,69,0.66,KAN,NWE,0,39,grey zone,pass short right,8,2020
 1,13:46,1,10,long,61,-0.54,KAN,NWE,0,6,grey zone,pass deep right,0,2020
@@ -9164,7 +9164,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,1:37,4,10,long,40,-1.79,NWE,KAN,-16,7,green zone,pass short right,6,2020
 4,1:30,1,10,long,66,-0.95,KAN,NWE,16,41,grey zone,,,2020
 4,0:49,2,13,long,69,-0.94,KAN,NWE,16,42,grey zone,,,2020
-4,0:07,3,15,long,71,-0.81,KAN,NWE,16,0:00:07,grey zone,,,2020
+4,0:07,3,15,long,71,-0.81,KAN,NWE,16,7,grey zone,,,2020
 1,15:00,1,10,long,75,-0.010000000000000009,ATL,GNB,0,31,grey zone,run left,4,2020
 1,14:29,2,6,middle,71,-0.7,ATL,GNB,0,43,grey zone,run right,,2020
 1,13:46,3,6,middle,71,-1.3399999999999999,ATL,GNB,0,5,grey zone,pass deep right,0,2020
@@ -9305,7 +9305,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,0:24,2,23,long,44,-0.6499999999999999,ATL,GNB,-14,6,green zone,pass short right,0,2020
 4,0:18,3,23,long,44,0.31999999999999995,ATL,GNB,-14,8,green zone,pass short middle,8,2020
 4,0:10,4,15,long,36,-2.21,ATL,GNB,-14,5,green zone,pass short right,0,2020
-4,0:05,1,10,long,64,-0.67,GNB,ATL,14,0:00:05,grey zone,,,2020
+4,0:05,1,10,long,64,-0.67,GNB,ATL,14,5,grey zone,,,2020
 1,15:00,1,10,long,75,-0.010000000000000009,TAM,CHI,0,37,grey zone,run right,4,2020
 1,14:23,2,6,middle,71,-0.7,TAM,CHI,0,6,grey zone,pass deep right,0,2020
 1,14:17,3,6,middle,71,1.7000000000000002,TAM,CHI,0,44,grey zone,pass short middle,11,2020
@@ -9457,7 +9457,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,0:42,3,6,middle,59,-1.35,TAM,CHI,-1,4,grey zone,pass short left,0,2020
 4,0:38,4,6,middle,59,-2.2,TAM,CHI,-1,5,grey zone,pass deep middle,0,2020
 4,0:33,1,10,long,41,0.73,CHI,TAM,1,1,green zone,,,2020
-4,0:32,1,5,middle,36,-0.73,CHI,TAM,1,0:00:32,green zone,,,2020
+4,0:32,1,5,middle,36,-0.73,CHI,TAM,1,32,green zone,,,2020
 1,14:54,1,10,long,77,0.79,CAR,ATL,0,36,black zone,pass short left,12,2020
 1,14:18,1,10,long,65,0.6599999999999999,CAR,ATL,0,31,grey zone,pass short right,10,2020
 1,13:47,1,10,long,55,0.40000000000000013,CAR,ATL,0,36,grey zone,run left,7,2020
@@ -9603,7 +9603,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,0:28,4,10,long,58,3.77,ATL,CAR,-10,17,grey zone,pass deep left,22,2020
 4,0:11,1,10,long,36,-0.54,ATL,CAR,-10,2,green zone,,,2020
 4,0:09,2,10,long,36,0.3599999999999999,ATL,CAR,-7,6,green zone,field goal,success,2020
-4,0:03,1,10,long,47,-0.6799999999999999,CAR,ATL,7,0:00:03,green zone,,,2020
+4,0:03,1,10,long,47,-0.6799999999999999,CAR,ATL,7,3,green zone,,,2020
 1,15:00,1,10,long,75,-0.14,WAS,STL,0,38,grey zone,pass short middle,3,2020
 1,14:22,2,7,middle,72,-0.57,WAS,STL,0,38,grey zone,run left,1,2020
 1,13:44,3,6,middle,71,-1.3399999999999999,WAS,STL,0,5,grey zone,pass short middle,0,2020
@@ -9743,7 +9743,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,1:55,4,3,short,86,1.3300000000000003,WAS,STL,-20,10,black zone,punt,53,2020
 4,1:45,1,10,long,67,-0.2799999999999999,STL,WAS,20,41,grey zone,run left,2,2020
 4,1:04,2,8,long,65,-0.82,STL,WAS,20,29,grey zone,,,2020
-4,0:35,3,9,long,66,-1.22,STL,WAS,20,0:00:35,grey zone,,,2020
+4,0:35,3,9,long,66,-1.22,STL,WAS,20,35,grey zone,,,2020
 1,15:00,1,10,long,75,0.92,CIN,BAL,0,36,grey zone,pass short middle,14,2020
 1,14:24,1,10,long,61,0.1299999999999999,CIN,BAL,0,37,grey zone,run right,5,2020
 1,13:47,2,5,middle,56,-0.7,CIN,BAL,0,4,grey zone,pass short left,0,2020
@@ -9892,7 +9892,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,2:00,2,8,long,21,-0.43000000000000016,CIN,BAL,-27,42,red zone,run right,2,2020
 4,1:18,3,6,middle,19,-1.2199999999999998,CIN,BAL,-27,41,red zone,run left,-1,2020
 4,0:37,4,7,middle,20,0.8799999999999999,CIN,BAL,-24,12,red zone,field goal,success,2020
-4,0:25,1,10,long,63,-0.6799999999999999,BAL,CIN,24,0:00:25,grey zone,,,2020
+4,0:25,1,10,long,63,-0.6799999999999999,BAL,CIN,24,25,grey zone,,,2020
 1,14:54,1,10,long,83,-0.79,PHI,PIT,0,19,black zone,run right,-2,2020
 1,14:35,2,12,long,85,-0.4,PHI,PIT,0,42,black zone,run middle,2,2020
 1,13:53,3,10,long,83,-1.2400000000000002,PHI,PIT,0,38,black zone,,,2020
@@ -10035,7 +10035,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,2:00,2,9,long,74,0.36000000000000004,PIT,PHI,9,8,grey zone,run right,8,2020
 4,1:52,3,1,short,66,0.77,PIT,PHI,9,42,grey zone,run left,2,2020
 4,1:10,1,10,long,64,-0.67,PIT,PHI,9,32,grey zone,,,2020
-4,0:38,2,11,long,65,-0.8200000000000001,PIT,PHI,9,0:00:38,grey zone,,,2020
+4,0:38,2,11,long,65,-0.8200000000000001,PIT,PHI,9,38,grey zone,,,2020
 1,15:00,1,10,long,75,-0.55,NYJ,ARI,0,5,grey zone,pass short right,0,2020
 1,14:55,2,10,long,75,-0.42,NYJ,ARI,0,30,grey zone,run left,2,2020
 1,14:25,3,8,long,73,-0.7500000000000001,NYJ,ARI,0,37,grey zone,pass short right,7,2020
@@ -10193,7 +10193,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,2:29,3,3,short,48,1.1,ARI,NYJ,20,29,green zone,pass short right,5,2020
 4,2:00,1,10,long,43,-0.8100000000000003,ARI,NYJ,20,44,green zone,,,2020
 4,1:16,2,12,long,45,-0.8199999999999998,ARI,NYJ,20,43,green zone,,,2020
-4,0:33,3,13,long,46,-0.9600000000000001,ARI,NYJ,20,0:00:33,green zone,,,2020
+4,0:33,3,13,long,46,-0.9600000000000001,ARI,NYJ,20,33,green zone,,,2020
 1,15:00,1,10,long,75,0.5299999999999999,KAN,OAK,0,17,grey zone,run right,8,2020
 1,14:43,2,2,short,67,0.5900000000000001,KAN,OAK,0,37,grey zone,run right,9,2020
 1,14:06,1,10,long,58,-0.6599999999999999,KAN,OAK,0,9,grey zone,,,2020
@@ -10347,7 +10347,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,2:11,3,3,short,47,-1.42,OAK,KAN,8,11,green zone,pass short left,2,2020
 4,2:00,4,1,short,45,2.38,OAK,KAN,8,42,green zone,run middle,1,2020
 4,1:18,1,10,long,44,-0.6699999999999999,OAK,KAN,8,39,green zone,,,2020
-4,0:39,2,11,long,45,-0.8200000000000001,OAK,KAN,8,0:00:39,green zone,,,2020
+4,0:39,2,11,long,45,-0.8200000000000001,OAK,KAN,8,39,green zone,,,2020
 1,15:00,1,10,long,75,0.7200000000000001,JAX,HOU,0,36,grey zone,run middle,11,2020
 1,14:24,1,10,long,64,0.27,JAX,HOU,0,40,grey zone,pass short right,6,2020
 1,13:44,2,4,middle,58,-0.7100000000000001,JAX,HOU,0,6,grey zone,pass short left,0,2020
@@ -10495,7 +10495,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,1:38,1,10,long,68,0.73,HOU,JAX,16,11,grey zone,run right,11,2020
 4,1:27,1,10,long,57,1.91,HOU,JAX,16,50,grey zone,run right,29,2020
 4,0:37,1,10,long,28,-0.33000000000000007,HOU,JAX,16,0,green zone,,,2020
-4,0:37,1,15,long,33,-0.6200000000000001,HOU,JAX,16,0:00:37,green zone,run middle,2,2020
+4,0:37,1,15,long,33,-0.6200000000000001,HOU,JAX,16,37,green zone,run middle,2,2020
 1,15:00,1,10,long,75,0.13,SFO,MIA,0,30,grey zone,run right,5,2020
 1,14:30,2,5,middle,70,-0.7,SFO,MIA,0,36,grey zone,run left,,2020
 1,13:54,3,5,middle,70,-1.4100000000000001,SFO,MIA,0,5,grey zone,pass short left,0,2020
@@ -10640,7 +10640,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,2:38,3,1,short,22,-1.33,MIA,SFO,26,38,red zone,run left,,2020
 4,2:00,4,1,short,22,2.1,MIA,SFO,26,45,red zone,run left,2,2020
 4,1:15,1,10,long,20,-0.6800000000000002,MIA,SFO,26,40,red zone,,,2020
-4,0:35,2,11,long,21,-0.69,MIA,SFO,26,0:00:35,red zone,,,2020
+4,0:35,2,11,long,21,-0.69,MIA,SFO,26,35,red zone,,,2020
 1,14:56,1,10,long,75,-0.010000000000000009,CLE,IND,0,39,grey zone,run left,4,2020
 1,14:17,2,6,middle,71,0.7999999999999999,CLE,IND,0,36,grey zone,pass short right,8,2020
 1,13:41,1,10,long,63,2.11,CLE,IND,0,38,grey zone,pass deep right,32,2020
@@ -10779,7 +10779,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,1:10,3,7,middle,26,-1.22,CLE,IND,6,45,green zone,run left,-2,2020
 4,0:25,4,9,long,28,1.41,CLE,IND,9,9,green zone,field goal,success,2020
 4,0:16,1,10,long,78,-0.41,IND,CLE,-9,4,black zone,pass short left,1,2020
-4,0:12,2,9,long,77,1.66,IND,CLE,-9,0:00:12,black zone,pass short right,18,2020
+4,0:12,2,9,long,77,1.66,IND,CLE,-9,12,black zone,pass short right,18,2020
 1,15:00,1,10,long,75,-0.55,DAL,NYG,0,6,grey zone,pass short left,0,2020
 1,14:54,2,10,long,75,0.11000000000000001,DAL,NYG,0,34,grey zone,pass short left,6,2020
 1,14:20,3,4,middle,69,3.0100000000000002,DAL,NYG,0,15,grey zone,pass short middle,18,2020
@@ -10925,7 +10925,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,0:48,2,10,long,88,1.52,DAL,NYG,0,8,black zone,pass short middle,15,2020
 4,0:40,1,10,long,73,1.25,DAL,NYG,0,9,grey zone,pass deep right,19,2020
 4,0:31,1,10,long,54,2.5199999999999996,DAL,NYG,0,28,grey zone,pass deep right,38,2020
-4,0:03,1,10,long,16,-1.5099999999999998,DAL,NYG,3,0:00:03,red zone,field goal,success,2020
+4,0:03,1,10,long,16,-1.5099999999999998,DAL,NYG,3,3,red zone,field goal,success,2020
 1,14:53,1,10,long,77,-0.55,MIN,SEA,0,4,black zone,pass short middle,0,2020
 1,14:49,2,10,long,77,2.06,MIN,SEA,0,35,black zone,pass deep left,23,2020
 1,14:14,1,10,long,54,-0.81,MIN,SEA,0,37,grey zone,run left,-2,2020
@@ -11075,7 +11075,7 @@ OT,0:13,1,10,long,89,0.37,CIN,PHI,0,0:00:13,black zone,run middle,9,2020
 4,0:24,3,6,middle,6,-1.0499999999999998,SEA,MIN,-5,4,red zone,pass short right,0,2020
 4,0:20,4,6,middle,6,4.01,SEA,MIN,1,5,red zone,pass short right,6,2020
 4,0:15,1,10,long,75,0.66,MIN,SEA,-1,5,grey zone,pass short right,10,2020
-4,0:10,1,10,long,65,-0.55,MIN,SEA,-1,0:00:10,grey zone,,,2020
+4,0:10,1,10,long,65,-0.55,MIN,SEA,-1,10,grey zone,,,2020
 1,14:57,1,10,long,85,-0.22,SDG,NOR,0,32,black zone,run left,2,2020
 1,14:25,2,8,long,83,-0.6800000000000002,SDG,NOR,0,5,black zone,pass short right,0,2020
 1,14:20,3,8,long,83,-0.7799999999999998,SDG,NOR,0,47,black zone,run right,5,2020
@@ -11240,7 +11240,7 @@ OT,5:08,1,10,long,75,0.9900000000000001,SDG,NOR,-3,4,grey zone,,,2020
 OT,5:04,1,10,long,60,-0.010000000000000009,SDG,NOR,-3,32,grey zone,run right,4,2020
 OT,4:32,2,6,middle,56,-0.7000000000000001,SDG,NOR,-3,5,grey zone,pass short middle,0,2020
 OT,4:27,3,6,middle,56,-1.35,SDG,NOR,-3,4,grey zone,pass short middle,0,2020
-OT,4:23,4,6,middle,56,0.46,SDG,NOR,-3,0:04:23,grey zone,pass short left,5,2020
+OT,4:23,4,6,middle,56,0.46,SDG,NOR,-3,263,grey zone,pass short left,5,2020
 1,14:55,1,10,long,80,-0.14,BUF,TEN,0,36,black zone,run right,3,2020
 1,14:19,2,7,middle,77,-0.30000000000000004,BUF,TEN,0,38,black zone,run right,3,2020
 1,13:41,3,4,middle,74,-4.35,BUF,TEN,0,12,grey zone,pass deep left,interception,2020
@@ -11391,7 +11391,7 @@ OT,4:23,4,6,middle,56,0.46,SDG,NOR,-3,0:04:23,grey zone,pass short left,5,2020
 4,0:47,1,10,long,56,2.25,BUF,TEN,-26,9,grey zone,run middle,34,2020
 4,0:38,1,10,long,22,-0.5500000000000003,BUF,TEN,-26,4,red zone,pass short right,0,2020
 4,0:34,2,10,long,22,-0.41999999999999993,BUF,TEN,-26,20,red zone,pass short middle,2,2020
-4,0:14,3,8,long,20,0.36999999999999966,BUF,TEN,-26,0:00:14,red zone,pass short middle,11,2020
+4,0:14,3,8,long,20,0.36999999999999966,BUF,TEN,-26,14,red zone,pass short middle,11,2020
 1,14:55,1,10,long,83,-0.52,JAX,DET,0,36,black zone,run right,,2020
 1,14:19,2,10,long,83,-0.83,JAX,DET,0,38,black zone,run right,-1,2020
 1,13:41,3,11,long,84,-0.55,JAX,DET,0,46,black zone,pass short right,5,2020
@@ -11541,7 +11541,7 @@ OT,4:23,4,6,middle,56,0.46,SDG,NOR,-3,0:04:23,grey zone,pass short left,5,2020
 4,2:44,2,7,middle,34,0.8599999999999999,DET,JAX,18,44,green zone,run left,8,2020
 4,2:00,1,10,long,26,-0.6799999999999997,DET,JAX,18,44,green zone,,,2020
 4,1:16,2,11,long,27,-0.9500000000000002,DET,JAX,18,39,green zone,,,2020
-4,0:37,3,13,long,29,-0.8899999999999999,DET,JAX,18,0:00:37,green zone,,,2020
+4,0:37,3,13,long,29,-0.8899999999999999,DET,JAX,18,37,green zone,,,2020
 1,15:00,1,10,long,75,1.4500000000000002,IND,CIN,0,38,grey zone,pass short left,22,2020
 1,14:22,1,10,long,53,-4.78,IND,CIN,0,17,grey zone,pass short right,-2,2020
 1,14:05,1,10,long,43,0.27,CIN,IND,0,29,green zone,run left,6,2020
@@ -11692,7 +11692,7 @@ OT,4:23,4,6,middle,56,0.46,SDG,NOR,-3,0:04:23,grey zone,pass short left,5,2020
 4,1:15,1,10,long,39,-0.27,CIN,IND,-4,23,green zone,pass short middle,2,2020
 4,0:52,2,8,long,37,-0.43000000000000016,CIN,IND,-4,6,green zone,pass short left,2,2020
 4,0:46,3,6,middle,35,-2.76,CIN,IND,-4,7,green zone,pass deep middle,interception,2020
-4,0:39,1,10,long,77,-0.6799999999999999,IND,CIN,4,0:00:39,black zone,,,2020
+4,0:39,1,10,long,77,-0.6799999999999999,IND,CIN,4,39,black zone,,,2020
 1,14:54,1,10,long,90,-0.47,CAR,CHI,0,41,black zone,run middle,-1,2020
 1,14:13,2,11,long,91,-1.62,CAR,CHI,0,48,black zone,,,2020
 1,13:25,3,19,long,99,-3.1299999999999994,CAR,CHI,0,9,black zone,pass short left,interception,2020
@@ -11845,7 +11845,7 @@ OT,4:23,4,6,middle,56,0.46,SDG,NOR,-3,0:04:23,grey zone,pass short left,5,2020
 4,1:32,1,10,long,80,-3.5300000000000002,CAR,CHI,-7,4,black zone,pass short middle,interception,2020
 4,1:28,1,10,long,35,-0.6800000000000002,CHI,CAR,7,2,green zone,,,2020
 4,1:26,2,11,long,36,-0.9499999999999997,CHI,CAR,7,43,green zone,,,2020
-4,0:43,3,13,long,38,-0.9600000000000001,CHI,CAR,7,0:00:43,green zone,,,2020
+4,0:43,3,13,long,38,-0.9600000000000001,CHI,CAR,7,43,green zone,,,2020
 1,15:00,1,10,long,75,0.13,PIT,CLE,0,32,grey zone,run middle,5,2020
 1,14:28,2,5,middle,70,-0.7,PIT,CLE,0,4,grey zone,pass short middle,0,2020
 1,14:24,3,5,middle,70,2.68,PIT,CLE,0,41,grey zone,pass deep left,27,2020
@@ -11982,7 +11982,7 @@ OT,4:23,4,6,middle,56,0.46,SDG,NOR,-3,0:04:23,grey zone,pass short left,5,2020
 4,1:57,4,2,short,80,-0.3600000000000003,CLE,PIT,-31,13,black zone,punt,33,2020
 4,1:44,1,10,long,48,-0.6800000000000002,PIT,CLE,31,41,green zone,,,2020
 4,1:03,2,11,long,49,-0.82,PIT,CLE,31,40,green zone,,,2020
-4,0:23,3,12,long,50,-1.02,PIT,CLE,31,0:00:23,green zone,,,2020
+4,0:23,3,12,long,50,-1.02,PIT,CLE,31,23,green zone,,,2020
 1,15:00,1,10,long,75,-1.5899999999999999,PHI,BAL,0,43,grey zone,,,2020
 1,14:17,2,17,long,82,-1.96,PHI,BAL,0,47,black zone,pass short right,-6,2020
 1,13:30,3,23,long,88,0.44999999999999973,PHI,BAL,0,6,black zone,pass deep right,0,2020
@@ -12145,7 +12145,7 @@ OT,4:23,4,6,middle,56,0.46,SDG,NOR,-3,0:04:23,grey zone,pass short left,5,2020
 4,1:54,1,10,long,45,0.13000000000000034,BAL,PHI,2,6,green zone,run middle,5,2020
 4,1:48,2,5,middle,40,1.5899999999999994,BAL,PHI,2,48,green zone,run left,21,2020
 4,1:00,1,10,long,19,-0.6799999999999997,BAL,PHI,2,41,red zone,,,2020
-4,0:19,2,11,long,20,-0.8199999999999998,BAL,PHI,2,0:00:19,red zone,,,2020
+4,0:19,2,11,long,20,-0.8199999999999998,BAL,PHI,2,19,red zone,,,2020
 1,15:00,1,10,long,75,-0.32999999999999996,TEN,HOU,0,0,grey zone,,,2020
 1,15:00,1,15,long,80,-0.89,TEN,HOU,0,4,black zone,pass short right,0,2020
 1,14:56,2,15,long,80,0.12,TEN,HOU,0,32,black zone,pass short left,6,2020
@@ -12300,7 +12300,7 @@ OT,9:19,2,8,long,80,3.9099999999999997,TEN,HOU,0,36,black zone,pass short right,
 OT,8:43,1,10,long,27,1.1300000000000003,TEN,HOU,0,41,green zone,run middle,17,2020
 OT,8:02,1,10,long,10,-0.15000000000000036,TEN,HOU,0,48,red zone,run left,3,2020
 OT,7:14,2,7,middle,7,-0.5,TEN,HOU,0,39,red zone,pass short left,2,2020
-OT,6:35,3,5,middle,5,1.7400000000000002,TEN,HOU,6,0:06:35,red zone,run left,5,2020
+OT,6:35,3,5,middle,5,1.7400000000000002,TEN,HOU,6,395,red zone,run left,5,2020
 1,14:55,1,10,long,68,0.6699999999999999,WAS,NYG,0,28,grey zone,pass short left,9,2020
 1,14:27,2,1,short,59,0.06000000000000005,WAS,NYG,0,31,grey zone,run right,2,2020
 1,13:56,1,10,long,57,-0.010000000000000009,WAS,NYG,0,37,grey zone,pass short middle,4,2020
@@ -12432,7 +12432,7 @@ OT,6:35,3,5,middle,5,1.7400000000000002,TEN,HOU,6,0:06:35,red zone,run left,5,20
 4,0:46,1,10,long,22,-0.5500000000000003,WAS,NYG,-7,3,red zone,pass short left,0,2020
 4,0:43,2,10,long,22,3.44,WAS,NYG,-1,8,red zone,pass deep left,22,2020
 4,0:35,1,10,long,38,0.73,NYG,WAS,1,4,green zone,,,2020
-4,0:31,1,5,middle,33,-0.8699999999999997,NYG,WAS,1,0:00:31,green zone,,,2020
+4,0:31,1,5,middle,33,-0.8699999999999997,NYG,WAS,1,31,green zone,,,2020
 1,15:00,1,10,long,75,-0.010000000000000009,DEN,NWE,0,33,grey zone,run left,4,2020
 1,14:27,2,6,middle,71,2.98,DEN,NWE,0,31,grey zone,pass deep right,41,2020
 1,13:56,1,10,long,30,-0.14000000000000012,DEN,NWE,0,39,green zone,run middle,3,2020
@@ -12566,7 +12566,7 @@ OT,6:35,3,5,middle,5,1.7400000000000002,TEN,HOU,6,0:06:35,red zone,run left,5,20
 4,1:03,4,10,long,24,-2.41,NWE,DEN,-6,4,red zone,pass short right,0,2020
 4,0:59,1,10,long,76,-0.68,DEN,NWE,6,3,black zone,,,2020
 4,0:56,2,11,long,77,-0.9500000000000001,DEN,NWE,6,41,black zone,,,2020
-4,0:15,3,13,long,79,-0.9399999999999997,DEN,NWE,6,0:00:15,black zone,,,2020
+4,0:15,3,13,long,79,-0.9399999999999997,DEN,NWE,6,15,black zone,,,2020
 1,14:55,1,10,long,76,-4.18,MIN,ATL,0,12,black zone,pass deep right,interception,2020
 1,14:43,1,10,long,29,0.6800000000000002,ATL,MIN,0,35,green zone,run right,9,2020
 1,14:08,2,1,short,20,-0.010000000000000675,ATL,MIN,0,38,red zone,run right,1,2020
@@ -12712,7 +12712,7 @@ OT,6:35,3,5,middle,5,1.7400000000000002,TEN,HOU,6,0:06:35,red zone,run left,5,20
 4,1:58,1,10,long,61,0.7899999999999998,MIN,ATL,-25,23,grey zone,pass short left,12,2020
 4,1:35,1,10,long,49,4.68,MIN,ATL,-19,10,green zone,pass deep left,49,2020
 4,1:25,1,10,long,49,0.0,ATL,MIN,17,69,green zone,run left,4,2020
-4,0:16,2,6,middle,45,-0.8299999999999998,ATL,MIN,17,0:00:16,green zone,,,2020
+4,0:16,2,6,middle,45,-0.8299999999999998,ATL,MIN,17,16,green zone,,,2020
 1,15:00,1,10,long,75,-0.14,NYJ,MIA,0,36,grey zone,run left,3,2020
 1,14:24,2,7,middle,72,-0.7,NYJ,MIA,0,6,grey zone,pass deep left,0,2020
 1,14:18,3,7,middle,72,-1.27,NYJ,MIA,0,5,grey zone,pass deep left,0,2020
@@ -12862,7 +12862,7 @@ OT,6:35,3,5,middle,5,1.7400000000000002,TEN,HOU,6,0:06:35,red zone,run left,5,20
 4,2:00,2,9,long,92,-0.3600000000000001,MIA,NYJ,24,6,black zone,pass short left,2,2020
 4,1:54,3,7,middle,90,1.01,MIA,NYJ,24,45,black zone,pass short right,7,2020
 4,1:09,1,10,long,83,0.14,MIA,NYJ,24,46,black zone,run right,4,2020
-4,0:23,2,6,middle,79,-0.2,MIA,NYJ,24,0:00:23,black zone,run right,5,2020
+4,0:23,2,6,middle,79,-0.2,MIA,NYJ,24,23,black zone,run right,5,2020
 1,15:00,1,10,long,75,-0.55,GNB,TAM,0,42,grey zone,run left,,2020
 1,14:18,2,10,long,75,-0.6799999999999999,GNB,TAM,0,4,grey zone,pass short right,0,2020
 1,14:14,3,10,long,75,2.55,GNB,TAM,0,44,grey zone,pass short middle,20,2020
@@ -13005,7 +13005,7 @@ OT,6:35,3,5,middle,5,1.7400000000000002,TEN,HOU,6,0:06:35,red zone,run left,5,20
 4,2:33,2,8,long,41,-0.5700000000000003,TAM,GNB,28,33,green zone,run right,1,2020
 4,2:00,3,7,middle,40,2.29,TAM,GNB,28,48,green zone,run middle,19,2020
 4,1:12,1,10,long,21,-0.54,TAM,GNB,28,37,red zone,,,2020
-4,0:35,2,10,long,21,-0.69,TAM,GNB,28,0:00:35,red zone,,,2020
+4,0:35,2,10,long,21,-0.69,TAM,GNB,28,35,red zone,,,2020
 1,14:56,1,10,long,76,0.13,SFO,STL,0,37,black zone,run left,5,2020
 1,14:19,2,5,middle,71,2.5100000000000002,SFO,STL,0,33,grey zone,pass short middle,35,2020
 1,13:46,1,10,long,36,-0.27,SFO,STL,0,36,green zone,run right,2,2020
@@ -13156,7 +13156,7 @@ OT,6:35,3,5,middle,5,1.7400000000000002,TEN,HOU,6,0:06:35,red zone,run left,5,20
 4,2:33,2,10,long,65,-0.29,SFO,STL,8,33,grey zone,run right,3,2020
 4,2:00,3,7,middle,62,1.76,SFO,STL,8,47,grey zone,pass short middle,11,2020
 4,1:13,1,10,long,51,-0.6799999999999999,SFO,STL,8,41,grey zone,,,2020
-4,0:32,2,11,long,52,-0.81,SFO,STL,8,0:00:32,grey zone,,,2020
+4,0:32,2,11,long,52,-0.81,SFO,STL,8,32,grey zone,,,2020
 1,14:53,1,10,long,74,-0.54,BUF,KAN,0,5,grey zone,pass short right,0,2020
 1,14:48,2,10,long,74,-0.6900000000000001,BUF,KAN,0,5,grey zone,pass short left,0,2020
 1,14:43,3,10,long,74,-1.0699999999999998,BUF,KAN,0,6,grey zone,pass short left,0,2020
@@ -13295,7 +13295,7 @@ OT,6:35,3,5,middle,5,1.7400000000000002,TEN,HOU,6,0:06:35,red zone,run left,5,20
 4,1:34,2,7,middle,72,-0.6799999999999999,BUF,KAN,-9,14,grey zone,,,2020
 4,1:20,2,12,long,77,-2.84,BUF,KAN,-9,9,black zone,pass deep left,interception,2020
 4,1:11,1,10,long,38,-0.6799999999999997,KAN,BUF,9,37,green zone,,,2020
-4,0:34,2,11,long,39,-0.8200000000000001,KAN,BUF,9,0:00:34,green zone,,,2020
+4,0:34,2,11,long,39,-0.8200000000000001,KAN,BUF,9,34,green zone,,,2020
 1,15:00,1,10,long,75,-0.55,ARI,DAL,0,4,grey zone,pass short middle,0,2020
 1,14:56,2,10,long,75,-0.16,ARI,DAL,0,37,grey zone,run middle,4,2020
 1,14:19,3,6,middle,71,-1.3399999999999999,ARI,DAL,0,6,grey zone,pass deep middle,0,2020
@@ -13460,7 +13460,7 @@ OT,6:35,3,5,middle,5,1.7400000000000002,TEN,HOU,6,0:06:35,red zone,run left,5,20
 4,2:00,3,4,middle,69,6.83,ARI,DAL,27,11,grey zone,run middle,69,2020
 4,1:49,1,10,long,75,0.13,DAL,ARI,-28,34,grey zone,run middle,5,2020
 4,1:15,2,5,middle,70,0.6599999999999999,DAL,ARI,-28,38,grey zone,run left,7,2020
-4,0:37,1,10,long,63,-0.4099999999999999,DAL,ARI,-28,0:00:37,grey zone,run right,1,2020
+4,0:37,1,10,long,63,-0.4099999999999999,DAL,ARI,-28,37,grey zone,run right,1,2020
 1,15:00,1,10,long,75,0.7899999999999999,PHI,NYG,0,33,grey zone,run right,12,2020
 1,14:27,1,10,long,63,0.6600000000000001,PHI,NYG,0,20,grey zone,pass short left,10,2020
 1,14:07,1,10,long,53,0.1299999999999999,PHI,NYG,0,35,grey zone,run left,5,2020
@@ -13613,7 +13613,7 @@ OT,6:35,3,5,middle,5,1.7400000000000002,TEN,HOU,6,0:06:35,red zone,run left,5,20
 4,0:40,1,10,long,75,-1.02,NYG,PHI,-1,6,grey zone,,,2020
 4,0:34,1,20,long,85,0.19999999999999998,NYG,PHI,-1,5,black zone,pass short right,8,2020
 4,0:29,2,12,long,77,-4.23,NYG,PHI,-1,8,black zone,,,2020
-4,0:21,1,10,long,17,-0.7200000000000002,PHI,NYG,1,0:00:21,red zone,,,2020
+4,0:21,1,10,long,17,-0.7200000000000002,PHI,NYG,1,21,red zone,,,2020
 1,14:56,1,10,long,72,0.26,CIN,CLE,0,42,grey zone,pass short middle,6,2020
 1,14:14,2,4,middle,66,-0.8400000000000001,CIN,CLE,0,41,grey zone,run left,-1,2020
 1,13:33,3,5,middle,67,2.03,CIN,CLE,0,32,grey zone,pass short left,17,2020
@@ -13751,7 +13751,7 @@ OT,6:35,3,5,middle,5,1.7400000000000002,TEN,HOU,6,0:06:35,red zone,run left,5,20
 4,0:39,2,2,short,54,1.9700000000000002,CLE,CIN,-3,22,grey zone,pass deep right,30,2020
 4,0:17,1,10,long,24,-0.54,CLE,CIN,-3,1,red zone,,,2020
 4,0:16,2,10,long,24,3.57,CLE,CIN,3,12,red zone,pass deep right,24,2020
-4,0:04,1,10,long,58,-0.54,CIN,CLE,-3,0:00:04,grey zone,pass deep middle,0,2020
+4,0:04,1,10,long,58,-0.54,CIN,CLE,-3,4,grey zone,pass deep middle,0,2020
 1,14:56,1,10,long,82,-0.36,ATL,DET,0,25,black zone,run left,1,2020
 1,14:31,2,9,long,81,-0.72,ATL,DET,0,3,black zone,pass short middle,0,2020
 1,14:28,3,9,long,81,2.04,ATL,DET,0,39,black zone,pass short right,12,2020
@@ -13900,7 +13900,7 @@ OT,6:35,3,5,middle,5,1.7400000000000002,TEN,HOU,6,0:06:35,red zone,run left,5,20
 4,0:20,1,10,long,40,-0.5499999999999998,DET,ATL,-6,1,green zone,,,2020
 4,0:19,2,10,long,40,2.4699999999999998,DET,ATL,-6,16,green zone,pass deep left,29,2020
 4,0:03,1,10,long,11,-0.7000000000000002,DET,ATL,-6,1,red zone,,,2020
-4,0:02,2,10,long,11,2.8600000000000003,DET,ATL,0,0:00:02,red zone,pass short left,11,2020
+4,0:02,2,10,long,11,2.8600000000000003,DET,ATL,0,2,red zone,pass short left,11,2020
 1,15:00,1,10,long,75,0.13,WAS,DAL,0,38,grey zone,run right,5,2020
 1,14:22,2,5,middle,70,0.54,WAS,DAL,0,19,grey zone,,,2020
 1,14:03,2,1,short,66,0.25,WAS,DAL,0,42,grey zone,run right,5,2020
@@ -14039,7 +14039,7 @@ OT,6:35,3,5,middle,5,1.7400000000000002,TEN,HOU,6,0:06:35,red zone,run left,5,20
 4,2:44,1,10,long,81,0.06,WAS,DAL,22,44,black zone,run right,4,2020
 4,2:00,2,6,middle,77,-1.15,WAS,DAL,22,42,black zone,run right,-3,2020
 4,1:18,3,9,long,80,1.94,WAS,DAL,22,44,black zone,run right,11,2020
-4,0:34,1,10,long,69,-0.6799999999999999,WAS,DAL,22,0:00:34,grey zone,,,2020
+4,0:34,1,10,long,69,-0.6799999999999999,WAS,DAL,22,34,grey zone,,,2020
 1,15:00,1,10,long,75,-0.55,PIT,TEN,0,4,grey zone,pass short right,0,2020
 1,14:56,2,10,long,75,0.24,PIT,TEN,0,46,grey zone,pass short middle,7,2020
 1,14:10,3,3,short,68,1.69,PIT,TEN,0,32,grey zone,pass short left,14,2020
@@ -14189,7 +14189,7 @@ OT,6:35,3,5,middle,5,1.7400000000000002,TEN,HOU,6,0:06:35,red zone,run left,5,20
 4,0:40,2,20,long,35,0.27,TEN,PIT,-3,16,green zone,pass short right,7,2020
 4,0:24,3,13,long,28,-0.6899999999999997,TEN,PIT,-3,5,green zone,pass deep right,0,2020
 4,0:19,4,13,long,28,-2.8600000000000003,TEN,PIT,-3,5,green zone,field goal,failure,2020
-4,0:14,1,10,long,65,-0.68,PIT,TEN,3,0:00:14,grey zone,,,2020
+4,0:14,1,10,long,65,-0.68,PIT,TEN,3,14,grey zone,,,2020
 1,14:56,1,10,long,78,0.54,NYJ,BUF,0,34,black zone,run right,8,2020
 1,14:22,2,2,short,70,0.71,NYJ,BUF,0,37,grey zone,run middle,11,2020
 1,13:45,1,10,long,59,1.26,NYJ,BUF,0,43,grey zone,pass short left,19,2020
@@ -14337,7 +14337,7 @@ OT,6:35,3,5,middle,5,1.7400000000000002,TEN,HOU,6,0:06:35,red zone,run left,5,20
 4,1:37,1,20,long,78,-1.5,NYJ,BUF,-8,21,black zone,,,2020
 4,1:16,2,22,long,80,-4.05,NYJ,BUF,-8,8,black zone,pass short right,interception,2020
 4,1:08,1,9,long,9,-0.9499999999999993,BUF,NYJ,8,29,red zone,,,2020
-4,0:39,2,10,long,10,-1.0700000000000003,BUF,NYJ,8,0:00:39,red zone,,,2020
+4,0:39,2,10,long,10,-1.0700000000000003,BUF,NYJ,8,39,red zone,,,2020
 1,15:00,1,10,long,75,-0.010000000000000009,NOR,CAR,0,31,grey zone,run left,4,2020
 1,14:29,2,6,middle,71,0.67,NOR,CAR,0,29,grey zone,pass short right,6,2020
 1,14:00,1,10,long,65,0.6699999999999999,NOR,CAR,0,35,grey zone,pass short right,9,2020
@@ -14459,7 +14459,7 @@ OT,6:35,3,5,middle,5,1.7400000000000002,TEN,HOU,6,0:06:35,red zone,run left,5,20
 4,1:55,1,10,long,45,0.26000000000000023,NOR,CAR,3,4,green zone,run right,6,2020
 4,1:51,2,4,middle,39,-0.31000000000000005,NOR,CAR,3,46,green zone,run left,3,2020
 4,1:05,3,1,short,36,0.77,NOR,CAR,3,38,green zone,run right,2,2020
-4,0:27,1,10,long,34,-0.6699999999999999,NOR,CAR,3,0:00:27,green zone,,,2020
+4,0:27,1,10,long,34,-0.6699999999999999,NOR,CAR,3,27,green zone,,,2020
 1,15:00,1,10,long,75,-0.14,GNB,HOU,0,38,grey zone,run left,3,2020
 1,14:22,2,7,middle,72,-0.03999999999999998,GNB,HOU,0,43,grey zone,run left,5,2020
 1,13:39,3,2,short,67,1.04,GNB,HOU,0,21,grey zone,,,2020
@@ -14604,7 +14604,7 @@ OT,6:35,3,5,middle,5,1.7400000000000002,TEN,HOU,6,0:06:35,red zone,run left,5,20
 4,1:37,3,6,middle,6,2.96,HOU,GNB,-16,7,red zone,pass short left,6,2020
 4,1:30,1,10,long,47,-3.5300000000000002,HOU,GNB,-15,8,green zone,pass short middle,8,2020
 4,1:22,1,10,long,68,-0.68,GNB,HOU,15,42,grey zone,,,2020
-4,0:40,2,11,long,69,-0.6799999999999999,GNB,HOU,15,0:00:40,grey zone,,,2020
+4,0:40,2,11,long,69,-0.6799999999999999,GNB,HOU,15,40,grey zone,,,2020
 1,14:53,1,10,long,76,-0.54,TAM,OAK,0,6,black zone,pass deep left,0,2020
 1,14:47,2,10,long,76,-0.69,TAM,OAK,0,29,black zone,run right,,2020
 1,14:18,3,10,long,76,-0.8800000000000001,TAM,OAK,0,39,black zone,pass short middle,3,2020
@@ -14753,7 +14753,7 @@ OT,6:35,3,5,middle,5,1.7400000000000002,TEN,HOU,6,0:06:35,red zone,run left,5,20
 4,2:00,3,6,middle,71,1.57,OAK,TAM,-25,27,grey zone,run left,9,2020
 4,1:33,1,10,long,62,-0.28,OAK,TAM,-25,36,grey zone,run right,2,2020
 4,0:57,2,8,long,60,-0.5599999999999999,OAK,TAM,-25,34,grey zone,run right,1,2020
-4,0:23,3,7,middle,59,-0.89,OAK,TAM,-25,0:00:23,grey zone,run right,6,2020
+4,0:23,3,7,middle,59,-0.89,OAK,TAM,-25,23,grey zone,run right,6,2020
 1,15:00,1,10,long,75,-0.55,JAX,SDG,0,4,grey zone,pass short right,0,2020
 1,14:56,2,10,long,75,0.11000000000000001,JAX,SDG,0,37,grey zone,run middle,6,2020
 1,14:19,3,4,middle,69,-1.48,JAX,SDG,0,3,grey zone,pass short middle,0,2020
@@ -14906,7 +14906,7 @@ OT,6:35,3,5,middle,5,1.7400000000000002,TEN,HOU,6,0:06:35,red zone,run left,5,20
 4,2:25,3,1,short,17,0.6299999999999999,SDG,JAX,10,25,red zone,run right,2,2020
 4,2:00,1,10,long,15,-0.77,SDG,JAX,10,39,red zone,,,2020
 4,1:21,2,11,long,16,-0.8300000000000001,SDG,JAX,10,39,red zone,,,2020
-4,0:42,3,12,long,17,-0.6699999999999999,SDG,JAX,10,0:00:42,red zone,,,2020
+4,0:42,3,12,long,17,-0.6699999999999999,SDG,JAX,10,42,red zone,,,2020
 1,15:00,1,10,long,75,-0.14,SFO,NWE,0,33,grey zone,run right,3,2020
 1,14:27,2,7,middle,72,-0.16999999999999998,SFO,NWE,0,42,grey zone,run left,4,2020
 1,13:45,3,3,short,68,1.03,SFO,NWE,0,39,grey zone,run left,4,2020
@@ -15033,7 +15033,7 @@ OT,6:35,3,5,middle,5,1.7400000000000002,TEN,HOU,6,0:06:35,red zone,run left,5,20
 4,0:38,1,10,long,42,-0.5499999999999998,NWE,SFO,-27,6,green zone,pass short right,0,2020
 4,0:32,2,10,long,42,1.5399999999999996,NWE,SFO,-27,7,green zone,pass short right,15,2020
 4,0:25,1,10,long,27,-0.5499999999999998,NWE,SFO,-27,8,green zone,pass short left,0,2020
-4,0:17,2,10,long,27,-1.6099999999999999,NWE,SFO,-27,0:00:17,green zone,,,2020
+4,0:17,2,10,long,27,-1.6099999999999999,NWE,SFO,-27,17,green zone,,,2020
 1,15:00,1,10,long,75,-0.6799999999999999,DEN,KAN,0,35,grey zone,run left,-1,2020
 1,14:25,2,11,long,76,-0.74,DEN,KAN,0,17,black zone,,,2020
 1,14:08,2,16,long,81,-0.20999999999999996,DEN,KAN,0,42,black zone,pass short right,3,2020
@@ -15173,7 +15173,7 @@ OT,6:35,3,5,middle,5,1.7400000000000002,TEN,HOU,6,0:06:35,red zone,run left,5,20
 4,1:42,4,10,long,49,-2.19,DEN,KAN,-27,6,green zone,pass deep left,0,2020
 4,1:36,1,10,long,51,-0.6799999999999999,KAN,DEN,27,41,grey zone,,,2020
 4,0:55,2,11,long,52,-0.81,KAN,DEN,27,32,grey zone,,,2020
-4,0:23,3,12,long,53,-1.02,KAN,DEN,27,0:00:23,grey zone,,,2020
+4,0:23,3,12,long,53,-1.02,KAN,DEN,27,23,grey zone,,,2020
 1,15:00,1,10,long,75,2.24,SEA,ARI,0,40,grey zone,pass deep left,34,2020
 1,14:20,1,10,long,41,1.12,SEA,ARI,0,39,green zone,pass short right,17,2020
 1,13:41,1,10,long,24,0.0,SEA,ARI,0,33,red zone,pass short right,4,2020
@@ -15357,7 +15357,7 @@ OT,0:54,2,1,short,40,0.1200000000000001,ARI,SEA,0,20,green zone,run middle,3,202
 OT,0:34,1,10,long,37,-0.5500000000000003,ARI,SEA,0,1,green zone,,,2020
 OT,0:33,2,10,long,37,0.2400000000000002,ARI,SEA,0,8,green zone,pass short right,7,2020
 OT,0:25,3,3,short,30,-1.33,ARI,SEA,0,5,green zone,pass deep right,0,2020
-OT,0:20,4,3,short,30,1.52,ARI,SEA,3,0:00:20,green zone,field goal,success,2020
+OT,0:20,4,3,short,30,1.52,ARI,SEA,3,20,green zone,field goal,success,2020
 1,14:53,1,10,long,70,-0.1399999999999999,CHI,STL,0,45,grey zone,run left,3,2020
 1,14:08,2,7,middle,67,-0.5700000000000001,CHI,STL,0,40,grey zone,run middle,1,2020
 1,13:28,3,6,middle,66,1.5,CHI,STL,0,28,grey zone,pass short left,8,2020
@@ -15507,7 +15507,7 @@ OT,0:20,4,3,short,30,1.52,ARI,SEA,3,0:00:20,green zone,field goal,success,2020
 4,1:42,3,10,long,58,-1.61,CHI,STL,-14,32,grey zone,,,2020
 4,1:10,4,18,long,66,-2.2699999999999996,CHI,STL,-14,6,grey zone,pass deep left,0,2020
 4,1:04,1,10,long,33,-0.6799999999999997,STL,CHI,14,30,green zone,,,2020
-4,0:34,2,11,long,34,-0.8200000000000003,STL,CHI,14,0:00:34,green zone,,,2020
+4,0:34,2,11,long,34,-0.8200000000000003,STL,CHI,14,34,green zone,,,2020
 1,15:00,1,10,long,75,1.58,ATL,CAR,0,34,grey zone,pass deep middle,24,2020
 1,14:26,1,10,long,51,1.85,ATL,CAR,0,39,grey zone,pass deep left,28,2020
 1,13:47,1,10,long,23,0.7400000000000002,ATL,CAR,0,36,red zone,pass short left,11,2020
@@ -15643,7 +15643,7 @@ OT,0:20,4,3,short,30,1.52,ARI,SEA,3,0:00:20,green zone,field goal,success,2020
 4,1:11,2,10,long,34,-0.16000000000000014,CAR,ATL,-8,7,green zone,run right,4,2020
 4,1:04,3,6,middle,30,-2.26,CAR,ATL,-8,7,green zone,pass deep left,interception,2020
 4,0:57,1,10,long,88,-0.5,ATL,CAR,8,33,black zone,,,2020
-4,0:24,2,11,long,89,-0.7999999999999999,ATL,CAR,8,0:00:24,black zone,,,2020
+4,0:24,2,11,long,89,-0.7999999999999999,ATL,CAR,8,24,black zone,,,2020
 1,15:00,1,10,long,75,0.4,NWE,BUF,0,26,grey zone,pass short right,7,2020
 1,14:34,2,3,short,68,0.52,NWE,BUF,0,29,grey zone,run left,7,2020
 1,14:05,1,10,long,61,0.0,NWE,BUF,0,34,grey zone,run right,4,2020
@@ -15781,7 +15781,7 @@ OT,0:20,4,3,short,30,1.52,ARI,SEA,3,0:00:20,green zone,field goal,success,2020
 4,0:37,2,10,long,19,-3.43,NWE,BUF,-3,6,red zone,run left,5,2020
 4,0:31,1,10,long,87,-0.45,BUF,NWE,3,2,black zone,,,2020
 4,0:29,2,10,long,87,-0.77,BUF,NWE,3,3,black zone,,,2020
-4,0:26,3,11,long,88,-0.9500000000000002,BUF,NWE,3,0:00:26,black zone,,,2020
+4,0:26,3,11,long,88,-0.9500000000000002,BUF,NWE,3,26,black zone,,,2020
 1,15:00,1,10,long,75,-0.010000000000000009,BAL,PIT,0,43,grey zone,run right,4,2020
 1,14:17,2,6,middle,71,-0.7,BAL,PIT,0,3,grey zone,pass short left,0,2020
 1,14:14,3,6,middle,71,-6.9,BAL,PIT,-6,8,grey zone,pass short middle,interception,2020
@@ -15927,7 +15927,7 @@ OT,0:20,4,3,short,30,1.52,ARI,SEA,3,0:00:20,green zone,field goal,success,2020
 4,0:29,3,2,short,55,-1.6099999999999999,BAL,PIT,-4,3,grey zone,pass short middle,0,2020
 4,0:26,4,2,short,55,4.43,BAL,PIT,-4,18,grey zone,pass deep middle,32,2020
 4,0:08,1,10,long,23,-0.54,BAL,PIT,-4,3,red zone,pass short right,0,2020
-4,0:05,2,10,long,23,-0.69,BAL,PIT,-4,0:00:05,red zone,pass deep middle,0,2020
+4,0:05,2,10,long,23,-0.69,BAL,PIT,-4,5,red zone,pass deep middle,0,2020
 1,15:00,1,10,long,75,0.7300000000000001,STL,MIA,0,0,grey zone,,,2020
 1,15:00,1,5,middle,70,-0.06000000000000005,STL,MIA,0,41,grey zone,run right,4,2020
 1,14:19,2,1,short,66,0.18999999999999995,STL,MIA,0,37,grey zone,run right,4,2020
@@ -16091,7 +16091,7 @@ OT,0:20,4,3,short,30,1.52,ARI,SEA,3,0:00:20,green zone,field goal,success,2020
 4,0:53,1,10,long,84,1.08,STL,MIA,-11,19,black zone,pass short middle,14,2020
 4,0:34,1,10,long,70,-0.5499999999999999,STL,MIA,-11,1,grey zone,,,2020
 4,0:33,2,10,long,70,-0.16,STL,MIA,-11,18,grey zone,pass short right,4,2020
-4,0:15,3,6,middle,66,1.37,STL,MIA,-11,0:00:15,grey zone,pass short right,6,2020
+4,0:15,3,6,middle,66,1.37,STL,MIA,-11,15,grey zone,pass short right,6,2020
 1,14:52,1,10,long,90,-0.18000000000000005,KAN,NYJ,0,36,black zone,run middle,3,2020
 1,14:16,2,7,middle,87,1.23,KAN,NYJ,0,35,black zone,pass short right,13,2020
 1,13:41,1,10,long,74,0.68,KAN,NYJ,0,39,grey zone,pass short left,9,2020
@@ -16232,7 +16232,7 @@ OT,0:20,4,3,short,30,1.52,ARI,SEA,3,0:00:20,green zone,field goal,success,2020
 4,2:00,4,10,long,34,-2.33,KAN,NYJ,26,4,green zone,pass short right,0,2020
 4,1:56,1,10,long,65,0.53,NYJ,KAN,-26,39,grey zone,run left,8,2020
 4,1:17,2,2,short,57,0.32999999999999985,NYJ,KAN,-26,40,grey zone,run right,5,2020
-4,0:37,1,10,long,52,-0.2799999999999998,NYJ,KAN,-26,0:00:37,grey zone,run right,2,2020
+4,0:37,1,10,long,52,-0.2799999999999998,NYJ,KAN,-26,37,grey zone,run right,2,2020
 1,15:00,1,10,long,75,-0.010000000000000009,GNB,MIN,0,36,grey zone,run left,4,2020
 1,14:24,2,6,middle,71,0.7999999999999999,GNB,MIN,0,43,grey zone,pass short right,8,2020
 1,13:41,1,10,long,63,0.27,GNB,MIN,0,41,grey zone,run right,6,2020
@@ -16366,7 +16366,7 @@ OT,0:20,4,3,short,30,1.52,ARI,SEA,3,0:00:20,green zone,field goal,success,2020
 4,0:42,2,3,short,65,0.52,GNB,MIN,-6,5,grey zone,pass short left,7,2020
 4,0:37,1,10,long,58,1.12,GNB,MIN,-6,24,grey zone,pass short left,17,2020
 4,0:13,1,10,long,41,-0.54,GNB,MIN,-6,1,green zone,,,2020
-4,0:12,2,10,long,41,-2.31,GNB,MIN,-6,0:00:12,green zone,,,2020
+4,0:12,2,10,long,41,-2.31,GNB,MIN,-6,12,green zone,,,2020
 1,14:56,1,10,long,76,-0.27,IND,DET,0,39,black zone,run left,2,2020
 1,14:17,2,8,long,74,1.9899999999999998,IND,DET,0,32,grey zone,pass short right,24,2020
 1,13:45,1,10,long,50,-0.4099999999999997,IND,DET,0,41,green zone,run right,1,2020
@@ -16516,7 +16516,7 @@ OT,0:20,4,3,short,30,1.52,ARI,SEA,3,0:00:20,green zone,field goal,success,2020
 4,2:23,1,10,long,66,-0.1399999999999999,IND,DET,20,23,grey zone,run middle,3,2020
 4,2:00,2,7,middle,63,1.2599999999999998,IND,DET,20,44,grey zone,run right,14,2020
 4,1:16,1,10,long,49,-0.8099999999999998,IND,DET,20,41,green zone,,,2020
-4,0:35,2,12,long,51,-0.68,IND,DET,20,0:00:35,grey zone,,,2020
+4,0:35,2,12,long,51,-0.68,IND,DET,20,35,grey zone,,,2020
 1,14:54,1,10,long,75,1.12,OAK,CLE,0,20,grey zone,pass short right,2,2020
 1,14:34,1,10,long,58,0.27,OAK,CLE,0,40,grey zone,run right,6,2020
 1,13:54,2,4,middle,52,0.45999999999999996,OAK,CLE,0,33,grey zone,run right,5,2020
@@ -16654,7 +16654,7 @@ OT,0:20,4,3,short,30,1.52,ARI,SEA,3,0:00:20,green zone,field goal,success,2020
 4,1:41,1,10,long,55,0.13000000000000012,OAK,CLE,10,5,grey zone,run right,5,2020
 4,1:36,2,5,middle,50,-0.43999999999999995,OAK,CLE,10,43,green zone,run left,2,2020
 4,0:53,3,3,short,48,0.9699999999999998,OAK,CLE,10,33,green zone,run right,3,2020
-4,0:20,1,10,long,45,-0.6799999999999999,OAK,CLE,10,0:00:20,green zone,,,2020
+4,0:20,1,10,long,45,-0.6799999999999999,OAK,CLE,10,20,green zone,,,2020
 1,14:53,1,10,long,72,0.26,CIN,TEN,0,32,grey zone,run left,6,2020
 1,14:21,2,4,middle,66,0.73,CIN,TEN,0,35,grey zone,pass short middle,9,2020
 1,13:46,1,10,long,57,0.6700000000000002,CIN,TEN,0,37,grey zone,run right,9,2020
@@ -16802,7 +16802,7 @@ OT,0:20,4,3,short,30,1.52,ARI,SEA,3,0:00:20,green zone,field goal,success,2020
 4,1:09,3,2,short,45,-1.5499999999999998,CIN,TEN,11,46,green zone,run right,1,2020
 4,0:23,4,1,short,44,-0.33,CIN,TEN,11,1,green zone,,,2020
 4,0:22,4,6,middle,49,0.38,CIN,TEN,11,6,green zone,punt,47,2020
-4,0:16,1,10,long,98,0.18,TEN,CIN,-11,0:00:16,black zone,run left,8,2020
+4,0:16,1,10,long,98,0.18,TEN,CIN,-11,16,black zone,run left,8,2020
 1,15:00,1,10,long,75,-0.27999999999999997,DEN,SDG,0,30,grey zone,run middle,2,2020
 1,14:30,2,8,long,73,-0.8200000000000001,DEN,SDG,0,36,grey zone,run left,-1,2020
 1,13:54,3,9,long,74,-0.8800000000000001,DEN,SDG,0,43,grey zone,pass short middle,4,2020
@@ -16968,7 +16968,7 @@ OT,0:20,4,3,short,30,1.52,ARI,SEA,3,0:00:20,green zone,field goal,success,2020
 4,0:14,2,4,middle,18,-0.7200000000000002,DEN,SDG,-6,1,red zone,,,2020
 4,0:13,3,4,middle,18,-1.25,DEN,SDG,-6,6,red zone,pass deep right,0,2020
 4,0:07,4,4,middle,18,4.65,DEN,SDG,-6,6,red zone,,,2020
-4,0:01,1,1,short,1,0.03000000000000025,DEN,SDG,0,0:00:01,red zone,pass short right,1,2020
+4,0:01,1,1,short,1,0.03000000000000025,DEN,SDG,0,1,red zone,pass short right,1,2020
 1,15:00,1,10,long,75,-0.27999999999999997,NOR,CHI,0,30,grey zone,run left,2,2020
 1,14:30,2,8,long,73,-0.29000000000000004,NOR,CHI,0,36,grey zone,run left,3,2020
 1,13:54,3,5,middle,70,1.49,NOR,CHI,0,37,grey zone,run left,9,2020
@@ -17134,7 +17134,7 @@ OT,2:00,1,10,long,38,-0.27,NOR,CHI,0,9,green zone,run left,2,2020
 OT,1:51,2,8,long,36,0.73,NOR,CHI,0,4,green zone,,,2020
 OT,1:47,1,10,long,31,1.33,NOR,CHI,0,7,green zone,run right,20,2020
 OT,1:40,1,10,long,11,-0.5,NOR,CHI,0,0,red zone,,,2020
-OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,success,2020
+OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,100,red zone,field goal,success,2020
 1,15:00,1,10,long,75,-0.95,SEA,SFO,0,36,grey zone,pass short left,-3,2020
 1,14:24,2,13,long,78,-2.21,SEA,SFO,0,40,black zone,,,2020
 1,13:44,3,21,long,86,0.5899999999999999,SEA,SFO,0,18,black zone,pass short right,7,2020
@@ -17284,7 +17284,7 @@ OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,s
 4,1:55,3,3,short,3,2.2800000000000002,SFO,SEA,-11,4,red zone,pass short right,3,2020
 4,1:51,1,10,long,42,-0.6800000000000002,SEA,SFO,10,41,green zone,,,2020
 4,1:10,2,11,long,43,-0.8199999999999998,SEA,SFO,10,42,green zone,,,2020
-4,0:28,3,12,long,44,-1.02,SEA,SFO,10,0:00:28,green zone,,,2020
+4,0:28,3,12,long,44,-1.02,SEA,SFO,10,28,green zone,,,2020
 1,14:55,1,10,long,78,0.4000000000000001,DAL,PHI,0,34,black zone,run middle,7,2020
 1,14:21,2,3,short,71,1.3199999999999998,DAL,PHI,0,41,grey zone,run left,19,2020
 1,13:40,1,10,long,52,-0.5499999999999998,DAL,PHI,0,8,grey zone,pass short right,0,2020
@@ -17439,7 +17439,7 @@ OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,s
 4,0:31,2,10,long,31,0.5,DAL,PHI,-14,7,green zone,run right,9,2020
 4,0:24,3,1,short,22,1.1099999999999999,DAL,PHI,-14,15,red zone,pass short left,7,2020
 4,0:09,1,10,long,15,-0.6299999999999999,DAL,PHI,-14,6,red zone,pass short left,0,2020
-4,0:03,2,10,long,15,-0.040000000000000036,DAL,PHI,-14,0:00:03,red zone,pass short left,10,2020
+4,0:03,2,10,long,15,-0.040000000000000036,DAL,PHI,-14,3,red zone,pass short left,10,2020
 1,14:55,1,10,long,75,-0.27999999999999997,TAM,NYG,0,30,grey zone,run right,2,2020
 1,14:25,2,8,long,73,1.0,TAM,NYG,0,35,grey zone,pass short left,9,2020
 1,13:50,1,10,long,64,0.0,TAM,NYG,0,34,grey zone,run right,4,2020
@@ -17595,7 +17595,7 @@ OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,s
 4,0:59,1,10,long,29,0.6699999999999995,NYG,TAM,-8,21,green zone,pass short right,10,2020
 4,0:38,1,10,long,19,-0.5599999999999996,NYG,TAM,-8,5,red zone,pass short right,0,2020
 4,0:33,2,10,long,19,3.25,NYG,TAM,-2,6,red zone,pass deep middle,19,2020
-4,0:27,1,10,long,44,-0.6699999999999999,TAM,NYG,2,0:00:27,green zone,,,2020
+4,0:27,1,10,long,44,-0.6699999999999999,TAM,NYG,2,27,green zone,,,2020
 1,15:00,1,10,long,75,0.13,GNB,SFO,0,30,grey zone,pass short left,5,2020
 1,14:30,2,5,middle,70,0.9199999999999999,GNB,SFO,0,41,grey zone,run right,11,2020
 1,13:49,1,10,long,59,0.27,GNB,SFO,0,38,grey zone,run left,6,2020
@@ -17729,7 +17729,7 @@ OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,s
 4,0:20,1,8,long,8,-0.7999999999999998,SFO,GNB,-24,5,red zone,pass short middle,0,2020
 4,0:15,2,8,long,8,0.5999999999999996,SFO,GNB,-24,7,red zone,pass short right,7,2020
 4,0:08,3,1,short,1,1.83,SFO,GNB,-18,6,red zone,run middle,1,2020
-4,0:02,1,10,long,72,-0.68,GNB,SFO,17,0:00:02,grey zone,,,2020
+4,0:02,1,10,long,72,-0.68,GNB,SFO,17,2,grey zone,,,2020
 1,14:51,1,10,long,45,0.26000000000000023,BUF,SEA,0,23,green zone,pass short right,6,2020
 1,14:28,2,4,middle,39,1.06,BUF,SEA,0,47,green zone,pass short left,14,2020
 1,13:41,1,10,long,25,3.09,BUF,SEA,6,6,red zone,pass deep left,25,2020
@@ -17874,7 +17874,7 @@ OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,s
 4,1:40,3,1,short,41,0.71,BUF,SEA,10,5,green zone,run right,1,2020
 4,1:35,1,10,long,40,-0.6799999999999997,BUF,SEA,10,41,green zone,,,2020
 4,0:54,2,11,long,41,-0.8200000000000003,BUF,SEA,10,18,green zone,,,2020
-4,0:36,3,12,long,42,-1.02,BUF,SEA,10,0:00:36,green zone,,,2020
+4,0:36,3,12,long,42,-1.02,BUF,SEA,10,36,green zone,,,2020
 1,15:00,1,10,long,75,0.7200000000000001,ATL,DEN,0,29,grey zone,pass short left,11,2020
 1,14:31,1,10,long,64,-0.54,ATL,DEN,0,41,grey zone,run left,,2020
 1,13:50,2,10,long,64,-0.030000000000000027,ATL,DEN,0,38,grey zone,pass short left,5,2020
@@ -18034,7 +18034,7 @@ OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,s
 4,0:38,2,10,long,80,-0.69,DEN,ATL,-7,7,black zone,pass short right,0,2020
 4,0:31,3,10,long,80,-1.0699999999999998,DEN,ATL,-7,4,black zone,pass short left,0,2020
 4,0:27,4,10,long,80,-2.28,DEN,ATL,-7,4,black zone,,,2020
-4,0:23,1,10,long,19,-0.6799999999999997,ATL,DEN,7,0:00:23,red zone,,,2020
+4,0:23,1,10,long,19,-0.6799999999999997,ATL,DEN,7,23,red zone,,,2020
 1,15:00,1,10,long,75,0.26,NYG,WAS,0,24,grey zone,pass short left,6,2020
 1,14:36,2,4,middle,69,0.6,NYG,WAS,0,38,grey zone,run right,7,2020
 1,13:58,1,10,long,62,1.18,NYG,WAS,0,41,grey zone,run right,18,2020
@@ -18179,7 +18179,7 @@ OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,s
 4,1:48,1,10,long,72,-0.010000000000000009,WAS,NYG,-3,25,grey zone,pass short middle,4,2020
 4,1:23,2,6,middle,68,-4.38,WAS,NYG,-3,8,grey zone,pass short middle,interception,2020
 4,1:15,1,10,long,30,-0.6800000000000002,NYG,WAS,3,43,green zone,,,2020
-4,0:32,2,11,long,31,-0.8199999999999998,NYG,WAS,3,0:00:32,green zone,,,2020
+4,0:32,2,11,long,31,-0.8199999999999998,NYG,WAS,3,32,green zone,,,2020
 1,15:00,1,10,long,75,-0.55,TEN,CHI,0,4,grey zone,pass short middle,0,2020
 1,14:56,2,10,long,75,-0.29000000000000004,TEN,CHI,0,37,grey zone,run right,3,2020
 1,14:19,3,7,middle,72,-1.27,TEN,CHI,0,4,grey zone,pass short right,0,2020
@@ -18333,7 +18333,7 @@ OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,s
 4,1:25,1,10,long,19,1.0600000000000005,CHI,TEN,-14,18,red zone,pass short left,11,2020
 4,1:07,1,8,long,8,1.63,CHI,TEN,-8,4,red zone,pass short right,8,2020
 4,1:03,1,10,long,48,-0.6800000000000002,TEN,CHI,7,25,green zone,,,2020
-4,0:38,2,11,long,49,-0.82,TEN,CHI,7,0:00:38,green zone,,,2020
+4,0:38,2,11,long,49,-0.82,TEN,CHI,7,38,green zone,,,2020
 1,15:00,1,10,long,75,-0.55,DET,MIN,0,6,grey zone,pass deep left,0,2020
 1,14:54,2,10,long,75,0.37,DET,MIN,0,36,grey zone,run left,8,2020
 1,14:18,3,2,short,67,-1.54,DET,MIN,0,46,grey zone,pass short left,1,2020
@@ -18480,7 +18480,7 @@ OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,s
 4,0:22,2,2,short,45,0.8500000000000001,DET,MIN,-14,12,green zone,pass short left,13,2020
 4,0:10,1,10,long,32,-0.5500000000000003,DET,MIN,-14,1,green zone,,,2020
 4,0:09,2,10,long,32,0.5,DET,MIN,-14,6,green zone,pass short right,9,2020
-4,0:03,3,1,short,23,-0.08999999999999986,DET,MIN,-14,0:00:03,red zone,pass short left,11,2020
+4,0:03,3,1,short,23,-0.08999999999999986,DET,MIN,-14,3,red zone,pass short left,11,2020
 1,15:00,1,10,long,75,0.4,CAR,KAN,0,38,grey zone,pass short left,7,2020
 1,14:22,2,3,short,68,0.32000000000000006,CAR,KAN,0,35,grey zone,pass short right,4,2020
 1,13:47,1,10,long,64,0.32999999999999985,CAR,KAN,0,22,grey zone,,,2020
@@ -18636,7 +18636,7 @@ OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,s
 4,0:10,1,10,long,49,-0.5399999999999998,CAR,KAN,-2,1,green zone,,,2020
 4,0:09,2,10,long,49,-0.69,CAR,KAN,-2,4,green zone,pass short right,0,2020
 4,0:05,3,10,long,49,-1.09,CAR,KAN,-2,3,green zone,pass short right,0,2020
-4,0:02,4,10,long,49,2.65,CAR,KAN,-2,0:00:02,green zone,field goal,failure,2020
+4,0:02,4,10,long,49,2.65,CAR,KAN,-2,2,green zone,field goal,failure,2020
 1,15:00,1,10,long,75,-0.27999999999999997,JAX,HOU,0,36,grey zone,run left,2,2020
 1,14:24,2,8,long,73,-0.69,JAX,HOU,0,5,grey zone,pass short left,0,2020
 1,14:19,3,8,long,73,7.36,JAX,HOU,6,11,grey zone,pass deep left,73,2020
@@ -18784,7 +18784,7 @@ OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,s
 4,1:39,1,10,long,13,2.29,JAX,HOU,-2,10,red zone,run left,13,2020
 4,1:29,1,10,long,47,-0.6799999999999999,HOU,JAX,2,40,green zone,,,2020
 4,0:49,2,11,long,48,-0.8200000000000001,HOU,JAX,2,26,green zone,,,2020
-4,0:23,3,12,long,49,-1.02,HOU,JAX,2,0:00:23,green zone,,,2020
+4,0:23,3,12,long,49,-1.02,HOU,JAX,2,23,green zone,,,2020
 1,14:53,1,10,long,78,0.73,IND,BAL,0,33,black zone,run left,11,2020
 1,14:20,1,10,long,67,-0.2799999999999999,IND,BAL,0,44,grey zone,pass short right,2,2020
 1,13:36,2,8,long,65,-0.29999999999999993,IND,BAL,0,29,grey zone,run left,3,2020
@@ -18930,7 +18930,7 @@ OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,s
 4,0:22,1,20,long,34,-1.23,IND,BAL,-14,4,green zone,pass short middle,0,2020
 4,0:18,2,20,long,34,1.19,IND,BAL,-14,16,green zone,run left,14,2020
 4,0:02,3,6,middle,20,-1.12,IND,BAL,-14,0,red zone,,,2020
-4,0:02,4,6,middle,20,1.1,IND,BAL,-14,0:00:02,red zone,pass short right,15,2020
+4,0:02,4,6,middle,20,1.1,IND,BAL,-14,2,red zone,pass short right,15,2020
 1,14:53,1,10,long,69,0.73,SDG,OAK,0,38,grey zone,run left,fumble,2020
 1,14:15,1,10,long,58,0.45999999999999996,SDG,OAK,0,23,grey zone,run right,2,2020
 1,13:52,1,10,long,51,-0.54,SDG,OAK,0,5,grey zone,pass short right,0,2020
@@ -19072,7 +19072,7 @@ OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,s
 4,0:25,2,6,middle,20,2.31,SDG,OAK,-5,18,red zone,pass deep right,16,2020
 4,0:07,1,4,middle,4,-0.9400000000000004,SDG,OAK,-5,1,red zone,,,2020
 4,0:06,2,4,middle,4,-0.8499999999999996,SDG,OAK,-5,5,red zone,pass short right,0,2020
-4,0:01,3,4,middle,4,-1.4600000000000004,SDG,OAK,-5,0:00:01,red zone,pass short right,0,2020
+4,0:01,3,4,middle,4,-1.4600000000000004,SDG,OAK,-5,1,red zone,pass short right,0,2020
 1,14:54,1,10,long,74,-0.13,PIT,DAL,0,37,grey zone,run left,3,2020
 1,14:17,2,7,middle,71,-0.7000000000000001,PIT,DAL,0,5,grey zone,pass short right,0,2020
 1,14:12,3,7,middle,71,1.5599999999999998,PIT,DAL,0,46,grey zone,run middle,8,2020
@@ -19225,7 +19225,7 @@ OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,s
 4,0:23,3,10,long,49,2.55,DAL,PIT,-5,15,green zone,pass deep middle,20,2020
 4,0:08,1,10,long,29,-0.54,DAL,PIT,-5,1,green zone,,,2020
 4,0:07,2,10,long,29,0.10000000000000009,DAL,PIT,-5,3,green zone,pass short left,6,2020
-4,0:04,3,4,middle,23,-1.2000000000000002,DAL,PIT,-5,0:00:04,red zone,pass deep middle,0,2020
+4,0:04,3,4,middle,23,-1.2000000000000002,DAL,PIT,-5,4,red zone,pass deep middle,0,2020
 1,15:00,1,10,long,75,0.26,MIA,ARI,0,35,grey zone,pass short left,6,2020
 1,14:25,2,4,middle,69,-0.44,MIA,ARI,0,39,grey zone,run middle,2,2020
 1,13:46,3,2,short,67,-1.74,MIA,ARI,0,34,grey zone,run right,-2,2020
@@ -19368,7 +19368,7 @@ OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,s
 4,1:09,2,2,short,53,-0.5799999999999998,MIA,ARI,3,4,grey zone,run middle,1,2020
 4,1:05,3,1,short,52,0.7,MIA,ARI,3,15,grey zone,run middle,1,2020
 4,0:50,1,10,long,51,-0.6799999999999999,MIA,ARI,3,37,grey zone,,,2020
-4,0:13,2,11,long,52,-0.81,MIA,ARI,3,0:00:13,grey zone,,,2020
+4,0:13,2,11,long,52,-0.81,MIA,ARI,3,13,grey zone,,,2020
 1,15:00,1,10,long,75,-0.55,TAM,NOR,0,5,grey zone,pass deep right,0,2020
 1,14:55,2,10,long,75,0.24,TAM,NOR,0,37,grey zone,run right,7,2020
 1,14:18,3,3,short,68,-1.54,TAM,NOR,0,3,grey zone,pass short left,0,2020
@@ -19501,7 +19501,7 @@ OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,s
 4,2:00,2,5,middle,28,-0.8299999999999996,NOR,TAM,35,42,green zone,,,2020
 4,1:18,3,6,middle,29,-1.2700000000000002,NOR,TAM,35,42,green zone,,,2020
 4,0:36,4,7,middle,30,-2.41,NOR,TAM,35,2,green zone,,,2020
-4,0:34,1,10,long,69,-0.6799999999999999,TAM,NOR,-35,0:00:34,grey zone,,,2020
+4,0:34,1,10,long,69,-0.6799999999999999,TAM,NOR,-35,34,grey zone,,,2020
 1,15:00,1,10,long,75,0.13,NYJ,NWE,0,34,grey zone,run left,5,2020
 1,14:26,2,5,middle,70,-0.17999999999999994,NYJ,NWE,0,35,grey zone,run middle,4,2020
 1,13:51,3,1,short,66,0.8399999999999999,NYJ,NWE,0,34,grey zone,run middle,3,2020
@@ -19637,7 +19637,7 @@ OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,s
 4,0:22,3,1,short,58,0.97,NWE,NYJ,0,13,grey zone,run middle,5,2020
 4,0:09,1,10,long,53,-0.54,NWE,NYJ,0,1,grey zone,,,2020
 4,0:08,2,10,long,53,1.8599999999999999,NWE,NYJ,0,5,grey zone,pass deep right,20,2020
-4,0:03,1,10,long,33,-0.3799999999999999,NWE,NYJ,3,0:00:03,green zone,field goal,success,2020
+4,0:03,1,10,long,33,-0.3799999999999999,NWE,NYJ,3,3,green zone,field goal,success,2020
 1,14:53,1,10,long,67,0.8500000000000001,TEN,IND,0,30,grey zone,pass short right,13,2020
 1,14:23,1,10,long,54,1.39,TEN,IND,0,32,grey zone,pass short middle,21,2020
 1,13:51,1,10,long,33,-0.13999999999999968,TEN,IND,0,31,green zone,run middle,3,2020
@@ -19783,7 +19783,7 @@ OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,s
 4,2:00,2,8,long,57,-0.8299999999999998,TEN,IND,-17,42,grey zone,run left,-1,2020
 4,1:18,3,9,long,58,-0.6900000000000001,TEN,IND,-17,37,grey zone,run middle,7,2020
 4,0:41,4,2,short,51,2.65,TEN,IND,-17,0,grey zone,,,2020
-4,0:41,1,10,long,46,-0.54,TEN,IND,-17,0:00:41,green zone,run left,,2020
+4,0:41,1,10,long,46,-0.54,TEN,IND,-17,41,green zone,run left,,2020
 1,15:00,1,10,long,75,-0.27999999999999997,CLE,HOU,0,37,grey zone,run left,2,2020
 1,14:23,2,8,long,73,1.0,CLE,HOU,0,40,grey zone,run right,9,2020
 1,13:43,1,10,long,64,0.6799999999999997,CLE,HOU,0,41,grey zone,pass short left,9,2020
@@ -19917,7 +19917,7 @@ OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,s
 4,1:54,2,7,middle,64,-0.17000000000000004,CLE,HOU,3,47,grey zone,run right,4,2020
 4,1:07,3,3,short,60,6.14,CLE,HOU,3,11,grey zone,run left,59,2020
 4,0:56,1,1,short,1,-1.25,CLE,HOU,3,25,red zone,,,2020
-4,0:31,2,2,short,2,-1.0,CLE,HOU,3,0:00:31,red zone,,,2020
+4,0:31,2,2,short,2,-1.0,CLE,HOU,3,31,red zone,,,2020
 1,15:00,1,10,long,75,0.13,CAR,TAM,0,29,grey zone,pass short left,5,2020
 1,14:31,2,5,middle,70,-0.7,CAR,TAM,0,46,grey zone,pass short right,0,2020
 1,13:45,3,5,middle,70,-1.28,CAR,TAM,0,39,grey zone,pass short right,2,2020
@@ -20055,7 +20055,7 @@ OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,s
 4,2:10,2,7,middle,59,0.8599999999999999,TAM,CAR,23,10,grey zone,run right,8,2020
 4,2:00,1,10,long,51,-0.54,TAM,CAR,23,41,grey zone,,,2020
 4,1:19,2,10,long,51,-0.69,TAM,CAR,23,41,grey zone,,,2020
-4,0:38,3,10,long,51,-1.0899999999999999,TAM,CAR,23,0:00:38,grey zone,,,2020
+4,0:38,3,10,long,51,-1.0899999999999999,TAM,CAR,23,38,grey zone,,,2020
 1,14:55,1,10,long,85,-0.9299999999999999,NYG,PHI,0,36,black zone,,,2020
 1,14:19,2,15,long,90,2.2199999999999998,NYG,PHI,0,39,black zone,pass short middle,22,2020
 1,13:40,1,10,long,68,0.27,NYG,PHI,0,39,grey zone,run left,6,2020
@@ -20211,7 +20211,7 @@ OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,s
 4,1:56,2,4,middle,36,-0.43999999999999995,NYG,PHI,10,45,green zone,run middle,2,2020
 4,1:11,3,2,short,34,1.4300000000000002,NYG,PHI,10,14,green zone,run left,-4,2020
 4,0:57,1,10,long,23,-0.54,NYG,PHI,10,35,red zone,,,2020
-4,0:22,2,10,long,23,-0.96,NYG,PHI,10,0:00:22,red zone,,,2020
+4,0:22,2,10,long,23,-0.96,NYG,PHI,10,22,red zone,,,2020
 1,15:00,1,10,long,75,0.13,GNB,JAX,0,35,grey zone,pass short left,5,2020
 1,14:25,2,5,middle,70,-0.44,GNB,JAX,0,46,grey zone,run left,2,2020
 1,13:39,3,3,short,68,-1.54,GNB,JAX,0,6,grey zone,pass deep right,0,2020
@@ -20356,7 +20356,7 @@ OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,s
 4,1:24,3,16,long,42,-1.3499999999999999,JAX,GNB,-4,14,green zone,,,2020
 4,1:10,4,26,long,52,-2.2,JAX,GNB,-4,9,grey zone,pass short right,0,2020
 4,1:01,1,10,long,48,-0.54,GNB,JAX,4,29,green zone,,,2020
-4,0:32,2,10,long,48,-0.8200000000000001,GNB,JAX,4,0:00:32,green zone,,,2020
+4,0:32,2,10,long,48,-0.8200000000000001,GNB,JAX,4,32,green zone,,,2020
 1,15:00,1,10,long,75,-0.41,WAS,DET,0,35,grey zone,run middle,1,2020
 1,14:25,2,9,long,74,1.93,WAS,DET,0,40,grey zone,pass deep middle,22,2020
 1,13:45,1,10,long,52,0.1299999999999999,WAS,DET,0,33,grey zone,run right,5,2020
@@ -20519,7 +20519,7 @@ OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,s
 4,0:16,1,10,long,75,0.66,DET,WAS,0,4,grey zone,pass short left,10,2020
 4,0:12,1,10,long,65,0.9899999999999998,DET,WAS,0,6,grey zone,,,2020
 4,0:06,1,10,long,50,0.6700000000000004,DET,WAS,0,3,green zone,pass short right,9,2020
-4,0:03,2,1,short,41,0.06999999999999984,DET,WAS,3,0:00:03,green zone,field goal,success,2020
+4,0:03,2,1,short,41,0.06999999999999984,DET,WAS,3,3,green zone,field goal,success,2020
 1,14:49,1,10,long,97,-0.4,DEN,OAK,0,5,black zone,pass short right,0,2020
 1,14:44,2,10,long,97,-0.16999999999999993,DEN,OAK,0,22,black zone,run right,4,2020
 1,14:22,3,6,middle,93,-1.5400000000000003,DEN,OAK,0,43,black zone,pass short left,1,2020
@@ -20677,7 +20677,7 @@ OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,s
 4,0:51,3,8,long,55,2.02,DEN,OAK,-25,20,grey zone,pass short right,14,2020
 4,0:31,1,10,long,41,1.06,DEN,OAK,-25,6,green zone,pass short right,16,2020
 4,0:25,1,10,long,25,-4.0600000000000005,DEN,OAK,-25,7,red zone,pass short middle,interception,2020
-4,0:18,1,10,long,81,-0.7100000000000001,OAK,DEN,25,0:00:18,black zone,,,2020
+4,0:18,1,10,long,81,-0.7100000000000001,OAK,DEN,25,18,black zone,,,2020
 1,15:00,1,10,long,75,-0.14,SDG,MIA,0,32,grey zone,run middle,3,2020
 1,14:28,2,7,middle,72,-2.8200000000000003,SDG,MIA,0,42,grey zone,,,2020
 1,13:46,3,20,long,85,0.3900000000000001,SDG,MIA,0,40,black zone,pass short left,6,2020
@@ -20813,7 +20813,7 @@ OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,s
 4,2:02,3,10,long,13,3.88,SDG,MIA,-9,6,red zone,pass short left,13,2020
 4,1:56,1,10,long,49,-0.8099999999999998,MIA,SDG,8,41,green zone,,,2020
 4,1:15,2,12,long,51,-0.81,MIA,SDG,8,38,grey zone,,,2020
-4,0:37,3,13,long,52,-0.96,MIA,SDG,8,0:00:37,grey zone,,,2020
+4,0:37,3,13,long,52,-0.96,MIA,SDG,8,37,grey zone,,,2020
 1,14:56,1,10,long,80,-0.28,ARI,BUF,0,27,black zone,pass short left,2,2020
 1,14:29,2,8,long,78,0.1,ARI,BUF,0,31,black zone,run middle,6,2020
 1,13:58,3,2,short,72,0.9,ARI,BUF,0,33,grey zone,run left,3,2020
@@ -20980,7 +20980,7 @@ OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,s
 4,0:34,1,10,long,75,0.92,ARI,BUF,-4,7,grey zone,pass short middle,14,2020
 4,0:27,1,10,long,61,0.6700000000000002,ARI,BUF,-4,6,grey zone,pass short middle,9,2020
 4,0:21,2,1,short,52,0.52,ARI,BUF,-4,10,grey zone,pass short right,9,2020
-4,0:11,1,10,long,43,4.279999999999999,ARI,BUF,2,0:00:11,green zone,pass deep left,43,2020
+4,0:11,1,10,long,43,4.279999999999999,ARI,BUF,2,11,green zone,pass deep left,43,2020
 1,15:00,1,10,long,75,0.5299999999999999,STL,SEA,0,41,grey zone,pass short left,8,2020
 1,14:19,2,2,short,67,0.33000000000000007,STL,SEA,0,39,grey zone,pass short right,5,2020
 1,13:40,1,10,long,62,0.26,STL,SEA,0,41,grey zone,run left,6,2020
@@ -21131,7 +21131,7 @@ OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,s
 4,0:35,1,10,long,11,-1.9,SEA,STL,-10,6,red zone,,,2020
 4,0:29,2,20,long,21,0.06000000000000005,SEA,STL,-7,5,red zone,field goal,success,2020
 4,0:24,1,10,long,46,-0.6799999999999999,STL,SEA,7,3,green zone,,,2020
-4,0:21,2,11,long,47,-0.81,STL,SEA,7,0:00:21,green zone,,,2020
+4,0:21,2,11,long,47,-0.81,STL,SEA,7,21,green zone,,,2020
 1,14:56,1,10,long,85,-0.49,PIT,CIN,0,3,black zone,pass short right,0,2020
 1,14:53,2,10,long,85,1.52,PIT,CIN,0,26,black zone,pass short left,13,2020
 1,14:27,1,10,long,72,0.1299999999999999,PIT,CIN,0,41,grey zone,run right,5,2020
@@ -21293,7 +21293,7 @@ OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,s
 4,2:00,2,8,long,53,0.94,CIN,PIT,-26,34,grey zone,run middle,8,2020
 4,1:26,1,10,long,45,0.40000000000000036,CIN,PIT,-26,32,green zone,run middle,7,2020
 4,0:54,2,3,short,38,0.31999999999999984,CIN,PIT,-26,36,green zone,run right,4,2020
-4,0:18,1,10,long,34,-0.3999999999999999,CIN,PIT,-26,0:00:18,green zone,run right,1,2020
+4,0:18,1,10,long,34,-0.3999999999999999,CIN,PIT,-26,18,green zone,run right,1,2020
 1,15:00,1,10,long,75,-0.95,SFO,NOR,0,37,grey zone,run right,-3,2020
 1,14:23,2,13,long,78,0.9000000000000001,SFO,NOR,0,36,black zone,pass short left,12,2020
 1,13:47,3,1,short,66,0.77,SFO,NOR,0,43,grey zone,run left,2,2020
@@ -21438,7 +21438,7 @@ OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,s
 4,2:21,2,7,middle,77,0.7999999999999999,NOR,SFO,14,21,black zone,run right,7,2020
 4,2:00,1,10,long,70,-0.6799999999999999,NOR,SFO,14,42,grey zone,,,2020
 4,1:18,2,11,long,71,-1.08,NOR,SFO,14,44,grey zone,,,2020
-4,0:34,3,14,long,74,-0.88,NOR,SFO,14,0:00:34,grey zone,,,2020
+4,0:34,3,14,long,74,-0.88,NOR,SFO,14,34,grey zone,,,2020
 1,15:00,1,10,long,75,1.12,BAL,NWE,0,39,grey zone,pass short right,17,2020
 1,14:21,1,10,long,58,-0.6799999999999999,BAL,NWE,0,45,grey zone,run left,-1,2020
 1,13:36,2,11,long,59,-0.68,BAL,NWE,0,6,grey zone,pass short middle,0,2020
@@ -21574,7 +21574,7 @@ OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,s
 4,0:38,2,15,long,88,0.2799999999999999,BAL,NWE,-6,8,black zone,run left,8,2020
 4,0:30,3,7,middle,80,-1.0899999999999999,BAL,NWE,-6,22,black zone,pass short left,1,2020
 4,0:08,4,6,middle,79,-2.21,BAL,NWE,-6,6,black zone,pass short right,0,2020
-4,0:02,1,10,long,21,-0.6799999999999997,NWE,BAL,6,0:00:02,red zone,,,2020
+4,0:02,1,10,long,21,-0.6799999999999997,NWE,BAL,6,2,red zone,,,2020
 1,15:00,1,10,long,75,-0.010000000000000009,MIN,CHI,0,32,grey zone,run left,4,2020
 1,14:28,2,6,middle,71,-0.42999999999999994,MIN,CHI,0,36,grey zone,pass short middle,2,2020
 1,13:52,3,4,middle,69,1.1600000000000001,MIN,CHI,0,12,grey zone,,,2020
@@ -21713,7 +21713,7 @@ OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,s
 4,0:18,2,10,long,62,-0.6900000000000001,CHI,MIN,-6,5,grey zone,pass short right,0,2020
 4,0:13,3,10,long,62,-1.08,CHI,MIN,-6,5,grey zone,pass deep right,0,2020
 4,0:08,4,10,long,62,-2.1999999999999997,CHI,MIN,-6,5,grey zone,pass short left,0,2020
-4,0:03,1,10,long,38,-0.6799999999999997,MIN,CHI,6,0:00:03,green zone,,,2020
+4,0:03,1,10,long,38,-0.6799999999999997,MIN,CHI,6,3,green zone,,,2020
 1,15:00,1,10,long,75,-1.42,SEA,ARI,0,36,grey zone,,,2020
 1,14:24,2,16,long,81,0.7100000000000001,SEA,ARI,0,26,black zone,pass short right,10,2020
 1,13:58,3,6,middle,71,1.57,SEA,ARI,0,41,grey zone,pass short left,9,2020
@@ -21862,7 +21862,7 @@ OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,s
 4,0:50,2,10,long,27,-0.69,ARI,SEA,-7,5,green zone,pass deep middle,0,2020
 4,0:45,3,10,long,27,-0.8700000000000001,ARI,SEA,-7,7,green zone,pass deep right,0,2020
 4,0:38,4,10,long,27,-2.8099999999999996,ARI,SEA,-7,4,green zone,,,2020
-4,0:34,1,10,long,67,-0.6799999999999999,SEA,ARI,7,0:00:34,grey zone,,,2020
+4,0:34,1,10,long,67,-0.6799999999999999,SEA,ARI,7,34,grey zone,,,2020
 1,15:00,1,10,long,75,-0.55,CLE,PHI,0,4,grey zone,pass short right,0,2020
 1,14:56,2,10,long,75,-0.55,CLE,PHI,0,43,grey zone,run left,1,2020
 1,14:13,3,9,long,74,0.66,CLE,PHI,0,5,grey zone,,,2020
@@ -22015,7 +22015,7 @@ OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,s
 4,1:07,3,3,short,12,-2.2,PHI,CLE,-12,24,red zone,,,2020
 4,0:43,4,13,long,22,4.29,PHI,CLE,-12,7,red zone,pass short left,18,2020
 4,0:36,1,4,middle,4,0.7199999999999998,PHI,CLE,-6,7,red zone,pass short right,4,2020
-4,0:29,1,10,long,46,-0.6799999999999999,CLE,PHI,5,0:00:29,green zone,,,2020
+4,0:29,1,10,long,46,-0.6799999999999999,CLE,PHI,5,29,green zone,,,2020
 1,15:00,1,10,long,75,0.67,CAR,DET,0,39,grey zone,pass short left,9,2020
 1,14:21,2,1,short,66,0.25,CAR,DET,0,40,grey zone,run left,5,2020
 1,13:41,1,10,long,61,-0.14000000000000012,CAR,DET,0,38,grey zone,run left,3,2020
@@ -22161,7 +22161,7 @@ OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,s
 4,1:55,4,1,short,45,2.71,CAR,DET,20,0,green zone,,,2020
 4,1:55,1,10,long,39,-0.81,CAR,DET,20,41,green zone,,,2020
 4,1:14,2,12,long,41,-0.8099999999999998,CAR,DET,20,39,green zone,,,2020
-4,0:35,3,13,long,42,-0.9600000000000001,CAR,DET,20,0:00:35,green zone,,,2020
+4,0:35,3,13,long,42,-0.9600000000000001,CAR,DET,20,35,green zone,,,2020
 1,15:00,1,10,long,75,0.66,WAS,CIN,0,20,grey zone,pass short right,10,2020
 1,14:40,1,10,long,65,-0.55,WAS,CIN,0,35,grey zone,pass short left,0,2020
 1,14:05,2,10,long,65,0.3700000000000001,WAS,CIN,0,37,grey zone,pass short left,8,2020
@@ -22312,7 +22312,7 @@ OT,1:40,1,15,long,16,-1.3399999999999999,NOR,CHI,3,0:01:40,red zone,field goal,s
 4,1:50,1,10,long,46,0.73,WAS,CIN,11,6,green zone,run middle,11,2020
 4,1:44,1,10,long,35,-0.6800000000000002,WAS,CIN,11,39,green zone,,,2020
 4,1:05,2,11,long,36,-0.8199999999999998,WAS,CIN,11,29,green zone,,,2020
-4,0:36,3,12,long,37,-1.03,WAS,CIN,11,0:00:36,green zone,,,2020
+4,0:36,3,12,long,37,-1.03,WAS,CIN,11,36,green zone,,,2020
 1,14:54,1,10,long,64,-0.13000000000000012,BAL,TEN,0,37,grey zone,run left,3,2020
 1,14:17,2,7,middle,61,-0.7,BAL,TEN,0,5,grey zone,pass deep right,0,2020
 1,14:12,3,7,middle,61,-1.28,BAL,TEN,0,8,grey zone,pass deep right,0,2020
@@ -22460,7 +22460,7 @@ OT,7:25,1,10,long,59,0.0,TEN,BAL,0,41,grey zone,run left,4,2020
 OT,6:44,2,6,middle,55,0.99,TEN,BAL,0,24,grey zone,pass short middle,11,2020
 OT,6:20,1,10,long,44,0.0,TEN,BAL,0,37,green zone,run left,4,2020
 OT,5:43,2,6,middle,40,0.9900000000000002,TEN,BAL,0,14,green zone,pass short right,11,2020
-OT,5:29,1,10,long,29,2.36,TEN,BAL,6,0:05:29,green zone,run left,29,2020
+OT,5:29,1,10,long,29,2.36,TEN,BAL,6,329,green zone,run left,29,2020
 1,15:00,1,10,long,75,-0.14,ATL,NOR,0,38,grey zone,pass short left,3,2020
 1,14:22,2,7,middle,72,3.37,ATL,NOR,0,46,grey zone,pass deep middle,46,2020
 1,13:36,1,10,long,26,0.6699999999999999,ATL,NOR,0,39,green zone,pass short right,10,2020
@@ -22607,7 +22607,7 @@ OT,5:29,1,10,long,29,2.36,TEN,BAL,6,0:05:29,green zone,run left,29,2020
 4,0:39,1,10,long,76,-0.54,ATL,NOR,-15,7,black zone,pass deep middle,0,2020
 4,0:32,2,10,long,76,-0.69,ATL,NOR,-15,5,black zone,pass short middle,0,2020
 4,0:27,3,10,long,76,-0.49,ATL,NOR,-15,20,black zone,pass short right,9,2020
-4,0:07,4,1,short,67,3.9699999999999998,ATL,NOR,-15,0:00:07,grey zone,pass short left,25,2020
+4,0:07,4,1,short,67,3.9699999999999998,ATL,NOR,-15,7,grey zone,pass short left,25,2020
 1,15:00,1,10,long,75,1.12,JAX,PIT,0,42,grey zone,pass deep right,17,2020
 1,14:18,1,10,long,58,0.13000000000000012,JAX,PIT,0,39,grey zone,run middle,5,2020
 1,13:39,2,5,middle,53,-0.31000000000000005,JAX,PIT,0,37,grey zone,run middle,3,2020
@@ -22762,7 +22762,7 @@ OT,5:29,1,10,long,29,2.36,TEN,BAL,6,0:05:29,green zone,run left,29,2020
 4,2:07,4,5,middle,80,-2.0100000000000002,JAX,PIT,-24,7,black zone,pass short right,3,2020
 4,2:00,1,10,long,23,-0.6800000000000002,PIT,JAX,24,42,red zone,,,2020
 4,1:18,2,11,long,24,-0.9499999999999997,PIT,JAX,24,44,red zone,,,2020
-4,0:34,3,13,long,26,-0.7400000000000002,PIT,JAX,24,0:00:34,green zone,,,2020
+4,0:34,3,13,long,26,-0.7400000000000002,PIT,JAX,24,34,green zone,,,2020
 1,15:00,1,10,long,75,-0.27999999999999997,HOU,NWE,0,31,grey zone,run middle,2,2020
 1,14:29,2,8,long,73,1.27,HOU,NWE,0,39,grey zone,pass short right,13,2020
 1,13:50,1,10,long,60,0.26,HOU,NWE,0,29,grey zone,pass short middle,6,2020
@@ -22904,7 +22904,7 @@ OT,5:29,1,10,long,29,2.36,TEN,BAL,6,0:05:29,green zone,run left,29,2020
 4,0:23,3,6,middle,71,-1.27,HOU,NWE,7,4,grey zone,run right,1,2020
 4,0:19,4,5,middle,70,0.5000000000000001,HOU,NWE,7,10,grey zone,punt,41,2020
 4,0:09,1,10,long,71,0.67,NWE,HOU,-7,5,grey zone,pass short right,9,2020
-4,0:04,2,1,short,62,3.24,NWE,HOU,-7,0:00:04,grey zone,pass deep right,50,2020
+4,0:04,2,1,short,62,3.24,NWE,HOU,-7,4,grey zone,pass deep right,50,2020
 1,15:00,1,10,long,75,-0.27999999999999997,SDG,NYJ,0,40,grey zone,pass short right,2,2020
 1,14:20,2,8,long,73,1.53,SDG,NYJ,0,23,grey zone,pass short right,17,2020
 1,13:57,1,10,long,56,0.0,SDG,NYJ,0,31,grey zone,run left,4,2020
@@ -23060,7 +23060,7 @@ OT,5:29,1,10,long,29,2.36,TEN,BAL,6,0:05:29,green zone,run left,29,2020
 4,1:46,1,10,long,68,-1.08,SDG,NYJ,8,7,grey zone,run left,-4,2020
 4,1:39,2,14,long,72,-0.15,SDG,NYJ,8,44,grey zone,run middle,4,2020
 4,0:55,3,10,long,68,-1.34,SDG,NYJ,8,47,grey zone,run right,-4,2020
-4,0:08,4,14,long,72,-0.5,SDG,NYJ,6,0:00:08,grey zone,,,2020
+4,0:08,4,14,long,72,-0.5,SDG,NYJ,6,8,grey zone,,,2020
 1,15:00,1,10,long,75,-0.55,MIA,DEN,0,7,grey zone,pass deep left,0,2020
 1,14:53,2,10,long,75,-0.16,MIA,DEN,0,43,grey zone,run right,4,2020
 1,14:10,3,6,middle,71,-1.3399999999999999,MIA,DEN,0,6,grey zone,pass deep left,0,2020
@@ -23207,7 +23207,7 @@ OT,5:29,1,10,long,29,2.36,TEN,BAL,6,0:05:29,green zone,run left,29,2020
 4,0:58,2,10,long,80,-0.29000000000000004,DEN,MIA,7,7,black zone,run right,3,2020
 4,0:51,3,7,middle,77,-1.4,DEN,MIA,7,47,black zone,run right,-2,2020
 4,0:04,4,9,long,79,-0.43000000000000016,DEN,MIA,7,0,black zone,,,2020
-4,0:04,4,14,long,84,6.43,DEN,MIA,7,0:00:04,black zone,pass deep right,61,2020
+4,0:04,4,14,long,84,6.43,DEN,MIA,7,4,black zone,pass deep right,61,2020
 1,15:00,1,10,long,75,-0.27999999999999997,DAL,MIN,0,31,grey zone,run left,2,2020
 1,14:29,2,8,long,73,-0.030000000000000027,DAL,MIN,0,39,grey zone,run middle,5,2020
 1,13:50,3,3,short,68,-1.54,DAL,MIN,0,4,grey zone,pass short middle,0,2020
@@ -23346,7 +23346,7 @@ OT,5:29,1,10,long,29,2.36,TEN,BAL,6,0:05:29,green zone,run left,29,2020
 4,1:29,3,6,middle,71,-1.3399999999999999,MIN,DAL,-3,5,grey zone,pass short right,0,2020
 4,1:24,4,6,middle,71,-2.2,MIN,DAL,-3,6,grey zone,pass deep right,0,2020
 4,1:18,1,10,long,29,-0.6699999999999999,DAL,MIN,3,43,green zone,,,2020
-4,0:35,2,11,long,30,-0.8200000000000003,DAL,MIN,3,0:00:35,green zone,,,2020
+4,0:35,2,11,long,30,-0.8200000000000003,DAL,MIN,3,35,green zone,,,2020
 1,14:55,1,10,long,79,2.18,GNB,IND,0,38,black zone,pass deep right,33,2020
 1,14:17,1,10,long,46,0.54,GNB,IND,0,29,green zone,pass short right,8,2020
 1,13:48,2,2,short,38,-4.59,GNB,IND,0,5,green zone,,,2020
@@ -23503,7 +23503,7 @@ OT,9:20,2,2,short,70,-4.59,GNB,IND,0,8,grey zone,pass short left,-1,2020
 OT,9:12,1,10,long,29,-0.54,IND,GNB,0,43,green zone,run middle,,2020
 OT,8:29,2,10,long,29,-0.03000000000000025,IND,GNB,0,33,green zone,run middle,5,2020
 OT,7:56,3,5,middle,24,-0.8899999999999997,IND,GNB,0,41,red zone,run right,3,2020
-OT,7:15,4,2,short,21,0.8199999999999998,IND,GNB,3,0:07:15,red zone,field goal,success,2020
+OT,7:15,4,2,short,21,0.8199999999999998,IND,GNB,3,435,red zone,field goal,success,2020
 1,15:00,1,10,long,75,-0.41,OAK,KAN,0,33,grey zone,run left,1,2020
 1,14:27,2,9,long,74,-0.16,OAK,KAN,0,44,grey zone,run right,4,2020
 1,13:43,3,5,middle,70,2.61,OAK,KAN,0,49,grey zone,pass deep left,26,2020
@@ -23649,7 +23649,7 @@ OT,7:15,4,2,short,21,0.8199999999999998,IND,GNB,3,0:07:15,red zone,field goal,su
 4,0:34,2,7,middle,22,3.23,KAN,OAK,3,6,red zone,pass deep middle,22,2020
 4,0:28,1,10,long,75,-3.26,OAK,KAN,-4,9,grey zone,pass deep left,interception,2020
 4,0:19,1,10,long,44,-0.6699999999999999,KAN,OAK,4,2,green zone,,,2020
-4,0:17,2,11,long,45,-0.8200000000000001,KAN,OAK,4,0:00:17,green zone,,,2020
+4,0:17,2,11,long,45,-0.8200000000000001,KAN,OAK,4,17,green zone,,,2020
 1,15:00,1,10,long,75,-0.55,TAM,STL,0,36,grey zone,run left,,2020
 1,14:24,2,10,long,75,0.11000000000000001,TAM,STL,0,40,grey zone,pass short left,6,2020
 1,13:44,3,4,middle,69,1.3,TAM,STL,0,34,grey zone,pass short middle,7,2020
@@ -23808,7 +23808,7 @@ OT,7:15,4,2,short,21,0.8199999999999998,IND,GNB,3,0:07:15,red zone,field goal,su
 4,1:49,1,10,long,63,0.27,STL,TAM,3,6,grey zone,run right,6,2020
 4,1:43,2,4,middle,57,-1.1099999999999999,STL,TAM,3,47,grey zone,run left,-3,2020
 4,0:56,3,7,middle,60,-1.15,STL,TAM,3,47,grey zone,run middle,2,2020
-4,0:09,4,5,middle,58,2.32,STL,TAM,3,0:00:09,grey zone,punt,33,2020
+4,0:09,4,5,middle,58,2.32,STL,TAM,3,9,grey zone,punt,33,2020
 1,14:54,1,10,long,78,-0.13999999999999996,HOU,DET,0,34,black zone,run middle,3,2020
 1,14:20,2,7,middle,75,-0.7,HOU,DET,0,8,grey zone,pass deep right,0,2020
 1,14:12,3,7,middle,75,1.7,HOU,DET,0,34,grey zone,pass short middle,10,2020
@@ -23957,7 +23957,7 @@ OT,7:15,4,2,short,21,0.8199999999999998,IND,GNB,3,0:07:15,red zone,field goal,su
 4,1:43,4,15,long,53,-2.2,DET,HOU,-16,8,grey zone,pass deep middle,0,2020
 4,1:35,1,10,long,47,-0.6799999999999999,HOU,DET,16,43,green zone,,,2020
 4,0:52,2,11,long,48,-0.8200000000000001,HOU,DET,16,25,green zone,,,2020
-4,0:27,3,12,long,49,-1.02,HOU,DET,16,0:00:27,green zone,,,2020
+4,0:27,3,12,long,49,-1.02,HOU,DET,16,27,green zone,,,2020
 1,15:00,1,10,long,75,-0.010000000000000009,WAS,DAL,0,31,grey zone,run left,4,2020
 1,14:29,2,6,middle,71,-0.83,WAS,DAL,0,36,grey zone,pass short left,-1,2020
 1,13:53,3,7,middle,72,-1.73,WAS,DAL,0,33,grey zone,,,2020
@@ -24097,7 +24097,7 @@ OT,7:15,4,2,short,21,0.8199999999999998,IND,GNB,3,0:07:15,red zone,field goal,su
 4,2:08,1,10,long,44,-0.3999999999999999,WAS,DAL,25,8,green zone,run left,1,2020
 4,2:00,2,9,long,43,-0.30000000000000004,WAS,DAL,25,43,green zone,run left,3,2020
 4,1:17,3,6,middle,40,1.5000000000000002,WAS,DAL,25,42,green zone,run left,8,2020
-4,0:35,1,10,long,32,-0.6800000000000002,WAS,DAL,25,0:00:35,green zone,,,2020
+4,0:35,1,10,long,32,-0.6800000000000002,WAS,DAL,25,35,green zone,,,2020
 1,15:00,1,10,long,75,-1.02,ATL,OAK,0,18,grey zone,,,2020
 1,14:42,1,20,long,85,-1.02,ATL,OAK,0,4,black zone,pass short left,0,2020
 1,14:38,2,20,long,85,-0.9200000000000002,ATL,OAK,0,4,black zone,pass short right,0,2020
@@ -24255,7 +24255,7 @@ OT,7:15,4,2,short,21,0.8199999999999998,IND,GNB,3,0:07:15,red zone,field goal,su
 4,1:53,4,14,long,55,0.45,OAK,ATL,-37,11,grey zone,punt,38,2020
 4,1:42,1,10,long,83,-0.6699999999999999,ATL,OAK,37,43,black zone,,,2020
 4,0:59,2,11,long,84,-0.99,ATL,OAK,37,27,black zone,,,2020
-4,0:32,3,13,long,86,-0.7700000000000002,ATL,OAK,37,0:00:32,black zone,,,2020
+4,0:32,3,13,long,86,-0.7700000000000002,ATL,OAK,37,32,black zone,,,2020
 1,15:00,1,10,long,75,-0.14,NYJ,MIA,0,39,grey zone,run left,3,2020
 1,14:21,2,7,middle,72,1.3900000000000001,NYJ,MIA,0,34,grey zone,pass short left,16,2020
 1,13:47,1,10,long,56,0.1299999999999999,NYJ,MIA,0,40,grey zone,run left,5,2020
@@ -24397,7 +24397,7 @@ OT,7:15,4,2,short,21,0.8199999999999998,IND,GNB,3,0:07:15,red zone,field goal,su
 4,2:26,3,6,middle,18,1.5100000000000002,MIA,NYJ,17,26,red zone,run left,8,2020
 4,2:00,1,10,long,10,0.2400000000000002,MIA,NYJ,17,49,red zone,run right,5,2020
 4,1:11,2,5,middle,5,-1.1100000000000003,MIA,NYJ,17,34,red zone,,,2020
-4,0:37,3,6,middle,6,-1.0699999999999998,MIA,NYJ,17,0:00:37,red zone,,,2020
+4,0:37,3,6,middle,6,-1.0699999999999998,MIA,NYJ,17,37,red zone,,,2020
 1,15:00,1,10,long,75,-0.55,NWE,ARI,0,38,grey zone,run middle,,2020
 1,14:22,2,10,long,75,-0.16,NWE,ARI,0,37,grey zone,run middle,4,2020
 1,13:45,3,6,middle,71,-3.94,NWE,ARI,0,7,grey zone,pass short left,interception,2020
@@ -24536,7 +24536,7 @@ OT,7:15,4,2,short,21,0.8199999999999998,IND,GNB,3,0:07:15,red zone,field goal,su
 4,0:50,1,10,long,39,0.14000000000000012,NWE,ARI,0,22,green zone,pass short left,5,2020
 4,0:28,2,5,middle,34,-0.43999999999999995,NWE,ARI,0,24,green zone,run middle,2,2020
 4,0:04,3,3,short,32,-1.3900000000000001,NWE,ARI,0,1,green zone,,,2020
-4,0:03,4,3,short,32,1.71,NWE,ARI,3,0:00:03,green zone,field goal,success,2020
+4,0:03,4,3,short,32,1.71,NWE,ARI,3,3,green zone,field goal,success,2020
 1,15:00,1,10,long,75,0.66,CAR,MIN,0,46,grey zone,run middle,10,2020
 1,14:14,1,10,long,65,-0.010000000000000009,CAR,MIN,0,41,grey zone,pass short right,4,2020
 1,13:33,2,6,middle,61,-0.7,CAR,MIN,0,5,grey zone,pass deep right,0,2020
@@ -24691,7 +24691,7 @@ OT,7:15,4,2,short,21,0.8199999999999998,IND,GNB,3,0:07:15,red zone,field goal,su
 4,0:21,2,6,middle,48,1.06,CAR,MIN,-1,14,green zone,pass short right,12,2020
 4,0:07,1,10,long,36,-0.54,CAR,MIN,-1,1,green zone,,,2020
 4,0:06,2,10,long,36,-4.44,CAR,MIN,-1,5,green zone,field goal,failure,2020
-4,0:01,1,10,long,57,-0.6799999999999999,MIN,CAR,1,0:00:01,grey zone,,,2020
+4,0:01,1,10,long,57,-0.6799999999999999,MIN,CAR,1,1,grey zone,,,2020
 1,15:00,1,10,long,75,-0.010000000000000009,JAX,CLE,0,26,grey zone,run middle,4,2020
 1,14:34,2,6,middle,71,1.0,JAX,CLE,0,38,grey zone,pass short right,11,2020
 1,13:56,1,10,long,60,-0.33000000000000007,JAX,CLE,0,23,grey zone,,,2020
@@ -24833,7 +24833,7 @@ OT,7:15,4,2,short,21,0.8199999999999998,IND,GNB,3,0:07:15,red zone,field goal,su
 4,1:37,3,12,long,65,2.23,CLE,JAX,2,12,grey zone,pass short left,13,2020
 4,1:25,1,10,long,52,-0.6799999999999999,CLE,JAX,2,42,grey zone,,,2020
 4,0:43,2,11,long,53,-0.82,CLE,JAX,2,17,grey zone,,,2020
-4,0:26,3,12,long,54,-1.02,CLE,JAX,2,0:00:26,grey zone,,,2020
+4,0:26,3,12,long,54,-1.02,CLE,JAX,2,26,grey zone,,,2020
 1,15:00,1,10,long,75,0.26,TEN,IND,0,33,grey zone,run left,6,2020
 1,14:27,2,4,middle,69,0.93,TEN,IND,0,34,grey zone,pass short right,12,2020
 1,13:53,1,10,long,57,-0.14000000000000012,TEN,IND,0,34,grey zone,run right,3,2020
@@ -24992,7 +24992,7 @@ OT,7:15,4,2,short,21,0.8199999999999998,IND,GNB,3,0:07:15,red zone,field goal,su
 4,1:55,4,10,long,75,-2.8099999999999996,IND,TEN,-19,8,grey zone,,,2020
 4,1:47,1,10,long,16,-0.8699999999999997,TEN,IND,19,40,red zone,,,2020
 4,1:07,2,12,long,18,-0.8999999999999999,TEN,IND,19,37,red zone,,,2020
-4,0:30,3,14,long,20,-0.6800000000000002,TEN,IND,19,0:00:30,red zone,,,2020
+4,0:30,3,14,long,20,-0.6800000000000002,TEN,IND,19,30,red zone,,,2020
 1,14:56,1,10,long,76,0.27,NYG,CIN,0,30,black zone,pass short right,6,2020
 1,14:26,2,4,middle,70,0.45999999999999996,NYG,CIN,0,39,grey zone,run right,5,2020
 1,13:47,1,10,long,65,-0.010000000000000009,NYG,CIN,0,41,grey zone,run right,4,2020
@@ -25140,7 +25140,7 @@ OT,7:15,4,2,short,21,0.8199999999999998,IND,GNB,3,0:07:15,red zone,field goal,su
 4,1:11,4,5,middle,82,-0.019999999999999574,NYG,CIN,2,14,black zone,punt,32,2020
 4,0:57,1,10,long,50,-5.38,CIN,NYG,-2,8,green zone,,,2020
 4,0:49,1,10,long,37,-0.6800000000000002,NYG,CIN,2,36,green zone,,,2020
-4,0:13,2,11,long,38,-0.8199999999999998,NYG,CIN,2,0:00:13,green zone,,,2020
+4,0:13,2,11,long,38,-0.8199999999999998,NYG,CIN,2,13,green zone,,,2020
 1,14:53,1,10,long,75,-0.55,SDG,BUF,0,4,grey zone,pass short right,0,2020
 1,14:49,2,10,long,75,-0.6799999999999999,SDG,BUF,0,5,grey zone,pass short right,0,2020
 1,14:44,3,10,long,75,-1.08,SDG,BUF,0,5,grey zone,pass short middle,0,2020
@@ -25298,7 +25298,7 @@ OT,7:15,4,2,short,21,0.8199999999999998,IND,GNB,3,0:07:15,red zone,field goal,su
 4,0:25,1,2,short,2,-0.8300000000000001,SDG,BUF,-10,17,red zone,run middle,1,2020
 4,0:08,2,1,short,1,1.0599999999999996,SDG,BUF,-10,2,red zone,,,2020
 4,0:06,1,1,short,1,-1.0599999999999996,SDG,BUF,-10,3,red zone,pass short left,0,2020
-4,0:03,2,1,short,1,-0.7400000000000002,SDG,BUF,-10,0:00:03,red zone,run middle,,2020
+4,0:03,2,1,short,1,-0.7400000000000002,SDG,BUF,-10,3,red zone,run middle,,2020
 1,15:00,1,10,long,75,-0.010000000000000009,SFO,STL,0,29,grey zone,pass short right,4,2020
 1,14:31,2,6,middle,71,-0.16999999999999998,SFO,STL,0,45,grey zone,run right,4,2020
 1,13:46,3,2,short,67,-1.6099999999999999,SFO,STL,0,4,grey zone,pass short middle,0,2020
@@ -25456,7 +25456,7 @@ OT,7:15,4,2,short,21,0.8199999999999998,IND,GNB,3,0:07:15,red zone,field goal,su
 4,0:23,2,10,long,37,-0.1599999999999997,SFO,STL,0,5,green zone,pass short left,4,2020
 4,0:18,3,6,middle,33,-0.81,SFO,STL,0,14,green zone,run middle,4,2020
 4,0:04,4,2,short,29,2.37,SFO,STL,0,0,green zone,,,2020
-4,0:04,1,10,long,24,-0.9700000000000002,SFO,STL,3,0:00:04,red zone,field goal,success,2020
+4,0:04,1,10,long,24,-0.9700000000000002,SFO,STL,3,4,red zone,field goal,success,2020
 1,15:00,1,10,long,75,-0.27999999999999997,DEN,NOR,0,39,grey zone,run left,2,2020
 1,14:21,2,8,long,73,1.27,DEN,NOR,0,39,grey zone,run middle,13,2020
 1,13:42,1,10,long,60,-0.14000000000000012,DEN,NOR,0,39,grey zone,run right,3,2020
@@ -25583,7 +25583,7 @@ OT,7:15,4,2,short,21,0.8199999999999998,IND,GNB,3,0:07:15,red zone,field goal,su
 4,2:00,4,4,middle,73,1.03,NOR,DEN,28,13,grey zone,punt,49,2020
 4,1:47,1,10,long,76,1.52,DEN,NOR,-28,40,black zone,run left,23,2020
 4,1:07,1,10,long,53,-0.41000000000000014,DEN,NOR,-28,42,grey zone,run left,1,2020
-4,0:25,2,9,long,52,-0.69,DEN,NOR,-28,0:00:25,grey zone,run middle,,2020
+4,0:25,2,9,long,52,-0.69,DEN,NOR,-28,25,grey zone,run middle,,2020
 1,15:00,1,10,long,75,2.24,KAN,TAM,0,33,grey zone,pass short left,34,2020
 1,14:27,1,10,long,41,-0.54,KAN,TAM,0,4,green zone,pass short right,0,2020
 1,14:23,2,10,long,41,0.6699999999999999,KAN,TAM,0,0,green zone,,,2020
@@ -25738,7 +25738,7 @@ OT,7:15,4,2,short,21,0.8199999999999998,IND,GNB,3,0:07:15,red zone,field goal,su
 4,2:25,1,10,long,52,-0.4099999999999999,KAN,TAM,3,25,grey zone,run left,1,2020
 4,2:00,2,9,long,51,-0.42999999999999994,KAN,TAM,3,45,grey zone,pass short right,2,2020
 4,1:15,3,7,middle,49,1.56,KAN,TAM,3,46,green zone,pass short left,8,2020
-4,0:29,1,10,long,41,-0.6800000000000002,KAN,TAM,3,0:00:29,green zone,,,2020
+4,0:29,1,10,long,41,-0.6800000000000002,KAN,TAM,3,29,green zone,,,2020
 1,15:00,1,10,long,75,0.7200000000000001,GNB,CHI,0,38,grey zone,pass short left,11,2020
 1,14:22,1,10,long,64,-0.54,GNB,CHI,0,5,grey zone,pass short middle,0,2020
 1,14:17,2,10,long,64,1.4699999999999998,GNB,CHI,0,45,grey zone,run middle,14,2020
@@ -25883,7 +25883,7 @@ OT,7:15,4,2,short,21,0.8199999999999998,IND,GNB,3,0:07:15,red zone,field goal,su
 4,2:45,1,10,long,31,0.0,GNB,CHI,16,45,green zone,run middle,4,2020
 4,2:00,2,6,middle,27,0.9300000000000006,GNB,CHI,16,45,green zone,run middle,10,2020
 4,1:15,1,10,long,17,-0.5900000000000003,GNB,CHI,16,40,red zone,,,2020
-4,0:35,2,10,long,17,-0.7800000000000002,GNB,CHI,16,0:00:35,red zone,,,2020
+4,0:35,2,10,long,17,-0.7800000000000002,GNB,CHI,16,35,red zone,,,2020
 1,14:54,1,10,long,81,0.7899999999999999,PHI,SEA,0,0,black zone,,,2020
 1,14:54,1,5,middle,76,-0.5999999999999999,PHI,SEA,0,4,black zone,pass short right,0,2020
 1,14:50,2,5,middle,76,-0.76,PHI,SEA,0,3,black zone,pass short middle,0,2020
@@ -26036,7 +26036,7 @@ OT,7:15,4,2,short,21,0.8199999999999998,IND,GNB,3,0:07:15,red zone,field goal,su
 4,0:43,2,2,short,50,1.1099999999999999,PHI,SEA,-14,21,green zone,pass short right,17,2020
 4,0:22,1,10,long,33,-0.54,PHI,SEA,-14,1,green zone,,,2020
 4,0:21,2,10,long,33,4.16,PHI,SEA,-8,10,green zone,pass deep middle,33,2020
-4,0:11,1,10,long,51,-0.6799999999999999,SEA,PHI,6,0:00:11,grey zone,,,2020
+4,0:11,1,10,long,51,-0.6799999999999999,SEA,PHI,6,11,grey zone,,,2020
 1,14:55,1,10,long,65,0.1299999999999999,BAL,PIT,0,38,grey zone,pass short left,5,2020
 1,14:17,2,5,middle,60,-0.57,BAL,PIT,0,43,grey zone,run left,1,2020
 1,13:34,3,4,middle,59,-1.5499999999999998,BAL,PIT,0,44,grey zone,pass short left,-1,2020
@@ -26178,7 +26178,7 @@ OT,7:15,4,2,short,21,0.8199999999999998,IND,GNB,3,0:07:15,red zone,field goal,su
 4,2:16,1,10,long,54,0.4099999999999999,PIT,BAL,5,16,grey zone,run right,7,2020
 4,2:00,2,3,short,47,-0.44999999999999996,PIT,BAL,5,41,green zone,run left,2,2020
 4,1:19,3,1,short,45,0.7,PIT,BAL,5,42,green zone,run left,1,2020
-4,0:37,1,10,long,44,-0.6699999999999999,PIT,BAL,5,0:00:37,green zone,,,2020
+4,0:37,1,10,long,44,-0.6699999999999999,PIT,BAL,5,37,green zone,,,2020
 1,14:51,1,10,long,54,0.0,CHI,DET,0,22,grey zone,run left,4,2020
 1,14:29,2,6,middle,50,1.32,CHI,DET,0,20,green zone,pass short middle,16,2020
 1,14:09,1,10,long,34,-0.54,CHI,DET,0,3,green zone,pass short left,0,2020
@@ -26329,7 +26329,7 @@ OT,7:15,4,2,short,21,0.8199999999999998,IND,GNB,3,0:07:15,red zone,field goal,su
 4,0:26,2,5,middle,24,-0.71,CHI,DET,-4,4,red zone,pass deep right,0,2020
 4,0:22,3,5,middle,24,-0.7999999999999998,CHI,DET,-4,6,red zone,pass short right,4,2020
 4,0:16,4,1,short,20,-2.55,CHI,DET,-4,5,red zone,run left,,2020
-4,0:11,1,10,long,80,-0.74,DET,CHI,4,0:00:11,black zone,,,2020
+4,0:11,1,10,long,80,-0.74,DET,CHI,4,11,black zone,,,2020
 1,15:00,1,10,long,75,-0.010000000000000009,ATL,NOR,0,33,grey zone,pass short middle,4,2020
 1,14:27,2,6,middle,71,-0.42999999999999994,ATL,NOR,0,36,grey zone,run right,2,2020
 1,13:51,3,4,middle,69,-1.48,ATL,NOR,0,6,grey zone,pass short right,0,2020
@@ -26490,7 +26490,7 @@ OT,7:15,4,2,short,21,0.8199999999999998,IND,GNB,3,0:07:15,red zone,field goal,su
 4,0:38,4,4,middle,74,0.09999999999999987,NOR,ATL,5,11,grey zone,punt,35,2020
 4,0:27,1,10,long,61,-0.54,ATL,NOR,-5,7,grey zone,pass deep left,0,2020
 4,0:20,2,10,long,61,1.99,ATL,NOR,-5,11,grey zone,pass deep left,22,2020
-4,0:09,1,10,long,39,-0.54,ATL,NOR,-5,0:00:09,green zone,pass deep middle,0,2020
+4,0:09,1,10,long,39,-0.54,ATL,NOR,-5,9,green zone,pass deep middle,0,2020
 1,15:00,1,10,long,75,0.66,CLE,TEN,0,36,grey zone,pass short middle,10,2020
 1,14:24,1,10,long,65,-0.14000000000000012,CLE,TEN,0,43,grey zone,run left,3,2020
 1,13:41,2,7,middle,62,2.65,CLE,TEN,0,29,grey zone,pass deep right,35,2020
@@ -26644,7 +26644,7 @@ OT,7:15,4,2,short,21,0.8199999999999998,IND,GNB,3,0:07:15,red zone,field goal,su
 4,0:38,3,10,long,13,-0.5500000000000003,TEN,CLE,-13,5,red zone,pass short right,0,2020
 4,0:33,4,10,long,13,0.40000000000000036,TEN,CLE,-13,0,red zone,,,2020
 4,0:33,4,5,middle,8,4.029999999999999,TEN,CLE,-7,6,red zone,pass short left,8,2020
-4,0:27,1,10,long,43,-0.6800000000000002,CLE,TEN,6,0:00:27,green zone,,,2020
+4,0:27,1,10,long,43,-0.6800000000000002,CLE,TEN,6,27,green zone,,,2020
 1,14:54,1,10,long,74,-0.54,NYJ,OAK,0,7,grey zone,pass short right,0,2020
 1,14:47,2,10,long,74,-0.43,NYJ,OAK,0,28,grey zone,run left,2,2020
 1,14:19,3,8,long,72,2.5599999999999996,NYJ,OAK,0,41,grey zone,pass short left,22,2020
@@ -26793,7 +26793,7 @@ OT,7:15,4,2,short,21,0.8199999999999998,IND,GNB,3,0:07:15,red zone,field goal,su
 4,0:20,1,10,long,46,-0.54,OAK,NYJ,-4,1,green zone,,,2020
 4,0:19,2,10,long,46,-0.69,OAK,NYJ,-4,6,green zone,pass deep middle,0,2020
 4,0:13,3,10,long,46,5.71,OAK,NYJ,2,9,green zone,pass deep left,46,2020
-4,0:04,1,10,long,50,-0.5499999999999998,NYJ,OAK,-3,0:00:04,green zone,pass deep right,0,2020
+4,0:04,1,10,long,50,-0.5499999999999998,NYJ,OAK,-3,4,green zone,pass deep right,0,2020
 1,15:00,1,10,long,75,1.58,JAX,MIN,0,35,grey zone,pass deep middle,24,2020
 1,14:25,1,10,long,51,0.54,JAX,MIN,0,31,grey zone,pass short right,8,2020
 1,13:54,2,2,short,43,0.5800000000000001,JAX,MIN,0,33,green zone,run left,9,2020
@@ -26977,7 +26977,7 @@ OT,3:03,3,3,short,11,1.7999999999999998,MIN,JAX,0,36,red zone,run left,6,2020
 OT,2:27,1,5,middle,5,-0.33999999999999986,MIN,JAX,0,27,red zone,run left,3,2020
 OT,2:00,2,2,short,2,-0.5499999999999998,MIN,JAX,0,7,red zone,run middle,1,2020
 OT,1:53,3,1,short,1,-0.9100000000000001,MIN,JAX,0,0,red zone,,,2020
-OT,1:53,3,5,middle,5,-1.2599999999999998,MIN,JAX,3,0:01:53,red zone,field goal,success,2020
+OT,1:53,3,5,middle,5,-1.2599999999999998,MIN,JAX,3,113,red zone,field goal,success,2020
 1,15:00,1,10,long,75,0.67,CIN,MIA,0,35,grey zone,run right,9,2020
 1,14:25,2,1,short,66,-0.010000000000000009,CIN,MIA,0,39,grey zone,run left,1,2020
 1,13:46,1,10,long,65,-0.68,CIN,MIA,0,35,grey zone,run left,-1,2020
@@ -27120,7 +27120,7 @@ OT,1:53,3,5,middle,5,-1.2599999999999998,MIN,JAX,3,0:01:53,red zone,field goal,s
 4,1:44,1,10,long,91,0.22,MIA,CIN,12,8,black zone,run right,7,2020
 4,1:36,2,3,short,84,-0.31999999999999995,MIA,CIN,12,46,black zone,run left,1,2020
 4,0:50,3,2,short,83,0.8200000000000001,MIA,CIN,12,31,black zone,run right,4,2020
-4,0:19,1,10,long,79,-0.8700000000000001,MIA,CIN,12,0:00:19,black zone,,,2020
+4,0:19,1,10,long,79,-0.8700000000000001,MIA,CIN,12,19,black zone,,,2020
 1,14:56,1,10,long,78,-0.41,HOU,IND,0,34,black zone,pass short left,1,2020
 1,14:22,2,9,long,77,-0.56,HOU,IND,0,44,black zone,run right,1,2020
 1,13:38,3,8,long,76,-1.21,HOU,IND,0,7,black zone,pass short right,0,2020
@@ -27267,7 +27267,7 @@ OT,1:53,3,5,middle,5,-1.2599999999999998,MIN,JAX,3,0:01:53,red zone,field goal,s
 4,1:32,1,6,middle,6,-0.11000000000000032,HOU,IND,-6,4,red zone,run middle,4,2020
 4,1:28,2,2,short,2,-5.34,HOU,IND,-6,5,red zone,,,2020
 4,1:23,1,10,long,91,-0.47,IND,HOU,6,42,black zone,,,2020
-4,0:41,2,11,long,92,-0.7999999999999999,IND,HOU,6,0:00:41,black zone,,,2020
+4,0:41,2,11,long,92,-0.7999999999999999,IND,HOU,6,41,black zone,,,2020
 1,15:00,1,10,long,75,-0.41,ARI,STL,0,31,grey zone,run middle,1,2020
 1,14:29,2,9,long,74,-0.69,ARI,STL,0,3,grey zone,pass short middle,0,2020
 1,14:26,3,9,long,74,2.15,ARI,STL,0,15,grey zone,,,2020
@@ -27425,7 +27425,7 @@ OT,1:53,3,5,middle,5,-1.2599999999999998,MIN,JAX,3,0:01:53,red zone,field goal,s
 4,1:59,2,5,middle,45,-0.8400000000000001,STL,ARI,10,6,green zone,run right,-1,2020
 4,1:53,3,6,middle,46,-1.02,STL,ARI,10,44,green zone,run middle,5,2020
 4,1:09,4,1,short,41,2.45,STL,ARI,10,42,green zone,run middle,2,2020
-4,0:27,1,10,long,39,-0.6800000000000002,STL,ARI,10,0:00:27,green zone,,,2020
+4,0:27,1,10,long,39,-0.6800000000000002,STL,ARI,10,27,green zone,,,2020
 1,14:55,1,10,long,70,0.13000000000000012,SEA,NYG,0,30,grey zone,pass short middle,5,2020
 1,14:25,2,5,middle,65,0.5899999999999999,SEA,NYG,0,28,grey zone,pass short right,6,2020
 1,13:57,1,10,long,59,0.7300000000000002,SEA,NYG,0,39,grey zone,run right,11,2020
@@ -27572,7 +27572,7 @@ OT,1:53,3,5,middle,5,-1.2599999999999998,MIN,JAX,3,0:01:53,red zone,field goal,s
 4,0:58,2,10,long,46,-0.69,SEA,NYG,-5,4,green zone,pass short middle,0,2020
 4,0:54,3,10,long,46,-1.61,SEA,NYG,-5,6,green zone,,,2020
 4,0:48,4,18,long,54,-2.2,SEA,NYG,-5,11,grey zone,pass deep right,0,2020
-4,0:37,1,10,long,46,-0.6799999999999999,NYG,SEA,5,0:00:37,green zone,,,2020
+4,0:37,1,10,long,46,-0.6799999999999999,NYG,SEA,5,37,green zone,,,2020
 1,15:00,1,10,long,75,0.9900000000000001,NWE,SDG,0,43,grey zone,pass short left,15,2020
 1,14:17,1,10,long,60,0.3999999999999999,NWE,SDG,0,34,grey zone,run middle,7,2020
 1,13:43,2,3,short,53,0.5899999999999999,NWE,SDG,0,41,grey zone,run right,8,2020
@@ -27726,7 +27726,7 @@ OT,1:53,3,5,middle,5,-1.2599999999999998,MIN,JAX,3,0:01:53,red zone,field goal,s
 4,1:56,3,4,middle,85,-1.72,SDG,NWE,-45,34,black zone,pass short left,0,2020
 4,1:22,4,4,middle,85,-2.14,SDG,NWE,-45,4,black zone,pass short left,0,2020
 4,1:18,1,10,long,15,-0.77,NWE,SDG,45,41,red zone,,,2020
-4,0:37,2,11,long,16,-0.8300000000000001,NWE,SDG,45,0:00:37,red zone,,,2020
+4,0:37,2,11,long,16,-0.8300000000000001,NWE,SDG,45,37,red zone,,,2020
 1,15:00,1,10,long,75,0.26,PHI,GNB,0,47,grey zone,run left,6,2020
 1,14:13,2,4,middle,69,-0.30999999999999994,PHI,GNB,0,41,grey zone,run left,3,2020
 1,13:32,3,1,short,66,0.8399999999999999,PHI,GNB,0,44,grey zone,run middle,3,2020
@@ -27862,7 +27862,7 @@ OT,1:53,3,5,middle,5,-1.2599999999999998,MIN,JAX,3,0:01:53,red zone,field goal,s
 4,1:38,3,4,middle,60,1.17,GNB,PHI,14,6,grey zone,pass short right,5,2020
 4,1:32,1,10,long,55,-0.6799999999999999,GNB,PHI,14,37,grey zone,,,2020
 4,0:55,2,11,long,56,-0.8200000000000001,GNB,PHI,14,30,grey zone,,,2020
-4,0:25,3,12,long,57,-1.02,GNB,PHI,14,0:00:25,grey zone,,,2020
+4,0:25,3,12,long,57,-1.02,GNB,PHI,14,25,grey zone,,,2020
 1,15:00,1,10,long,75,-0.55,DEN,KAN,0,37,grey zone,run right,,2020
 1,14:23,2,10,long,75,-0.29000000000000004,DEN,KAN,0,39,grey zone,run middle,3,2020
 1,13:44,3,7,middle,72,3.48,DEN,KAN,0,31,grey zone,pass deep left,37,2020
@@ -28006,7 +28006,7 @@ OT,1:53,3,5,middle,5,-1.2599999999999998,MIN,JAX,3,0:01:53,red zone,field goal,s
 4,0:59,2,10,long,75,-0.019999999999999997,DEN,KAN,-6,22,grey zone,pass short left,5,2020
 4,0:37,3,5,middle,70,-1.4100000000000001,DEN,KAN,-6,4,grey zone,pass deep middle,0,2020
 4,0:33,4,5,middle,70,-0.9499999999999997,DEN,KAN,-6,9,grey zone,pass deep right,interception,2020
-4,0:24,1,10,long,49,-0.6699999999999999,KAN,DEN,6,0:00:24,green zone,,,2020
+4,0:24,1,10,long,49,-0.6699999999999999,KAN,DEN,6,24,green zone,,,2020
 1,15:00,1,10,long,75,-0.55,PIT,WAS,0,5,grey zone,pass deep right,0,2020
 1,14:55,2,10,long,75,0.11000000000000001,PIT,WAS,0,42,grey zone,pass short left,6,2020
 1,14:13,3,4,middle,69,-1.28,PIT,WAS,0,42,grey zone,pass short middle,3,2020
@@ -28171,7 +28171,7 @@ OT,1:53,3,5,middle,5,-1.2599999999999998,MIN,JAX,3,0:01:53,red zone,field goal,s
 4,1:08,3,12,long,27,-0.7400000000000002,WAS,PIT,3,47,green zone,run left,,2020
 4,0:21,4,12,long,27,1.33,WAS,PIT,6,4,green zone,field goal,success,2020
 4,0:17,1,10,long,75,-0.55,PIT,WAS,-6,5,grey zone,pass deep right,0,2020
-4,0:12,2,10,long,75,2.0,PIT,WAS,-6,0:00:12,grey zone,pass deep left,22,2020
+4,0:12,2,10,long,75,2.0,PIT,WAS,-6,12,grey zone,pass deep left,22,2020
 1,15:00,1,10,long,75,0.7300000000000001,BUF,SFO,0,5,grey zone,,,2020
 1,14:55,1,5,middle,70,-0.06000000000000005,BUF,SFO,0,42,grey zone,run middle,4,2020
 1,14:13,2,1,short,66,0.11999999999999988,BUF,SFO,0,21,grey zone,pass short left,3,2020
@@ -28315,7 +28315,7 @@ OT,1:53,3,5,middle,5,-1.2599999999999998,MIN,JAX,3,0:01:53,red zone,field goal,s
 4,1:14,1,10,long,14,1.0199999999999996,SFO,BUF,-17,20,red zone,pass short middle,9,2020
 4,0:54,2,1,short,5,-0.71,SFO,BUF,-17,4,red zone,pass short left,0,2020
 4,0:50,3,1,short,5,2.04,SFO,BUF,-11,8,red zone,pass short right,5,2020
-4,0:42,1,10,long,45,-0.6799999999999999,BUF,SFO,10,0:00:42,green zone,,,2020
+4,0:42,1,10,long,45,-0.6799999999999999,BUF,SFO,10,42,green zone,,,2020
 1,14:54,1,10,long,81,-0.35,DAL,BAL,0,32,black zone,run right,1,2020
 1,14:22,2,9,long,80,0.17,DAL,BAL,0,38,black zone,run left,7,2020
 1,13:44,3,2,short,73,1.03,DAL,BAL,0,27,grey zone,pass short left,4,2020
@@ -28463,7 +28463,7 @@ OT,1:53,3,5,middle,5,-1.2599999999999998,MIN,JAX,3,0:01:53,red zone,field goal,s
 4,0:38,4,19,long,61,4.16,DAL,BAL,-17,19,grey zone,pass deep middle,28,2020
 4,0:19,1,10,long,33,-0.54,DAL,BAL,-17,6,green zone,pass deep right,0,2020
 4,0:13,2,10,long,33,-0.69,DAL,BAL,-17,5,green zone,pass deep left,0,2020
-4,0:08,3,10,long,33,0.43999999999999995,DAL,BAL,-17,0:00:08,green zone,run right,12,2020
+4,0:08,3,10,long,33,0.43999999999999995,DAL,BAL,-17,8,green zone,run right,12,2020
 1,15:00,1,10,long,75,1.65,STL,NWE,0,37,grey zone,pass short right,25,2020
 1,14:23,1,10,long,50,0.7300000000000004,STL,NWE,0,11,green zone,,,2020
 1,14:12,1,5,middle,45,1.92,STL,NWE,0,37,green zone,run left,35,2020
@@ -28604,7 +28604,7 @@ OT,1:53,3,5,middle,5,-1.2599999999999998,MIN,JAX,3,0:01:53,red zone,field goal,s
 4,1:14,2,9,long,49,0.09999999999999987,NWE,STL,-21,33,green zone,run middle,6,2020
 4,0:41,3,3,short,43,-1.6199999999999999,NWE,STL,-21,33,green zone,run middle,-1,2020
 4,0:08,4,4,middle,44,-1.99,NWE,STL,-21,3,green zone,run middle,3,2020
-4,0:05,1,10,long,59,-0.6699999999999999,STL,NWE,21,0:00:05,grey zone,,,2020
+4,0:05,1,10,long,59,-0.6699999999999999,STL,NWE,21,5,grey zone,,,2020
 1,15:00,1,10,long,75,0.67,DEN,CAR,0,35,grey zone,run left,9,2020
 1,14:25,2,1,short,66,0.11999999999999988,DEN,CAR,0,38,grey zone,run left,3,2020
 1,13:47,1,10,long,63,-0.1399999999999999,DEN,CAR,0,33,grey zone,pass short left,3,2020
@@ -28742,7 +28742,7 @@ OT,1:53,3,5,middle,5,-1.2599999999999998,MIN,JAX,3,0:01:53,red zone,field goal,s
 4,1:56,4,8,long,71,-2.14,CAR,DEN,-5,6,grey zone,pass short left,1,2020
 4,1:50,1,10,long,30,-0.8200000000000003,DEN,CAR,5,41,green zone,,,2020
 4,1:09,2,12,long,32,-0.9399999999999997,DEN,CAR,5,41,green zone,,,2020
-4,0:28,3,14,long,34,-0.9400000000000001,DEN,CAR,5,0:00:28,green zone,,,2020
+4,0:28,3,14,long,34,-0.9400000000000001,DEN,CAR,5,28,green zone,,,2020
 1,15:00,1,10,long,75,0.13,MIN,TAM,0,33,grey zone,run left,5,2020
 1,14:27,2,5,middle,70,1.39,MIN,TAM,0,25,grey zone,run left,13,2020
 1,14:02,1,10,long,52,0.3999999999999999,MIN,TAM,0,36,grey zone,run right,7,2020
@@ -28884,7 +28884,7 @@ OT,1:53,3,5,middle,5,-1.2599999999999998,MIN,JAX,3,0:01:53,red zone,field goal,s
 4,1:59,2,3,short,37,0.98,TAM,MIN,12,6,green zone,run middle,14,2020
 4,1:53,1,10,long,23,-0.6800000000000002,TAM,MIN,12,41,red zone,,,2020
 4,1:12,2,11,long,24,-0.6799999999999997,TAM,MIN,12,36,red zone,,,2020
-4,0:36,3,11,long,24,-0.8800000000000001,TAM,MIN,12,0:00:36,red zone,,,2020
+4,0:36,3,11,long,24,-0.8800000000000001,TAM,MIN,12,36,red zone,,,2020
 1,15:00,1,10,long,75,0.86,NYG,ARI,0,34,grey zone,pass short left,13,2020
 1,14:26,1,10,long,62,0.53,NYG,ARI,0,34,grey zone,run middle,8,2020
 1,13:52,2,2,short,54,0.2599999999999998,NYG,ARI,0,40,grey zone,run left,4,2020
@@ -29033,7 +29033,7 @@ OT,1:53,3,5,middle,5,-1.2599999999999998,MIN,JAX,3,0:01:53,red zone,field goal,s
 4,1:49,1,10,long,64,-4.970000000000001,NYG,ARI,-19,7,grey zone,,,2020
 4,1:42,1,10,long,29,-0.6699999999999999,ARI,NYG,19,41,green zone,,,2020
 4,1:01,2,11,long,30,-0.9500000000000002,ARI,NYG,19,41,green zone,,,2020
-4,0:20,3,13,long,32,-0.96,ARI,NYG,19,0:00:20,green zone,,,2020
+4,0:20,3,13,long,32,-0.96,ARI,NYG,19,20,green zone,,,2020
 1,15:00,1,10,long,75,-0.55,MIA,KAN,0,7,grey zone,pass deep left,0,2020
 1,14:53,2,10,long,75,-0.55,MIA,KAN,0,38,grey zone,run right,1,2020
 1,14:15,3,9,long,74,-1.14,MIA,KAN,0,6,grey zone,pass deep middle,0,2020
@@ -29193,7 +29193,7 @@ OT,1:53,3,5,middle,5,-1.2599999999999998,MIN,JAX,3,0:01:53,red zone,field goal,s
 4,0:36,1,10,long,48,1.4499999999999997,MIA,KAN,-9,14,green zone,pass deep middle,22,2020
 4,0:22,1,10,long,26,-0.54,MIA,KAN,-9,1,green zone,,,2020
 4,0:21,2,10,long,26,-0.2999999999999998,MIA,KAN,-6,6,green zone,field goal,success,2020
-4,0:15,1,10,long,45,-0.6799999999999999,KAN,MIA,6,0:00:15,green zone,,,2020
+4,0:15,1,10,long,45,-0.6799999999999999,KAN,MIA,6,15,green zone,,,2020
 1,15:00,1,10,long,75,0.67,JAX,TEN,0,36,grey zone,pass short left,9,2020
 1,14:24,2,1,short,66,-0.8500000000000001,JAX,TEN,0,36,grey zone,run middle,-1,2020
 1,13:48,3,2,short,67,1.3,JAX,TEN,0,39,grey zone,pass short middle,9,2020
@@ -29345,7 +29345,7 @@ OT,1:53,3,5,middle,5,-1.2599999999999998,MIN,JAX,3,0:01:53,red zone,field goal,s
 4,1:15,1,10,long,57,0.26,JAX,TEN,-21,23,grey zone,pass short right,6,2020
 4,0:52,2,4,middle,51,0.6600000000000001,JAX,TEN,-21,5,grey zone,,,2020
 4,0:47,1,10,long,43,-0.8100000000000003,JAX,TEN,-21,30,green zone,pass short right,-2,2020
-4,0:17,2,12,long,45,0.3699999999999999,JAX,TEN,-21,0:00:17,green zone,pass short middle,8,2020
+4,0:17,2,12,long,45,0.3699999999999999,JAX,TEN,-21,17,green zone,pass short middle,8,2020
 1,14:55,1,10,long,79,0.6599999999999999,CIN,DAL,0,25,black zone,pass short left,10,2020
 1,14:30,1,10,long,69,-4.45,CIN,DAL,0,8,grey zone,run right,1,2020
 1,14:22,1,10,long,32,-0.5500000000000003,DAL,CIN,0,4,green zone,pass short left,0,2020
@@ -29478,7 +29478,7 @@ OT,1:53,3,5,middle,5,-1.2599999999999998,MIN,JAX,3,0:01:53,red zone,field goal,s
 4,2:00,4,1,short,7,3.99,DAL,CIN,22,5,red zone,pass short right,7,2020
 4,1:55,1,10,long,75,-0.010000000000000009,CIN,DAL,-23,35,grey zone,run middle,4,2020
 4,1:20,2,6,middle,71,-0.7,CIN,DAL,-23,45,grey zone,run middle,,2020
-4,0:35,3,6,middle,71,-1.01,CIN,DAL,-23,0:00:35,grey zone,run left,5,2020
+4,0:35,3,6,middle,71,-1.01,CIN,DAL,-23,35,grey zone,run left,5,2020
 1,14:54,1,10,long,83,0.6799999999999999,HOU,CHI,0,32,black zone,pass short right,8,2020
 1,14:22,2,2,short,75,0.58,HOU,CHI,0,27,grey zone,run right,9,2020
 1,13:55,1,10,long,66,-0.5399999999999999,HOU,CHI,0,34,grey zone,run left,,2020
@@ -29623,7 +29623,7 @@ OT,1:53,3,5,middle,5,-1.2599999999999998,MIN,JAX,3,0:01:53,red zone,field goal,s
 4,1:29,1,10,long,35,-0.5499999999999998,HOU,CHI,-29,8,green zone,pass deep left,0,2020
 4,1:21,2,10,long,35,-0.5500000000000003,HOU,CHI,-29,44,green zone,run right,1,2020
 4,0:37,3,9,long,34,1.7600000000000002,HOU,CHI,-29,25,green zone,pass short middle,9,2020
-4,0:12,1,10,long,25,-2.4400000000000004,HOU,CHI,-29,0:00:12,red zone,,,2020
+4,0:12,1,10,long,25,-2.4400000000000004,HOU,CHI,-29,12,red zone,,,2020
 1,15:00,1,10,long,75,0.7200000000000001,NYJ,SEA,0,36,grey zone,run left,11,2020
 1,14:24,1,10,long,64,0.0,NYJ,SEA,0,42,grey zone,run left,4,2020
 1,13:42,2,6,middle,60,0.8599999999999999,NYJ,SEA,0,35,grey zone,pass short right,9,2020
@@ -29764,7 +29764,7 @@ OT,1:53,3,5,middle,5,-1.2599999999999998,MIN,JAX,3,0:01:53,red zone,field goal,s
 4,2:31,1,10,long,61,0.1299999999999999,NYJ,SEA,-37,31,grey zone,run left,5,2020
 4,2:00,2,5,middle,56,-0.2999999999999998,NYJ,SEA,-37,45,grey zone,run left,3,2020
 4,1:15,3,2,short,53,0.8299999999999998,NYJ,SEA,-37,41,grey zone,run left,2,2020
-4,0:34,1,10,long,51,0.0,NYJ,SEA,-37,0:00:34,grey zone,run left,4,2020
+4,0:34,1,10,long,51,0.0,NYJ,SEA,-37,34,grey zone,run left,4,2020
 1,15:00,1,10,long,75,0.26,IND,OAK,0,4,grey zone,,,2020
 1,14:56,1,10,long,71,-0.14,IND,OAK,0,27,grey zone,run left,3,2020
 1,14:29,2,7,middle,68,1.2,IND,OAK,0,42,grey zone,run left,13,2020
@@ -29906,7 +29906,7 @@ OT,1:53,3,5,middle,5,-1.2599999999999998,MIN,JAX,3,0:01:53,red zone,field goal,s
 4,1:08,1,5,middle,5,-0.9099999999999993,OAK,IND,-24,4,red zone,pass short left,0,2020
 4,1:04,2,5,middle,5,1.8499999999999996,OAK,IND,-18,9,red zone,run left,5,2020
 4,0:55,1,10,long,75,-0.6799999999999999,IND,OAK,17,17,grey zone,,,2020
-4,0:38,2,11,long,76,-0.8200000000000001,IND,OAK,17,0:00:38,black zone,,,2020
+4,0:38,2,11,long,76,-0.8200000000000001,IND,OAK,17,38,black zone,,,2020
 1,15:00,1,10,long,75,0.67,SFO,WAS,0,22,grey zone,run left,9,2020
 1,14:38,2,1,short,66,0.050000000000000044,SFO,WAS,0,25,grey zone,run middle,2,2020
 1,14:13,1,10,long,64,1.06,SFO,WAS,0,26,grey zone,pass deep left,16,2020
@@ -30075,7 +30075,7 @@ OT,1:53,3,5,middle,5,-1.2599999999999998,MIN,JAX,3,0:01:53,red zone,field goal,s
 4,1:35,2,17,long,63,-1.33,WAS,SFO,8,43,grey zone,,,2020
 4,0:52,3,22,long,68,-0.48,WAS,SFO,8,44,grey zone,,,2020
 4,0:08,4,25,long,71,0.83,WAS,SFO,8,7,grey zone,punt,46,2020
-4,0:01,1,10,long,75,1.4500000000000002,SFO,WAS,-8,0:00:01,grey zone,pass short left,19,2020
+4,0:01,1,10,long,75,1.4500000000000002,SFO,WAS,-8,1,grey zone,pass short left,19,2020
 1,15:00,1,10,long,75,-0.14,ATL,SDG,0,38,grey zone,run middle,3,2020
 1,14:22,2,7,middle,72,-0.16999999999999998,ATL,SDG,0,36,grey zone,pass short right,4,2020
 1,13:46,3,3,short,68,-1.54,ATL,SDG,0,5,grey zone,pass deep left,0,2020
@@ -30215,7 +30215,7 @@ OT,1:53,3,5,middle,5,-1.2599999999999998,MIN,JAX,3,0:01:53,red zone,field goal,s
 4,0:20,3,2,short,66,1.69,SDG,ATL,0,4,grey zone,pass short middle,15,2020
 4,0:16,1,10,long,51,1.65,SDG,ATL,0,6,grey zone,pass deep left,25,2020
 4,0:10,1,10,long,26,-0.4099999999999997,SDG,ATL,0,7,green zone,run right,1,2020
-4,0:03,2,9,long,25,-0.43000000000000016,SDG,ATL,3,0:00:03,red zone,field goal,success,2020
+4,0:03,2,9,long,25,-0.43000000000000016,SDG,ATL,3,3,red zone,field goal,success,2020
 1,14:54,1,10,long,68,-1.35,NOR,PHI,0,39,grey zone,pass short left,-6,2020
 1,14:15,2,16,long,74,-0.14999999999999997,NOR,PHI,0,34,grey zone,run left,4,2020
 1,13:41,3,12,long,70,-0.81,NOR,PHI,0,30,grey zone,pass short left,2,2020
@@ -30366,7 +30366,7 @@ OT,1:53,3,5,middle,5,-1.2599999999999998,MIN,JAX,3,0:01:53,red zone,field goal,s
 4,1:29,2,10,long,20,3.31,NOR,PHI,-4,6,red zone,pass deep middle,20,2020
 4,1:23,1,10,long,28,-0.6800000000000002,PHI,NOR,3,1,green zone,,,2020
 4,1:22,2,11,long,29,-0.9499999999999997,PHI,NOR,3,46,green zone,,,2020
-4,0:36,3,13,long,31,-0.8400000000000001,PHI,NOR,3,0:00:36,green zone,,,2020
+4,0:36,3,13,long,31,-0.8400000000000001,PHI,NOR,3,36,green zone,,,2020
 1,15:00,1,10,long,75,-0.41,DET,GNB,0,35,grey zone,run middle,1,2020
 1,14:25,2,9,long,74,-0.69,DET,GNB,0,5,grey zone,pass short middle,0,2020
 1,14:20,3,9,long,74,2.55,DET,GNB,0,36,grey zone,pass deep middle,21,2020
@@ -30511,7 +30511,7 @@ OT,1:53,3,5,middle,5,-1.2599999999999998,MIN,JAX,3,0:01:53,red zone,field goal,s
 4,1:44,2,6,middle,41,-0.5700000000000003,GNB,DET,7,4,green zone,run middle,1,2020
 4,1:40,3,5,middle,40,1.3000000000000003,GNB,DET,7,41,green zone,pass short right,6,2020
 4,0:59,1,10,long,34,-0.6699999999999999,GNB,DET,7,37,green zone,,,2020
-4,0:22,2,11,long,35,-0.8200000000000001,GNB,DET,7,0:00:22,green zone,,,2020
+4,0:22,2,11,long,35,-0.8200000000000001,GNB,DET,7,22,green zone,,,2020
 1,14:55,1,10,long,90,-0.4,PIT,BUF,0,3,black zone,pass short left,0,2020
 1,14:52,2,10,long,90,-0.05999999999999994,PIT,BUF,0,38,black zone,pass short middle,5,2020
 1,14:14,3,5,middle,85,-1.6,PIT,BUF,0,4,black zone,pass short right,0,2020
@@ -30660,7 +30660,7 @@ OT,1:53,3,5,middle,5,-1.2599999999999998,MIN,JAX,3,0:01:53,red zone,field goal,s
 4,1:55,2,12,long,30,0.8200000000000003,BUF,PIT,11,47,green zone,run left,11,2020
 4,1:08,3,1,short,19,0.7200000000000002,BUF,PIT,11,5,red zone,run right,2,2020
 4,1:03,1,10,long,17,-0.7200000000000002,BUF,PIT,11,27,red zone,,,2020
-4,0:36,2,11,long,18,-0.81,BUF,PIT,11,0:00:36,red zone,,,2020
+4,0:36,2,11,long,18,-0.81,BUF,PIT,11,36,red zone,,,2020
 1,14:56,1,10,long,81,-0.54,CLE,BAL,0,4,black zone,pass short right,0,2020
 1,14:52,2,10,long,81,1.92,CLE,BAL,0,40,black zone,pass short right,20,2020
 1,14:12,1,10,long,61,-0.14000000000000012,CLE,BAL,0,31,grey zone,run left,3,2020
@@ -30813,7 +30813,7 @@ OT,1:53,3,5,middle,5,-1.2599999999999998,MIN,JAX,3,0:01:53,red zone,field goal,s
 4,0:22,2,4,middle,41,0.3999999999999999,BAL,CLE,0,14,green zone,pass short right,4,2020
 4,0:08,1,10,long,37,-0.5500000000000003,BAL,CLE,0,1,green zone,,,2020
 4,0:07,2,10,long,37,0.43000000000000016,BAL,CLE,3,5,green zone,field goal,success,2020
-4,0:02,1,10,long,75,-2.61,CLE,BAL,-5,0:00:02,grey zone,pass short middle,2,2020
+4,0:02,1,10,long,75,-2.61,CLE,BAL,-5,2,grey zone,pass short middle,2,2020
 1,15:00,1,10,long,75,-0.41,OAK,SDG,0,35,grey zone,run right,1,2020
 1,14:25,2,9,long,74,0.09999999999999998,OAK,SDG,0,46,grey zone,pass short left,6,2020
 1,13:39,3,3,short,68,-1.54,OAK,SDG,0,4,grey zone,pass short right,0,2020
@@ -30967,7 +30967,7 @@ OT,3:05,1,10,long,55,4.8100000000000005,SDG,OAK,-3,46,grey zone,pass deep middle
 OT,2:19,1,2,short,2,0.22999999999999954,SDG,OAK,-3,11,red zone,,,2020
 OT,2:08,1,1,short,1,-1.0599999999999996,SDG,OAK,-3,8,red zone,run right,,2020
 OT,2:00,2,1,short,1,-0.7400000000000002,SDG,OAK,-3,28,red zone,run middle,,2020
-OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,2020
+OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,92,red zone,run left,1,2020
 1,15:00,1,10,long,75,-0.27999999999999997,DEN,BUF,0,40,grey zone,run right,2,2020
 1,14:20,2,8,long,73,1.0699999999999998,DEN,BUF,0,29,grey zone,pass short left,10,2020
 1,13:51,1,10,long,63,0.6600000000000001,DEN,BUF,0,40,grey zone,run middle,10,2020
@@ -31116,7 +31116,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,1:51,1,10,long,51,4.8100000000000005,BUF,DEN,28,11,grey zone,run left,51,2020
 4,1:40,1,10,long,75,-0.55,DEN,BUF,-29,36,grey zone,run middle,,2020
 4,1:04,2,10,long,75,-0.29000000000000004,DEN,BUF,-29,34,grey zone,run middle,3,2020
-4,0:30,3,7,middle,72,-1.1400000000000001,DEN,BUF,-29,0:00:30,grey zone,run middle,2,2020
+4,0:30,3,7,middle,72,-1.1400000000000001,DEN,BUF,-29,30,grey zone,run middle,2,2020
 1,14:54,1,10,long,77,0.26,CAR,GNB,0,32,black zone,run right,6,2020
 1,14:22,2,4,middle,71,-0.44,CAR,GNB,0,32,grey zone,pass short right,2,2020
 1,13:50,3,2,short,69,-1.61,CAR,GNB,0,5,grey zone,pass short middle,0,2020
@@ -31261,7 +31261,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,0:30,3,9,long,79,-1.1400000000000001,CAR,GNB,-8,6,black zone,pass deep middle,0,2020
 4,0:24,4,9,long,79,0.33000000000000007,CAR,GNB,-8,6,black zone,,,2020
 4,0:18,4,4,middle,74,-2.21,CAR,GNB,-8,5,grey zone,pass short right,0,2020
-4,0:13,1,10,long,26,-0.6799999999999997,GNB,CAR,8,0:00:13,green zone,,,2020
+4,0:13,1,10,long,26,-0.6799999999999997,GNB,CAR,8,13,green zone,,,2020
 1,15:00,1,10,long,75,-0.14,WAS,SEA,0,37,grey zone,run right,3,2020
 1,14:23,2,7,middle,72,-0.96,WAS,SEA,0,41,grey zone,pass short left,-2,2020
 1,13:42,3,9,long,74,-1.14,WAS,SEA,0,41,grey zone,pass short middle,0,2020
@@ -31411,7 +31411,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,1:03,4,24,long,37,-2.19,WAS,SEA,-5,12,green zone,pass deep middle,0,2020
 4,0:51,1,10,long,63,-0.6799999999999999,SEA,WAS,5,2,grey zone,,,2020
 4,0:49,2,11,long,64,-0.82,SEA,WAS,5,41,grey zone,,,2020
-4,0:08,3,12,long,65,-1.01,SEA,WAS,5,0:00:08,grey zone,,,2020
+4,0:08,3,12,long,65,-1.01,SEA,WAS,5,8,grey zone,,,2020
 1,15:00,1,10,long,75,0.7200000000000001,BAL,JAX,0,43,grey zone,pass short right,11,2020
 1,14:17,1,10,long,64,0.6599999999999999,BAL,JAX,0,38,grey zone,pass short left,10,2020
 1,13:39,1,10,long,54,-0.1299999999999999,BAL,JAX,0,33,grey zone,run left,3,2020
@@ -31543,7 +31543,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,1:49,1,10,long,13,2.29,JAX,BAL,-27,5,red zone,pass short right,13,2020
 4,1:44,1,10,long,75,0.13,BAL,JAX,26,45,grey zone,run right,5,2020
 4,0:59,2,5,middle,70,-0.84,BAL,JAX,26,32,grey zone,,,2020
-4,0:27,3,6,middle,71,-1.4,BAL,JAX,26,0:00:27,grey zone,,,2020
+4,0:27,3,6,middle,71,-1.4,BAL,JAX,26,27,grey zone,,,2020
 1,15:00,1,10,long,75,-0.27999999999999997,TEN,DET,0,34,grey zone,run left,2,2020
 1,14:26,2,8,long,73,0.09999999999999998,TEN,DET,0,36,grey zone,pass short right,6,2020
 1,13:50,3,2,short,67,1.1,TEN,DET,0,37,grey zone,pass short right,6,2020
@@ -31684,7 +31684,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,1:38,1,10,long,59,-3.26,DET,TEN,-21,6,grey zone,pass deep right,interception,2020
 4,1:32,1,10,long,60,-0.68,TEN,DET,21,37,grey zone,,,2020
 4,0:55,2,11,long,61,-0.8200000000000001,TEN,DET,21,27,grey zone,,,2020
-4,0:28,3,12,long,62,-1.01,TEN,DET,21,0:00:28,grey zone,,,2020
+4,0:28,3,12,long,62,-1.01,TEN,DET,21,28,grey zone,,,2020
 1,14:55,1,10,long,61,0.3999999999999999,CHI,MIN,0,19,grey zone,pass short left,7,2020
 1,14:36,2,3,short,54,-0.43999999999999995,CHI,MIN,0,40,grey zone,run right,2,2020
 1,13:56,3,1,short,52,-1.95,CHI,MIN,0,39,grey zone,,,2020
@@ -31827,7 +31827,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,0:30,2,3,short,51,0.79,MIN,CHI,-6,19,grey zone,pass short left,11,2020
 4,0:11,1,10,long,40,-0.5499999999999998,MIN,CHI,-6,1,green zone,,,2020
 4,0:10,2,10,long,40,0.23999999999999977,MIN,CHI,-6,3,green zone,pass short left,7,2020
-4,0:07,3,3,short,33,-2.61,MIN,CHI,-6,0:00:07,green zone,pass deep right,interception,2020
+4,0:07,3,3,short,33,-2.61,MIN,CHI,-6,7,green zone,pass deep right,interception,2020
 1,15:00,1,10,long,75,-0.55,NWE,MIA,0,3,grey zone,pass short left,0,2020
 1,14:57,2,10,long,75,-0.8200000000000001,NWE,MIA,0,45,grey zone,run right,-1,2020
 1,14:12,3,11,long,76,-1.14,NWE,MIA,0,36,black zone,pass short right,-2,2020
@@ -31967,7 +31967,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,1:32,3,15,long,35,0.34999999999999987,NWE,MIA,-10,16,green zone,pass short right,12,2020
 4,1:16,4,3,short,23,-3.0999999999999996,NWE,MIA,-10,8,red zone,,,2020
 4,1:08,1,10,long,68,-0.27,MIA,NWE,10,46,grey zone,run right,2,2020
-4,0:22,2,8,long,66,0.08999999999999997,MIA,NWE,10,0:00:22,grey zone,run left,6,2020
+4,0:22,2,8,long,66,0.08999999999999997,MIA,NWE,10,22,grey zone,run left,6,2020
 1,15:00,1,10,long,75,-0.41,SFO,DAL,0,24,grey zone,run left,1,2020
 1,14:36,2,9,long,74,0.36000000000000004,SFO,DAL,0,24,grey zone,run right,8,2020
 1,14:12,3,1,short,66,-0.52,SFO,DAL,0,19,grey zone,,,2020
@@ -32126,7 +32126,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,0:43,2,7,middle,13,-1.3899999999999997,SFO,DAL,-7,9,red zone,field goal,success,2020
 4,0:34,1,10,long,75,1.71,SFO,DAL,-14,22,grey zone,pass deep middle,26,2020
 4,0:12,1,10,long,49,-0.5399999999999998,SFO,DAL,-14,5,green zone,pass short left,0,2020
-4,0:07,2,10,long,49,5.22,SFO,DAL,-8,0:00:07,green zone,pass deep right,49,2020
+4,0:07,2,10,long,49,5.22,SFO,DAL,-8,7,green zone,pass deep right,49,2020
 1,14:55,1,10,long,77,0.53,HOU,IND,0,32,black zone,run left,8,2020
 1,14:23,2,2,short,69,0.26,HOU,IND,0,36,grey zone,pass short left,4,2020
 1,13:47,1,10,long,65,0.26,HOU,IND,0,36,grey zone,run left,6,2020
@@ -32261,7 +32261,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,0:56,2,21,long,31,0.6600000000000001,HOU,IND,-7,20,green zone,pass short middle,10,2020
 4,0:36,3,11,long,21,-0.3799999999999999,HOU,IND,-7,8,red zone,pass short left,6,2020
 4,0:28,4,5,middle,15,-2.7700000000000005,HOU,IND,-7,9,red zone,pass short middle,13,2020
-4,0:19,1,10,long,80,-0.74,IND,HOU,7,0:00:19,black zone,,,2020
+4,0:19,1,10,long,80,-0.74,IND,HOU,7,19,black zone,,,2020
 1,15:00,1,10,long,75,-0.6799999999999999,ATL,TAM,0,36,grey zone,run right,-1,2020
 1,14:24,2,11,long,76,-0.42,ATL,TAM,0,35,black zone,pass short right,2,2020
 1,13:49,3,9,long,74,1.82,ATL,TAM,0,34,grey zone,pass short middle,10,2020
@@ -32408,7 +32408,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,2:02,1,10,long,19,-0.27999999999999936,TAM,ATL,4,4,red zone,run right,2,2020
 4,1:58,2,8,long,17,0.39999999999999947,TAM,ATL,4,46,red zone,run right,6,2020
 4,1:12,3,2,short,11,0.71,TAM,ATL,4,35,red zone,run right,2,2020
-4,0:37,1,9,long,9,-0.9499999999999993,TAM,ATL,4,0:00:37,red zone,,,2020
+4,0:37,1,9,long,9,-0.9499999999999993,TAM,ATL,4,37,red zone,,,2020
 1,15:00,1,10,long,75,-0.27999999999999997,STL,NYJ,0,27,grey zone,run right,2,2020
 1,14:33,2,8,long,73,0.09999999999999998,STL,NYJ,0,39,grey zone,pass short left,6,2020
 1,13:54,3,2,short,67,-1.6099999999999999,STL,NYJ,0,5,grey zone,pass short left,0,2020
@@ -32550,7 +32550,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,2:17,3,6,middle,48,1.37,NYJ,STL,3,17,green zone,pass short middle,6,2020
 4,2:00,1,10,long,42,-0.6800000000000002,NYJ,STL,3,40,green zone,,,2020
 4,1:20,2,11,long,43,-0.8199999999999998,NYJ,STL,3,41,green zone,,,2020
-4,0:39,3,12,long,44,-1.02,NYJ,STL,3,0:00:39,green zone,,,2020
+4,0:39,3,12,long,44,-1.02,NYJ,STL,3,39,green zone,,,2020
 1,15:00,1,10,long,75,0.9900000000000001,ARI,PHI,0,25,grey zone,pass short middle,15,2020
 1,14:35,1,10,long,60,-0.28,ARI,PHI,0,26,grey zone,run left,2,2020
 1,14:09,2,8,long,58,1.47,ARI,PHI,0,32,grey zone,pass short right,16,2020
@@ -32721,7 +32721,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,0:21,2,10,long,49,1.7299999999999998,PHI,ARI,-7,6,green zone,pass deep right,18,2020
 4,0:15,1,10,long,31,-0.5399999999999996,PHI,ARI,-7,5,green zone,pass deep right,0,2020
 4,0:10,2,10,long,31,-0.6900000000000004,PHI,ARI,-7,8,green zone,pass deep middle,0,2020
-4,0:02,3,10,long,31,-0.9599999999999997,PHI,ARI,-7,0:00:02,green zone,pass deep middle,0,2020
+4,0:02,3,10,long,31,-0.9599999999999997,PHI,ARI,-7,2,green zone,pass deep middle,0,2020
 1,15:00,1,10,long,75,0.5299999999999999,KAN,NOR,0,33,grey zone,pass short middle,8,2020
 1,14:27,2,2,short,67,0.33000000000000007,KAN,NOR,0,26,grey zone,run left,5,2020
 1,14:01,1,10,long,62,-0.4099999999999999,KAN,NOR,0,40,grey zone,run right,1,2020
@@ -32889,7 +32889,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,1:45,2,5,middle,58,1.5199999999999998,KAN,NOR,3,8,grey zone,run right,5,2020
 4,1:37,1,10,long,38,-0.6799999999999997,KAN,NOR,3,41,green zone,,,2020
 4,0:56,2,11,long,39,-0.8200000000000001,KAN,NOR,3,34,green zone,,,2020
-4,0:22,3,12,long,40,-1.02,KAN,NOR,3,0:00:22,green zone,,,2020
+4,0:22,3,12,long,40,-1.02,KAN,NOR,3,22,green zone,,,2020
 1,14:50,1,10,long,48,0.6699999999999999,NYG,CLE,0,39,green zone,run right,9,2020
 1,14:11,2,1,short,39,-0.7200000000000002,NYG,CLE,0,4,green zone,pass short left,0,2020
 1,14:07,3,1,short,39,0.7800000000000002,NYG,CLE,0,33,green zone,run middle,2,2020
@@ -33017,7 +33017,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,1:05,1,10,long,80,0.6699999999999999,NYG,CLE,-14,22,black zone,pass short middle,9,2020
 4,0:43,2,1,short,71,0.71,NYG,CLE,-14,5,grey zone,pass short left,12,2020
 4,0:38,1,10,long,59,-1.48,NYG,CLE,-14,30,grey zone,,,2020
-4,0:08,2,17,long,66,0.12,NYG,CLE,-14,0:00:08,grey zone,pass short left,6,2020
+4,0:08,2,17,long,66,0.12,NYG,CLE,-14,8,grey zone,pass short left,6,2020
 1,15:00,1,10,long,75,-0.55,PIT,CIN,0,6,grey zone,pass deep right,0,2020
 1,14:54,2,10,long,75,-0.42,PIT,CIN,0,39,grey zone,run right,2,2020
 1,14:15,3,8,long,73,-1.21,PIT,CIN,0,4,grey zone,pass short middle,0,2020
@@ -33158,7 +33158,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,1:04,2,5,middle,19,0.04999999999999982,CIN,PIT,7,44,red zone,run right,4,2020
 4,0:20,3,1,short,15,-1.58,CIN,PIT,7,4,red zone,run right,,2020
 4,0:16,4,1,short,15,0.41000000000000014,CIN,PIT,10,4,red zone,field goal,success,2020
-4,0:12,1,10,long,75,-0.6799999999999999,PIT,CIN,-10,0:00:12,grey zone,,,2020
+4,0:12,1,10,long,75,-0.6799999999999999,PIT,CIN,-10,12,grey zone,,,2020
 1,15:00,1,10,long,75,0.7200000000000001,NOR,MIN,0,41,grey zone,run left,11,2020
 1,14:19,1,10,long,64,0.6799999999999997,NOR,MIN,0,31,grey zone,pass short left,9,2020
 1,13:48,2,1,short,55,0.1200000000000001,NOR,MIN,0,43,grey zone,run right,3,2020
@@ -33302,7 +33302,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,1:33,4,10,long,75,-1.68,MIN,NOR,-19,6,grey zone,pass short right,8,2020
 4,1:27,1,10,long,33,-0.6799999999999997,NOR,MIN,19,42,green zone,,,2020
 4,0:45,2,11,long,34,-0.8200000000000003,NOR,MIN,19,39,green zone,,,2020
-4,0:06,3,12,long,35,-0.9999999999999999,NOR,MIN,19,0:00:06,green zone,,,2020
+4,0:06,3,12,long,35,-0.9999999999999999,NOR,MIN,19,6,green zone,,,2020
 1,14:56,1,10,long,82,-0.53,TAM,DET,0,5,black zone,pass short left,0,2020
 1,14:51,2,10,long,82,-0.55,TAM,DET,0,42,black zone,run left,1,2020
 1,14:09,3,9,long,81,0.64,TAM,DET,0,19,black zone,,,2020
@@ -33449,7 +33449,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,2:08,1,10,long,60,-0.010000000000000009,TAM,DET,40,8,grey zone,run right,4,2020
 4,2:00,2,6,middle,56,-1.2200000000000002,TAM,DET,40,46,grey zone,run left,-4,2020
 4,1:14,3,10,long,60,1.8899999999999997,TAM,DET,40,40,grey zone,pass short right,10,2020
-4,0:34,1,10,long,50,-0.6799999999999997,TAM,DET,40,0:00:34,green zone,,,2020
+4,0:34,1,10,long,50,-0.6799999999999997,TAM,DET,40,34,green zone,,,2020
 1,14:56,1,10,long,83,-0.52,ARI,SFO,0,7,black zone,pass short middle,0,2020
 1,14:49,2,10,long,83,0.08999999999999997,ARI,SFO,0,30,black zone,pass short right,6,2020
 1,14:19,3,4,middle,77,3.4699999999999998,ARI,SFO,0,26,black zone,pass deep right,38,2020
@@ -33604,7 +33604,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,0:42,2,10,long,60,-0.16000000000000003,ARI,SFO,-8,16,grey zone,pass short middle,4,2020
 4,0:26,3,6,middle,56,-1.35,ARI,SFO,-8,6,grey zone,pass deep right,0,2020
 4,0:20,4,6,middle,56,-2.2600000000000002,ARI,SFO,-8,6,grey zone,pass short left,0,2020
-4,0:14,1,10,long,43,-0.6800000000000002,SFO,ARI,8,0:00:14,green zone,,,2020
+4,0:14,1,10,long,43,-0.6800000000000002,SFO,ARI,8,14,green zone,,,2020
 1,15:00,1,10,long,75,-0.14,OAK,MIA,0,26,grey zone,run left,3,2020
 1,14:34,2,7,middle,72,-0.83,OAK,MIA,0,34,grey zone,pass short right,-1,2020
 1,14:00,3,8,long,73,-1.21,OAK,MIA,0,5,grey zone,pass deep left,0,2020
@@ -33750,7 +33750,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,0:23,4,4,middle,4,-0.029999999999999805,OAK,MIA,2,4,red zone,field goal,success,2020
 4,0:19,1,10,long,75,3.23,MIA,OAK,-2,7,grey zone,pass deep left,34,2020
 4,0:12,1,10,long,26,-0.54,MIA,OAK,-2,6,green zone,pass deep right,0,2020
-4,0:06,2,10,long,26,-0.2999999999999998,MIA,OAK,1,0:00:06,green zone,field goal,success,2020
+4,0:06,2,10,long,26,-0.2999999999999998,MIA,OAK,1,6,green zone,field goal,success,2020
 1,14:54,1,10,long,82,0.1,BAL,NYG,0,40,black zone,run left,4,2020
 1,14:14,2,6,middle,78,1.13,BAL,NYG,0,38,black zone,pass short middle,13,2020
 1,13:36,1,10,long,65,-0.14000000000000012,BAL,NYG,0,44,grey zone,run right,3,2020
@@ -33897,7 +33897,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,1:09,2,10,long,59,-0.6900000000000002,NYG,BAL,-14,4,grey zone,pass deep right,0,2020
 4,1:05,3,10,long,59,-0.89,NYG,BAL,-14,25,grey zone,run middle,3,2020
 4,0:40,4,7,middle,56,-2.19,NYG,BAL,-14,3,grey zone,pass short left,0,2020
-4,0:37,1,10,long,44,-0.6699999999999999,BAL,NYG,14,0:00:37,green zone,,,2020
+4,0:37,1,10,long,44,-0.6699999999999999,BAL,NYG,14,37,green zone,,,2020
 1,14:55,1,10,long,76,-0.54,PIT,IND,0,3,black zone,pass short middle,0,2020
 1,14:52,2,10,long,76,-0.69,PIT,IND,0,5,black zone,pass short middle,0,2020
 1,14:47,3,10,long,76,-1.08,PIT,IND,0,3,black zone,pass short right,0,2020
@@ -34050,7 +34050,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,1:24,3,8,long,33,-1.13,IND,PIT,-4,5,green zone,pass deep middle,0,2020
 4,1:19,4,8,long,33,-2.29,IND,PIT,-4,5,green zone,pass deep right,0,2020
 4,1:14,1,10,long,67,-0.5499999999999999,PIT,IND,4,36,grey zone,,,2020
-4,0:38,2,10,long,67,-0.82,PIT,IND,4,0:00:38,grey zone,,,2020
+4,0:38,2,10,long,67,-0.82,PIT,IND,4,38,grey zone,,,2020
 1,14:54,1,10,long,65,0.1299999999999999,CLE,NYJ,0,32,grey zone,pass short middle,5,2020
 1,14:22,2,5,middle,60,-0.7,CLE,NYJ,0,4,grey zone,pass short middle,0,2020
 1,14:18,3,5,middle,60,-1.42,CLE,NYJ,0,6,grey zone,pass short right,0,2020
@@ -34223,7 +34223,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,1:25,4,1,short,16,-2.3899999999999997,CLE,NYJ,-7,7,red zone,run left,,2020
 4,1:18,1,10,long,84,-0.64,NYJ,CLE,7,2,black zone,,,2020
 4,1:16,2,11,long,85,-0.8300000000000001,NYJ,CLE,7,38,black zone,,,2020
-4,0:38,3,12,long,86,-0.8800000000000001,NYJ,CLE,7,0:00:38,black zone,,,2020
+4,0:38,3,12,long,86,-0.8800000000000001,NYJ,CLE,7,38,black zone,,,2020
 1,15:00,1,10,long,75,1.71,ATL,KAN,0,31,grey zone,pass deep right,26,2020
 1,14:29,1,10,long,49,-0.3999999999999999,ATL,KAN,0,33,green zone,run right,1,2020
 1,13:56,2,9,long,48,-0.8299999999999998,ATL,KAN,0,38,green zone,pass short left,-1,2020
@@ -34374,7 +34374,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,0:23,2,5,middle,21,-0.7000000000000002,ATL,KAN,-3,4,red zone,,,2020
 4,0:19,3,5,middle,21,-1.1600000000000001,ATL,KAN,-3,5,red zone,pass deep left,0,2020
 4,0:14,4,5,middle,21,-2.98,ATL,KAN,-3,5,red zone,field goal,failure,2020
-4,0:09,1,10,long,71,-0.6799999999999999,KAN,ATL,3,0:00:09,grey zone,,,2020
+4,0:09,1,10,long,71,-0.6799999999999999,KAN,ATL,3,9,grey zone,,,2020
 1,14:54,1,10,long,79,-0.13000000000000003,JAX,CHI,0,39,black zone,run middle,3,2020
 1,14:15,2,7,middle,76,-0.31,JAX,CHI,0,39,black zone,run middle,3,2020
 1,13:36,3,4,middle,73,1.4300000000000002,JAX,CHI,0,41,grey zone,pass short left,9,2020
@@ -34518,7 +34518,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,1:34,3,27,long,63,0.24,JAX,CHI,-24,32,grey zone,pass short right,3,2020
 4,1:02,4,24,long,60,1.1,JAX,CHI,-24,7,grey zone,punt,53,2020
 4,0:55,1,10,long,93,-0.47,CHI,JAX,24,23,black zone,,,2020
-4,0:32,2,11,long,94,-0.7999999999999999,CHI,JAX,24,0:00:32,black zone,,,2020
+4,0:32,2,11,long,94,-0.7999999999999999,CHI,JAX,24,32,black zone,,,2020
 1,15:00,1,10,long,75,-0.55,HOU,CIN,0,3,grey zone,pass short middle,0,2020
 1,14:57,2,10,long,75,-0.29000000000000004,HOU,CIN,0,38,grey zone,run right,3,2020
 1,14:19,3,7,middle,72,-1.08,HOU,CIN,0,39,grey zone,pass short right,3,2020
@@ -34658,7 +34658,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,1:09,3,6,middle,22,-0.77,CIN,HOU,3,48,red zone,run right,4,2020
 4,0:21,4,2,short,18,0.6299999999999999,CIN,HOU,6,7,red zone,field goal,success,2020
 4,0:14,1,10,long,82,0.8999999999999999,HOU,CIN,-6,5,black zone,pass short left,12,2020
-4,0:09,1,10,long,70,1.98,HOU,CIN,-6,0:00:09,grey zone,pass short left,fumble,2020
+4,0:09,1,10,long,70,1.98,HOU,CIN,-6,9,grey zone,pass short left,fumble,2020
 1,15:00,1,10,long,75,-0.27999999999999997,WAS,CAR,0,32,grey zone,run left,2,2020
 1,14:28,2,8,long,73,-0.69,WAS,CAR,0,6,grey zone,pass deep right,0,2020
 1,14:22,3,8,long,73,-1.21,WAS,CAR,0,4,grey zone,pass short left,0,2020
@@ -34808,7 +34808,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,2:00,1,10,long,29,3.36,WAS,CAR,-8,11,green zone,pass deep left,29,2020
 4,1:49,1,10,long,61,-0.54,CAR,WAS,7,42,grey zone,,,2020
 4,1:07,2,10,long,61,-0.82,CAR,WAS,7,38,grey zone,,,2020
-4,0:29,3,11,long,62,-1.08,CAR,WAS,7,0:00:29,grey zone,,,2020
+4,0:29,3,11,long,62,-1.08,CAR,WAS,7,29,grey zone,,,2020
 1,14:51,1,10,long,39,0.9300000000000002,SDG,DEN,0,42,green zone,pass short left,14,2020
 1,14:09,1,10,long,25,-0.14000000000000012,SDG,DEN,0,37,red zone,run right,3,2020
 1,13:32,2,7,middle,22,-0.2799999999999998,SDG,DEN,0,32,red zone,pass short right,3,2020
@@ -34962,7 +34962,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,0:29,3,10,long,75,-1.08,DEN,SDG,-3,9,grey zone,pass deep left,0,2020
 4,0:20,4,10,long,75,3.96,DEN,SDG,-3,18,grey zone,pass deep middle,25,2020
 4,0:02,1,10,long,50,-0.5499999999999998,DEN,SDG,-3,1,green zone,,,2020
-4,0:01,2,10,long,50,-1.71,DEN,SDG,-3,0:00:01,green zone,pass deep middle,interception,2020
+4,0:01,2,10,long,50,-1.71,DEN,SDG,-3,1,green zone,pass deep middle,interception,2020
 1,14:56,1,10,long,90,-0.08000000000000002,STL,SEA,0,39,black zone,run right,4,2020
 1,14:17,2,6,middle,86,0.09000000000000002,STL,SEA,0,28,black zone,pass short left,5,2020
 1,13:49,3,1,short,81,-1.77,STL,SEA,0,3,black zone,pass short left,0,2020
@@ -35119,7 +35119,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,2:00,4,19,long,86,-1.5,STL,SEA,-11,9,black zone,pass short left,10,2020
 4,1:51,1,10,long,24,0.0,SEA,STL,11,45,red zone,run left,4,2020
 4,1:06,2,6,middle,20,-0.56,SEA,STL,11,45,red zone,run left,1,2020
-4,0:21,3,5,middle,19,-1.2600000000000002,SEA,STL,11,0:00:21,red zone,,,2020
+4,0:21,3,5,middle,19,-1.2600000000000002,SEA,STL,11,21,red zone,,,2020
 1,15:00,1,10,long,75,0.32999999999999996,PHI,DAL,0,6,grey zone,,,2020
 1,14:54,1,10,long,70,0.40000000000000013,PHI,DAL,0,34,grey zone,run middle,7,2020
 1,14:20,2,3,short,63,0.3899999999999999,PHI,DAL,0,37,grey zone,run right,5,2020
@@ -35284,7 +35284,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,0:54,1,10,long,49,0.54,PHI,DAL,-20,5,green zone,pass short right,8,2020
 4,0:49,2,2,short,41,-0.71,PHI,DAL,-20,4,green zone,pass short right,0,2020
 4,0:45,3,2,short,41,-3.15,PHI,DAL,-20,15,green zone,pass deep right,interception,2020
-4,0:30,1,10,long,69,-0.6799999999999999,DAL,PHI,20,0:00:30,grey zone,,,2020
+4,0:30,1,10,long,69,-0.6799999999999999,DAL,PHI,20,30,grey zone,,,2020
 1,15:00,1,10,long,60,-0.14000000000000012,GNB,TEN,0,37,grey zone,run middle,3,2020
 1,14:23,2,7,middle,57,0.7999999999999998,GNB,TEN,0,43,grey zone,pass short right,7,2020
 1,13:40,1,10,long,50,0.5300000000000002,GNB,TEN,0,42,green zone,pass short right,8,2020
@@ -35409,7 +35409,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,1:52,4,7,middle,74,1.91,TEN,GNB,-26,11,grey zone,punt,60,2020
 4,1:41,1,10,long,86,-0.57,GNB,TEN,26,41,black zone,,,2020
 4,1:00,2,11,long,87,-0.7999999999999999,GNB,TEN,26,29,black zone,,,2020
-4,0:31,3,12,long,88,-0.8400000000000003,GNB,TEN,26,0:00:31,black zone,,,2020
+4,0:31,3,12,long,88,-0.8400000000000003,GNB,TEN,26,31,black zone,,,2020
 1,14:53,1,10,long,65,-0.14000000000000012,NWE,BUF,0,24,grey zone,run right,3,2020
 1,14:29,2,7,middle,62,2.25,NWE,BUF,0,27,grey zone,run left,29,2020
 1,14:02,1,10,long,33,-0.9499999999999997,NWE,BUF,0,26,green zone,run middle,-3,2020
@@ -35544,7 +35544,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,2:43,2,7,middle,69,1.13,BUF,NWE,29,43,grey zone,run middle,12,2020
 4,2:00,1,10,long,57,-0.6799999999999999,BUF,NWE,29,42,grey zone,,,2020
 4,1:18,2,11,long,58,-0.8200000000000001,BUF,NWE,29,39,grey zone,,,2020
-4,0:39,3,12,long,59,-1.02,BUF,NWE,29,0:00:39,grey zone,,,2020
+4,0:39,3,12,long,59,-1.02,BUF,NWE,29,39,grey zone,,,2020
 1,15:00,1,10,long,75,0.13,BUF,MIA,0,41,grey zone,run middle,5,2020
 1,14:19,2,5,middle,70,0.6599999999999999,BUF,MIA,0,39,grey zone,pass short middle,7,2020
 1,13:40,1,10,long,63,0.40000000000000013,BUF,MIA,0,43,grey zone,pass short left,7,2020
@@ -35703,7 +35703,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,2:13,2,3,short,40,0.3900000000000001,BUF,MIA,30,13,green zone,run left,5,2020
 4,2:00,1,10,long,35,-0.6800000000000002,BUF,MIA,30,42,green zone,,,2020
 4,1:18,2,11,long,36,-0.8199999999999998,BUF,MIA,30,40,green zone,,,2020
-4,0:38,3,12,long,37,-1.03,BUF,MIA,30,0:00:38,green zone,,,2020
+4,0:38,3,12,long,37,-1.03,BUF,MIA,30,38,green zone,,,2020
 1,14:54,1,10,long,68,0.79,TAM,ATL,0,45,grey zone,pass short right,12,2020
 1,14:09,1,10,long,56,-0.14000000000000012,TAM,ATL,0,36,grey zone,run middle,3,2020
 1,13:33,2,7,middle,53,0.10000000000000009,TAM,ATL,0,32,grey zone,run right,6,2020
@@ -35849,7 +35849,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,2:01,3,1,short,20,0.77,TAM,ATL,17,9,red zone,pass short middle,2,2020
 4,1:52,1,10,long,18,-0.7000000000000002,TAM,ATL,17,41,red zone,,,2020
 4,1:11,2,11,long,19,-0.6999999999999997,TAM,ATL,17,33,red zone,,,2020
-4,0:38,3,11,long,19,-0.79,TAM,ATL,17,0:00:38,red zone,,,2020
+4,0:38,3,11,long,19,-0.79,TAM,ATL,17,38,red zone,,,2020
 1,14:54,1,10,long,78,0.9200000000000002,NYG,DAL,0,35,black zone,pass short right,14,2020
 1,14:19,1,10,long,64,0.54,NYG,DAL,0,38,grey zone,run right,8,2020
 1,13:41,2,2,short,56,0.6499999999999999,NYG,DAL,0,31,grey zone,run middle,10,2020
@@ -36007,7 +36007,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,1:09,2,5,middle,75,1.12,NYG,DAL,4,11,grey zone,run left,14,2020
 4,0:58,1,10,long,61,-0.68,NYG,DAL,4,3,grey zone,,,2020
 4,0:55,2,11,long,62,-0.8099999999999999,NYG,DAL,4,26,grey zone,,,2020
-4,0:29,3,12,long,63,-1.02,NYG,DAL,4,0:00:29,grey zone,,,2020
+4,0:29,3,12,long,63,-1.02,NYG,DAL,4,29,grey zone,,,2020
 1,14:57,1,10,long,84,-0.4,NWE,NYJ,0,7,black zone,,,2020
 1,14:50,1,15,long,89,1.35,NWE,NYJ,0,32,black zone,pass short right,17,2020
 1,14:18,1,10,long,72,-0.33000000000000007,NWE,NYJ,0,12,grey zone,,,2020
@@ -36149,7 +36149,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,1:14,3,7,middle,46,-1.3599999999999999,NWE,NYJ,14,47,green zone,run right,-1,2020
 4,0:27,4,8,long,47,0.0,NWE,NYJ,14,0,green zone,,,2020
 4,0:27,4,8,long,47,0.25,NWE,NYJ,14,11,green zone,punt,40,2020
-4,0:16,1,10,long,93,0.24,NYJ,NWE,-14,0:00:16,black zone,pass short left,8,2020
+4,0:16,1,10,long,93,0.24,NYJ,NWE,-14,16,black zone,pass short left,8,2020
 1,15:00,1,10,long,75,0.92,MIN,DET,0,31,grey zone,pass short middle,14,2020
 1,14:29,1,10,long,61,-0.66,MIN,DET,0,22,grey zone,,,2020
 1,14:07,1,20,long,71,-0.56,MIN,DET,0,36,grey zone,run middle,5,2020
@@ -36295,7 +36295,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,2:28,4,1,short,25,3.1899999999999995,MIN,DET,2,28,red zone,run right,16,2020
 4,2:00,1,9,long,9,-0.9499999999999993,MIN,DET,2,43,red zone,,,2020
 4,1:17,2,10,long,10,-1.0900000000000003,MIN,DET,2,39,red zone,,,2020
-4,0:38,3,12,long,12,-0.5300000000000002,MIN,DET,2,0:00:38,red zone,,,2020
+4,0:38,3,12,long,12,-0.5300000000000002,MIN,DET,2,38,red zone,,,2020
 1,15:00,1,10,long,75,-0.27999999999999997,PIT,CLE,0,33,grey zone,run right,2,2020
 1,14:27,2,8,long,73,-0.16,PIT,CLE,0,40,grey zone,run right,4,2020
 1,13:47,3,4,middle,69,1.6900000000000002,PIT,CLE,0,37,grey zone,pass short left,13,2020
@@ -36438,7 +36438,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,1:22,1,10,long,50,0.5300000000000002,CLE,PIT,2,6,green zone,run left,8,2020
 4,1:16,2,2,short,42,-0.71,CLE,PIT,2,6,green zone,run right,,2020
 4,1:10,3,2,short,42,0.8999999999999999,CLE,PIT,2,43,green zone,run right,3,2020
-4,0:27,1,10,long,39,-0.6800000000000002,CLE,PIT,2,0:00:27,green zone,,,2020
+4,0:27,1,10,long,39,-0.6800000000000002,CLE,PIT,2,27,green zone,,,2020
 1,15:00,1,10,long,75,-0.010000000000000009,BAL,CIN,0,39,grey zone,run left,4,2020
 1,14:21,2,6,middle,71,-0.039999999999999925,BAL,CIN,0,27,grey zone,pass short left,5,2020
 1,13:54,3,1,short,66,0.8399999999999999,BAL,CIN,0,35,grey zone,run right,3,2020
@@ -36569,7 +36569,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,2:00,3,8,long,94,-1.3000000000000003,BAL,CIN,35,47,black zone,run right,1,2020
 4,1:13,4,7,middle,93,0.5000000000000002,BAL,CIN,35,10,black zone,punt,47,2020
 4,1:03,1,10,long,54,0.0,CIN,BAL,-35,41,grey zone,run left,4,2020
-4,0:22,2,6,middle,50,1.39,CIN,BAL,-35,0:00:22,green zone,run left,17,2020
+4,0:22,2,6,middle,50,1.39,CIN,BAL,-35,22,green zone,run left,17,2020
 1,15:00,1,10,long,60,-0.14000000000000012,CHI,GNB,0,40,grey zone,run right,3,2020
 1,14:20,2,7,middle,57,0.09000000000000008,CHI,GNB,0,42,grey zone,pass short middle,6,2020
 1,13:38,3,1,short,51,0.8400000000000001,CHI,GNB,0,35,grey zone,run right,3,2020
@@ -36697,7 +36697,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,1:03,1,10,long,28,0.27,CHI,GNB,-19,23,green zone,pass short middle,6,2020
 4,0:40,2,4,middle,22,0.4600000000000004,CHI,GNB,-19,23,red zone,pass short middle,5,2020
 4,0:17,1,10,long,17,1.8399999999999999,CHI,GNB,-19,8,red zone,run right,13,2020
-4,0:09,1,4,middle,4,-0.3700000000000001,CHI,GNB,-19,0:00:09,red zone,pass short right,3,2020
+4,0:09,1,4,middle,4,-0.3700000000000001,CHI,GNB,-19,9,red zone,pass short right,3,2020
 1,15:00,1,10,long,75,-0.55,CAR,NOR,0,4,grey zone,pass short right,0,2020
 1,14:56,2,10,long,75,-0.95,CAR,NOR,0,39,grey zone,run right,-2,2020
 1,14:17,3,12,long,77,-1.6,CAR,NOR,0,37,black zone,,,2020
@@ -36835,7 +36835,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,2:13,1,10,long,95,-0.03999999999999998,NOR,CAR,26,13,black zone,run left,5,2020
 4,2:00,2,5,middle,90,0.04999999999999999,NOR,CAR,26,35,black zone,run right,4,2020
 4,1:25,3,1,short,86,0.22999999999999998,NOR,CAR,26,48,black zone,run middle,2,2020
-4,0:37,1,10,long,84,-0.64,NOR,CAR,26,0:00:37,black zone,,,2020
+4,0:37,1,10,long,84,-0.64,NOR,CAR,26,37,black zone,,,2020
 1,15:00,1,10,long,75,0.13,SEA,SFO,0,29,grey zone,pass short left,5,2020
 1,14:31,2,5,middle,70,0.53,SEA,SFO,0,31,grey zone,pass short left,5,2020
 1,14:00,1,10,long,65,-0.8200000000000001,SEA,SFO,0,42,grey zone,run left,-2,2020
@@ -36983,7 +36983,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,0:31,3,2,short,17,2.6599999999999997,SFO,SEA,-10,5,red zone,pass short right,14,2020
 4,0:26,1,3,short,3,0.4900000000000002,SFO,SEA,-4,4,red zone,pass short right,3,2020
 4,0:22,1,10,long,44,0.1299999999999999,SEA,SFO,3,4,green zone,pass short middle,5,2020
-4,0:18,2,5,middle,39,-0.8299999999999998,SEA,SFO,3,0:00:18,green zone,,,2020
+4,0:18,2,5,middle,39,-0.8299999999999998,SEA,SFO,3,18,green zone,,,2020
 1,15:00,1,10,long,75,0.7200000000000001,ARI,STL,0,32,grey zone,run right,11,2020
 1,14:28,1,10,long,64,0.4099999999999999,ARI,STL,0,24,grey zone,run right,7,2020
 1,14:04,2,3,short,57,-0.5800000000000001,ARI,STL,0,37,grey zone,run right,1,2020
@@ -37128,7 +37128,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,0:29,4,9,long,68,1.56,STL,ARI,11,10,grey zone,punt,55,2020
 4,0:19,1,10,long,87,1.19,ARI,STL,-11,6,black zone,pass short left,16,2020
 4,0:13,1,10,long,71,-0.54,ARI,STL,-11,7,grey zone,pass deep left,0,2020
-4,0:06,2,10,long,71,1.3299999999999998,ARI,STL,-11,0:00:06,grey zone,pass short left,12,2020
+4,0:06,2,10,long,71,1.3299999999999998,ARI,STL,-11,6,grey zone,pass short left,12,2020
 1,14:52,1,10,long,56,-0.81,KAN,SDG,0,36,grey zone,pass short right,-2,2020
 1,14:16,2,12,long,58,-0.29000000000000004,KAN,SDG,0,40,grey zone,run right,3,2020
 1,13:36,3,9,long,55,3.6100000000000003,KAN,SDG,0,36,grey zone,pass short right,37,2020
@@ -37256,7 +37256,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,2:19,2,5,middle,14,0.6099999999999994,SDG,KAN,17,19,red zone,run right,5,2020
 4,2:00,1,9,long,9,-0.9499999999999993,SDG,KAN,17,42,red zone,,,2020
 4,1:18,2,10,long,10,-1.0600000000000005,SDG,KAN,17,44,red zone,,,2020
-4,0:34,3,10,long,10,-0.4299999999999997,SDG,KAN,17,0:00:34,red zone,,,2020
+4,0:34,3,10,long,10,-0.4299999999999997,SDG,KAN,17,34,red zone,,,2020
 1,15:00,1,10,long,75,1.3199999999999998,HOU,TEN,0,27,grey zone,pass deep middle,20,2020
 1,14:33,1,10,long,55,-0.55,HOU,TEN,0,4,grey zone,pass short right,0,2020
 1,14:29,2,10,long,55,-0.15999999999999992,HOU,TEN,0,41,grey zone,pass short right,4,2020
@@ -37402,7 +37402,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,0:22,4,10,long,33,1.85,HOU,TEN,0,4,green zone,field goal,success,2020
 4,0:18,1,10,long,75,3.43,TEN,HOU,0,8,grey zone,pass deep right,52,2020
 4,0:10,1,10,long,23,0.009999999999999787,TEN,HOU,0,6,red zone,run right,4,2020
-4,0:04,2,6,middle,19,-1.0499999999999998,TEN,HOU,3,0:00:04,red zone,field goal,success,2020
+4,0:04,2,6,middle,19,-1.0499999999999998,TEN,HOU,3,4,red zone,field goal,success,2020
 1,15:00,1,10,long,75,-0.41,OAK,DEN,0,26,grey zone,run left,1,2020
 1,14:34,2,9,long,74,-0.30000000000000004,OAK,DEN,0,43,grey zone,run right,3,2020
 1,13:51,3,6,middle,71,-1.3399999999999999,OAK,DEN,0,4,grey zone,pass short right,0,2020
@@ -37570,7 +37570,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,0:24,1,10,long,75,2.3800000000000003,DEN,OAK,-1,12,grey zone,pass short middle,25,2020
 4,0:12,1,5,middle,45,-0.6000000000000001,DEN,OAK,-1,3,green zone,pass short left,0,2020
 4,0:09,2,5,middle,45,-4.19,DEN,OAK,-1,7,green zone,field goal,failure,2020
-4,0:02,1,10,long,57,-0.6799999999999999,OAK,DEN,1,0:00:02,grey zone,,,2020
+4,0:02,1,10,long,57,-0.6799999999999999,OAK,DEN,1,2,grey zone,,,2020
 1,15:00,1,10,long,75,-0.55,JAX,IND,0,4,grey zone,pass short left,0,2020
 1,14:56,2,10,long,75,1.54,JAX,IND,0,34,grey zone,pass short middle,15,2020
 1,14:22,1,10,long,60,-0.8200000000000001,JAX,IND,0,37,grey zone,run right,-2,2020
@@ -37716,7 +37716,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,2:14,2,9,long,52,0.10000000000000009,IND,JAX,14,14,grey zone,run middle,6,2020
 4,2:00,3,3,short,46,1.1,IND,JAX,14,46,green zone,run right,5,2020
 4,1:14,1,10,long,41,-0.6800000000000002,IND,JAX,14,37,green zone,,,2020
-4,0:37,2,11,long,42,-0.8199999999999998,IND,JAX,14,0:00:37,green zone,,,2020
+4,0:37,2,11,long,42,-0.8199999999999998,IND,JAX,14,37,green zone,,,2020
 1,15:00,1,10,long,75,-0.55,PHI,WAS,0,5,grey zone,pass deep right,0,2020
 1,14:55,2,10,long,75,1.67,PHI,WAS,0,16,grey zone,run right,2,2020
 1,14:39,1,10,long,58,0.27,PHI,WAS,0,39,grey zone,run left,6,2020
@@ -37864,7 +37864,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,0:38,4,4,middle,86,3.14,PHI,WAS,-6,22,black zone,run middle,12,2020
 4,0:16,1,10,long,74,-0.54,PHI,WAS,-6,5,grey zone,pass deep right,0,2020
 4,0:11,2,10,long,74,-0.6900000000000001,PHI,WAS,-6,5,grey zone,pass short left,0,2020
-4,0:06,3,10,long,74,-0.6799999999999999,PHI,WAS,-6,0:00:06,grey zone,pass short middle,6,2020
+4,0:06,3,10,long,74,-0.6799999999999999,PHI,WAS,-6,6,grey zone,pass short middle,6,2020
 1,15:00,1,10,long,75,0.67,IND,BUF,0,31,grey zone,pass short left,9,2020
 1,14:29,2,1,short,66,0.11999999999999988,IND,BUF,0,28,grey zone,run left,3,2020
 1,14:01,1,10,long,63,-0.27,IND,BUF,0,32,grey zone,run left,2,2020
@@ -38010,7 +38010,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,0:26,1,10,long,46,-0.6799999999999999,IND,BUF,-3,12,green zone,pass short left,fumble,2020
 4,0:14,2,11,long,47,-0.6800000000000002,IND,BUF,-3,6,green zone,pass deep left,0,2020
 4,0:08,3,11,long,47,-1.0299999999999998,IND,BUF,-3,4,green zone,pass short left,0,2020
-4,0:04,4,11,long,47,1.9300000000000002,IND,BUF,-3,0:00:04,green zone,pass deep right,0,2020
+4,0:04,4,11,long,47,1.9300000000000002,IND,BUF,-3,4,green zone,pass deep right,0,2020
 1,14:55,1,10,long,72,-0.010000000000000009,STL,SEA,0,41,grey zone,run right,4,2020
 1,14:14,2,6,middle,68,-0.040000000000000036,STL,SEA,0,48,grey zone,run right,5,2020
 1,13:26,3,1,short,63,0.77,STL,SEA,0,30,grey zone,run right,2,2020
@@ -38167,7 +38167,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,1:40,3,15,long,65,-0.74,SEA,STL,-10,9,grey zone,pass deep right,0,2020
 4,1:31,4,15,long,65,-2.6,SEA,STL,-10,7,grey zone,,,2020
 4,1:24,1,10,long,29,-0.6699999999999999,STL,SEA,10,42,green zone,,,2020
-4,0:42,2,11,long,30,-0.8200000000000003,STL,SEA,10,0:00:42,green zone,,,2020
+4,0:42,2,11,long,30,-0.8200000000000003,STL,SEA,10,42,green zone,,,2020
 1,14:55,1,10,long,81,-0.54,TAM,WAS,0,5,black zone,pass short right,0,2020
 1,14:50,2,10,long,81,2.58,TAM,WAS,0,22,black zone,pass short left,15,2020
 1,14:28,1,10,long,51,0.6699999999999999,TAM,WAS,0,33,grey zone,run left,9,2020
@@ -38324,7 +38324,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,2:00,4,21,long,60,-2.2,WAS,TAM,-8,9,grey zone,pass deep right,0,2020
 4,1:51,1,10,long,40,-0.6799999999999997,TAM,WAS,8,41,green zone,,,2020
 4,1:10,2,11,long,41,-0.6900000000000002,TAM,WAS,8,35,green zone,,,2020
-4,0:35,3,11,long,41,-1.09,TAM,WAS,8,0:00:35,green zone,,,2020
+4,0:35,3,11,long,41,-1.09,TAM,WAS,8,35,green zone,,,2020
 1,15:00,1,10,long,75,-0.010000000000000009,TEN,BAL,0,33,grey zone,run right,4,2020
 1,14:27,2,6,middle,71,-0.42999999999999994,TEN,BAL,0,46,grey zone,run left,2,2020
 1,13:41,3,4,middle,69,-1.48,TEN,BAL,0,5,grey zone,pass deep right,0,2020
@@ -38453,7 +38453,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,1:37,1,10,long,29,0.13999999999999968,BAL,TEN,7,5,green zone,run middle,5,2020
 4,1:32,2,5,middle,24,-0.17999999999999972,BAL,TEN,7,7,red zone,run right,4,2020
 4,1:25,3,1,short,20,0.98,BAL,TEN,7,46,red zone,run right,5,2020
-4,0:39,1,10,long,15,-0.77,BAL,TEN,7,0:00:39,red zone,,,2020
+4,0:39,1,10,long,15,-0.77,BAL,TEN,7,39,red zone,,,2020
 1,15:00,1,10,long,75,0.13,NOR,CHI,0,30,grey zone,pass short right,5,2020
 1,14:30,2,5,middle,70,-0.7,NOR,CHI,0,4,grey zone,pass short right,0,2020
 1,14:26,3,5,middle,70,1.76,NOR,CHI,0,37,grey zone,pass short right,13,2020
@@ -38602,7 +38602,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,0:33,1,10,long,38,0.40000000000000036,CHI,NOR,-18,6,green zone,pass short left,7,2020
 4,0:27,2,3,short,31,0.45999999999999996,CHI,NOR,-18,6,green zone,pass short right,6,2020
 4,0:21,1,10,long,25,0.29000000000000004,CHI,NOR,-18,18,red zone,pass short middle,6,2020
-4,0:03,2,4,middle,19,2.8,CHI,NOR,-12,0:00:03,red zone,pass deep middle,19,2020
+4,0:03,2,4,middle,19,2.8,CHI,NOR,-12,3,red zone,pass deep middle,19,2020
 1,14:54,1,10,long,78,-7.41,PIT,CLE,-6,14,black zone,,,2020
 1,14:40,1,10,long,75,-0.14,PIT,CLE,-7,36,grey zone,run left,3,2020
 1,14:04,2,7,middle,72,-0.16999999999999998,PIT,CLE,-7,38,grey zone,pass short left,4,2020
@@ -38768,7 +38768,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,1:13,1,7,middle,7,1.4000000000000004,PIT,CLE,-13,5,red zone,pass short left,7,2020
 4,1:08,1,10,long,46,-0.81,CLE,PIT,11,2,green zone,,,2020
 4,1:06,2,12,long,48,-0.82,CLE,PIT,11,32,green zone,,,2020
-4,0:34,3,13,long,49,-1.02,CLE,PIT,11,0:00:34,green zone,,,2020
+4,0:34,3,13,long,49,-1.02,CLE,PIT,11,34,green zone,,,2020
 1,15:00,1,10,long,75,-0.41,STL,GNB,0,37,grey zone,pass short left,1,2020
 1,14:23,2,9,long,74,-0.30000000000000004,STL,GNB,0,44,grey zone,run left,3,2020
 1,13:39,3,6,middle,71,-1.3399999999999999,STL,GNB,0,4,grey zone,pass short right,0,2020
@@ -38903,7 +38903,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,2:30,2,2,short,13,0.1899999999999995,GNB,STL,14,30,red zone,run middle,4,2020
 4,2:00,1,9,long,9,-1.12,GNB,STL,14,42,red zone,,,2020
 4,1:18,2,11,long,11,-0.9199999999999995,GNB,STL,14,39,red zone,,,2020
-4,0:39,3,12,long,12,-0.5300000000000002,GNB,STL,14,0:00:39,red zone,,,2020
+4,0:39,3,12,long,12,-0.5300000000000002,GNB,STL,14,39,red zone,,,2020
 1,15:00,1,10,long,75,0.7899999999999999,BAL,BUF,0,43,grey zone,run middle,12,2020
 1,14:17,1,10,long,63,0.6600000000000001,BAL,BUF,0,38,grey zone,run left,10,2020
 1,13:39,1,10,long,53,0.6699999999999999,BAL,BUF,0,35,grey zone,run middle,9,2020
@@ -39054,7 +39054,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,2:00,4,1,short,81,2.68,BUF,BAL,14,12,black zone,,,2020
 4,1:48,1,10,long,76,-0.68,BUF,BAL,14,41,black zone,,,2020
 4,1:07,2,11,long,77,-0.9500000000000001,BUF,BAL,14,31,black zone,,,2020
-4,0:36,3,13,long,79,-0.9399999999999997,BUF,BAL,14,0:00:36,black zone,,,2020
+4,0:36,3,13,long,79,-0.9399999999999997,BUF,BAL,14,36,black zone,,,2020
 1,15:00,1,10,long,75,-0.010000000000000009,KAN,CLE,0,32,grey zone,run left,4,2020
 1,14:28,2,6,middle,71,1.06,KAN,CLE,0,35,grey zone,run left,12,2020
 1,13:53,1,10,long,59,0.4099999999999999,KAN,CLE,0,41,grey zone,pass short middle,7,2020
@@ -39193,7 +39193,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,2:33,2,8,long,59,-1.49,KAN,CLE,5,33,grey zone,,,2020
 4,2:00,3,14,long,65,0.04000000000000001,KAN,CLE,5,46,grey zone,run left,13,2020
 4,1:14,4,1,short,52,2.65,KAN,CLE,5,43,grey zone,pass short right,5,2020
-4,0:31,1,10,long,47,-0.6799999999999999,KAN,CLE,5,0:00:31,green zone,,,2020
+4,0:31,1,10,long,47,-0.6799999999999999,KAN,CLE,5,31,green zone,,,2020
 1,15:00,1,10,long,75,-0.27999999999999997,TAM,NOR,0,35,grey zone,run left,2,2020
 1,14:25,2,8,long,73,-0.030000000000000027,TAM,NOR,0,43,grey zone,pass short left,5,2020
 1,13:42,3,3,short,68,-1.54,TAM,NOR,0,6,grey zone,pass deep left,0,2020
@@ -39341,7 +39341,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,2:27,3,3,short,30,1.1,TAM,NOR,10,27,green zone,run left,5,2020
 4,2:00,1,10,long,25,-0.6800000000000002,TAM,NOR,10,42,red zone,,,2020
 4,1:18,2,11,long,26,-0.69,TAM,NOR,10,40,green zone,,,2020
-4,0:38,3,11,long,26,-0.8,TAM,NOR,10,0:00:38,green zone,,,2020
+4,0:38,3,11,long,26,-0.8,TAM,NOR,10,38,green zone,,,2020
 1,14:51,1,10,long,66,-0.1399999999999999,TAM,GNB,0,30,grey zone,run right,3,2020
 1,14:21,2,7,middle,63,-0.30000000000000004,TAM,GNB,0,43,grey zone,run middle,3,2020
 1,13:38,3,4,middle,60,2.62,TAM,GNB,0,45,grey zone,pass deep left,27,2020
@@ -39484,7 +39484,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,1:37,1,5,middle,43,-0.73,TAM,GNB,5,5,green zone,run middle,-1,2020
 4,1:32,2,6,middle,44,-0.5700000000000001,TAM,GNB,5,44,green zone,run left,1,2020
 4,0:48,3,5,middle,43,1.3,TAM,GNB,5,46,green zone,run right,6,2020
-4,0:02,1,10,long,37,-0.6800000000000002,TAM,GNB,5,0:00:02,green zone,,,2020
+4,0:02,1,10,long,37,-0.6800000000000002,TAM,GNB,5,2,green zone,,,2020
 1,15:00,1,10,long,75,-0.41,BUF,KAN,0,27,grey zone,run right,1,2020
 1,14:33,2,9,long,74,1.6,BUF,KAN,0,30,grey zone,pass short middle,17,2020
 1,14:03,1,10,long,57,-0.14000000000000012,BUF,KAN,0,40,grey zone,run middle,3,2020
@@ -39630,7 +39630,7 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,2:51,3,11,long,26,2.17,KAN,BUF,14,51,green zone,run left,13,2020
 4,2:00,1,10,long,13,-0.81,KAN,BUF,14,41,red zone,,,2020
 4,1:19,2,11,long,14,-0.8700000000000001,KAN,BUF,14,42,red zone,,,2020
-4,0:37,3,12,long,15,-0.6499999999999999,KAN,BUF,14,0:00:37,red zone,,,2020
+4,0:37,3,12,long,15,-0.6499999999999999,KAN,BUF,14,37,red zone,,,2020
 1,14:56,1,10,long,77,-0.41,TAM,KAN,0,33,black zone,pass short left,1,2020
 1,14:23,2,9,long,76,-0.30000000000000004,TAM,KAN,0,35,black zone,run right,3,2020
 1,13:48,3,6,middle,73,-1.34,TAM,KAN,0,5,grey zone,pass short left,0,2020
@@ -39785,4 +39785,4 @@ OT,1:32,3,1,short,1,0.8300000000000001,SDG,OAK,3,0:01:32,red zone,run left,1,202
 4,1:40,2,6,middle,10,-4.99,KAN,TAM,22,7,red zone,pass short right,interception,2020
 4,1:33,1,10,long,80,-0.74,TAM,KAN,-22,43,black zone,,,2020
 4,0:50,2,11,long,81,-0.6799999999999999,TAM,KAN,-22,20,black zone,,,2020
-4,0:30,3,11,long,81,-1.1000000000000003,TAM,KAN,-22,0:00:30,black zone,,,2020
+4,0:30,3,11,long,81,-1.1000000000000003,TAM,KAN,-22,30,black zone,,,2020
