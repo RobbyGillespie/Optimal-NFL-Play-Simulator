@@ -13,7 +13,8 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = '/home/cooperpowell/'
+BASE_DIR = os.path.dirname(__file__)
+DATABASE_FILENAME = os.path.join(BASE_DIR, 'acjr-project')
 
 
 # Quick-start development settings - unsuitable for production
