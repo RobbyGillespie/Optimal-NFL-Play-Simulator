@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from django.http import HttpResponseRedirect
 
-urlpatterns = ['', 
-    (r'^$', lambda r: HttpResponseRedirect('simulation/')), #immediately paths to simulation
+urlpatterns = [ 
+    path('', include('simulation.urls')), #immediately paths to simulation
     path('simulation/', include('simulation.urls')), #path for all parts of our simulation app
     path('admin/', admin.site.urls),
 ]

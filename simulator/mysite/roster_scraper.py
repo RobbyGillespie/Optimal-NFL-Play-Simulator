@@ -1,7 +1,7 @@
 '''
 '''
 import re
-import util_2
+from . import util_2
 import bs4
 import queue
 import json
@@ -10,7 +10,7 @@ import csv
 import requests
 import numpy as np
 import pandas as pd
-import play_caller
+from . import play_caller
 import itertools
 from bs4 import BeautifulSoup,Comment
 

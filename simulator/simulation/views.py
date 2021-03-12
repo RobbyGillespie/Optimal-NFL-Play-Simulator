@@ -3,13 +3,25 @@ from django.http import HttpResponseRedirect
 from django.urls import reverse
 import pandas as pd
 import os
-import TEAM_ABBREVIATIONS from simulation.scraper
+import sys
+sys.path.insert(0, '/home/cooperpowell/acjr-project/simulator/simulation/pythonfiles')
 
-import simulation.simulator
+from mysite import simulator
+from mysite import scraper
 
 from .forms import FootballTeamsForm, WelcomeForm
 from .models import Team
 
+TEAM_ABBREVIATIONS = {'Browns' : ['CLE'], 'Ravens' : ['BAL', 'RAV'], 'Packers' : ['GNB'], 
+'Vikings' : ['MIN'], 'Texans' : ['HOU', 'HTX'], 'Chiefs' : ['KAN'], 
+'Seahawks' : ['SEA'], 'Falcons' : ['ATL'], 'Bears' : ['CHI'],
+'Lions' : ['DET'], 'Chargers' : ['SDG', 'LAC'], 'Bengals' : ['CIN'],
+'Buccaneers' : ['TAM'], 'Saints' : ['NOR'], 'Steelers' : ['PIT'],
+'Giants' : ['NYG'], 'Football' : ['WAS'], 'Eagles' : ['PHI'],
+'Jets' : ['NYJ'], 'Bills' : ['BUF'], 'Dolphins' : ['MIA'], 'Patriots' : ['NWE'],
+'Colts' : ['IND', 'CLT'], 'Jaguars' : ['JAX'], 'Raiders' : ['OAK', 'RAI', 'LVR'], 'Panthers' : ['CAR'],
+'Cardinals' : ['ARI', 'CRD'], '49ers' : ['SFO'], 'Cowboys' : ['DAL'], 'Rams' : ['STL', 'LAR', 'RAM'],
+'Titans' : ['TEN', 'OTI'], 'Broncos' : ['DEN'], 'Redskins' : ['WAS']}
 TEAM_NAMES = {'Browns': 'Cleveland Browns', 'Ravens': 'Baltimore Ravens', 'Packers': 'Green Bay Packers', 
 'Vikings': 'Minnesota Vikings', 'Texans': 'Houston Texans', 'Chiefs': 'Kansas City Chiefs', 'Seahawks': 'Seattle Seahawks', 
 'Falcons': 'Atlanta Falcons', 'Bears': 'Chicago Bears', 'Lions': 'Detroit Lions', 'Chargers': 'Los Angeles Chargers', 
@@ -55,14 +67,14 @@ def simulate(request):
         team_names.append(t.team_name)
         teams.append((TEAM_ABBREVIATIONS[t.team_name], t.team_year))
     #run through the simulator with the correct team tuples of ([List of Abbreviations], Year)
-    sim = simulator(teams[0], teams[1])
+    sim = simulator.simulator(teams[0], teams[1])
     #convert team names for the roster
     team1_name = TEAM_NAMES[team_names[0]]
     team2_name = TEAM_NAMES[team_names[1]]
     #get the rosters for the two teams input by the user from rosters.csv
     rosters_df = pd.read_csv('rosters.csv')
-    roster1_df = rosters_df[(rosters_df['Name'] == team1_name) & (rosters_df['Year'] == year1)]
-    roster2_df = rosters_df[(rosters_df['Name'] == team2_name) & (rosters_df['Year'] == year2)]
+    roster1_df = rosters_df[(rosters_df['Name'] == team1_name) & (rosters_df['Year'] == teams[0][1])]
+    roster2_df = rosters_df[(rosters_df['Name'] == team2_name) & (rosters_df['Year'] == teams[1][1])]
     players_positions1 = roster1_df[['player1', 'player2', 'player3', 'Pos']]
     players_positions2 = roster2_df[['player1', 'player2', 'player3', 'Pos']]
     #create dictionaries with structure {Position: Player(s)}

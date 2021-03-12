@@ -1,5 +1,6 @@
 from django.urls import path
 from . import views
+from django.http import HttpResponseRedirect
 
 '''
 urlpattern for the two pages in simulation: the input page, and simulation page

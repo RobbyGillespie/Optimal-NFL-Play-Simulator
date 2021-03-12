@@ -3,7 +3,7 @@ Columns: [Quarter, Time, Down, Yards to go, Yards to go category, Field position
           Score difference, Time of play, Field position category, Play type, Yardage, Year]
 """
 import re
-import util_2
+from . import util_2
 import bs4
 import queue
 import json
