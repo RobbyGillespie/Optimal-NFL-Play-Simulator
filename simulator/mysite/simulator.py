@@ -52,9 +52,9 @@ def create_optimal_plays(team_A_info, team_B_info, all_plays_df):
     sum_weighted_EPC = ((tAo_v_tBd['count_x']**2) * tAo_v_tBd['mean_x']) + \
         ((tAo_v_tBd['count_y']**2) * tAo_v_tBd['mean_y'])
     tAo_v_tBd['sum_weighted_EPC'] = sum_weighted_EPC
-    tA_optimal_plays = tAo_v_tBd[tAo_v_tBd['EPC_sum'] == \
+    tA_optimal_plays = tAo_v_tBd[tAo_v_tBd['sum_weighted_EPC'] == \
         tAo_v_tBd.groupby(['Down', 'To go category', \
-        'Field zone'])['EPC_sum'].transform(max)]
+        'Field zone'])['sum_weighted_EPC'].transform(max)]
 
     return team_A, tA_optimal_plays, team_A_is_offense, team_B_is_defense
 
@@ -145,29 +145,37 @@ def run_play(optimal_plays_df, offense, defense, quarter, down, time, to_go, to_
 field_pos, field_pos_cat, team_1_score, team_2_score, play_tracker, plays_df):
     
     # Get play optimal play type for current situation
-    optimal_play_row = optimal_plays_df.loc[down, to_go_cat, field_pos_cat]
-    optimal_play = optimal_play_row.index[0]
+    try:
+        optimal_play_row = optimal_plays_df.loc[down, to_go_cat, field_pos_cat]
+        optimal_play = optimal_play_row.index[0]
 
-    # Call random play of this type using outcome from offense or defense
-    team_to_use = random.randint(0, 1)
-    # Use outcome from offensive play history
-    if team_to_use == 0:
-        same_team = plays_df['Offense'] == offense
-    # Use outcome from defensive play history
-    else:
-        same_team = plays_df['Defense'] == defense
+        # Call random play of this type using outcome from offense or defense
+        team_to_use = random.randint(0, 1)
+        # Use outcome from offensive play history
+        if team_to_use == 0:
+            same_team = plays_df['Offense'] == offense
+        # Use outcome from defensive play history
+        else:
+            same_team = plays_df['Defense'] == defense
 
-    # Set conditions for current situation
-    same_down = plays_df['Down'] == down
-    same_to_go = plays_df['To go category'] == to_go_cat
-    same_field_pos = plays_df['Field zone'] == field_pos_cat
-    same_play = plays_df['Play type'] == optimal_play
+        # Set conditions for current situation
+        same_down = plays_df['Down'] == down
+        same_to_go = plays_df['To go category'] == to_go_cat
+        same_field_pos = plays_df['Field zone'] == field_pos_cat
+        same_play = plays_df['Play type'] == optimal_play
 
-    # Get play outcome
-    past_plays = plays_df[same_team & same_down & same_to_go & \
-        same_field_pos & same_play]
+        # Get play outcome
+        past_plays = plays_df[same_team & same_down & same_to_go & \
+            same_field_pos & same_play]
+    
+    # A team did not encounter this situation all season
+    except KeyError:
+        past_plays = plays_df[(plays_df['Play type'].str.contains('pass')) | \
+            (plays_df['Play type'].str.contains('run'))]
+
     play_outcome = past_plays.iloc[random.randint(0, len(past_plays) - \
         1)]
+    optimal_play = play_outcome['Play type']
     yards_gained = play_outcome['Yards gained']
     play_time = play_outcome['Play time']
 
@@ -212,8 +220,6 @@ field_pos, ball_first):
     try:
         yards_gained = int(yards_gained)
         field_pos = field_pos - yards_gained
-        print(yards_gained)
-        print(field_pos)
         if field_pos <= 0:
             # Touchdown
             if play_type != 'punt':
@@ -237,7 +243,7 @@ field_pos, ball_first):
                 if to_go > field_pos:
                     to_go = field_pos
             else:
-                down = down + 1
+                down += 1
                 # Turnover on downs
                 if down == 5:
                     offense, defense, field_pos, down, to_go = \
@@ -249,10 +255,19 @@ field_pos, ball_first):
         if play_type == 'field goal' and yards_gained == 'success':
             team_1_score, team_2_score = score_change(team_1_score, \
                 team_2_score, team_1, team_2, offense, defense, 3)
+            offense, defense, down, to_go = switch_possession (team_1, \
+                team_2, offense, defense)
             field_pos = 75
+        # No data on yards, field position and increment down
+        elif yards_gained == '':
+            down += 1
+            if down == 5:
+                offense, defense, field_pos, down, to_go = \
+                    turnover_on_downs(team_1, team_2, offense, defense, field_pos)
         # Unsuccessful field goal, fumble or interception, causing a possession change
-        offense, defense, field_pos, down, to_go = turnover_on_downs(team_1, \
-            team_2, offense, defense, field_pos)
+        else:
+            offense, defense, field_pos, down, to_go = turnover_on_downs(team_1, \
+                team_2, offense, defense, field_pos)
 
     return quarter, time, to_go, field_pos, down, offense, defense, team_1_score, team_2_score
 
