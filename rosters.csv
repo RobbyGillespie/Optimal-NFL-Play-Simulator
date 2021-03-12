@@ -1,0 +1,1756 @@
+,player1,player2,player3,Name,Year,Pos
+0,Derek Anderson,,,Arizona Cardinals,2010,QB
+1,Tim Hightower,,,Arizona Cardinals,2010,RB
+2,Stephen Spach,,,Arizona Cardinals,2010,TE
+3,Jay Feely,,,Arizona Cardinals,2010,K
+4,Larry Fitzgerald,Steve Breaston,Early Doucet,Arizona Cardinals,2010,WR
+5,Kevin Kolb,,,Arizona Cardinals,2011,QB
+6,Anthony Sherman,,,Arizona Cardinals,2011,RB
+7,Jeff King,,,Arizona Cardinals,2011,TE
+8,Jay Feely,,,Arizona Cardinals,2011,K
+9,Larry Fitzgerald,Andre Roberts,Early Doucet,Arizona Cardinals,2011,WR
+10,John Skelton,,,Arizona Cardinals,2012,QB
+11,Beanie Wells,,,Arizona Cardinals,2012,RB
+12,Jeff King,,,Arizona Cardinals,2012,TE
+13,Jay Feely,,,Arizona Cardinals,2012,K
+14,Larry Fitzgerald,Andre Roberts,Early Doucet,Arizona Cardinals,2012,WR
+15,Carson Palmer,,,Arizona Cardinals,2013,QB
+16,Rashard Mendenhall,,,Arizona Cardinals,2013,RB
+17,Jim Dray,,,Arizona Cardinals,2013,TE
+18,Jay Feely,,,Arizona Cardinals,2013,K
+19,Larry Fitzgerald,Michael Floyd,Andre Roberts,Arizona Cardinals,2013,WR
+20,Drew Stanton,,,Arizona Cardinals,2014,QB
+21,Andre Ellington,,,Arizona Cardinals,2014,RB
+22,John Carlson,,,Arizona Cardinals,2014,TE
+23,Chandler Catanzaro,,,Arizona Cardinals,2014,K
+24,Michael Floyd,Larry Fitzgerald,John Brown,Arizona Cardinals,2014,WR
+25,Carson Palmer,,,Arizona Cardinals,2015,QB
+26,Chris Johnson,,,Arizona Cardinals,2015,RB
+27,Darren Fells,,,Arizona Cardinals,2015,TE
+28,Chandler Catanzaro,,,Arizona Cardinals,2015,K
+29,Larry Fitzgerald,John Brown,Michael Floyd,Arizona Cardinals,2015,WR
+30,Carson Palmer,,,Arizona Cardinals,2016,QB
+31,David Johnson,,,Arizona Cardinals,2016,RB
+32,Jermaine Gresham,,,Arizona Cardinals,2016,TE
+33,Chandler Catanzaro,,,Arizona Cardinals,2016,K
+34,Larry Fitzgerald,Michael Floyd,John Brown,Arizona Cardinals,2016,WR
+35,Carson Palmer,,,Arizona Cardinals,2017,QB
+36,Adrian Peterson,,,Arizona Cardinals,2017,RB
+37,Jermaine Gresham,,,Arizona Cardinals,2017,TE
+38,Phil Dawson,,,Arizona Cardinals,2017,K
+39,Larry Fitzgerald,Jaron Brown,John Brown,Arizona Cardinals,2017,WR
+40,Josh Rosen,,,Arizona Cardinals,2018,QB
+41,David Johnson,,,Arizona Cardinals,2018,RB
+42,Jermaine Gresham,,,Arizona Cardinals,2018,TE
+43,Phil Dawson,,,Arizona Cardinals,2018,K
+44,Larry Fitzgerald,Christian Kirk,Chad Williams,Arizona Cardinals,2018,WR
+45,Kyler Murray,,,Arizona Cardinals,2019,QB
+46,David Johnson,,,Arizona Cardinals,2019,RB
+47,Charles Clay,,,Arizona Cardinals,2019,TE
+48,,,,Arizona Cardinals,2019,K
+49,Larry Fitzgerald,Christian Kirk,KeeSean Johnson,Arizona Cardinals,2019,WR
+50,Kyler Murray,,,Arizona Cardinals,2020,QB
+51,Kenyan Drake,,,Arizona Cardinals,2020,RB
+52,Darrell Daniels,,,Arizona Cardinals,2020,TE
+53,Zane Gonzalez,,,Arizona Cardinals,2020,K
+54,DeAndre Hopkins,Larry Fitzgerald,Christian Kirk,Arizona Cardinals,2020,WR
+55,Matt Ryan,,,Atlanta Falcons,2010,QB
+56,Michael Turner,,,Atlanta Falcons,2010,RB
+57,Tony Gonzalez,,,Atlanta Falcons,2010,TE
+58,Matt Bryant,,,Atlanta Falcons,2010,K
+59,Roddy White,Michael Jenkins,Harry Douglas,Atlanta Falcons,2010,WR
+60,Matt Ryan,,,Atlanta Falcons,2011,QB
+61,Antone Smith,,,Atlanta Falcons,2011,RB
+62,Tony Gonzalez,,,Atlanta Falcons,2011,TE
+63,Matt Bryant,,,Atlanta Falcons,2011,K
+64,Roddy White,Julio Jones,Harry Douglas,Atlanta Falcons,2011,WR
+65,Matt Ryan,,,Atlanta Falcons,2012,QB
+66,Michael Turner,,,Atlanta Falcons,2012,RB
+67,Tony Gonzalez,,,Atlanta Falcons,2012,TE
+68,Matt Bryant,,,Atlanta Falcons,2012,K
+69,Julio Jones,Roddy White,Harry Douglas,Atlanta Falcons,2012,WR
+70,Matt Ryan,,,Atlanta Falcons,2013,QB
+71,Steven Jackson,,,Atlanta Falcons,2013,RB
+72,Tony Gonzalez,,,Atlanta Falcons,2013,TE
+73,Matt Bryant,,,Atlanta Falcons,2013,K
+74,Roddy White,Harry Douglas,Julio Jones,Atlanta Falcons,2013,WR
+75,Matt Ryan,,,Atlanta Falcons,2014,QB
+76,Steven Jackson,,,Atlanta Falcons,2014,RB
+77,Levine Toilolo,,,Atlanta Falcons,2014,TE
+78,Matt Bryant,,,Atlanta Falcons,2014,K
+79,Julio Jones,Roddy White,Harry Douglas,Atlanta Falcons,2014,WR
+80,Matt Ryan,,,Atlanta Falcons,2015,QB
+81,Devonta Freeman,,,Atlanta Falcons,2015,RB
+82,Levine Toilolo,,,Atlanta Falcons,2015,TE
+83,Matt Bryant,,,Atlanta Falcons,2015,K
+84,Julio Jones,Roddy White,Justin Hardy,Atlanta Falcons,2015,WR
+85,Matt Ryan,,,Atlanta Falcons,2016,QB
+86,Devonta Freeman,,,Atlanta Falcons,2016,RB
+87,Levine Toilolo,,,Atlanta Falcons,2016,TE
+88,Matt Bryant,,,Atlanta Falcons,2016,K
+89,Mohamed Sanu,Julio Jones,Taylor Gabriel,Atlanta Falcons,2016,WR
+90,Matt Ryan,,,Atlanta Falcons,2017,QB
+91,Devonta Freeman,,,Atlanta Falcons,2017,RB
+92,Levine Toilolo,,,Atlanta Falcons,2017,TE
+93,Matt Bryant,,,Atlanta Falcons,2017,K
+94,Julio Jones,Mohamed Sanu,Taylor Gabriel,Atlanta Falcons,2017,WR
+95,Matt Ryan,,,Atlanta Falcons,2018,QB
+96,Tevin Coleman,,,Atlanta Falcons,2018,RB
+97,Logan Paulsen,,,Atlanta Falcons,2018,TE
+98,Matt Bryant,,,Atlanta Falcons,2018,K
+99,Julio Jones,Mohamed Sanu,Calvin Ridley,Atlanta Falcons,2018,WR
+100,Matt Ryan,,,Atlanta Falcons,2019,QB
+101,Devonta Freeman,,,Atlanta Falcons,2019,RB
+102,Austin Hooper,,,Atlanta Falcons,2019,TE
+103,Matt Bryant,,,Atlanta Falcons,2019,K
+104,Julio Jones,Calvin Ridley,Mohamed Sanu,Atlanta Falcons,2019,WR
+105,Matt Ryan,,,Atlanta Falcons,2020,QB
+106,Todd Gurley,,,Atlanta Falcons,2020,RB
+107,Luke Stocker,,,Atlanta Falcons,2020,TE
+108,Elliott Fry,,,Atlanta Falcons,2020,K
+109,Calvin Ridley,Julio Jones,Russell Gage,Atlanta Falcons,2020,WR
+110,Joe Flacco,,,Baltimore Ravens,2010,QB
+111,Le'Ron McClain,,,Baltimore Ravens,2010,RB
+112,Todd Heap,,,Baltimore Ravens,2010,TE
+113,Billy Cundiff,,,Baltimore Ravens,2010,K
+114,Anquan Boldin,Derrick Mason,T.J. Houshmandzadeh,Baltimore Ravens,2010,WR
+115,Joe Flacco,,,Baltimore Ravens,2011,QB
+116,Vonta Leach,,,Baltimore Ravens,2011,RB
+117,Ed Dickson,,,Baltimore Ravens,2011,TE
+118,Billy Cundiff,,,Baltimore Ravens,2011,K
+119,Anquan Boldin,Torrey Smith,Lee Evans,Baltimore Ravens,2011,WR
+120,Joe Flacco,,,Baltimore Ravens,2012,QB
+121,Ray Rice,,,Baltimore Ravens,2012,RB
+122,Ed Dickson,,,Baltimore Ravens,2012,TE
+123,Justin Tucker,,,Baltimore Ravens,2012,K
+124,Torrey Smith,Anquan Boldin,Jacoby Jones,Baltimore Ravens,2012,WR
+125,Joe Flacco,,,Baltimore Ravens,2013,QB
+126,Ray Rice,,,Baltimore Ravens,2013,RB
+127,Ed Dickson,,,Baltimore Ravens,2013,TE
+128,Justin Tucker,,,Baltimore Ravens,2013,K
+129,Torrey Smith,Marlon Brown,Jacoby Jones,Baltimore Ravens,2013,WR
+130,Joe Flacco,,,Baltimore Ravens,2014,QB
+131,Justin Forsett,,,Baltimore Ravens,2014,RB
+132,Owen Daniels,,,Baltimore Ravens,2014,TE
+133,Justin Tucker,,,Baltimore Ravens,2014,K
+134,Steve Smith,Torrey Smith,Marlon Brown,Baltimore Ravens,2014,WR
+135,Joe Flacco,,,Baltimore Ravens,2015,QB
+136,Justin Forsett,,,Baltimore Ravens,2015,RB
+137,Crockett Gillmore,,,Baltimore Ravens,2015,TE
+138,Justin Tucker,,,Baltimore Ravens,2015,K
+139,Kamar Aiken,Steve Smith,Chris Givens,Baltimore Ravens,2015,WR
+140,Joe Flacco,,,Baltimore Ravens,2016,QB
+141,Terrance West,,,Baltimore Ravens,2016,RB
+142,Dennis Pitta,,,Baltimore Ravens,2016,TE
+143,Justin Tucker,,,Baltimore Ravens,2016,K
+144,Mike Wallace,Steve Smith,Kamar Aiken,Baltimore Ravens,2016,WR
+145,Joe Flacco,,,Baltimore Ravens,2017,QB
+146,Alex Collins,,,Baltimore Ravens,2017,RB
+147,Ben Watson,,,Baltimore Ravens,2017,TE
+148,Justin Tucker,,,Baltimore Ravens,2017,K
+149,Mike Wallace,Jeremy Maclin,Chris Moore,Baltimore Ravens,2017,WR
+150,Joe Flacco,,,Baltimore Ravens,2018,QB
+151,Alex Collins,,,Baltimore Ravens,2018,RB
+152,Nick Boyle,,,Baltimore Ravens,2018,TE
+153,Justin Tucker,,,Baltimore Ravens,2018,K
+154,Michael Crabtree,John Brown,Willie Snead,Baltimore Ravens,2018,WR
+155,Lamar Jackson,,,Baltimore Ravens,2019,QB
+156,Mark Ingram,,,Baltimore Ravens,2019,RB
+157,Nick Boyle,,,Baltimore Ravens,2019,TE
+158,Justin Tucker,,,Baltimore Ravens,2019,K
+159,Miles Boykin,Marquise Brown,Willie Snead,Baltimore Ravens,2019,WR
+160,Lamar Jackson,,,Baltimore Ravens,2020,QB
+161,Mark Ingram,,,Baltimore Ravens,2020,RB
+162,Nick Boyle,,,Baltimore Ravens,2020,TE
+163,Justin Tucker,,,Baltimore Ravens,2020,K
+164,Marquise Brown,Miles Boykin,Willie Snead,Baltimore Ravens,2020,WR
+165,Ryan Fitzpatrick,,,Buffalo Bills,2010,QB
+166,Andre Anderson,,,Buffalo Bills,2010,RB
+167,David Martin,,,Buffalo Bills,2010,TE
+168,Rian Lindell,,,Buffalo Bills,2010,K
+169,Lee Evans,Steve Johnson,Roscoe Parrish,Buffalo Bills,2010,WR
+170,Ryan Fitzpatrick,,,Buffalo Bills,2011,QB
+171,Tashard Choice,,,Buffalo Bills,2011,RB
+172,Scott Chandler,,,Buffalo Bills,2011,TE
+173,Brandon Coutu,,,Buffalo Bills,2011,K
+174,Steve Johnson,David Nelson,Donald Jones,Buffalo Bills,2011,WR
+175,Ryan Fitzpatrick,,,Buffalo Bills,2012,QB
+176,C.J. Spiller,,,Buffalo Bills,2012,RB
+177,Scott Chandler,,,Buffalo Bills,2012,TE
+178,Rian Lindell,,,Buffalo Bills,2012,K
+179,Steve Johnson,T.J. Graham,Donald Jones,Buffalo Bills,2012,WR
+180,E.J. Manuel,,,Buffalo Bills,2013,QB
+181,C.J. Spiller,,,Buffalo Bills,2013,RB
+182,Lee Smith,,,Buffalo Bills,2013,TE
+183,Dan Carpenter,,,Buffalo Bills,2013,K
+184,Robert Woods,Steve Johnson,T.J. Graham,Buffalo Bills,2013,WR
+185,Kyle Orton,,,Buffalo Bills,2014,QB
+186,Fred Jackson,,,Buffalo Bills,2014,RB
+187,Lee Smith,,,Buffalo Bills,2014,TE
+188,Dan Carpenter,,,Buffalo Bills,2014,K
+189,Sammy Watkins,Robert Woods,Chris Hogan,Buffalo Bills,2014,WR
+190,E.J. Manuel,,,Buffalo Bills,2015,QB
+191,LeSean McCoy,,,Buffalo Bills,2015,RB
+192,Charles Clay,,,Buffalo Bills,2015,TE
+193,Dan Carpenter,,,Buffalo Bills,2015,K
+194,Sammy Watkins,Robert Woods,Percy Harvin,Buffalo Bills,2015,WR
+195,Tyrod Taylor,,,Buffalo Bills,2016,QB
+196,LeSean McCoy,,,Buffalo Bills,2016,RB
+197,Charles Clay,,,Buffalo Bills,2016,TE
+198,Dan Carpenter,,,Buffalo Bills,2016,K
+199,Robert Woods,Marquise Goodwin,Sammy Watkins,Buffalo Bills,2016,WR
+200,Tyrod Taylor,,,Buffalo Bills,2017,QB
+201,LeSean McCoy,,,Buffalo Bills,2017,RB
+202,Charles Clay,,,Buffalo Bills,2017,TE
+203,Stephen Hauschka,,,Buffalo Bills,2017,K
+204,Zay Jones,Jordan Matthews,Deonte Thompson,Buffalo Bills,2017,WR
+205,Josh Allen,,,Buffalo Bills,2018,QB
+206,LeSean McCoy,,,Buffalo Bills,2018,RB
+207,Charles Clay,,,Buffalo Bills,2018,TE
+208,Stephen Hauschka,,,Buffalo Bills,2018,K
+209,Zay Jones,Kelvin Benjamin,Robert Foster,Buffalo Bills,2018,WR
+210,Josh Allen,,,Buffalo Bills,2019,QB
+211,Frank Gore,,,Buffalo Bills,2019,RB
+212,Dawson Knox,,,Buffalo Bills,2019,TE
+213,Stephen Hauschka,,,Buffalo Bills,2019,K
+214,John Brown,Cole Beasley,Isaiah McKenzie,Buffalo Bills,2019,WR
+215,Josh Allen,,,Buffalo Bills,2020,QB
+216,Devin Singletary,,,Buffalo Bills,2020,RB
+217,Dawson Knox,,,Buffalo Bills,2020,TE
+218,Tyler Bass,,,Buffalo Bills,2020,K
+219,Stefon Diggs,Gabriel Davis,Cole Beasley,Buffalo Bills,2020,WR
+220,Jimmy Clausen,,,Carolina Panthers,2010,QB
+221,Tony Fiammetta,,,Carolina Panthers,2010,RB
+222,Jeff King,,,Carolina Panthers,2010,TE
+223,Todd Carter,,,Carolina Panthers,2010,K
+224,Steve Smith,David Gettis,Brandon LaFell,Carolina Panthers,2010,WR
+225,Cam Newton,,,Carolina Panthers,2011,QB
+226,Josh Vaughan,,,Carolina Panthers,2011,RB
+227,Greg Olsen,,,Carolina Panthers,2011,TE
+228,Olindo Mare,,,Carolina Panthers,2011,K
+229,Steve Smith,Legedu Naanee,Brandon LaFell,Carolina Panthers,2011,WR
+230,Cam Newton,,,Carolina Panthers,2012,QB
+231,DeAngelo Williams,,,Carolina Panthers,2012,RB
+232,Greg Olsen,,,Carolina Panthers,2012,TE
+233,Graham Gano,,,Carolina Panthers,2012,K
+234,Steve Smith,Brandon LaFell,Louis Murphy,Carolina Panthers,2012,WR
+235,Cam Newton,,,Carolina Panthers,2013,QB
+236,DeAngelo Williams,,,Carolina Panthers,2013,RB
+237,Greg Olsen,,,Carolina Panthers,2013,TE
+238,Graham Gano,,,Carolina Panthers,2013,K
+239,Brandon LaFell,Steve Smith,Ted Ginn,Carolina Panthers,2013,WR
+240,Cam Newton,,,Carolina Panthers,2014,QB
+241,Jonathan Stewart,,,Carolina Panthers,2014,RB
+242,Greg Olsen,,,Carolina Panthers,2014,TE
+243,Graham Gano,,,Carolina Panthers,2014,K
+244,Kelvin Benjamin,Jerricho Cotchery,Corey Brown,Carolina Panthers,2014,WR
+245,Cam Newton,,,Carolina Panthers,2015,QB
+246,Jonathan Stewart,,,Carolina Panthers,2015,RB
+247,Greg Olsen,,,Carolina Panthers,2015,TE
+248,Graham Gano,,,Carolina Panthers,2015,K
+249,Ted Ginn,Corey Brown,Devin Funchess,Carolina Panthers,2015,WR
+250,Cam Newton,,,Carolina Panthers,2016,QB
+251,Jonathan Stewart,,,Carolina Panthers,2016,RB
+252,Greg Olsen,,,Carolina Panthers,2016,TE
+253,Graham Gano,,,Carolina Panthers,2016,K
+254,Kelvin Benjamin,Corey Brown,Ted Ginn,Carolina Panthers,2016,WR
+255,Mitch Trubisky,,,Carolina Panthers,2017,QB
+256,Jordan Howard,,,Carolina Panthers,2017,RB
+257,Dion Sims,,,Carolina Panthers,2017,TE
+258,Connor Barth,,,Carolina Panthers,2017,K
+259,Josh Bellamy,Dontrelle Inman,Kendall Wright,Carolina Panthers,2017,WR
+260,Cam Newton,,,Carolina Panthers,2018,QB
+261,Christian McCaffrey,,,Carolina Panthers,2018,RB
+262,Greg Olsen,,,Carolina Panthers,2018,TE
+263,Chandler Catanzaro,,,Carolina Panthers,2018,K
+264,Devin Funchess,D.J. Moore,Curtis Samuel,Carolina Panthers,2018,WR
+265,Kyle Allen,,,Carolina Panthers,2019,QB
+266,Christian McCaffrey,,,Carolina Panthers,2019,RB
+267,Greg Olsen,,,Carolina Panthers,2019,TE
+268,Joey Slye,,,Carolina Panthers,2019,K
+269,D.J. Moore,Curtis Samuel,Jarius Wright,Carolina Panthers,2019,WR
+270,Teddy Bridgewater,,,Carolina Panthers,2020,QB
+271,Christian McCaffrey,,,Carolina Panthers,2020,RB
+272,Chris Manhertz,,,Carolina Panthers,2020,TE
+273,Joey Slye,,,Carolina Panthers,2020,K
+274,Robby Anderson,D.J. Moore,Curtis Samuel,Carolina Panthers,2020,WR
+275,Jay Cutler,,,Chicago Bears,2010,QB
+276,Matt Forte,,,Chicago Bears,2010,RB
+277,Greg Olsen,,,Chicago Bears,2010,TE
+278,Robbie Gould,,,Chicago Bears,2010,K
+279,Johnny Knox,Devin Hester,Earl Bennett,Chicago Bears,2010,WR
+280,Jay Cutler,,,Chicago Bears,2011,QB
+281,Marion Barber,,,Chicago Bears,2011,RB
+282,Kellen Davis,,,Chicago Bears,2011,TE
+283,Robbie Gould,,,Chicago Bears,2011,K
+284,Johnny Knox,Roy Williams,Devin Hester,Chicago Bears,2011,WR
+285,Jay Cutler,,,Chicago Bears,2012,QB
+286,Matt Forte,,,Chicago Bears,2012,RB
+287,Kellen Davis,,,Chicago Bears,2012,TE
+288,Robbie Gould,,,Chicago Bears,2012,K
+289,Brandon Marshall,Alshon Jeffery,Devin Hester,Chicago Bears,2012,WR
+290,Jay Cutler,,,Chicago Bears,2013,QB
+291,Matt Forte,,,Chicago Bears,2013,RB
+292,Martellus Bennett,,,Chicago Bears,2013,TE
+293,Robbie Gould,,,Chicago Bears,2013,K
+294,Brandon Marshall,Alshon Jeffery,Earl Bennett,Chicago Bears,2013,WR
+295,Jay Cutler,,,Chicago Bears,2014,QB
+296,Matt Forte,,,Chicago Bears,2014,RB
+297,Martellus Bennett,,,Chicago Bears,2014,TE
+298,Jay Feely,,,Chicago Bears,2014,K
+299,Alshon Jeffery,Brandon Marshall,Josh Morgan,Chicago Bears,2014,WR
+300,Jay Cutler,,,Chicago Bears,2015,QB
+301,Matt Forte,,,Chicago Bears,2015,RB
+302,Zach Miller,,,Chicago Bears,2015,TE
+303,Robbie Gould,,,Chicago Bears,2015,K
+304,Eddie Royal,Alshon Jeffery,Marquess Wilson,Chicago Bears,2015,WR
+305,Matt Barkley,,,Chicago Bears,2016,QB
+306,Jordan Howard,,,Chicago Bears,2016,RB
+307,Logan Paulsen,,,Chicago Bears,2016,TE
+308,Connor Barth,,,Chicago Bears,2016,K
+309,Alshon Jeffery,Cameron Meredith,Deonte Thompson,Chicago Bears,2016,WR
+310,Mitch Trubisky,,,Chicago Bears,2017,QB
+311,Jordan Howard,,,Chicago Bears,2017,RB
+312,Dion Sims,,,Chicago Bears,2017,TE
+313,Connor Barth,,,Chicago Bears,2017,K
+314,Josh Bellamy,Dontrelle Inman,Kendall Wright,Chicago Bears,2017,WR
+315,Mitch Trubisky,,,Chicago Bears,2018,QB
+316,Jordan Howard,,,Chicago Bears,2018,RB
+317,Trey Burton,,,Chicago Bears,2018,TE
+318,Cody Parkey,,,Chicago Bears,2018,K
+319,Allen Robinson,Taylor Gabriel,Anthony Miller,Chicago Bears,2018,WR
+320,Mitch Trubisky,,,Chicago Bears,2019,QB
+321,Tarik Cohen,,,Chicago Bears,2019,RB
+322,J.P. Holtz,,,Chicago Bears,2019,TE
+323,Eddy Pineiro,,,Chicago Bears,2019,K
+324,Allen Robinson,Taylor Gabriel,Anthony Miller,Chicago Bears,2019,WR
+325,Mitch Trubisky,,,Chicago Bears,2020,QB
+326,David Montgomery,,,Chicago Bears,2020,RB
+327,Jimmy Graham,,,Chicago Bears,2020,TE
+328,Cairo Santos,,,Chicago Bears,2020,K
+329,Allen Robinson,Darnell Mooney,Anthony Miller,Chicago Bears,2020,WR
+330,Carson Palmer,,,Cincinnati Bengals,2010,QB
+331,Chris Pressley,,,Cincinnati Bengals,2010,RB
+332,Reggie Kelly,,,Cincinnati Bengals,2010,TE
+333,Mike Nugent,,,Cincinnati Bengals,2010,K
+334,Chad Johnson,Terrell Owens,Andre Caldwell,Cincinnati Bengals,2010,WR
+335,Andy Dalton,,,Cincinnati Bengals,2011,QB
+336,Chris Pressley,,,Cincinnati Bengals,2011,RB
+337,Jermaine Gresham,,,Cincinnati Bengals,2011,TE
+338,Mike Nugent,,,Cincinnati Bengals,2011,K
+339,A.J. Green,Jerome Simpson,Andre Caldwell,Cincinnati Bengals,2011,WR
+340,Andy Dalton,,,Cincinnati Bengals,2012,QB
+341,Chris Pressley,,,Cincinnati Bengals,2012,RB
+342,Jermaine Gresham,,,Cincinnati Bengals,2012,TE
+343,Josh Brown,,,Cincinnati Bengals,2012,K
+344,A.J. Green,Armon Binns,Marvin Jones,Cincinnati Bengals,2012,WR
+345,Andy Dalton,,,Cincinnati Bengals,2013,QB
+346,,,,Cincinnati Bengals,2013,RB
+347,Jermaine Gresham,,,Cincinnati Bengals,2013,TE
+348,Mike Nugent,,,Cincinnati Bengals,2013,K
+349,A.J. Green,Mohamed Sanu,Marvin Jones,Cincinnati Bengals,2013,WR
+350,Andy Dalton,,,Cincinnati Bengals,2014,QB
+351,Onterio McCalebb,,,Cincinnati Bengals,2014,RB
+352,Jermaine Gresham,,,Cincinnati Bengals,2014,TE
+353,Mike Nugent,,,Cincinnati Bengals,2014,K
+354,A.J. Green,Mohamed Sanu,Brandon Tate,Cincinnati Bengals,2014,WR
+355,Andy Dalton,,,Cincinnati Bengals,2015,QB
+356,,,,Cincinnati Bengals,2015,RB
+357,Tyler Eifert,,,Cincinnati Bengals,2015,TE
+358,Mike Nugent,,,Cincinnati Bengals,2015,K
+359,A.J. Green,Marvin Jones,Mohamed Sanu,Cincinnati Bengals,2015,WR
+360,Andy Dalton,,,Cincinnati Bengals,2016,QB
+361,,,,Cincinnati Bengals,2016,RB
+362,Tyler Kroft,,,Cincinnati Bengals,2016,TE
+363,Randy Bullock,,,Cincinnati Bengals,2016,K
+364,Brandon LaFell,A.J. Green,Cody Core,Cincinnati Bengals,2016,WR
+365,Andy Dalton,,,Cincinnati Bengals,2017,QB
+366,,,,Cincinnati Bengals,2017,RB
+367,Tyler Kroft,,,Cincinnati Bengals,2017,TE
+368,Randy Bullock,,,Cincinnati Bengals,2017,K
+369,A.J. Green,Brandon LaFell,Josh Malone,Cincinnati Bengals,2017,WR
+370,Andy Dalton,,,Cincinnati Bengals,2018,QB
+371,Joe Mixon,,,Cincinnati Bengals,2018,RB
+372,C.J. Uzomah,,,Cincinnati Bengals,2018,TE
+373,Randy Bullock,,,Cincinnati Bengals,2018,K
+374,Tyler Boyd,John Ross,A.J. Green,Cincinnati Bengals,2018,WR
+375,Andy Dalton,,,Cincinnati Bengals,2019,QB
+376,,,,Cincinnati Bengals,2019,RB
+377,C.J. Uzomah,,,Cincinnati Bengals,2019,TE
+378,Randy Bullock,,,Cincinnati Bengals,2019,K
+379,Tyler Boyd,Auden Tate,John Ross,Cincinnati Bengals,2019,WR
+380,Joe Burrow,,,Cincinnati Bengals,2020,QB
+381,Trayveon Williams,,,Cincinnati Bengals,2020,RB
+382,Drew Sample,,,Cincinnati Bengals,2020,TE
+383,Randy Bullock,,,Cincinnati Bengals,2020,K
+384,A.J. Green,Tee Higgins,Tyler Boyd,Cincinnati Bengals,2020,WR
+385,Colt McCoy,,,Cleveland Browns,2010,QB
+386,Lawrence Vickers,,,Cleveland Browns,2010,RB
+387,Ben Watson,,,Cleveland Browns,2010,TE
+388,Phil Dawson,,,Cleveland Browns,2010,K
+389,Mohamed Massaquoi,Brian Robiskie,Josh Cribbs,Cleveland Browns,2010,WR
+390,Colt McCoy,,,Cleveland Browns,2011,QB
+391,Chris Ogbonnaya,,,Cleveland Browns,2011,RB
+392,Ben Watson,,,Cleveland Browns,2011,TE
+393,Phil Dawson,,,Cleveland Browns,2011,K
+394,Mohamed Massaquoi,Greg Little,Josh Cribbs,Cleveland Browns,2011,WR
+395,Brandon Weeden,,,Cleveland Browns,2012,QB
+396,Trent Richardson,,,Cleveland Browns,2012,RB
+397,Ben Watson,,,Cleveland Browns,2012,TE
+398,Phil Dawson,,,Cleveland Browns,2012,K
+399,Greg Little,Josh Gordon,Mohamed Massaquoi,Cleveland Browns,2012,WR
+400,Jason Campbell,,,Cleveland Browns,2013,QB
+401,Willis McGahee,,,Cleveland Browns,2013,RB
+402,Jordan Cameron,,,Cleveland Browns,2013,TE
+403,Billy Cundiff,,,Cleveland Browns,2013,K
+404,Josh Gordon,Greg Little,Travis Benjamin,Cleveland Browns,2013,WR
+405,Brian Hoyer,,,Cleveland Browns,2014,QB
+406,Ben Tate,,,Cleveland Browns,2014,RB
+407,Jordan Cameron,,,Cleveland Browns,2014,TE
+408,Billy Cundiff,,,Cleveland Browns,2014,K
+409,Andrew Hawkins,Miles Austin,Josh Gordon,Cleveland Browns,2014,WR
+410,Josh McCown,,,Cleveland Browns,2015,QB
+411,Isaiah Crowell,,,Cleveland Browns,2015,RB
+412,Gary Barnidge,,,Cleveland Browns,2015,TE
+413,Travis Coons,,,Cleveland Browns,2015,K
+414,Travis Benjamin,Andrew Hawkins,Taylor Gabriel,Cleveland Browns,2015,WR
+415,Cody Kessler,,,Cleveland Browns,2016,QB
+416,Isaiah Crowell,,,Cleveland Browns,2016,RB
+417,Gary Barnidge,,,Cleveland Browns,2016,TE
+418,Patrick Murray,,,Cleveland Browns,2016,K
+419,Terrelle Pryor,Corey Coleman,Andrew Hawkins,Cleveland Browns,2016,WR
+420,DeShone Kizer,,,Cleveland Browns,2017,QB
+421,Isaiah Crowell,,,Cleveland Browns,2017,RB
+422,Randall Telfer,,,Cleveland Browns,2017,TE
+423,Zane Gonzalez,,,Cleveland Browns,2017,K
+424,Ricardo Louis,Corey Coleman,Josh Gordon,Cleveland Browns,2017,WR
+425,Baker Mayfield,,,Cleveland Browns,2018,QB
+426,Nick Chubb,,,Cleveland Browns,2018,RB
+427,David Njoku,,,Cleveland Browns,2018,TE
+428,Zane Gonzalez,,,Cleveland Browns,2018,K
+429,Jarvis Landry,Antonio Callaway,Damion Ratley,Cleveland Browns,2018,WR
+430,Baker Mayfield,,,Cleveland Browns,2019,QB
+431,Nick Chubb,,,Cleveland Browns,2019,RB
+432,Pharaoh Brown,,,Cleveland Browns,2019,TE
+433,Austin Seibert,,,Cleveland Browns,2019,K
+434,Jarvis Landry,Odell Beckham,Damion Ratley,Cleveland Browns,2019,WR
+435,Baker Mayfield,,,Cleveland Browns,2020,QB
+436,Nick Chubb,,,Cleveland Browns,2020,RB
+437,Austin Hooper,,,Cleveland Browns,2020,TE
+438,Cody Parkey,,,Cleveland Browns,2020,K
+439,Jarvis Landry,Odell Beckham,Rashard Higgins,Cleveland Browns,2020,WR
+440,Jon Kitna,,,Dallas Cowboys,2010,QB
+441,Chris Gronkowski,,,Dallas Cowboys,2010,RB
+442,Jason Witten,,,Dallas Cowboys,2010,TE
+443,David Buehler,,,Dallas Cowboys,2010,K
+444,Miles Austin,Roy Williams,Dez Bryant,Dallas Cowboys,2010,WR
+445,Tony Romo,,,Dallas Cowboys,2011,QB
+446,Tony Fiammetta,,,Dallas Cowboys,2011,RB
+447,Jason Witten,,,Dallas Cowboys,2011,TE
+448,Dan Bailey,,,Dallas Cowboys,2011,K
+449,Miles Austin,Laurent Robinson,Dez Bryant,Dallas Cowboys,2011,WR
+450,Tony Romo,,,Dallas Cowboys,2012,QB
+451,DeMarco Murray,,,Dallas Cowboys,2012,RB
+452,Jason Witten,,,Dallas Cowboys,2012,TE
+453,Dan Bailey,,,Dallas Cowboys,2012,K
+454,Miles Austin,Dez Bryant,Kevin Ogletree,Dallas Cowboys,2012,WR
+455,Tony Romo,,,Dallas Cowboys,2013,QB
+456,DeMarco Murray,,,Dallas Cowboys,2013,RB
+457,Jason Witten,,,Dallas Cowboys,2013,TE
+458,Dan Bailey,,,Dallas Cowboys,2013,K
+459,Dez Bryant,Miles Austin,Terrance Williams,Dallas Cowboys,2013,WR
+460,Tony Romo,,,Dallas Cowboys,2014,QB
+461,DeMarco Murray,,,Dallas Cowboys,2014,RB
+462,Jason Witten,,,Dallas Cowboys,2014,TE
+463,Dan Bailey,,,Dallas Cowboys,2014,K
+464,Dez Bryant,Terrance Williams,Cole Beasley,Dallas Cowboys,2014,WR
+465,Matt Cassel,,,Dallas Cowboys,2015,QB
+466,Darren McFadden,,,Dallas Cowboys,2015,RB
+467,Jason Witten,,,Dallas Cowboys,2015,TE
+468,Dan Bailey,,,Dallas Cowboys,2015,K
+469,Terrance Williams,Dez Bryant,Cole Beasley,Dallas Cowboys,2015,WR
+470,Dak Prescott,,,Dallas Cowboys,2016,QB
+471,Ezekiel Elliott,,,Dallas Cowboys,2016,RB
+472,Jason Witten,,,Dallas Cowboys,2016,TE
+473,Dan Bailey,,,Dallas Cowboys,2016,K
+474,Terrance Williams,Dez Bryant,Cole Beasley,Dallas Cowboys,2016,WR
+475,Dak Prescott,,,Dallas Cowboys,2017,QB
+476,Ezekiel Elliott,,,Dallas Cowboys,2017,RB
+477,Jason Witten,,,Dallas Cowboys,2017,TE
+478,Dan Bailey,,,Dallas Cowboys,2017,K
+479,Dez Bryant,Terrance Williams,Cole Beasley,Dallas Cowboys,2017,WR
+480,Dak Prescott,,,Dallas Cowboys,2018,QB
+481,Ezekiel Elliott,,,Dallas Cowboys,2018,RB
+482,Geoff Swaim,,,Dallas Cowboys,2018,TE
+483,Brett Maher,,,Dallas Cowboys,2018,K
+484,Amari Cooper,Michael Gallup,Allen Hurns,Dallas Cowboys,2018,WR
+485,Dak Prescott,,,Dallas Cowboys,2019,QB
+486,Ezekiel Elliott,,,Dallas Cowboys,2019,RB
+487,Jason Witten,,,Dallas Cowboys,2019,TE
+488,Kai Forbath,,,Dallas Cowboys,2019,K
+489,Amari Cooper,Michael Gallup,Randall Cobb,Dallas Cowboys,2019,WR
+490,Andy Dalton,,,Dallas Cowboys,2020,QB
+491,Ezekiel Elliott,,,Dallas Cowboys,2020,RB
+492,Dalton Schultz,,,Dallas Cowboys,2020,TE
+493,Greg Zuerlein,,,Dallas Cowboys,2020,K
+494,Amari Cooper,Michael Gallup,CeeDee Lamb,Dallas Cowboys,2020,WR
+495,Kyle Orton,,,Denver Broncos,2010,QB
+496,Knowshon Moreno,,,Denver Broncos,2010,RB
+497,Daniel Graham,,,Denver Broncos,2010,TE
+498,Stephen Hauschka,,,Denver Broncos,2010,K
+499,Jabar Gaffney,Brandon Lloyd,Eddie Royal,Denver Broncos,2010,WR
+500,Tim Tebow,,,Denver Broncos,2011,QB
+501,Spencer Larsen,,,Denver Broncos,2011,RB
+502,Daniel Fells,,,Denver Broncos,2011,TE
+503,Matt Prater,,,Denver Broncos,2011,K
+504,Eric Decker,Eddie Royal,Demaryius Thomas,Denver Broncos,2011,WR
+505,Peyton Manning,,,Denver Broncos,2012,QB
+506,Willis McGahee,,,Denver Broncos,2012,RB
+507,Joel Dreessen,,,Denver Broncos,2012,TE
+508,Matt Prater,,,Denver Broncos,2012,K
+509,Demaryius Thomas,Eric Decker,Brandon Stokley,Denver Broncos,2012,WR
+510,Peyton Manning,,,Denver Broncos,2013,QB
+511,Knowshon Moreno,,,Denver Broncos,2013,RB
+512,Julius Thomas,,,Denver Broncos,2013,TE
+513,Matt Prater,,,Denver Broncos,2013,K
+514,Eric Decker,Demaryius Thomas,Wes Welker,Denver Broncos,2013,WR
+515,Peyton Manning,,,Denver Broncos,2014,QB
+516,C.J. Anderson,,,Denver Broncos,2014,RB
+517,Julius Thomas,,,Denver Broncos,2014,TE
+518,Connor Barth,,,Denver Broncos,2014,K
+519,Emmanuel Sanders,Demaryius Thomas,Wes Welker,Denver Broncos,2014,WR
+520,Peyton Manning,,,Denver Broncos,2015,QB
+521,Ronnie Hillman,,,Denver Broncos,2015,RB
+522,Owen Daniels,,,Denver Broncos,2015,TE
+523,Brandon McManus,,,Denver Broncos,2015,K
+524,Demaryius Thomas,Emmanuel Sanders,Jordan Norwood,Denver Broncos,2015,WR
+525,Trevor Siemian,,,Denver Broncos,2016,QB
+526,C.J. Anderson,,,Denver Broncos,2016,RB
+527,Virgil Green,,,Denver Broncos,2016,TE
+528,Brandon McManus,,,Denver Broncos,2016,K
+529,Emmanuel Sanders,Demaryius Thomas,Jordan Norwood,Denver Broncos,2016,WR
+530,Trevor Siemian,,,Denver Broncos,2017,QB
+531,C.J. Anderson,,,Denver Broncos,2017,RB
+532,Virgil Green,,,Denver Broncos,2017,TE
+533,Brandon McManus,,,Denver Broncos,2017,K
+534,Demaryius Thomas,Emmanuel Sanders,Bennie Fowler,Denver Broncos,2017,WR
+535,Case Keenum,,,Denver Broncos,2018,QB
+536,Royce Freeman,,,Denver Broncos,2018,RB
+537,Jeff Heuerman,,,Denver Broncos,2018,TE
+538,Brandon McManus,,,Denver Broncos,2018,K
+539,Emmanuel Sanders,Courtland Sutton,Demaryius Thomas,Denver Broncos,2018,WR
+540,Joe Flacco,,,Denver Broncos,2019,QB
+541,Phillip Lindsay,,,Denver Broncos,2019,RB
+542,Noah Fant,,,Denver Broncos,2019,TE
+543,Brandon McManus,,,Denver Broncos,2019,K
+544,Courtland Sutton,Emmanuel Sanders,DaeSean Hamilton,Denver Broncos,2019,WR
+545,Drew Lock,,,Denver Broncos,2020,QB
+546,Melvin Gordon,,,Denver Broncos,2020,RB
+547,Noah Fant,,,Denver Broncos,2020,TE
+548,Brandon McManus,,,Denver Broncos,2020,K
+549,Tim Patrick,Jerry Jeudy,K.J. Hamler,Denver Broncos,2020,WR
+550,Shaun Hill,,,Detroit Lions,2010,QB
+551,Jerome Felton,,,Detroit Lions,2010,RB
+552,Brandon Pettigrew,,,Detroit Lions,2010,TE
+553,Jason Hanson,,,Detroit Lions,2010,K
+554,Calvin Johnson,Nate Burleson,Bryant Johnson,Detroit Lions,2010,WR
+555,Matthew Stafford,,,Detroit Lions,2011,QB
+556,Jahvid Best,,,Detroit Lions,2011,RB
+557,Brandon Pettigrew,,,Detroit Lions,2011,TE
+558,Jason Hanson,,,Detroit Lions,2011,K
+559,Calvin Johnson,Nate Burleson,Titus Young,Detroit Lions,2011,WR
+560,Matthew Stafford,,,Detroit Lions,2012,QB
+561,Mikel Leshoure,,,Detroit Lions,2012,RB
+562,Brandon Pettigrew,,,Detroit Lions,2012,TE
+563,Jason Hanson,,,Detroit Lions,2012,K
+564,Calvin Johnson,Titus Young,Nate Burleson,Detroit Lions,2012,WR
+565,Matthew Stafford,,,Detroit Lions,2013,QB
+566,Reggie Bush,,,Detroit Lions,2013,RB
+567,Brandon Pettigrew,,,Detroit Lions,2013,TE
+568,David Akers,,,Detroit Lions,2013,K
+569,Calvin Johnson,Kris Durham,Nate Burleson,Detroit Lions,2013,WR
+570,Matthew Stafford,,,Detroit Lions,2014,QB
+571,Reggie Bush,,,Detroit Lions,2014,RB
+572,Brandon Pettigrew,,,Detroit Lions,2014,TE
+573,Nate Freese,,,Detroit Lions,2014,K
+574,Golden Tate,Calvin Johnson,Jeremy Ross,Detroit Lions,2014,WR
+575,Matthew Stafford,,,Detroit Lions,2015,QB
+576,Ameer Abdullah,,,Detroit Lions,2015,RB
+577,Eric Ebron,,,Detroit Lions,2015,TE
+578,Matt Prater,,,Detroit Lions,2015,K
+579,Calvin Johnson,Golden Tate,Lance Moore,Detroit Lions,2015,WR
+580,Matthew Stafford,,,Detroit Lions,2016,QB
+581,Theo Riddick,,,Detroit Lions,2016,RB
+582,Eric Ebron,,,Detroit Lions,2016,TE
+583,Matt Prater,,,Detroit Lions,2016,K
+584,Anquan Boldin,Golden Tate,Marvin Jones,Detroit Lions,2016,WR
+585,Matthew Stafford,,,Detroit Lions,2017,QB
+586,Ameer Abdullah,,,Detroit Lions,2017,RB
+587,Darren Fells,,,Detroit Lions,2017,TE
+588,Matt Prater,,,Detroit Lions,2017,K
+589,Marvin Jones,Golden Tate,T.J. Jones,Detroit Lions,2017,WR
+590,Matthew Stafford,,,Detroit Lions,2018,QB
+591,LeGarrette Blount,,,Detroit Lions,2018,RB
+592,Levine Toilolo,,,Detroit Lions,2018,TE
+593,Matt Prater,,,Detroit Lions,2018,K
+594,Kenny Golladay,Marvin Jones,Golden Tate,Detroit Lions,2018,WR
+595,Matthew Stafford,,,Detroit Lions,2019,QB
+596,Kerryon Johnson,,,Detroit Lions,2019,RB
+597,Jesse James,,,Detroit Lions,2019,TE
+598,Matt Prater,,,Detroit Lions,2019,K
+599,Kenny Golladay,Marvin Jones,Danny Amendola,Detroit Lions,2019,WR
+600,Aaron Rodgers,,,Green Bay Packers,2010,QB
+601,Korey Hall,,,Green Bay Packers,2010,RB
+602,Donald Lee,,,Green Bay Packers,2010,TE
+603,Mason Crosby,,,Green Bay Packers,2010,K
+604,Greg Jennings,Donald Driver,Jordy Nelson,Green Bay Packers,2010,WR
+605,Aaron Rodgers,,,Green Bay Packers,2011,QB
+606,Brandon Saine,,,Green Bay Packers,2011,RB
+607,Jermichael Finley,,,Green Bay Packers,2011,TE
+608,Mason Crosby,,,Green Bay Packers,2011,K
+609,Donald Driver,Greg Jennings,Jordy Nelson,Green Bay Packers,2011,WR
+610,Aaron Rodgers,,,Green Bay Packers,2012,QB
+611,Cedric Benson,,,Green Bay Packers,2012,RB
+612,Jermichael Finley,,,Green Bay Packers,2012,TE
+613,Mason Crosby,,,Green Bay Packers,2012,K
+614,James Jones,Jordy Nelson,Randall Cobb,Green Bay Packers,2012,WR
+615,Aaron Rodgers,,,Green Bay Packers,2013,QB
+616,Eddie Lacy,,,Green Bay Packers,2013,RB
+617,Andrew Quarless,,,Green Bay Packers,2013,TE
+618,Mason Crosby,,,Green Bay Packers,2013,K
+619,Jordy Nelson,James Jones,Jarrett Boykin,Green Bay Packers,2013,WR
+620,Aaron Rodgers,,,Green Bay Packers,2014,QB
+621,Eddie Lacy,,,Green Bay Packers,2014,RB
+622,Andrew Quarless,,,Green Bay Packers,2014,TE
+623,Mason Crosby,,,Green Bay Packers,2014,K
+624,Randall Cobb,Jordy Nelson,Davante Adams,Green Bay Packers,2014,WR
+625,Aaron Rodgers,,,Green Bay Packers,2015,QB
+626,Eddie Lacy,,,Green Bay Packers,2015,RB
+627,Richard Rodgers,,,Green Bay Packers,2015,TE
+628,Mason Crosby,,,Green Bay Packers,2015,K
+629,Randall Cobb,James Jones,Davante Adams,Green Bay Packers,2015,WR
+630,Aaron Rodgers,,,Green Bay Packers,2016,QB
+631,Eddie Lacy,,,Green Bay Packers,2016,RB
+632,Richard Rodgers,,,Green Bay Packers,2016,TE
+633,Mason Crosby,,,Green Bay Packers,2016,K
+634,Jordy Nelson,Davante Adams,Randall Cobb,Green Bay Packers,2016,WR
+635,Brett Hundley,,,Green Bay Packers,2017,QB
+636,Jamaal Williams,,,Green Bay Packers,2017,RB
+637,Lance Kendricks,,,Green Bay Packers,2017,TE
+638,Mason Crosby,,,Green Bay Packers,2017,K
+639,Jordy Nelson,Davante Adams,Randall Cobb,Green Bay Packers,2017,WR
+640,Aaron Rodgers,,,Green Bay Packers,2018,QB
+641,Aaron Jones,,,Green Bay Packers,2018,RB
+642,Jimmy Graham,,,Green Bay Packers,2018,TE
+643,Mason Crosby,,,Green Bay Packers,2018,K
+644,Davante Adams,Marquez Valdes-Scantling,Equanimeous St. Brown,Green Bay Packers,2018,WR
+645,Aaron Rodgers,,,Green Bay Packers,2019,QB
+646,Aaron Jones,,,Green Bay Packers,2019,RB
+647,Marcedes Lewis,,,Green Bay Packers,2019,TE
+648,Mason Crosby,,,Green Bay Packers,2019,K
+649,Davante Adams,Marquez Valdes-Scantling,Geronimo Allison,Green Bay Packers,2019,WR
+650,Aaron Rodgers,,,Green Bay Packers,2020,QB
+651,Aaron Jones,,,Green Bay Packers,2020,RB
+652,Marcedes Lewis,,,Green Bay Packers,2020,TE
+653,Mason Crosby,,,Green Bay Packers,2020,K
+654,Davante Adams,Marquez Valdes-Scantling,Allen Lazard,Green Bay Packers,2020,WR
+655,Matt Schaub,,,Houston Texans,2010,QB
+656,Arian Foster,,,Houston Texans,2010,RB
+657,Owen Daniels,,,Houston Texans,2010,TE
+658,Neil Rackers,,,Houston Texans,2010,K
+659,Kevin Walter,Andre Johnson,Jacoby Jones,Houston Texans,2010,WR
+660,Matt Schaub,,,Houston Texans,2011,QB
+661,James Casey,,,Houston Texans,2011,RB
+662,Owen Daniels,,,Houston Texans,2011,TE
+663,Neil Rackers,,,Houston Texans,2011,K
+664,Kevin Walter,Jacoby Jones,Andre Johnson,Houston Texans,2011,WR
+665,Matt Schaub,,,Houston Texans,2012,QB
+666,Arian Foster,,,Houston Texans,2012,RB
+667,Owen Daniels,,,Houston Texans,2012,TE
+668,Shayne Graham,,,Houston Texans,2012,K
+669,Andre Johnson,Kevin Walter,Lestar Jean,Houston Texans,2012,WR
+670,Case Keenum,,,Houston Texans,2013,QB
+671,Arian Foster,,,Houston Texans,2013,RB
+672,Garrett Graham,,,Houston Texans,2013,TE
+673,Randy Bullock,,,Houston Texans,2013,K
+674,DeAndre Hopkins,Andre Johnson,Keshawn Martin,Houston Texans,2013,WR
+675,Ryan Fitzpatrick,,,Houston Texans,2014,QB
+676,Arian Foster,,,Houston Texans,2014,RB
+677,Garrett Graham,,,Houston Texans,2014,TE
+678,Randy Bullock,,,Houston Texans,2014,K
+679,DeAndre Hopkins,Andre Johnson,Damaris Johnson,Houston Texans,2014,WR
+680,Brian Hoyer,,,Houston Texans,2015,QB
+681,Alfred Blue,,,Houston Texans,2015,RB
+682,C.J. Fiedorowicz,,,Houston Texans,2015,TE
+683,Randy Bullock,,,Houston Texans,2015,K
+684,DeAndre Hopkins,Nate Washington,Cecil Shorts,Houston Texans,2015,WR
+685,Brock Osweiler,,,Houston Texans,2016,QB
+686,Lamar Miller,,,Houston Texans,2016,RB
+687,C.J. Fiedorowicz,,,Houston Texans,2016,TE
+688,Nick Novak,,,Houston Texans,2016,K
+689,DeAndre Hopkins,Will Fuller,Braxton Miller,Houston Texans,2016,WR
+690,Tom Savage,,,Houston Texans,2017,QB
+691,Lamar Miller,,,Houston Texans,2017,RB
+692,Ryan Griffin,,,Houston Texans,2017,TE
+693,Ka'imi Fairbairn,,,Houston Texans,2017,K
+694,DeAndre Hopkins,Will Fuller,Bruce Ellington,Houston Texans,2017,WR
+695,Deshaun Watson,,,Houston Texans,2018,QB
+696,Lamar Miller,,,Houston Texans,2018,RB
+697,Ryan Griffin,,,Houston Texans,2018,TE
+698,Ka'imi Fairbairn,,,Houston Texans,2018,K
+699,DeAndre Hopkins,Will Fuller,Demaryius Thomas,Houston Texans,2018,WR
+700,Deshaun Watson,,,Houston Texans,2019,QB
+701,Carlos Hyde,,,Houston Texans,2019,RB
+702,Darren Fells,,,Houston Texans,2019,TE
+703,Ka'imi Fairbairn,,,Houston Texans,2019,K
+704,DeAndre Hopkins,Will Fuller,Kenny Stills,Houston Texans,2019,WR
+705,Deshaun Watson,,,Houston Texans,2020,QB
+706,David Johnson,,,Houston Texans,2020,RB
+707,Darren Fells,,,Houston Texans,2020,TE
+708,Ka'imi Fairbairn,,,Houston Texans,2020,K
+709,Brandin Cooks,Will Fuller,Keke Coutee,Houston Texans,2020,WR
+710,Peyton Manning,,,Indianapolis Colts,2010,QB
+711,Donald Brown,,,Indianapolis Colts,2010,RB
+712,Dallas Clark,,,Indianapolis Colts,2010,TE
+713,Adam Vinatieri,,,Indianapolis Colts,2010,K
+714,Reggie Wayne,Pierre Garcon,Austin Collie,Indianapolis Colts,2010,WR
+715,Curtis Painter,,,Indianapolis Colts,2011,QB
+716,Joseph Addai,,,Indianapolis Colts,2011,RB
+717,Dallas Clark,,,Indianapolis Colts,2011,TE
+718,Adam Vinatieri,,,Indianapolis Colts,2011,K
+719,Pierre Garcon,Reggie Wayne,Anthony Gonzalez,Indianapolis Colts,2011,WR
+720,Andrew Luck,,,Indianapolis Colts,2012,QB
+721,Vick Ballard,,,Indianapolis Colts,2012,RB
+722,Dwayne Allen,,,Indianapolis Colts,2012,TE
+723,Adam Vinatieri,,,Indianapolis Colts,2012,K
+724,Donnie Avery,Reggie Wayne,T.Y. Hilton,Indianapolis Colts,2012,WR
+725,Andrew Luck,,,Indianapolis Colts,2013,QB
+726,Trent Richardson,,,Indianapolis Colts,2013,RB
+727,Coby Fleener,,,Indianapolis Colts,2013,TE
+728,Adam Vinatieri,,,Indianapolis Colts,2013,K
+729,Darrius Heyward-Bey,T.Y. Hilton,Reggie Wayne,Indianapolis Colts,2013,WR
+730,Andrew Luck,,,Indianapolis Colts,2014,QB
+731,Trent Richardson,,,Indianapolis Colts,2014,RB
+732,Dwayne Allen,,,Indianapolis Colts,2014,TE
+733,Adam Vinatieri,,,Indianapolis Colts,2014,K
+734,T.Y. Hilton,Reggie Wayne,Hakeem Nicks,Indianapolis Colts,2014,WR
+735,Matt Hasselbeck,,,Indianapolis Colts,2015,QB
+736,Frank Gore,,,Indianapolis Colts,2015,RB
+737,Dwayne Allen,,,Indianapolis Colts,2015,TE
+738,Adam Vinatieri,,,Indianapolis Colts,2015,K
+739,T.Y. Hilton,Andre Johnson,Donte Moncrief,Indianapolis Colts,2015,WR
+740,Andrew Luck,,,Indianapolis Colts,2016,QB
+741,Frank Gore,,,Indianapolis Colts,2016,RB
+742,Dwayne Allen,,,Indianapolis Colts,2016,TE
+743,Adam Vinatieri,,,Indianapolis Colts,2016,K
+744,T.Y. Hilton,Phillip Dorsett,Donte Moncrief,Indianapolis Colts,2016,WR
+745,Jacoby Brissett,,,Indianapolis Colts,2017,QB
+746,Frank Gore,,,Indianapolis Colts,2017,RB
+747,Jack Doyle,,,Indianapolis Colts,2017,TE
+748,Adam Vinatieri,,,Indianapolis Colts,2017,K
+749,T.Y. Hilton,Donte Moncrief,Kamar Aiken,Indianapolis Colts,2017,WR
+750,Andrew Luck,,,Indianapolis Colts,2018,QB
+751,Marlon Mack,,,Indianapolis Colts,2018,RB
+752,Eric Ebron,,,Indianapolis Colts,2018,TE
+753,Adam Vinatieri,,,Indianapolis Colts,2018,K
+754,T.Y. Hilton,Ryan Grant,Chester Rogers,Indianapolis Colts,2018,WR
+755,Jacoby Brissett,,,Indianapolis Colts,2019,QB
+756,Marlon Mack,,,Indianapolis Colts,2019,RB
+757,Jack Doyle,,,Indianapolis Colts,2019,TE
+758,Chase McLaughlin,,,Indianapolis Colts,2019,K
+759,Zach Pascal,T.Y. Hilton,Marcus Johnson,Indianapolis Colts,2019,WR
+760,Philip Rivers,,,Indianapolis Colts,2020,QB
+761,Jonathan Taylor,,,Indianapolis Colts,2020,RB
+762,Jack Doyle,,,Indianapolis Colts,2020,TE
+763,Rodrigo Blankenship,,,Indianapolis Colts,2020,K
+764,T.Y. Hilton,Zach Pascal,Michael Pittman,Indianapolis Colts,2020,WR
+765,David Garrard,,,Jacksonville Jaguars,2010,QB
+766,Maurice Jones-Drew,,,Jacksonville Jaguars,2010,RB
+767,Marcedes Lewis,,,Jacksonville Jaguars,2010,TE
+768,Josh Scobee,,,Jacksonville Jaguars,2010,K
+769,Mike Sims-Walker,Mike Thomas,Kassim Osgood,Jacksonville Jaguars,2010,WR
+770,Blaine Gabbert,,,Jacksonville Jaguars,2011,QB
+771,DuJuan Harris,,,Jacksonville Jaguars,2011,RB
+772,Marcedes Lewis,,,Jacksonville Jaguars,2011,TE
+773,Josh Scobee,,,Jacksonville Jaguars,2011,K
+774,Mike Thomas,Jason Hill,Jarett Dillard,Jacksonville Jaguars,2011,WR
+775,Blaine Gabbert,,,Jacksonville Jaguars,2012,QB
+776,Jalen Parmele,,,Jacksonville Jaguars,2012,RB
+777,Marcedes Lewis,,,Jacksonville Jaguars,2012,TE
+778,Josh Scobee,,,Jacksonville Jaguars,2012,K
+779,Justin Blackmon,Cecil Shorts,Laurent Robinson,Jacksonville Jaguars,2012,WR
+780,Chad Henne,,,Jacksonville Jaguars,2013,QB
+781,Maurice Jones-Drew,,,Jacksonville Jaguars,2013,RB
+782,Marcedes Lewis,,,Jacksonville Jaguars,2013,TE
+783,Josh Scobee,,,Jacksonville Jaguars,2013,K
+784,Cecil Shorts,Mike Brown,Justin Blackmon,Jacksonville Jaguars,2013,WR
+785,Blake Bortles,,,Jacksonville Jaguars,2014,QB
+786,Denard Robinson,,,Jacksonville Jaguars,2014,RB
+787,Clay Harbor,,,Jacksonville Jaguars,2014,TE
+788,Josh Scobee,,,Jacksonville Jaguars,2014,K
+789,Cecil Shorts,Allen Hurns,Marqise Lee,Jacksonville Jaguars,2014,WR
+790,Blake Bortles,,,Jacksonville Jaguars,2015,QB
+791,T.J. Yeldon,,,Jacksonville Jaguars,2015,RB
+792,Marcedes Lewis,,,Jacksonville Jaguars,2015,TE
+793,Jason Myers,,,Jacksonville Jaguars,2015,K
+794,Allen Robinson,Allen Hurns,Marqise Lee,Jacksonville Jaguars,2015,WR
+795,,,,Jacksonville Jaguars,2016,QB
+796,,,,Jacksonville Jaguars,2016,RB
+797,,,,Jacksonville Jaguars,2016,TE
+798,,,,Jacksonville Jaguars,2016,K
+799,,,,Jacksonville Jaguars,2016,WR
+800,Blake Bortles,,,Jacksonville Jaguars,2017,QB
+801,Leonard Fournette,,,Jacksonville Jaguars,2017,RB
+802,Marcedes Lewis,,,Jacksonville Jaguars,2017,TE
+803,Josh Lambo,,,Jacksonville Jaguars,2017,K
+804,Marqise Lee,Allen Hurns,Keelan Cole,Jacksonville Jaguars,2017,WR
+805,Blake Bortles,,,Jacksonville Jaguars,2018,QB
+806,Leonard Fournette,,,Jacksonville Jaguars,2018,RB
+807,James O'Shaughnessy,,,Jacksonville Jaguars,2018,TE
+808,Kai Forbath,,,Jacksonville Jaguars,2018,K
+809,Donte Moncrief,Keelan Cole,Dede Westbrook,Jacksonville Jaguars,2018,WR
+810,Gardner Minshew,,,Jacksonville Jaguars,2019,QB
+811,Leonard Fournette,,,Jacksonville Jaguars,2019,RB
+812,Ben Koyack,,,Jacksonville Jaguars,2019,TE
+813,Josh Lambo,,,Jacksonville Jaguars,2019,K
+814,D.J. Chark,Chris Conley,Dede Westbrook,Jacksonville Jaguars,2019,WR
+815,Gardner Minshew,,,Jacksonville Jaguars,2020,QB
+816,James Robinson,,,Jacksonville Jaguars,2020,RB
+817,James O'Shaughnessy,,,Jacksonville Jaguars,2020,TE
+818,Jon Brown,,,Jacksonville Jaguars,2020,K
+819,Laviska Shenault,D.J. Chark,Keelan Cole,Jacksonville Jaguars,2020,WR
+820,Matt Cassel,,,Kansas City Chiefs,2010,QB
+821,Tim Castille,,,Kansas City Chiefs,2010,RB
+822,Tony Moeaki,,,Kansas City Chiefs,2010,TE
+823,Ryan Succop,,,Kansas City Chiefs,2010,K
+824,Dwayne Bowe,Chris Chambers,Terrance Copper,Kansas City Chiefs,2010,WR
+825,Matt Cassel,,,Kansas City Chiefs,2011,QB
+826,Le'Ron McClain,,,Kansas City Chiefs,2011,RB
+827,Leonard Pope,,,Kansas City Chiefs,2011,TE
+828,Ryan Succop,,,Kansas City Chiefs,2011,K
+829,Dwayne Bowe,Steve Breaston,Jon Baldwin,Kansas City Chiefs,2011,WR
+830,Matt Cassel,,,Kansas City Chiefs,2012,QB
+831,Jamaal Charles,,,Kansas City Chiefs,2012,RB
+832,Tony Moeaki,,,Kansas City Chiefs,2012,TE
+833,Ryan Succop,,,Kansas City Chiefs,2012,K
+834,Dwayne Bowe,Jon Baldwin,Dexter McCluster,Kansas City Chiefs,2012,WR
+835,Alex Smith,,,Kansas City Chiefs,2013,QB
+836,Jamaal Charles,,,Kansas City Chiefs,2013,RB
+837,Anthony Fasano,,,Kansas City Chiefs,2013,TE
+838,Ryan Succop,,,Kansas City Chiefs,2013,K
+839,Dwayne Bowe,Donnie Avery,Dexter McCluster,Kansas City Chiefs,2013,WR
+840,Alex Smith,,,Kansas City Chiefs,2014,QB
+841,Jamaal Charles,,,Kansas City Chiefs,2014,RB
+842,Anthony Fasano,,,Kansas City Chiefs,2014,TE
+843,Cairo Santos,,,Kansas City Chiefs,2014,K
+844,Dwayne Bowe,Donnie Avery,Frankie Hammond,Kansas City Chiefs,2014,WR
+845,Alex Smith,,,Kansas City Chiefs,2015,QB
+846,Charcandrick West,,,Kansas City Chiefs,2015,RB
+847,Travis Kelce,,,Kansas City Chiefs,2015,TE
+848,Cairo Santos,,,Kansas City Chiefs,2015,K
+849,Jeremy Maclin,Albert Wilson,Chris Conley,Kansas City Chiefs,2015,WR
+850,Alex Smith,,,Kansas City Chiefs,2016,QB
+851,Spencer Ware,,,Kansas City Chiefs,2016,RB
+852,Travis Kelce,,,Kansas City Chiefs,2016,TE
+853,Cairo Santos,,,Kansas City Chiefs,2016,K
+854,Jeremy Maclin,Chris Conley,Albert Wilson,Kansas City Chiefs,2016,WR
+855,Alex Smith,,,Kansas City Chiefs,2017,QB
+856,Kareem Hunt,,,Kansas City Chiefs,2017,RB
+857,Travis Kelce,,,Kansas City Chiefs,2017,TE
+858,Harrison Butker,,,Kansas City Chiefs,2017,K
+859,Tyreek Hill,Demarcus Robinson,Albert Wilson,Kansas City Chiefs,2017,WR
+860,Patrick Mahomes,,,Kansas City Chiefs,2018,QB
+861,Kareem Hunt,,,Kansas City Chiefs,2018,RB
+862,Travis Kelce,,,Kansas City Chiefs,2018,TE
+863,Harrison Butker,,,Kansas City Chiefs,2018,K
+864,Tyreek Hill,Chris Conley,Sammy Watkins,Kansas City Chiefs,2018,WR
+865,Patrick Mahomes,,,Kansas City Chiefs,2019,QB
+866,LeSean McCoy,,,Kansas City Chiefs,2019,RB
+867,Travis Kelce,,,Kansas City Chiefs,2019,TE
+868,Harrison Butker,,,Kansas City Chiefs,2019,K
+869,Sammy Watkins,Tyreek Hill,Demarcus Robinson,Kansas City Chiefs,2019,WR
+870,Patrick Mahomes,,,Kansas City Chiefs,2020,QB
+871,Clyde Edwards-Helaire,,,Kansas City Chiefs,2020,RB
+872,Travis Kelce,,,Kansas City Chiefs,2020,TE
+873,Harrison Butker,,,Kansas City Chiefs,2020,K
+874,Tyreek Hill,Demarcus Robinson,Sammy Watkins,Kansas City Chiefs,2020,WR
+875,Jason Campbell,,,Las Vegas Raiders,2010,QB
+876,Marcel Reece,,,Las Vegas Raiders,2010,RB
+877,Zach Miller,,,Las Vegas Raiders,2010,TE
+878,Sebastian Janikowski,,,Las Vegas Raiders,2010,K
+879,Darrius Heyward-Bey,Jacoby Ford,Louis Murphy,Las Vegas Raiders,2010,WR
+880,Carson Palmer,,,Las Vegas Raiders,2011,QB
+881,Marcel Reece,,,Las Vegas Raiders,2011,RB
+882,Kevin Boss,,,Las Vegas Raiders,2011,TE
+883,Sebastian Janikowski,,,Las Vegas Raiders,2011,K
+884,Darrius Heyward-Bey,Denarius Moore,Chaz Schilens,Las Vegas Raiders,2011,WR
+885,Carson Palmer,,,Las Vegas Raiders,2012,QB
+886,Darren McFadden,,,Las Vegas Raiders,2012,RB
+887,Brandon Myers,,,Las Vegas Raiders,2012,TE
+888,Sebastian Janikowski,,,Las Vegas Raiders,2012,K
+889,Denarius Moore,Darrius Heyward-Bey,Derek Hagan,Las Vegas Raiders,2012,WR
+890,Terrelle Pryor,,,Las Vegas Raiders,2013,QB
+891,Rashad Jennings,,,Las Vegas Raiders,2013,RB
+892,Jeron Mastrud,,,Las Vegas Raiders,2013,TE
+893,Sebastian Janikowski,,,Las Vegas Raiders,2013,K
+894,Rod Streater,Denarius Moore,Andre Holmes,Las Vegas Raiders,2013,WR
+895,Derek Carr,,,Las Vegas Raiders,2014,QB
+896,Darren McFadden,,,Las Vegas Raiders,2014,RB
+897,Mychal Rivera,,,Las Vegas Raiders,2014,TE
+898,Sebastian Janikowski,,,Las Vegas Raiders,2014,K
+899,Andre Holmes,James Jones,Kenbrell Thompkins,Las Vegas Raiders,2014,WR
+900,Derek Carr,,,Las Vegas Raiders,2015,QB
+901,Latavius Murray,,,Las Vegas Raiders,2015,RB
+902,Lee Smith,,,Las Vegas Raiders,2015,TE
+903,Sebastian Janikowski,,,Las Vegas Raiders,2015,K
+904,Amari Cooper,Michael Crabtree,Seth Roberts,Las Vegas Raiders,2015,WR
+905,Derek Carr,,,Las Vegas Raiders,2016,QB
+906,Latavius Murray,,,Las Vegas Raiders,2016,RB
+907,Clive Walford,,,Las Vegas Raiders,2016,TE
+908,Sebastian Janikowski,,,Las Vegas Raiders,2016,K
+909,Michael Crabtree,Amari Cooper,Seth Roberts,Las Vegas Raiders,2016,WR
+910,Derek Carr,,,Las Vegas Raiders,2017,QB
+911,Marshawn Lynch,,,Las Vegas Raiders,2017,RB
+912,Jared Cook,,,Las Vegas Raiders,2017,TE
+913,Giorgio Tavecchio,,,Las Vegas Raiders,2017,K
+914,Michael Crabtree,Amari Cooper,Seth Roberts,Las Vegas Raiders,2017,WR
+915,Derek Carr,,,Las Vegas Raiders,2018,QB
+916,Doug Martin,,,Las Vegas Raiders,2018,RB
+917,Jared Cook,,,Las Vegas Raiders,2018,TE
+918,Daniel Carlson,,,Las Vegas Raiders,2018,K
+919,Jordy Nelson,Seth Roberts,Marcell Ateman,Las Vegas Raiders,2018,WR
+920,Derek Carr,,,Las Vegas Raiders,2019,QB
+921,Josh Jacobs,,,Las Vegas Raiders,2019,RB
+922,Darren Waller,,,Las Vegas Raiders,2019,TE
+923,Daniel Carlson,,,Las Vegas Raiders,2019,K
+924,Tyrell Williams,Zay Jones,Trevor Davis,Las Vegas Raiders,2019,WR
+925,Derek Carr,,,Las Vegas Raiders,2020,QB
+926,Josh Jacobs,,,Las Vegas Raiders,2020,RB
+927,Darren Waller,,,Las Vegas Raiders,2020,TE
+928,Daniel Carlson,,,Las Vegas Raiders,2020,K
+929,Nelson Agholor,Henry Ruggs,Hunter Renfrow,Las Vegas Raiders,2020,WR
+930,Philip Rivers,,,Los Angeles Chargers,2010,QB
+931,Ryan Mathews,,,Los Angeles Chargers,2010,RB
+932,Randy McMichael,,,Los Angeles Chargers,2010,TE
+933,Kris Brown,,,Los Angeles Chargers,2010,K
+934,Malcom Floyd,Legedu Naanee,Vincent Jackson,Los Angeles Chargers,2010,WR
+935,Philip Rivers,,,Los Angeles Chargers,2011,QB
+936,Curtis Brinkley,,,Los Angeles Chargers,2011,RB
+937,Randy McMichael,,,Los Angeles Chargers,2011,TE
+938,Nate Kaeding,,,Los Angeles Chargers,2011,K
+939,Vincent Jackson,Malcom Floyd,Vincent Brown,Los Angeles Chargers,2011,WR
+940,Philip Rivers,,,Los Angeles Chargers,2012,QB
+941,Ryan Mathews,,,Los Angeles Chargers,2012,RB
+942,Antonio Gates,,,Los Angeles Chargers,2012,TE
+943,Nate Kaeding,,,Los Angeles Chargers,2012,K
+944,Malcom Floyd,Danario Alexander,Robert Meachem,Los Angeles Chargers,2012,WR
+945,Philip Rivers,,,Los Angeles Chargers,2013,QB
+946,Ryan Mathews,,,Los Angeles Chargers,2013,RB
+947,Antonio Gates,,,Los Angeles Chargers,2013,TE
+948,Nick Novak,,,Los Angeles Chargers,2013,K
+949,Keenan Allen,Vincent Brown,Eddie Royal,Los Angeles Chargers,2013,WR
+950,Philip Rivers,,,Los Angeles Chargers,2014,QB
+951,Branden Oliver,,,Los Angeles Chargers,2014,RB
+952,Antonio Gates,,,Los Angeles Chargers,2014,TE
+953,Nick Novak,,,Los Angeles Chargers,2014,K
+954,Malcom Floyd,Keenan Allen,Eddie Royal,Los Angeles Chargers,2014,WR
+955,Philip Rivers,,,Los Angeles Chargers,2015,QB
+956,Melvin Gordon,,,Los Angeles Chargers,2015,RB
+957,Ladarius Green,,,Los Angeles Chargers,2015,TE
+958,Josh Lambo,,,Los Angeles Chargers,2015,K
+959,Malcom Floyd,Keenan Allen,Steve Johnson,Los Angeles Chargers,2015,WR
+960,Philip Rivers,,,Los Angeles Chargers,2016,QB
+961,Melvin Gordon,,,Los Angeles Chargers,2016,RB
+962,Hunter Henry,,,Los Angeles Chargers,2016,TE
+963,Josh Lambo,,,Los Angeles Chargers,2016,K
+964,Dontrelle Inman,Tyrell Williams,Travis Benjamin,Los Angeles Chargers,2016,WR
+965,Philip Rivers,,,Los Angeles Chargers,2017,QB
+966,Melvin Gordon,,,Los Angeles Chargers,2017,RB
+967,Hunter Henry,,,Los Angeles Chargers,2017,TE
+968,Travis Coons,,,Los Angeles Chargers,2017,K
+969,Keenan Allen,Tyrell Williams,Travis Benjamin,Los Angeles Chargers,2017,WR
+970,Philip Rivers,,,Los Angeles Chargers,2018,QB
+971,Melvin Gordon,,,Los Angeles Chargers,2018,RB
+972,Virgil Green,,,Los Angeles Chargers,2018,TE
+973,Mike Badgley,,,Los Angeles Chargers,2018,K
+974,Keenan Allen,Tyrell Williams,Mike Williams,Los Angeles Chargers,2018,WR
+975,Philip Rivers,,,Los Angeles Chargers,2019,QB
+976,Melvin Gordon,,,Los Angeles Chargers,2019,RB
+977,Hunter Henry,,,Los Angeles Chargers,2019,TE
+978,Mike Badgley,,,Los Angeles Chargers,2019,K
+979,Keenan Allen,Mike Williams,Andre Patton,Los Angeles Chargers,2019,WR
+980,Justin Herbert,,,Los Angeles Chargers,2020,QB
+981,Austin Ekeler,,,Los Angeles Chargers,2020,RB
+982,Hunter Henry,,,Los Angeles Chargers,2020,TE
+983,Mike Badgley,,,Los Angeles Chargers,2020,K
+984,Keenan Allen,Mike Williams,Jalen Guyton,Los Angeles Chargers,2020,WR
+985,Sam Bradford,,,Los Angeles Rams,2010,QB
+986,Steven Jackson,,,Los Angeles Rams,2010,RB
+987,Billy Bajema,,,Los Angeles Rams,2010,TE
+988,Josh Brown,,,Los Angeles Rams,2010,K
+989,Brandon Gibson,Laurent Robinson,Danny Amendola,Los Angeles Rams,2010,WR
+990,Sam Bradford,,,Los Angeles Rams,2011,QB
+991,Brit Miller,,,Los Angeles Rams,2011,RB
+992,Billy Bajema,,,Los Angeles Rams,2011,TE
+993,Josh Brown,,,Los Angeles Rams,2011,K
+994,Brandon Lloyd,Brandon Gibson,Danario Alexander,Los Angeles Rams,2011,WR
+995,Sam Bradford,,,Los Angeles Rams,2012,QB
+996,Brit Miller,,,Los Angeles Rams,2012,RB
+997,Lance Kendricks,,,Los Angeles Rams,2012,TE
+998,Greg Zuerlein,,,Los Angeles Rams,2012,K
+999,Brandon Gibson,Chris Givens,Danny Amendola,Los Angeles Rams,2012,WR
+1000,Kellen Clemens,,,Los Angeles Rams,2013,QB
+1001,,,,Los Angeles Rams,2013,RB
+1002,Jared Cook,,,Los Angeles Rams,2013,TE
+1003,Greg Zuerlein,,,Los Angeles Rams,2013,K
+1004,Chris Givens,Austin Pettis,Brian Quick,Los Angeles Rams,2013,WR
+1005,Austin Davis,,,Los Angeles Rams,2014,QB
+1006,Tre Mason,,,Los Angeles Rams,2014,RB
+1007,Lance Kendricks,,,Los Angeles Rams,2014,TE
+1008,Greg Zuerlein,,,Los Angeles Rams,2014,K
+1009,Kenny Britt,Tavon Austin,Brian Quick,Los Angeles Rams,2014,WR
+1010,Nick Foles,,,Los Angeles Rams,2015,QB
+1011,Todd Gurley,,,Los Angeles Rams,2015,RB
+1012,Jared Cook,,,Los Angeles Rams,2015,TE
+1013,Zach Hocker,,,Los Angeles Rams,2015,K
+1014,Tavon Austin,Kenny Britt,Stedman Bailey,Los Angeles Rams,2015,WR
+1015,Case Keenum,,,Los Angeles Rams,2016,QB
+1016,,,,Los Angeles Rams,2016,RB
+1017,Lance Kendricks,,,Los Angeles Rams,2016,TE
+1018,Greg Zuerlein,,,Los Angeles Rams,2016,K
+1019,Tavon Austin,Kenny Britt,Brian Quick,Los Angeles Rams,2016,WR
+1020,Jared Goff,,,Los Angeles Rams,2017,QB
+1021,Malcolm Brown,,,Los Angeles Rams,2017,RB
+1022,Tyler Higbee,,,Los Angeles Rams,2017,TE
+1023,Sam Ficken,,,Los Angeles Rams,2017,K
+1024,Sammy Watkins,Robert Woods,Tavon Austin,Los Angeles Rams,2017,WR
+1025,Jared Goff,,,Los Angeles Rams,2018,QB
+1026,Todd Gurley,,,Los Angeles Rams,2018,RB
+1027,Tyler Higbee,,,Los Angeles Rams,2018,TE
+1028,Sam Ficken,,,Los Angeles Rams,2018,K
+1029,Brandin Cooks,Robert Woods,Cooper Kupp,Los Angeles Rams,2018,WR
+1030,Jared Goff,,,Los Angeles Rams,2019,QB
+1031,Malcolm Brown,,,Los Angeles Rams,2019,RB
+1032,Tyler Higbee,,,Los Angeles Rams,2019,TE
+1033,Greg Zuerlein,,,Los Angeles Rams,2019,K
+1034,Robert Woods,Brandin Cooks,Cooper Kupp,Los Angeles Rams,2019,WR
+1035,Jared Goff,,,Los Angeles Rams,2020,QB
+1036,Darrell Henderson,,,Los Angeles Rams,2020,RB
+1037,Tyler Higbee,,,Los Angeles Rams,2020,TE
+1038,Kai Forbath,,,Los Angeles Rams,2020,K
+1039,Robert Woods,Josh Reynolds,Cooper Kupp,Los Angeles Rams,2020,WR
+1040,Chad Henne,,,Miami Dolphins,2010,QB
+1041,Lousaka Polite,,,Miami Dolphins,2010,RB
+1042,Anthony Fasano,,,Miami Dolphins,2010,TE
+1043,Dan Carpenter,,,Miami Dolphins,2010,K
+1044,Brandon Marshall,Brian Hartline,Davone Bess,Miami Dolphins,2010,WR
+1045,Matt Moore,,,Miami Dolphins,2011,QB
+1046,Richard Medlin,,,Miami Dolphins,2011,RB
+1047,Anthony Fasano,,,Miami Dolphins,2011,TE
+1048,Dan Carpenter,,,Miami Dolphins,2011,K
+1049,Brandon Marshall,Brian Hartline,Davone Bess,Miami Dolphins,2011,WR
+1050,Ryan Tannehill,,,Miami Dolphins,2012,QB
+1051,Reggie Bush,,,Miami Dolphins,2012,RB
+1052,Anthony Fasano,,,Miami Dolphins,2012,TE
+1053,Dan Carpenter,,,Miami Dolphins,2012,K
+1054,Brian Hartline,Davone Bess,Marlon Moore,Miami Dolphins,2012,WR
+1055,Ryan Tannehill,,,Miami Dolphins,2013,QB
+1056,Lamar Miller,,,Miami Dolphins,2013,RB
+1057,Michael Egnew,,,Miami Dolphins,2013,TE
+1058,Caleb Sturgis,,,Miami Dolphins,2013,K
+1059,Mike Wallace,Brian Hartline,Rishard Matthews,Miami Dolphins,2013,WR
+1060,Ryan Tannehill,,,Miami Dolphins,2014,QB
+1061,Lamar Miller,,,Miami Dolphins,2014,RB
+1062,Charles Clay,,,Miami Dolphins,2014,TE
+1063,Caleb Sturgis,,,Miami Dolphins,2014,K
+1064,Brian Hartline,Mike Wallace,Jarvis Landry,Miami Dolphins,2014,WR
+1065,Ryan Tannehill,,,Miami Dolphins,2015,QB
+1066,Lamar Miller,,,Miami Dolphins,2015,RB
+1067,Jordan Cameron,,,Miami Dolphins,2015,TE
+1068,Andrew Franks,,,Miami Dolphins,2015,K
+1069,Jarvis Landry,Rishard Matthews,Kenny Stills,Miami Dolphins,2015,WR
+1070,Ryan Tannehill,,,Miami Dolphins,2016,QB
+1071,Jay Ajayi,,,Miami Dolphins,2016,RB
+1072,Dion Sims,,,Miami Dolphins,2016,TE
+1073,Andrew Franks,,,Miami Dolphins,2016,K
+1074,Jarvis Landry,Kenny Stills,DeVante Parker,Miami Dolphins,2016,WR
+1075,Jay Cutler,,,Miami Dolphins,2017,QB
+1076,Jay Ajayi,,,Miami Dolphins,2017,RB
+1077,Julius Thomas,,,Miami Dolphins,2017,TE
+1078,Cody Parkey,,,Miami Dolphins,2017,K
+1079,Jarvis Landry,Kenny Stills,DeVante Parker,Miami Dolphins,2017,WR
+1080,Ryan Tannehill,,,Miami Dolphins,2018,QB
+1081,Frank Gore,,,Miami Dolphins,2018,RB
+1082,Mike Gesicki,,,Miami Dolphins,2018,TE
+1083,Jason Sanders,,,Miami Dolphins,2018,K
+1084,Danny Amendola,Kenny Stills,DeVante Parker,Miami Dolphins,2018,WR
+1085,Ryan Fitzpatrick,,,Miami Dolphins,2019,QB
+1086,Kalen Ballage,,,Miami Dolphins,2019,RB
+1087,Durham Smythe,,,Miami Dolphins,2019,TE
+1088,Jason Sanders,,,Miami Dolphins,2019,K
+1089,DeVante Parker,Allen Hurns,Preston Williams,Miami Dolphins,2019,WR
+1090,Tua Tagovailoa,,,Miami Dolphins,2020,QB
+1091,Myles Gaskin,,,Miami Dolphins,2020,RB
+1092,Durham Smythe,,,Miami Dolphins,2020,TE
+1093,Jason Sanders,,,Miami Dolphins,2020,K
+1094,DeVante Parker,Preston Williams,Lynn Bowden,Miami Dolphins,2020,WR
+1095,Brett Favre,,,Minnesota Vikings,2010,QB
+1096,Naufahu Tahi,,,Minnesota Vikings,2010,RB
+1097,Visanthe Shiancoe,,,Minnesota Vikings,2010,TE
+1098,Ryan Longwell,,,Minnesota Vikings,2010,K
+1099,Percy Harvin,Bernard Berrian,Greg Lewis,Minnesota Vikings,2010,WR
+1100,Christian Ponder,,,Minnesota Vikings,2011,QB
+1101,Ryan D'Imperio,,,Minnesota Vikings,2011,RB
+1102,Visanthe Shiancoe,,,Minnesota Vikings,2011,TE
+1103,Ryan Longwell,,,Minnesota Vikings,2011,K
+1104,Percy Harvin,Michael Jenkins,Devin Aromashodu,Minnesota Vikings,2011,WR
+1105,Christian Ponder,,,Minnesota Vikings,2012,QB
+1106,Jerome Felton,,,Minnesota Vikings,2012,RB
+1107,Kyle Rudolph,,,Minnesota Vikings,2012,TE
+1108,Blair Walsh,,,Minnesota Vikings,2012,K
+1109,Jerome Simpson,Percy Harvin,Michael Jenkins,Minnesota Vikings,2012,WR
+1110,Christian Ponder,,,Minnesota Vikings,2013,QB
+1111,Joe Banyard,,,Minnesota Vikings,2013,RB
+1112,John Carlson,,,Minnesota Vikings,2013,TE
+1113,Blair Walsh,,,Minnesota Vikings,2013,K
+1114,Greg Jennings,Jerome Simpson,Cordarrelle Patterson,Minnesota Vikings,2013,WR
+1115,Teddy Bridgewater,,,Minnesota Vikings,2014,QB
+1116,Matt Asiata,,,Minnesota Vikings,2014,RB
+1117,Rhett Ellison,,,Minnesota Vikings,2014,TE
+1118,Blair Walsh,,,Minnesota Vikings,2014,K
+1119,Greg Jennings,Cordarrelle Patterson,Jarius Wright,Minnesota Vikings,2014,WR
+1120,Teddy Bridgewater,,,Minnesota Vikings,2015,QB
+1121,Matt Asiata,,,Minnesota Vikings,2015,RB
+1122,Kyle Rudolph,,,Minnesota Vikings,2015,TE
+1123,Blair Walsh,,,Minnesota Vikings,2015,K
+1124,Mike Wallace,Stefon Diggs,Charles Johnson,Minnesota Vikings,2015,WR
+1125,Sam Bradford,,,Minnesota Vikings,2016,QB
+1126,Ronnie Hillman,,,Minnesota Vikings,2016,RB
+1127,Kyle Rudolph,,,Minnesota Vikings,2016,TE
+1128,Kai Forbath,,,Minnesota Vikings,2016,K
+1129,Stefon Diggs,Adam Thielen,Cordarrelle Patterson,Minnesota Vikings,2016,WR
+1130,Case Keenum,,,Minnesota Vikings,2017,QB
+1131,Latavius Murray,,,Minnesota Vikings,2017,RB
+1132,Kyle Rudolph,,,Minnesota Vikings,2017,TE
+1133,Kai Forbath,,,Minnesota Vikings,2017,K
+1134,Adam Thielen,Stefon Diggs,Laquon Treadwell,Minnesota Vikings,2017,WR
+1135,Kirk Cousins,,,Minnesota Vikings,2018,QB
+1136,Dalvin Cook,,,Minnesota Vikings,2018,RB
+1137,Kyle Rudolph,,,Minnesota Vikings,2018,TE
+1138,Dan Bailey,,,Minnesota Vikings,2018,K
+1139,Adam Thielen,Stefon Diggs,Laquon Treadwell,Minnesota Vikings,2018,WR
+1140,Kirk Cousins,,,Minnesota Vikings,2019,QB
+1141,Ameer Abdullah,,,Minnesota Vikings,2019,RB
+1142,Kyle Rudolph,,,Minnesota Vikings,2019,TE
+1143,Dan Bailey,,,Minnesota Vikings,2019,K
+1144,Stefon Diggs,Adam Thielen,Bisi Johnson,Minnesota Vikings,2019,WR
+1145,Kirk Cousins,,,Minnesota Vikings,2020,QB
+1146,C.J. Ham,,,Minnesota Vikings,2020,RB
+1147,Kyle Rudolph,,,Minnesota Vikings,2020,TE
+1148,Dan Bailey,,,Minnesota Vikings,2020,K
+1149,Adam Thielen,Justin Jefferson,Bisi Johnson,Minnesota Vikings,2020,WR
+1150,Tom Brady,,,New England Patriots,2010,QB
+1151,BenJarvus Green-Ellis,,,New England Patriots,2010,RB
+1152,Rob Gronkowski,,,New England Patriots,2010,TE
+1153,Stephen Gostkowski,,,New England Patriots,2010,K
+1154,Wes Welker,Brandon Tate,Deion Branch,New England Patriots,2010,WR
+1155,Tom Brady,,,New England Patriots,2011,QB
+1156,Stevan Ridley,,,New England Patriots,2011,RB
+1157,Rob Gronkowski,,,New England Patriots,2011,TE
+1158,Stephen Gostkowski,,,New England Patriots,2011,K
+1159,Deion Branch,Wes Welker,Chad Johnson,New England Patriots,2011,WR
+1160,Tom Brady,,,New England Patriots,2012,QB
+1161,Danny Woodhead,,,New England Patriots,2012,RB
+1162,Rob Gronkowski,,,New England Patriots,2012,TE
+1163,Stephen Gostkowski,,,New England Patriots,2012,K
+1164,Brandon Lloyd,Wes Welker,Deion Branch,New England Patriots,2012,WR
+1165,Tom Brady,,,New England Patriots,2013,QB
+1166,Stevan Ridley,,,New England Patriots,2013,RB
+1167,Michael Hoomanawanui,,,New England Patriots,2013,TE
+1168,Stephen Gostkowski,,,New England Patriots,2013,K
+1169,Julian Edelman,Aaron Dobson,Kenbrell Thompkins,New England Patriots,2013,WR
+1170,Tom Brady,,,New England Patriots,2014,QB
+1171,Shane Vereen,,,New England Patriots,2014,RB
+1172,Michael Hoomanawanui,,,New England Patriots,2014,TE
+1173,Stephen Gostkowski,,,New England Patriots,2014,K
+1174,Julian Edelman,Brandon LaFell,Danny Amendola,New England Patriots,2014,WR
+1175,Tom Brady,,,New England Patriots,2015,QB
+1176,LeGarrette Blount,,,New England Patriots,2015,RB
+1177,Rob Gronkowski,,,New England Patriots,2015,TE
+1178,Stephen Gostkowski,,,New England Patriots,2015,K
+1179,Julian Edelman,Keshawn Martin,Danny Amendola,New England Patriots,2015,WR
+1180,Tom Brady,,,New England Patriots,2016,QB
+1181,LeGarrette Blount,,,New England Patriots,2016,RB
+1182,Martellus Bennett,,,New England Patriots,2016,TE
+1183,Stephen Gostkowski,,,New England Patriots,2016,K
+1184,Chris Hogan,Julian Edelman,Malcolm Mitchell,New England Patriots,2016,WR
+1185,Tom Brady,,,New England Patriots,2017,QB
+1186,Dion Lewis,,,New England Patriots,2017,RB
+1187,Rob Gronkowski,,,New England Patriots,2017,TE
+1188,Stephen Gostkowski,,,New England Patriots,2017,K
+1189,Brandin Cooks,Danny Amendola,Chris Hogan,New England Patriots,2017,WR
+1190,Tom Brady,,,New England Patriots,2018,QB
+1191,Sony Michel,,,New England Patriots,2018,RB
+1192,Rob Gronkowski,,,New England Patriots,2018,TE
+1193,Stephen Gostkowski,,,New England Patriots,2018,K
+1194,Julian Edelman,Josh Gordon,Chris Hogan,New England Patriots,2018,WR
+1195,Tom Brady,,,New England Patriots,2019,QB
+1196,Sony Michel,,,New England Patriots,2019,RB
+1197,Matt LaCosse,,,New England Patriots,2019,TE
+1198,Nick Folk,,,New England Patriots,2019,K
+1199,Julian Edelman,Josh Gordon,Mohamed Sanu,New England Patriots,2019,WR
+1200,Cam Newton,,,New England Patriots,2020,QB
+1201,Damien Harris,,,New England Patriots,2020,RB
+1202,Ryan Izzo,,,New England Patriots,2020,TE
+1203,Nick Folk,,,New England Patriots,2020,K
+1204,Damiere Byrd,N'Keal Harry,Jakobi Meyers,New England Patriots,2020,WR
+1205,Drew Brees,,,New Orleans Saints,2010,QB
+1206,Reggie Bush,,,New Orleans Saints,2010,RB
+1207,Jeremy Shockey,,,New Orleans Saints,2010,TE
+1208,John Carney,,,New Orleans Saints,2010,K
+1209,Marques Colston,Devery Henderson,Robert Meachem,New Orleans Saints,2010,WR
+1210,Drew Brees,,,New Orleans Saints,2011,QB
+1211,Chris Ivory,,,New Orleans Saints,2011,RB
+1212,Jimmy Graham,,,New Orleans Saints,2011,TE
+1213,John Kasay,,,New Orleans Saints,2011,K
+1214,Devery Henderson,Robert Meachem,Marques Colston,New Orleans Saints,2011,WR
+1215,Drew Brees,,,New Orleans Saints,2012,QB
+1216,Darren Sproles,,,New Orleans Saints,2012,RB
+1217,Jimmy Graham,,,New Orleans Saints,2012,TE
+1218,Garrett Hartley,,,New Orleans Saints,2012,K
+1219,Marques Colston,Devery Henderson,Lance Moore,New Orleans Saints,2012,WR
+1220,Drew Brees,,,New Orleans Saints,2013,QB
+1221,Pierre Thomas,,,New Orleans Saints,2013,RB
+1222,Jimmy Graham,,,New Orleans Saints,2013,TE
+1223,Shayne Graham,,,New Orleans Saints,2013,K
+1224,Marques Colston,Kenny Stills,Robert Meachem,New Orleans Saints,2013,WR
+1225,Drew Brees,,,New Orleans Saints,2014,QB
+1226,Mark Ingram,,,New Orleans Saints,2014,RB
+1227,Ben Watson,,,New Orleans Saints,2014,TE
+1228,Shayne Graham,,,New Orleans Saints,2014,K
+1229,Marques Colston,Brandin Cooks,Kenny Stills,New Orleans Saints,2014,WR
+1230,Drew Brees,,,New Orleans Saints,2015,QB
+1231,Mark Ingram,,,New Orleans Saints,2015,RB
+1232,Ben Watson,,,New Orleans Saints,2015,TE
+1233,Kai Forbath,,,New Orleans Saints,2015,K
+1234,Brandin Cooks,Willie Snead,Marques Colston,New Orleans Saints,2015,WR
+1235,Drew Brees,,,New Orleans Saints,2016,QB
+1236,Mark Ingram,,,New Orleans Saints,2016,RB
+1237,Coby Fleener,,,New Orleans Saints,2016,TE
+1238,Wil Lutz,,,New Orleans Saints,2016,K
+1239,Brandin Cooks,Michael Thomas,Brandon Coleman,New Orleans Saints,2016,WR
+1240,Drew Brees,,,New Orleans Saints,2017,QB
+1241,Mark Ingram,,,New Orleans Saints,2017,RB
+1242,Josh Hill,,,New Orleans Saints,2017,TE
+1243,Wil Lutz,,,New Orleans Saints,2017,K
+1244,Michael Thomas,Ted Ginn,Willie Snead,New Orleans Saints,2017,WR
+1245,Drew Brees,,,New Orleans Saints,2018,QB
+1246,Alvin Kamara,,,New Orleans Saints,2018,RB
+1247,Josh Hill,,,New Orleans Saints,2018,TE
+1248,Wil Lutz,,,New Orleans Saints,2018,K
+1249,Michael Thomas,Tre'Quan Smith,Ted Ginn,New Orleans Saints,2018,WR
+1250,Drew Brees,,,New Orleans Saints,2019,QB
+1251,Alvin Kamara,,,New Orleans Saints,2019,RB
+1252,Josh Hill,,,New Orleans Saints,2019,TE
+1253,Wil Lutz,,,New Orleans Saints,2019,K
+1254,Michael Thomas,Ted Ginn,Tre'Quan Smith,New Orleans Saints,2019,WR
+1255,Drew Brees,,,New Orleans Saints,2020,QB
+1256,Alvin Kamara,,,New Orleans Saints,2020,RB
+1257,Josh Hill,,,New Orleans Saints,2020,TE
+1258,Wil Lutz,,,New Orleans Saints,2020,K
+1259,Tre'Quan Smith,Emmanuel Sanders,Michael Thomas,New Orleans Saints,2020,WR
+1260,Eli Manning,,,New York Giants,2010,QB
+1261,Ahmad Bradshaw,,,New York Giants,2010,RB
+1262,Kevin Boss,,,New York Giants,2010,TE
+1263,Shayne Graham,,,New York Giants,2010,K
+1264,Hakeem Nicks,Mario Manningham,Steve Smith,New York Giants,2010,WR
+1265,Eli Manning,,,New York Giants,2011,QB
+1266,D.J. Ware,,,New York Giants,2011,RB
+1267,Jake Ballard,,,New York Giants,2011,TE
+1268,Lawrence Tynes,,,New York Giants,2011,K
+1269,Hakeem Nicks,Mario Manningham,Victor Cruz,New York Giants,2011,WR
+1270,Eli Manning,,,New York Giants,2012,QB
+1271,Ahmad Bradshaw,,,New York Giants,2012,RB
+1272,Martellus Bennett,,,New York Giants,2012,TE
+1273,Lawrence Tynes,,,New York Giants,2012,K
+1274,Victor Cruz,Hakeem Nicks,Domenik Hixon,New York Giants,2012,WR
+1275,Eli Manning,,,New York Giants,2013,QB
+1276,Andre Brown,,,New York Giants,2013,RB
+1277,Brandon Myers,,,New York Giants,2013,TE
+1278,Josh Brown,,,New York Giants,2013,K
+1279,Hakeem Nicks,Victor Cruz,Jerrel Jernigan,New York Giants,2013,WR
+1280,Eli Manning,,,New York Giants,2014,QB
+1281,Rashad Jennings,,,New York Giants,2014,RB
+1282,Larry Donnell,,,New York Giants,2014,TE
+1283,Josh Brown,,,New York Giants,2014,K
+1284,Rueben Randle,Odell Beckham,Preston Parker,New York Giants,2014,WR
+1285,Eli Manning,,,New York Giants,2015,QB
+1286,Rashad Jennings,,,New York Giants,2015,RB
+1287,Larry Donnell,,,New York Giants,2015,TE
+1288,Josh Brown,,,New York Giants,2015,K
+1289,Rueben Randle,Odell Beckham,Dwayne Harris,New York Giants,2015,WR
+1290,Eli Manning,,,New York Giants,2016,QB
+1291,Rashad Jennings,,,New York Giants,2016,RB
+1292,Will Tye,,,New York Giants,2016,TE
+1293,Josh Brown,,,New York Giants,2016,K
+1294,Odell Beckham,Sterling Shepard,Victor Cruz,New York Giants,2016,WR
+1295,Eli Manning,,,New York Giants,2017,QB
+1296,Orleans Darkwa,,,New York Giants,2017,RB
+1297,Rhett Ellison,,,New York Giants,2017,TE
+1298,Aldrick Rosas,,,New York Giants,2017,K
+1299,Sterling Shepard,Roger Lewis,Brandon Marshall,New York Giants,2017,WR
+1300,Eli Manning,,,New York Giants,2018,QB
+1301,Saquon Barkley,,,New York Giants,2018,RB
+1302,Rhett Ellison,,,New York Giants,2018,TE
+1303,Aldrick Rosas,,,New York Giants,2018,K
+1304,Sterling Shepard,Odell Beckham,Bennie Fowler,New York Giants,2018,WR
+1305,Daniel Jones,,,New York Giants,2019,QB
+1306,Saquon Barkley,,,New York Giants,2019,RB
+1307,Rhett Ellison,,,New York Giants,2019,TE
+1308,Aldrick Rosas,,,New York Giants,2019,K
+1309,Cody Latimer,Sterling Shepard,Golden Tate,New York Giants,2019,WR
+1310,Daniel Jones,,,New York Giants,2020,QB
+1311,Saquon Barkley,,,New York Giants,2020,RB
+1312,Evan Engram,,,New York Giants,2020,TE
+1313,Graham Gano,,,New York Giants,2020,K
+1314,Darius Slayton,Sterling Shepard,C.J. Board,New York Giants,2020,WR
+1315,Mark Sanchez,,,New York Jets,2010,QB
+1316,Danny Woodhead,,,New York Jets,2010,RB
+1317,Dustin Keller,,,New York Jets,2010,TE
+1318,Nick Folk,,,New York Jets,2010,K
+1319,Braylon Edwards,Santonio Holmes,Jerricho Cotchery,New York Jets,2010,WR
+1320,Mark Sanchez,,,New York Jets,2011,QB
+1321,Joe McKnight,,,New York Jets,2011,RB
+1322,Dustin Keller,,,New York Jets,2011,TE
+1323,Nick Folk,,,New York Jets,2011,K
+1324,Santonio Holmes,Plaxico Burress,Derrick Mason,New York Jets,2011,WR
+1325,Mark Sanchez,,,New York Jets,2012,QB
+1326,Shonn Greene,,,New York Jets,2012,RB
+1327,Jeff Cumberland,,,New York Jets,2012,TE
+1328,Nick Folk,,,New York Jets,2012,K
+1329,Stephen Hill,Jeremy Kerley,Chaz Schilens,New York Jets,2012,WR
+1330,Geno Smith,,,New York Jets,2013,QB
+1331,Bilal Powell,,,New York Jets,2013,RB
+1332,Jeff Cumberland,,,New York Jets,2013,TE
+1333,Nick Folk,,,New York Jets,2013,K
+1334,Stephen Hill,Santonio Holmes,Jeremy Kerley,New York Jets,2013,WR
+1335,Geno Smith,,,New York Jets,2014,QB
+1336,Chris Ivory,,,New York Jets,2014,RB
+1337,Jeff Cumberland,,,New York Jets,2014,TE
+1338,Nick Folk,,,New York Jets,2014,K
+1339,Eric Decker,Percy Harvin,Jeremy Kerley,New York Jets,2014,WR
+1340,Ryan Fitzpatrick,,,New York Jets,2015,QB
+1341,Chris Ivory,,,New York Jets,2015,RB
+1342,Kellen Davis,,,New York Jets,2015,TE
+1343,Randy Bullock,,,New York Jets,2015,K
+1344,Brandon Marshall,Eric Decker,Quincy Enunwa,New York Jets,2015,WR
+1345,Ryan Fitzpatrick,,,New York Jets,2016,QB
+1346,Matt Forte,,,New York Jets,2016,RB
+1347,Brandon Bostick,,,New York Jets,2016,TE
+1348,Nick Folk,,,New York Jets,2016,K
+1349,Brandon Marshall,Quincy Enunwa,Robby Anderson,New York Jets,2016,WR
+1350,Josh McCown,,,New York Jets,2017,QB
+1351,Bilal Powell,,,New York Jets,2017,RB
+1352,Eric Tomlinson,,,New York Jets,2017,TE
+1353,Chandler Catanzaro,,,New York Jets,2017,K
+1354,Robby Anderson,Jermaine Kearse,Jeremy Kerley,New York Jets,2017,WR
+1355,Sam Darnold,,,New York Jets,2018,QB
+1356,Bilal Powell,,,New York Jets,2018,RB
+1357,Chris Herndon,,,New York Jets,2018,TE
+1358,Jason Myers,,,New York Jets,2018,K
+1359,Quincy Enunwa,Robby Anderson,Jermaine Kearse,New York Jets,2018,WR
+1360,Sam Darnold,,,New York Jets,2019,QB
+1361,Le'Veon Bell,,,New York Jets,2019,RB
+1362,Ryan Griffin,,,New York Jets,2019,TE
+1363,Sam Ficken,,,New York Jets,2019,K
+1364,Robby Anderson,Jamison Crowder,Demaryius Thomas,New York Jets,2019,WR
+1365,Sam Darnold,,,New York Jets,2020,QB
+1366,Frank Gore,,,New York Jets,2020,RB
+1367,Chris Herndon,,,New York Jets,2020,TE
+1368,Sergio Castillo,,,New York Jets,2020,K
+1369,Breshad Perriman,Denzel Mims,Jamison Crowder,New York Jets,2020,WR
+1370,Michael Vick,,,Philadelphia Eagles,2010,QB
+1371,Owen Schmitt,,,Philadelphia Eagles,2010,RB
+1372,Brent Celek,,,Philadelphia Eagles,2010,TE
+1373,David Akers,,,Philadelphia Eagles,2010,K
+1374,Jeremy Maclin,DeSean Jackson,Jason Avant,Philadelphia Eagles,2010,WR
+1375,Michael Vick,,,Philadelphia Eagles,2011,QB
+1376,Owen Schmitt,,,Philadelphia Eagles,2011,RB
+1377,Brent Celek,,,Philadelphia Eagles,2011,TE
+1378,Alex Henery,,,Philadelphia Eagles,2011,K
+1379,DeSean Jackson,Jeremy Maclin,Jason Avant,Philadelphia Eagles,2011,WR
+1380,Michael Vick,,,Philadelphia Eagles,2012,QB
+1381,LeSean McCoy,,,Philadelphia Eagles,2012,RB
+1382,Brent Celek,,,Philadelphia Eagles,2012,TE
+1383,Alex Henery,,,Philadelphia Eagles,2012,K
+1384,Jeremy Maclin,DeSean Jackson,Jason Avant,Philadelphia Eagles,2012,WR
+1385,Nick Foles,,,Philadelphia Eagles,2013,QB
+1386,LeSean McCoy,,,Philadelphia Eagles,2013,RB
+1387,Brent Celek,,,Philadelphia Eagles,2013,TE
+1388,Alex Henery,,,Philadelphia Eagles,2013,K
+1389,DeSean Jackson,Riley Cooper,Jason Avant,Philadelphia Eagles,2013,WR
+1390,Nick Foles,,,Philadelphia Eagles,2014,QB
+1391,LeSean McCoy,,,Philadelphia Eagles,2014,RB
+1392,Brent Celek,,,Philadelphia Eagles,2014,TE
+1393,Cody Parkey,,,Philadelphia Eagles,2014,K
+1394,Riley Cooper,Jeremy Maclin,Jordan Matthews,Philadelphia Eagles,2014,WR
+1395,Sam Bradford,,,Philadelphia Eagles,2015,QB
+1396,DeMarco Murray,,,Philadelphia Eagles,2015,RB
+1397,Brent Celek,,,Philadelphia Eagles,2015,TE
+1398,Cody Parkey,,,Philadelphia Eagles,2015,K
+1399,Riley Cooper,Nelson Agholor,Jordan Matthews,Philadelphia Eagles,2015,WR
+1400,Carson Wentz,,,Philadelphia Eagles,2016,QB
+1401,Ryan Mathews,,,Philadelphia Eagles,2016,RB
+1402,Zach Ertz,,,Philadelphia Eagles,2016,TE
+1403,Caleb Sturgis,,,Philadelphia Eagles,2016,K
+1404,Nelson Agholor,Jordan Matthews,Dorial Green-Beckham,Philadelphia Eagles,2016,WR
+1405,Carson Wentz,,,Philadelphia Eagles,2017,QB
+1406,LeGarrette Blount,,,Philadelphia Eagles,2017,RB
+1407,Zach Ertz,,,Philadelphia Eagles,2017,TE
+1408,Jake Elliott,,,Philadelphia Eagles,2017,K
+1409,Alshon Jeffery,Torrey Smith,Nelson Agholor,Philadelphia Eagles,2017,WR
+1410,Carson Wentz,,,Philadelphia Eagles,2018,QB
+1411,Wendell Smallwood,,,Philadelphia Eagles,2018,RB
+1412,Zach Ertz,,,Philadelphia Eagles,2018,TE
+1413,Jake Elliott,,,Philadelphia Eagles,2018,K
+1414,Nelson Agholor,Alshon Jeffery,Jordan Matthews,Philadelphia Eagles,2018,WR
+1415,Carson Wentz,,,Philadelphia Eagles,2019,QB
+1416,Miles Sanders,,,Philadelphia Eagles,2019,RB
+1417,Zach Ertz,,,Philadelphia Eagles,2019,TE
+1418,Jake Elliott,,,Philadelphia Eagles,2019,K
+1419,Nelson Agholor,Alshon Jeffery,J.J. Arcega-Whiteside,Philadelphia Eagles,2019,WR
+1420,Carson Wentz,,,Philadelphia Eagles,2020,QB
+1421,Miles Sanders,,,Philadelphia Eagles,2020,RB
+1422,Zach Ertz,,,Philadelphia Eagles,2020,TE
+1423,Jake Elliott,,,Philadelphia Eagles,2020,K
+1424,Jalen Reagor,Greg Ward,Travis Fulgham,Philadelphia Eagles,2020,WR
+1425,Ben Roethlisberger,,,Pittsburgh Steelers,2010,QB
+1426,,,,Pittsburgh Steelers,2010,RB
+1427,Heath Miller,,,Pittsburgh Steelers,2010,TE
+1428,Jeff Reed,,,Pittsburgh Steelers,2010,K
+1429,Mike Wallace,Hines Ward,Emmanuel Sanders,Pittsburgh Steelers,2010,WR
+1430,Ben Roethlisberger,,,Pittsburgh Steelers,2011,QB
+1431,David Johnson,,,Pittsburgh Steelers,2011,RB
+1432,Heath Miller,,,Pittsburgh Steelers,2011,TE
+1433,Shaun Suisham,,,Pittsburgh Steelers,2011,K
+1434,Mike Wallace,Hines Ward,Antonio Brown,Pittsburgh Steelers,2011,WR
+1435,Ben Roethlisberger,,,Pittsburgh Steelers,2012,QB
+1436,Jonathan Dwyer,,,Pittsburgh Steelers,2012,RB
+1437,Heath Miller,,,Pittsburgh Steelers,2012,TE
+1438,Shaun Suisham,,,Pittsburgh Steelers,2012,K
+1439,Mike Wallace,Antonio Brown,Emmanuel Sanders,Pittsburgh Steelers,2012,WR
+1440,Ben Roethlisberger,,,Pittsburgh Steelers,2013,QB
+1441,Le'Veon Bell,,,Pittsburgh Steelers,2013,RB
+1442,Heath Miller,,,Pittsburgh Steelers,2013,TE
+1443,Shaun Suisham,,,Pittsburgh Steelers,2013,K
+1444,Antonio Brown,Emmanuel Sanders,Jerricho Cotchery,Pittsburgh Steelers,2013,WR
+1445,Ben Roethlisberger,,,Pittsburgh Steelers,2014,QB
+1446,Le'Veon Bell,,,Pittsburgh Steelers,2014,RB
+1447,Heath Miller,,,Pittsburgh Steelers,2014,TE
+1448,Shaun Suisham,,,Pittsburgh Steelers,2014,K
+1449,Antonio Brown,Markus Wheaton,Martavis Bryant,Pittsburgh Steelers,2014,WR
+1450,Ben Roethlisberger,,,Pittsburgh Steelers,2015,QB
+1451,DeAngelo Williams,,,Pittsburgh Steelers,2015,RB
+1452,Heath Miller,,,Pittsburgh Steelers,2015,TE
+1453,Chris Boswell,,,Pittsburgh Steelers,2015,K
+1454,Antonio Brown,Markus Wheaton,Martavis Bryant,Pittsburgh Steelers,2015,WR
+1455,Ben Roethlisberger,,,Pittsburgh Steelers,2016,QB
+1456,Le'Veon Bell,,,Pittsburgh Steelers,2016,RB
+1457,Jesse James,,,Pittsburgh Steelers,2016,TE
+1458,Chris Boswell,,,Pittsburgh Steelers,2016,K
+1459,Antonio Brown,Cobi Hamilton,Eli Rogers,Pittsburgh Steelers,2016,WR
+1460,Ben Roethlisberger,,,Pittsburgh Steelers,2017,QB
+1461,Le'Veon Bell,,,Pittsburgh Steelers,2017,RB
+1462,Jesse James,,,Pittsburgh Steelers,2017,TE
+1463,Chris Boswell,,,Pittsburgh Steelers,2017,K
+1464,Antonio Brown,Martavis Bryant,JuJu Smith-Schuster,Pittsburgh Steelers,2017,WR
+1465,Ben Roethlisberger,,,Pittsburgh Steelers,2018,QB
+1466,James Conner,,,Pittsburgh Steelers,2018,RB
+1467,Vance McDonald,,,Pittsburgh Steelers,2018,TE
+1468,Chris Boswell,,,Pittsburgh Steelers,2018,K
+1469,Antonio Brown,JuJu Smith-Schuster,James Washington,Pittsburgh Steelers,2018,WR
+1470,Mason Rudolph,,,Pittsburgh Steelers,2019,QB
+1471,James Conner,,,Pittsburgh Steelers,2019,RB
+1472,Vance McDonald,,,Pittsburgh Steelers,2019,TE
+1473,Chris Boswell,,,Pittsburgh Steelers,2019,K
+1474,Diontae Johnson,JuJu Smith-Schuster,James Washington,Pittsburgh Steelers,2019,WR
+1475,Ben Roethlisberger,,,Pittsburgh Steelers,2020,QB
+1476,James Conner,,,Pittsburgh Steelers,2020,RB
+1477,Vance McDonald,,,Pittsburgh Steelers,2020,TE
+1478,Chris Boswell,,,Pittsburgh Steelers,2020,K
+1479,JuJu Smith-Schuster,Diontae Johnson,James Washington,Pittsburgh Steelers,2020,WR
+1480,Alex Smith,,,San Francisco 49ers,2010,QB
+1481,Moran Norris,,,San Francisco 49ers,2010,RB
+1482,Vernon Davis,,,San Francisco 49ers,2010,TE
+1483,Shane Andrus,,,San Francisco 49ers,2010,K
+1484,Michael Crabtree,Josh Morgan,Ted Ginn,San Francisco 49ers,2010,WR
+1485,Alex Smith,,,San Francisco 49ers,2011,QB
+1486,Bruce Miller,,,San Francisco 49ers,2011,RB
+1487,Vernon Davis,,,San Francisco 49ers,2011,TE
+1488,David Akers,,,San Francisco 49ers,2011,K
+1489,Michael Crabtree,Braylon Edwards,Josh Morgan,San Francisco 49ers,2011,WR
+1490,Alex Smith,,,San Francisco 49ers,2012,QB
+1491,Frank Gore,,,San Francisco 49ers,2012,RB
+1492,Vernon Davis,,,San Francisco 49ers,2012,TE
+1493,David Akers,,,San Francisco 49ers,2012,K
+1494,Michael Crabtree,Mario Manningham,Kyle Williams,San Francisco 49ers,2012,WR
+1495,Colin Kaepernick,,,San Francisco 49ers,2013,QB
+1496,Frank Gore,,,San Francisco 49ers,2013,RB
+1497,Vernon Davis,,,San Francisco 49ers,2013,TE
+1498,Phil Dawson,,,San Francisco 49ers,2013,K
+1499,Anquan Boldin,Michael Crabtree,Kyle Williams,San Francisco 49ers,2013,WR
+1500,Colin Kaepernick,,,San Francisco 49ers,2014,QB
+1501,Frank Gore,,,San Francisco 49ers,2014,RB
+1502,Vernon Davis,,,San Francisco 49ers,2014,TE
+1503,Phil Dawson,,,San Francisco 49ers,2014,K
+1504,Anquan Boldin,Michael Crabtree,Brandon Lloyd,San Francisco 49ers,2014,WR
+1505,Blaine Gabbert,,,San Francisco 49ers,2015,QB
+1506,Carlos Hyde,,,San Francisco 49ers,2015,RB
+1507,Vance McDonald,,,San Francisco 49ers,2015,TE
+1508,Phil Dawson,,,San Francisco 49ers,2015,K
+1509,Anquan Boldin,Torrey Smith,Quinton Patton,San Francisco 49ers,2015,WR
+1510,Colin Kaepernick,,,San Francisco 49ers,2016,QB
+1511,Carlos Hyde,,,San Francisco 49ers,2016,RB
+1512,Vance McDonald,,,San Francisco 49ers,2016,TE
+1513,Phil Dawson,,,San Francisco 49ers,2016,K
+1514,Quinton Patton,Jeremy Kerley,Torrey Smith,San Francisco 49ers,2016,WR
+1515,Brian Hoyer,,,San Francisco 49ers,2017,QB
+1516,Carlos Hyde,,,San Francisco 49ers,2017,RB
+1517,Garrett Celek,,,San Francisco 49ers,2017,TE
+1518,Robbie Gould,,,San Francisco 49ers,2017,K
+1519,Marquise Goodwin,Pierre Garcon,Louis Murphy,San Francisco 49ers,2017,WR
+1520,Nick Mullens,,,San Francisco 49ers,2018,QB
+1521,Matt Breida,,,San Francisco 49ers,2018,RB
+1522,George Kittle,,,San Francisco 49ers,2018,TE
+1523,Robbie Gould,,,San Francisco 49ers,2018,K
+1524,Kendrick Bourne,Pierre Garcon,Marquise Goodwin,San Francisco 49ers,2018,WR
+1525,Jimmy Garoppolo,,,San Francisco 49ers,2019,QB
+1526,Tevin Coleman,,,San Francisco 49ers,2019,RB
+1527,George Kittle,,,San Francisco 49ers,2019,TE
+1528,Robbie Gould,,,San Francisco 49ers,2019,K
+1529,Deebo Samuel,Emmanuel Sanders,Marquise Goodwin,San Francisco 49ers,2019,WR
+1530,Nick Mullens,,,San Francisco 49ers,2020,QB
+1531,Raheem Mostert,,,San Francisco 49ers,2020,RB
+1532,Ross Dwelley,,,San Francisco 49ers,2020,TE
+1533,Robbie Gould,,,San Francisco 49ers,2020,K
+1534,Brandon Aiyuk,Richie James,Kendrick Bourne,San Francisco 49ers,2020,WR
+1535,Matt Hasselbeck,,,Seattle Seahawks,2010,QB
+1536,Marshawn Lynch,,,Seattle Seahawks,2010,RB
+1537,Chris Baker,,,Seattle Seahawks,2010,TE
+1538,Olindo Mare,,,Seattle Seahawks,2010,K
+1539,Mike Williams,Deon Butler,Ben Obomanu,Seattle Seahawks,2010,WR
+1540,Tarvaris Jackson,,,Seattle Seahawks,2011,QB
+1541,Michael Robinson,,,Seattle Seahawks,2011,RB
+1542,Zach Miller,,,Seattle Seahawks,2011,TE
+1543,Stephen Hauschka,,,Seattle Seahawks,2011,K
+1544,Mike Williams,Sidney Rice,Ben Obomanu,Seattle Seahawks,2011,WR
+1545,Russell Wilson,,,Seattle Seahawks,2012,QB
+1546,Marshawn Lynch,,,Seattle Seahawks,2012,RB
+1547,Zach Miller,,,Seattle Seahawks,2012,TE
+1548,Stephen Hauschka,,,Seattle Seahawks,2012,K
+1549,Sidney Rice,Golden Tate,Doug Baldwin,Seattle Seahawks,2012,WR
+1550,Russell Wilson,,,Seattle Seahawks,2013,QB
+1551,Marshawn Lynch,,,Seattle Seahawks,2013,RB
+1552,Zach Miller,,,Seattle Seahawks,2013,TE
+1553,Stephen Hauschka,,,Seattle Seahawks,2013,K
+1554,Golden Tate,Doug Baldwin,Sidney Rice,Seattle Seahawks,2013,WR
+1555,Russell Wilson,,,Seattle Seahawks,2014,QB
+1556,Marshawn Lynch,,,Seattle Seahawks,2014,RB
+1557,Luke Willson,,,Seattle Seahawks,2014,TE
+1558,Stephen Hauschka,,,Seattle Seahawks,2014,K
+1559,Doug Baldwin,Jermaine Kearse,Paul Richardson,Seattle Seahawks,2014,WR
+1560,Russell Wilson,,,Seattle Seahawks,2015,QB
+1561,Thomas Rawls,,,Seattle Seahawks,2015,RB
+1562,Jimmy Graham,,,Seattle Seahawks,2015,TE
+1563,Stephen Hauschka,,,Seattle Seahawks,2015,K
+1564,Doug Baldwin,Jermaine Kearse,Tyler Lockett,Seattle Seahawks,2015,WR
+1565,Russell Wilson,,,Seattle Seahawks,2016,QB
+1566,Christine Michael,,,Seattle Seahawks,2016,RB
+1567,Jimmy Graham,,,Seattle Seahawks,2016,TE
+1568,Stephen Hauschka,,,Seattle Seahawks,2016,K
+1569,Doug Baldwin,Jermaine Kearse,Tyler Lockett,Seattle Seahawks,2016,WR
+1570,Russell Wilson,,,Seattle Seahawks,2017,QB
+1571,Mike Davis,,,Seattle Seahawks,2017,RB
+1572,Jimmy Graham,,,Seattle Seahawks,2017,TE
+1573,Blair Walsh,,,Seattle Seahawks,2017,K
+1574,Doug Baldwin,Paul Richardson,Tyler Lockett,Seattle Seahawks,2017,WR
+1575,Russell Wilson,,,Seattle Seahawks,2018,QB
+1576,Chris Carson,,,Seattle Seahawks,2018,RB
+1577,Nick Vannett,,,Seattle Seahawks,2018,TE
+1578,Sebastian Janikowski,,,Seattle Seahawks,2018,K
+1579,Tyler Lockett,Doug Baldwin,David Moore,Seattle Seahawks,2018,WR
+1580,Russell Wilson,,,Seattle Seahawks,2019,QB
+1581,Chris Carson,,,Seattle Seahawks,2019,RB
+1582,Luke Willson,,,Seattle Seahawks,2019,TE
+1583,Jason Myers,,,Seattle Seahawks,2019,K
+1584,Tyler Lockett,D.K. Metcalf,Jaron Brown,Seattle Seahawks,2019,WR
+1585,Russell Wilson,,,Seattle Seahawks,2020,QB
+1586,Chris Carson,,,Seattle Seahawks,2020,RB
+1587,Will Dissly,,,Seattle Seahawks,2020,TE
+1588,Jason Myers,,,Seattle Seahawks,2020,K
+1589,Tyler Lockett,D.K. Metcalf,David Moore,Seattle Seahawks,2020,WR
+1590,Josh Freeman,,,Tampa Bay Buccaneers,2010,QB
+1591,Earnest Graham,,,Tampa Bay Buccaneers,2010,RB
+1592,John Gilmore,,,Tampa Bay Buccaneers,2010,TE
+1593,Connor Barth,,,Tampa Bay Buccaneers,2010,K
+1594,Mike Williams,Arrelious Benn,Sammie Stroughter,Tampa Bay Buccaneers,2010,WR
+1595,Josh Freeman,,,Tampa Bay Buccaneers,2011,QB
+1596,Allen Bradford,,,Tampa Bay Buccaneers,2011,RB
+1597,Kellen Winslow,,,Tampa Bay Buccaneers,2011,TE
+1598,Connor Barth,,,Tampa Bay Buccaneers,2011,K
+1599,Mike Williams,Arrelious Benn,Dezmon Briscoe,Tampa Bay Buccaneers,2011,WR
+1600,Josh Freeman,,,Tampa Bay Buccaneers,2012,QB
+1601,D.J. Ware,,,Tampa Bay Buccaneers,2012,RB
+1602,Luke Stocker,,,Tampa Bay Buccaneers,2012,TE
+1603,Connor Barth,,,Tampa Bay Buccaneers,2012,K
+1604,Vincent Jackson,Mike Williams,Tiquan Underwood,Tampa Bay Buccaneers,2012,WR
+1605,Mike Glennon,,,Tampa Bay Buccaneers,2013,QB
+1606,Doug Martin,,,Tampa Bay Buccaneers,2013,RB
+1607,Tim Wright,,,Tampa Bay Buccaneers,2013,TE
+1608,Rian Lindell,,,Tampa Bay Buccaneers,2013,K
+1609,Vincent Jackson,Tiquan Underwood,Mike Williams,Tampa Bay Buccaneers,2013,WR
+1610,Josh McCown,,,Tampa Bay Buccaneers,2014,QB
+1611,Doug Martin,,,Tampa Bay Buccaneers,2014,RB
+1612,Austin Seferian-Jenkins,,,Tampa Bay Buccaneers,2014,TE
+1613,Patrick Murray,,,Tampa Bay Buccaneers,2014,K
+1614,Vincent Jackson,Mike Evans,Louis Murphy,Tampa Bay Buccaneers,2014,WR
+1615,Jameis Winston,,,Tampa Bay Buccaneers,2015,QB
+1616,Doug Martin,,,Tampa Bay Buccaneers,2015,RB
+1617,Luke Stocker,,,Tampa Bay Buccaneers,2015,TE
+1618,Connor Barth,,,Tampa Bay Buccaneers,2015,K
+1619,Mike Evans,Vincent Jackson,Donteea Dye,Tampa Bay Buccaneers,2015,WR
+1620,Jameis Winston,,,Tampa Bay Buccaneers,2016,QB
+1621,Doug Martin,,,Tampa Bay Buccaneers,2016,RB
+1622,Cameron Brate,,,Tampa Bay Buccaneers,2016,TE
+1623,Roberto Aguayo,,,Tampa Bay Buccaneers,2016,K
+1624,Mike Evans,Vincent Jackson,Cecil Shorts,Tampa Bay Buccaneers,2016,WR
+1625,Jameis Winston,,,Tampa Bay Buccaneers,2017,QB
+1626,Doug Martin,,,Tampa Bay Buccaneers,2017,RB
+1627,O.J. Howard,,,Tampa Bay Buccaneers,2017,TE
+1628,Nick Folk,,,Tampa Bay Buccaneers,2017,K
+1629,Mike Evans,DeSean Jackson,Adam Humphries,Tampa Bay Buccaneers,2017,WR
+1630,Jameis Winston,,,Tampa Bay Buccaneers,2018,QB
+1631,Peyton Barber,,,Tampa Bay Buccaneers,2018,RB
+1632,Antony Auclair,,,Tampa Bay Buccaneers,2018,TE
+1633,Chandler Catanzaro,,,Tampa Bay Buccaneers,2018,K
+1634,Mike Evans,Adam Humphries,DeSean Jackson,Tampa Bay Buccaneers,2018,WR
+1635,Jameis Winston,,,Tampa Bay Buccaneers,2019,QB
+1636,Ronald Jones,,,Tampa Bay Buccaneers,2019,RB
+1637,O.J. Howard,,,Tampa Bay Buccaneers,2019,TE
+1638,Matt Gay,,,Tampa Bay Buccaneers,2019,K
+1639,Chris Godwin,Mike Evans,Breshad Perriman,Tampa Bay Buccaneers,2019,WR
+1640,Tom Brady,,,Tampa Bay Buccaneers,2020,QB
+1641,Ronald Jones,,,Tampa Bay Buccaneers,2020,RB
+1642,Rob Gronkowski,,,Tampa Bay Buccaneers,2020,TE
+1643,Ryan Succop,,,Tampa Bay Buccaneers,2020,K
+1644,Mike Evans,Chris Godwin,Scott Miller,Tampa Bay Buccaneers,2020,WR
+1645,Vince Young,,,Tennessee Titans,2010,QB
+1646,Chris Johnson,,,Tennessee Titans,2010,RB
+1647,Bo Scaife,,,Tennessee Titans,2010,TE
+1648,Rob Bironas,,,Tennessee Titans,2010,K
+1649,Nate Washington,Kenny Britt,Justin Gage,Tennessee Titans,2010,WR
+1650,Matt Hasselbeck,,,Tennessee Titans,2011,QB
+1651,Ahmard Hall,,,Tennessee Titans,2011,RB
+1652,Craig Stevens,,,Tennessee Titans,2011,TE
+1653,Rob Bironas,,,Tennessee Titans,2011,K
+1654,Nate Washington,Damian Williams,Kenny Britt,Tennessee Titans,2011,WR
+1655,Jake Locker,,,Tennessee Titans,2012,QB
+1656,Darren Evans,,,Tennessee Titans,2012,RB
+1657,Jared Cook,,,Tennessee Titans,2012,TE
+1658,Rob Bironas,,,Tennessee Titans,2012,K
+1659,Nate Washington,Kenny Britt,Kendall Wright,Tennessee Titans,2012,WR
+1660,Ryan Fitzpatrick,,,Tennessee Titans,2013,QB
+1661,Chris Johnson,,,Tennessee Titans,2013,RB
+1662,Craig Stevens,,,Tennessee Titans,2013,TE
+1663,Rob Bironas,,,Tennessee Titans,2013,K
+1664,Nate Washington,Kendall Wright,Kenny Britt,Tennessee Titans,2013,WR
+1665,Zach Mettenberger,,,Tennessee Titans,2014,QB
+1666,Bishop Sankey,,,Tennessee Titans,2014,RB
+1667,Delanie Walker,,,Tennessee Titans,2014,TE
+1668,Ryan Succop,,,Tennessee Titans,2014,K
+1669,Nate Washington,Kendall Wright,Justin Hunter,Tennessee Titans,2014,WR
+1670,Marcus Mariota,,,Tennessee Titans,2015,QB
+1671,Antonio Andrews,,,Tennessee Titans,2015,RB
+1672,Anthony Fasano,,,Tennessee Titans,2015,TE
+1673,Ryan Succop,,,Tennessee Titans,2015,K
+1674,Harry Douglas,Kendall Wright,Dorial Green-Beckham,Tennessee Titans,2015,WR
+1675,Marcus Mariota,,,Tennessee Titans,2016,QB
+1676,DeMarco Murray,,,Tennessee Titans,2016,RB
+1677,Anthony Fasano,,,Tennessee Titans,2016,TE
+1678,Ryan Succop,,,Tennessee Titans,2016,K
+1679,Tajae Sharpe,Rishard Matthews,Andre Johnson,Tennessee Titans,2016,WR
+1680,Marcus Mariota,,,Tennessee Titans,2017,QB
+1681,DeMarco Murray,,,Tennessee Titans,2017,RB
+1682,Jonnu Smith,,,Tennessee Titans,2017,TE
+1683,Ryan Succop,,,Tennessee Titans,2017,K
+1684,Rishard Matthews,Corey Davis,Eric Decker,Tennessee Titans,2017,WR
+1685,Marcus Mariota,,,Tennessee Titans,2018,QB
+1686,Derrick Henry,,,Tennessee Titans,2018,RB
+1687,Jonnu Smith,,,Tennessee Titans,2018,TE
+1688,Ryan Succop,,,Tennessee Titans,2018,K
+1689,Corey Davis,Tajae Sharpe,Taywan Taylor,Tennessee Titans,2018,WR
+1690,Ryan Tannehill,,,Tennessee Titans,2019,QB
+1691,Derrick Henry,,,Tennessee Titans,2019,RB
+1692,Jonnu Smith,,,Tennessee Titans,2019,TE
+1693,Greg Joseph,,,Tennessee Titans,2019,K
+1694,A.J. Brown,Corey Davis,Tajae Sharpe,Tennessee Titans,2019,WR
+1695,Ryan Tannehill,,,Tennessee Titans,2020,QB
+1696,Derrick Henry,,,Tennessee Titans,2020,RB
+1697,Jonnu Smith,,,Tennessee Titans,2020,TE
+1698,Stephen Gostkowski,,,Tennessee Titans,2020,K
+1699,A.J. Brown,Corey Davis,Kalif Raymond,Tennessee Titans,2020,WR
+1700,Donovan McNabb,,,Washington Football Team,2010,QB
+1701,Ryan Torain,,,Washington Football Team,2010,RB
+1702,Chris Cooley,,,Washington Football Team,2010,TE
+1703,Graham Gano,,,Washington Football Team,2010,K
+1704,Santana Moss,Anthony Armstrong,Joey Galloway,Washington Football Team,2010,WR
+1705,Rex Grossman,,,Washington Football Team,2011,QB
+1706,Darrel Young,,,Washington Football Team,2011,RB
+1707,Fred Davis,,,Washington Football Team,2011,TE
+1708,Graham Gano,,,Washington Football Team,2011,K
+1709,Jabar Gaffney,Santana Moss,Anthony Armstrong,Washington Football Team,2011,WR
+1710,Robert Griffin,,,Washington Football Team,2012,QB
+1711,Alfred Morris,,,Washington Football Team,2012,RB
+1712,Logan Paulsen,,,Washington Football Team,2012,TE
+1713,Billy Cundiff,,,Washington Football Team,2012,K
+1714,Josh Morgan,Pierre Garcon,Leonard Hankerson,Washington Football Team,2012,WR
+1715,Robert Griffin,,,Washington Football Team,2013,QB
+1716,Alfred Morris,,,Washington Football Team,2013,RB
+1717,Logan Paulsen,,,Washington Football Team,2013,TE
+1718,Kai Forbath,,,Washington Football Team,2013,K
+1719,Pierre Garcon,Leonard Hankerson,Josh Morgan,Washington Football Team,2013,WR
+1720,Robert Griffin,,,Washington Football Team,2014,QB
+1721,Alfred Morris,,,Washington Football Team,2014,RB
+1722,Logan Paulsen,,,Washington Football Team,2014,TE
+1723,Kai Forbath,,,Washington Football Team,2014,K
+1724,Pierre Garcon,DeSean Jackson,Andre Roberts,Washington Football Team,2014,WR
+1725,Kirk Cousins,,,Washington Football Team,2015,QB
+1726,Alfred Morris,,,Washington Football Team,2015,RB
+1727,Derek Carrier,,,Washington Football Team,2015,TE
+1728,Kai Forbath,,,Washington Football Team,2015,K
+1729,Pierre Garcon,DeSean Jackson,Jamison Crowder,Washington Football Team,2015,WR
+1730,Kirk Cousins,,,Washington Football Team,2016,QB
+1731,Rob Kelley,,,Washington Football Team,2016,RB
+1732,Vernon Davis,,,Washington Football Team,2016,TE
+1733,Dustin Hopkins,,,Washington Football Team,2016,K
+1734,Pierre Garcon,DeSean Jackson,Jamison Crowder,Washington Football Team,2016,WR
+1735,Kirk Cousins,,,Washington Football Team,2017,QB
+1736,Samaje Perine,,,Washington Football Team,2017,RB
+1737,Vernon Davis,,,Washington Football Team,2017,TE
+1738,Dustin Hopkins,,,Washington Football Team,2017,K
+1739,Josh Doctson,Ryan Grant,Jamison Crowder,Washington Football Team,2017,WR
+1740,Alex Smith,,,Washington Football Team,2018,QB
+1741,Adrian Peterson,,,Washington Football Team,2018,RB
+1742,Jeremy Sprinkle,,,Washington Football Team,2018,TE
+1743,Dustin Hopkins,,,Washington Football Team,2018,K
+1744,Josh Doctson,Jamison Crowder,Maurice Harris,Washington Football Team,2018,WR
+1745,Case Keenum,,,Washington Football Team,2019,QB
+1746,Adrian Peterson,,,Washington Football Team,2019,RB
+1747,Jeremy Sprinkle,,,Washington Football Team,2019,TE
+1748,Dustin Hopkins,,,Washington Football Team,2019,K
+1749,Terry McLaurin,Kelvin Harmon,Trey Quinn,Washington Football Team,2019,WR
+1750,Dwayne Haskins,,,Washington Football Team,2020,QB
+1751,Antonio Gibson,,,Washington Football Team,2020,RB
+1752,Logan Thomas,,,Washington Football Team,2020,TE
+1753,Dustin Hopkins,,,Washington Football Team,2020,K
+1754,Terry McLaurin,Cam Sims,Isaiah Wright,Washington Football Team,2020,WR
