@@ -7,6 +7,17 @@ from simulator.py import simulator, get_optimal_plays
 from .forms import FootballTeamsForm, WelcomeForm
 from .models import Team
 
+TEAM_NAMES: {'Browns': 'Cleveland Browns', 'Ravens': 'Baltimore Ravens', 'Packers': 'Green Bay Packers', 
+'Vikings': 'Minnesota Vikings', 'Texans': 'Houston Texans', 'Chiefs': 'Kansas City Chiefs', 'Seahawks': 'Seattle Seahawks', 
+'Falcons': 'Atlanta Falcons', 'Bears': 'Chicago Bears', 'Lions': 'Detroit Lions', 'Chargers': 'Los Angeles Chargers', 
+'Bengals': 'Cincinnati Bengals', 'Buccaneers': 'Tampa Bay Buccaneers', 'Saints': 'New Orleans Saints', 
+'Steelers': 'Pittsburgh Steelers', 'Giants': 'New York Giants', 'Football': 'Washington Football Team', 
+'Eagles': 'Philadelphia Eagles', 'Jets': 'New York Jets', 'Bills': 'Buffalo Bills', 
+'Dolphins': 'Miami Dolphins', 'Patriots': 'New England Patriots', 'Colts': 'Indianapolis Colts', 
+'Jaguars': 'Jacksonville Jaguars', 'Raiders': 'Las Vegas Raiders', 'Panthers': 'Carolina Panthers', 
+'Cardinals': 'Arizona Cardinals', '49ers': 'San Francisco 49ers', 'Cowboys': 'Dallas Cowboys', 'Rams': 'Los Angeles Rams', 
+'Titans': 'Tennessee Titans', 'Broncos': 'Denver Broncos'}
+
 def get_teams(request):
     '''
     view for the user input of two teams from specific years, when
@@ -56,11 +67,14 @@ def simulate(request):
     optimal_plays_df = get_optimal_plays()
     #run through simulator with the plays and scenarios and two team names
     sim = simulator(plays_df, optimal_plays_df, teams[0], teams[1])
+    #convert team names for the roster
+    team1_name = TEAM_NAMES[team1]
+    team2_name = TEAM_NAMES[team2]
     #get the rosters for the two teams input by the user from rosters.csv
     rosters_df = pd.read_csv('rosters.csv', names=['team', 'year', 'position', 'player'])
-    roster1_check = rosters_df['team'] == team1 and rosters_df['year'] == year1
+    roster1_check = rosters_df['team'] == team1_name and rosters_df['year'] == year1
     roster1_df = rosters_df[roster1_check]
-    roster2_check = rosters_df['team'] == team2 and rosters_df['year'] == year2 
+    roster2_check = rosters_df['team'] == team2_name and rosters_df['year'] == year2 
     roster2_df = rosters_df[roster2_check]
     roster1_df.drop(columns=['team', 'year'])
     roster2_df.drop(columns=['team', 'year'])
