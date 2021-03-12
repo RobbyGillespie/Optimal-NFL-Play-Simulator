@@ -9,7 +9,7 @@ TEAMS = [('Browns', 'Browns'), ('Ravens', 'Ravens'), ('Packers', 'Packers'),
 ('Dolphins', 'Dolphins'), ('Patriots', 'Patriots'), ('Colts', 'Colts'), 
 ('Jaguars', 'Jaguars'), ('Raiders', 'Raiders'), ('Panthers', 'Panthers'), 
 ('Cardinals', 'Cardinals'), ('49ers', '49ers'), ('Cowboys', 'Cowboys'), ('Rams', 'Rams'), 
-('Titans', 'Titans'), ('Broncos', 'Broncos'), ('Redskins', 'Redskins')]
+('Titans', 'Titans'), ('Broncos', 'Broncos')]
 class FootballTeamsForm(forms.Form):
     '''
     form for taking user input for two teams with team names and years
@@ -20,4 +20,7 @@ class FootballTeamsForm(forms.Form):
     year_2 = forms.IntegerField(label="Enter the year of Team 2", max_value = 2020, min_value=2010)
 
 class WelcomeForm(forms.Form):
+    '''
+    form for a button that takes the user to the simulation page
+    '''
     btn = forms.CharField()
