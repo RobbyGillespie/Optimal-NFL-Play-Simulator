@@ -1,9 +1,15 @@
 """
-Columns: [Quarter, Time, Down, Yards to go, Yards to go category, Field position, EPC, Offense, Defense,
-          Score difference, Time of play, Field position category, Play type, Yardage, Year]
+ACJR project
+Scraper for pro-football-reference.com. Takes an input from play_caller.py and
+outputs a list of lists in which each element in the 15 element long sublist 
+corresponds to the following columns:
+
+Columns: [Quarter, Time, Down, Yards to go, Yards to go category, Field position,
+          EPC, Offense, Defense, Score difference, Time of play, Field position 
+          category, Play type, Yardage, Year]
 """
 import re
-from . import util_2
+import util_2
 import bs4
 import queue
 import json
@@ -14,6 +20,7 @@ import numpy as np
 import re
 import datetime
 from bs4 import BeautifulSoup,Comment
+
 
 TEAM_ABBREVIATIONS = {'Browns' : ['CLE'], 'Ravens' : ['BAL', 'RAV'], 'Packers' : ['GNB'], 
                       'Vikings' : ['MIN'], 'Texans' : ['HOU', 'HTX'], 'Chiefs' : ['KAN'], 
@@ -28,19 +35,16 @@ TEAM_ABBREVIATIONS = {'Browns' : ['CLE'], 'Ravens' : ['BAL', 'RAV'], 'Packers' :
 PASS_TYPES = {'deep left', 'deep middle', 'deep right', 'short left', 'short right', 'short middle'}
 
 
-def team_mapper(soup):
-    '''
-    '''
-    title_lst = soup.find("title").text.split()
-    team_lst = [x for x in title_lst if x in TEAM_ABBREVIATIONS]
-    teams = []
-    for word in team_lst:
-        teams.append(TEAM_ABBREVIATIONS[word])
-    return teams, team_lst
-
-
 def extractor(link_year):
     '''
+    Master function for this file. Designed to be called from play_caller.py,
+    which provides the input. Makes the necessary calls to all the other
+    functions in this file.
+
+    Inputs:
+        link_year (tuple): (link (str), year (str))
+    Outputs:
+        game_table (lst of lsts)
     '''
     link, year = link_year
     request_obj = util_2.get_request(link)
@@ -50,9 +54,13 @@ def extractor(link_year):
     comments = soup.find_all(text=lambda text:isinstance(text, Comment))
     for comment in comments:
         comment_soup = bs4.BeautifulSoup(comment, "html5lib")
-        coin_toss = comment_soup.find("div", class_="table_container", id="div_game_info")
+        # Code that searches for the coin toss and interprets the result
+        # by assigning the correct possession.
+        coin_toss = comment_soup.find("div", class_="table_container",
+                    id="div_game_info")
         if coin_toss is not None:
-            coiner = coin_toss.find_all("td", {"class":"center", "data-stat":"stat"})[0].text.split()
+            coiner = coin_toss.find_all("td", {"class":"center", 
+                "data-stat":"stat"})[0].text.split()
             for word in coiner:
                 if word in TEAM_ABBREVIATIONS.keys():
                     poss = word
@@ -63,27 +71,56 @@ def extractor(link_year):
                             possession = TEAM_ABBREVIATIONS[team]
                             poss = team
                             break
-        play_by_play = comment_soup.find("div", class_="table_container", id='div_pbp')
+        play_by_play = comment_soup.find("div", class_="table_container", 
+                                        id='div_pbp')
         if play_by_play != None:
             break
+    # With play_by_play found, construct and return the game_table.
+    return scrape_rows(play_by_play, teams, teams_lst, possession, poss, year)
 
-    game_table = scrape_rows(play_by_play, teams, teams_lst, possession, poss, year)
 
-    return game_table
+def team_mapper(soup):
+    '''
+    Takes in the soup for a pro-football-reference game page, finds the title
+    and extracts the two teams that are playing.
+    Input:
+        soup (soup object)
+    Outputs:
+        teams (lst of lsts): list of two elements which are lists containing
+                             the abbreviations of the two teams
+        team_lst (lst): list of two elements w/ unabbreviated team names
+    '''
+    title_lst = soup.find("title").text.split()
+    team_lst = [x for x in title_lst if x in TEAM_ABBREVIATIONS]
+    teams = []
+    for word in team_lst:
+        teams.append(TEAM_ABBREVIATIONS[word])
+    return teams, team_lst
 
 
 def scrape_rows(play_by, teams, teams_lst, possession, poss, year):
     '''
+    Constructs the play by play game table as a list of lists from the HTML
+    containing this data.
+
+    Input:
+        play_by (BS4 object): HTML containing data to scrape
+        teams (lst of lsts): list of two elements which are lists containing
+                             the abbreviations of the two teams
+        team_lst (lst): list of two elements w/ unabbreviated team names
+        possession (str): unabbreviated name of team with possession
+        poss (str): abbreviated name of team with possession
+        year (str): year that the current game happened in
+    Outputs:
+        master_lst (lst of lsts): the full play by play
     '''
     master_lst = []
     possession_lst = []
     switch = teams_lst.index(poss)
     quarter_tags = play_by.find_all("th", scope="row", class_="center")
-    print(teams, year, poss)
     for row in quarter_tags:
         if str(type(row)) == "<class 'bs4.element.Tag'>":
             variable = None
-            
             try:
                 variable = row.parent['class'][0] # success == at divider # variable is 'divider'
             except KeyError:
@@ -99,92 +136,104 @@ def scrape_rows(play_by, teams, teams_lst, possession, poss, year):
             togo = row.nextSibling.nextSibling.nextSibling.text 
             location = row.nextSibling.nextSibling.nextSibling.nextSibling.text.split()
             sub_play = row.nextSibling.nextSibling.nextSibling.nextSibling.nextSibling
-            epb = sub_play.nextSibling.nextSibling.nextSibling.text # epb
-            epa = sub_play.nextSibling.nextSibling.nextSibling.nextSibling.text # epa
-            if quarter != '':
-                if epb != '' and epa != '' and len(location) > 1:
-                    if current_time != '' and down != '' and togo != '':
-                        sub_lst = []
-                        sub_lst.append(quarter) # quarter 0
-                        sub_lst.append(current_time) # time 1
-                        sub_lst.append(down) # down 2
-                        sub_lst.append(togo) # togo (str) 3
-                        # add yds_togo_category 4
-                        if  togo == '' or togo is None:
-                            sub_lst.append('')
-                        else:
-                            tg = int(togo)
-                            if tg <= 3:
-                                sub_lst.append('short')
-                            elif 4 <= tg <= 7:
-                                sub_lst.append('middle')
-                            elif tg >= 8:
-                                sub_lst.append('long')
+            epb = sub_play.nextSibling.nextSibling.nextSibling.text
+            epa = sub_play.nextSibling.nextSibling.nextSibling.nextSibling.text
+            if quarter != '' and epb != '' and epa != '' and len(location) > 1 and \
+                    current_time != '' and down != '' and togo != '':
+                sub_lst = []
+                sub_lst.append(quarter) # 0 quarter
+                sub_lst.append(current_time) # 1 time
+                sub_lst.append(down) # 2 down
+                sub_lst.append(togo) # 3 togo (str)
+                # 4 add yds_togo_category
+                if  togo == '' or togo is None:
+                    sub_lst.append('')
+                else:
+                    tg = int(togo)
+                    if tg <= 3:
+                        sub_lst.append('short')
+                    elif 4 <= tg <= 7:
+                        sub_lst.append('middle')
+                    elif tg >= 8:
+                        sub_lst.append('long')
 
-                        if len(location) > 1:
-                            sub_lst += (str(location[0]), str(location[1])) # loc_team and loc_number 5, 6
-                        else:
-                            sub_lst += ['', '']
+                if len(location) > 1:
+                    sub_lst += (str(location[0]), str(location[1])) # 5,6 loc_team and loc_number
+                else:
+                    sub_lst += ['', '']
 
-                        # extracting the play info without player names 7
-                        string = ''
-                        for sub in sub_play.contents:
-                            if str(type(sub)) == "<class 'bs4.element.NavigableString'>":
-                                string += sub
-                            else:
-                                string += 'pp'
+                # 7 extracting the play info without player names
+                string = ''
+                for sub in sub_play.contents:
+                    if str(type(sub)) == "<class 'bs4.element.NavigableString'>":
+                        string += sub
+                    else:
+                        string += 'pp'
+                sub_lst.append(string)
+                
+                if epa != '' and epb != '':
+                    epc = float(epa) - float(epb) # 8 calculate epc
+                    sub_lst.append(str(epc))
+                
+                sub_lst.append(teams[switch][0]) # 9 offense
+                sub_lst.append(teams[1 - switch][0]) # 10 defense
 
-                        sub_lst.append(string)
+                away_score = sub_play.nextSibling.text # away score
+                home_score = sub_play.nextSibling.nextSibling.text # home score
+                # calc score diff
+                if away_score == '' or home_score == '': 
+                    sub_lst.append('')
+                else:
+                    if switch == 0:
+                        score_diff = int(away_score) - int(home_score)
+                    else:
+                        score_diff = int(home_score) - int(away_score)
+                    sub_lst.append(str(score_diff))
 
-                        away_score = sub_play.nextSibling.text # away score
-                        home_score = sub_play.nextSibling.nextSibling.text # home score
+                # calculate time_of_play
+                if len(master_lst) > 0:
+                    # if on same quarter as previous
+                    if quarter == master_lst[-1][0]: 
+                        minute_sec = current_time.split(':')
+                        #if len(minute_sec) == 2:
+                        total_time = datetime.timedelta(minutes = int(
+                            minute_sec[0]), seconds = int(minute_sec[1]))
+
+                        minute_sec_prev = master_lst[-1][1].split(':')
                         
-                        if epa != '' and epb != '':
-                            epc = float(epa) - float(epb) # calculate epc 8
-                            sub_lst.append(str(epc))
-                        sub_lst.append(teams[switch][0]) # 9 offense
-                        sub_lst.append(teams[1 - switch][0]) # 10 defense
-
-                        if away_score == '' or home_score == '': # calc score diff
-                            sub_lst.append('')
-                        else:
-                            if switch == 0:
-                                score_diff = int(away_score) - int(home_score)
-                            else:
-                                score_diff = int(home_score) - int(away_score)
-                            sub_lst.append(str(score_diff))
-
-                        # calculate time_of_play
-                        if len(master_lst) > 0:
-                            if quarter == master_lst[-1][0]: # if on same quarter as previous
-                                minute_sec = current_time.split(':')
-                                #if len(minute_sec) == 2:
-                                total_time = datetime.timedelta(minutes = int(minute_sec[0]), seconds = int(minute_sec[1])) #convert 
-
-                                minute_sec_prev = master_lst[-1][1].split(':')
-
-                                total_time_prev = datetime.timedelta(minutes = int(minute_sec_prev[0]), seconds = int(minute_sec_prev[1]))# calc total time in s
-                                time_of_play = (total_time_prev - total_time).seconds
-                                master_lst[-1].append(str(time_of_play)) # 12 time_of_play
-
-                            else: # case in which you are at new quarter
-                                total_time = datetime.timedelta(minutes = int(minute_sec[0]), seconds = int(minute_sec[1]))
-                                master_lst[-1].append(str(total_time.seconds))
-                        master_lst.append(sub_lst)
-                        possession_lst.append(teams[switch])
+                        # calc total time in s
+                        total_time_prev = datetime.timedelta(minutes = int(
+                            minute_sec_prev[0]), seconds = int(minute_sec_prev[1]))
+                        time_of_play = (total_time_prev - total_time).seconds
+                        master_lst[-1].append(str(time_of_play)) # 12 time_of_play
+                    else: # case in which you are at new quarter
+                        total_time = datetime.timedelta(minutes = int(
+                            minute_sec[0]), seconds = int(minute_sec[1]))
+                        master_lst[-1].append(str(total_time.seconds))
+                master_lst.append(sub_lst)
+                possession_lst.append(teams[switch])
     # add final time_of_play
     if len(master_lst) <= 1:
         return([])
     else:
         master_lst[-1].append(str(total_time.seconds))
-
     master_lst, detail_column = add_field_position(master_lst, possession_lst)
-    master_lst = play_classifier(master_lst, detail_column, year)
-    return master_lst
+
+    return play_classifier(master_lst, detail_column, year)
 
 
 def add_field_position(master_lst, possession_lst):
     '''
+    Helper function for scrape_rows. Takes the master_lst scrape_rows
+    is constructing, standardizes the field position, and adds a category.
+
+    Input:
+        master_lst (lst of lsts): the full play by play
+        possession_lst (lst of lsts): list containing the possession at
+                                    every play
+    Output:
+        master_lst (lst of lsts)
+        detail_column (lst): play detail info
     '''
     detail_column = []
     field_position = None
