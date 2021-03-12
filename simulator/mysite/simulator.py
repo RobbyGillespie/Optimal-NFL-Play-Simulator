@@ -2,11 +2,8 @@ import statistics
 import random
 import datetime
 import pandas as pd
-<<<<<<< Updated upstream:simulator/mysite/simulator.py
-import os
-=======
 import math
->>>>>>> Stashed changes:simulator.py
+import os
 
 def get_dataframes(team_1_info, team_2_info):
 
