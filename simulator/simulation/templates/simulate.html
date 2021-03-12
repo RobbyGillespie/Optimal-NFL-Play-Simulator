@@ -10,7 +10,7 @@ Running a simulation for {{ team_1 }} vs {{ team_2 }}
         <th>Score</th>
         <th>Detail</th>
     </tr>
-{% for quarter, time, down, to_go, location, team_1_score, team_2_score, yards_gained, play_type in {{ simulation }} %}
+{% for quarter, time, down, to_go, location, team_1_score, team_2_score, play_type, yards_gained, offense in simulation %}
     <tr>
         <th>{{ quarter }}</th>
         <th>{{ time }}</th>
@@ -19,40 +19,33 @@ Running a simulation for {{ team_1 }} vs {{ team_2 }}
         <th>{{ location }}</th>
         <th>{{ team_1_score }} vs. {{ team_2_score }}</th> 
         {% comment %} first check for the scoring, then offensive team, then sort by play type {% endcomment %}
-        {% if team_1_score != old_score_1 %}
-            {% update_var True as scored %}
-            {% update_var team_1_score as old_score_1 %}
-        {% elif team_2_score != old_score_2 %}
-            {% update_var True as scored %} 
-            {% update_var team_2_score as old_score_2 %}
-        {% endif %}
-        {% if team_1 == offense %}
+        {% get_name team_1 as team_1_name %}
+        {% get_name team_2 as team_2_name %}
+        {% if team_1_name == offense %}
             {% if 'pass' in play_type %}
-                <th>{% find_player roster_1['QB'] %} passes {{ yards_gained }} yards to {% find_player roster_1['WR'] %} {% if scored %} and scored! {% endif %}</th>
+                <th>{% find_player qb1 %} ( {% get_name team_1 %} ) passes {{ yards_gained }} yards to {% find_player wr1 %} ( {% get_name team_1 %} ) {% if scored %} and scored! {% endif %}</th>
             {% elif 'run' in play_type %}
-                <th>{% find_player roster_1['RB'] %} runs {{ yards_gained }} yards {% if scored %} and scored! {% endif %}</th>
+                <th>{% find_player rb1 %} ( {% get_name team_1 %} ) runs {{ yards_gained }} yards {% if scored %} and scored! {% endif %}</th>
             {% elif 'punt' in play_type %}
-                <th>{% find_player roster_1['kicker'] %} punted {{ yards_gained }} yards</th>
+                <th>{% find_player k1 %} ( {% get_name team_1 %} ) punted {{ yards_gained }} yards</th>
             {% elif yards_gained == 'success' %}
-                <th>{% find_player roster_1['kicker'] %} made a field goal</th>
-            {% else %}
-                <th>{% find_player roster_1['kicker'] %} missed a field goal</th>
+                <th>{% find_player k1 %} ( {% get_name team_1 %} ) made a field goal</th>
+            {% elif yards_gained == 'fail' %}
+                <th>{% find_player k1 %} ( {% get_name team_1 %} ) missed a field goal</th>
             {% endif %}
-        {% elif team_2 == offense %}
+        {% elif team_2_name == offense %}
             {% if 'pass' in play_type %}
-                <th>{% find_player roster_2['QB'] %} passes {{ yards_gained }} yards to {% find_player roster_2['WR'] %} {% if scored %} and scored! {% endif %}</th>
+                <th>{% find_player qb2 %} ( {% get_name team_2 %} ) passes {{ yards_gained }} yards to {% find_player wr2 %} ( {% get_name team_2 %} ) {% if scored %} and scored! {% endif %}</th>
             {% elif 'run' in play_type %}
-                <th>{% find_player roster_2['RB'] %} runs {{ yards_gained }} yards {% if scored %} and scored! {% endif %}</th>
+                <th>{% find_player rb2 %} ( {% get_name team_2 %} ) runs {{ yards_gained }} yards {% if scored %} and scored! {% endif %}</th>
             {% elif 'punt' in play_type %}
-                <th>{% find_player roster_2['kicker'] %} punted {{ yards_gained }} yards</th>
+                <th>{% find_player k2 %} ( {% get_name team_2 %} ) punted {{ yards_gained }} yards</th>
             {% elif yards_gained == 'success' %}
-                <th>{% find_player roster_2['kicker'] %} made a field goal</th>
-            {% else %}
-                <th>{% find_player roster_2['kicker'] %} missed a field goal</th>
+                <th>{% find_player k2 %} ( {% get_name team_2 %} ) made a field goal</th>
+            {% elif years_gained == 'fail' %}
+                <th>{% find_player k2 %} ( {% get_name team_2 %} ) missed a field goal</th>
             {% endif %}
         {% endif %}
-        {% update_var False as scored %}
-
 {% endfor %}
     </tr>
 </table>

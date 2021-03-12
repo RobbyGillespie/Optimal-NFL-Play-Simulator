@@ -11,7 +11,7 @@ def get_dataframes(team_1_info, team_2_info):
     team_2, team_2_year = team_2_info
 
     # Get past plays dataframe
-    csv_path = os.path.join(os.path.dirname(__file__), 'out.csv')
+    csv_path = os.path.join(os.path.dirname(__file__), 'allgames.csv')
     all_plays_df = pd.read_csv(csv_path, names = ['Quarter', 'Time', 'Down', \
         'To go', 'To go category', 'Field position', 'EPC', 'Offense', \
         'Defense', 'Score difference', 'Play time', 'Field zone', \
