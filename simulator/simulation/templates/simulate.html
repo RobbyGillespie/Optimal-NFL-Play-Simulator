@@ -17,27 +17,27 @@ Running a simulation for {{ team_1 }} vs {{ team_2 }}
         <th>{{ down }}</th>
         <th>{{ to_go }}</th>
         <th>{{ location }}</th>
-        <th>{{ team_1_score }} vs. {{ team_2_score }}</th> 
+        <th>{{ team_1_score }} vs. {{ team_2_score }}</th>
         {% comment %} first check for the scoring, then offensive team, then sort by play type {% endcomment %}
         {% get_name team_1 as team_1_name %}
         {% get_name team_2 as team_2_name %}
         {% if team_1_name == offense %}
             {% if 'pass' in play_type %}
-                <th>{% find_player qb1 %} ( {% get_name team_1 %} ) passes {{ yards_gained }} yards to {% find_player wr1 %} ( {% get_name team_1 %} ) {% if scored %} and scored! {% endif %}</th>
+                <th>{% find_player qb1 %} ( {% get_name team_1 %} ) {% cut_play_type play_type %} {% pass_output yards_gained %} {% find_player wr1 %} ( {% get_name team_1 %} ) {% if scored %} and scored! {% endif %}</th>
             {% elif 'run' in play_type %}
-                <th>{% find_player rb1 %} ( {% get_name team_1 %} ) runs {{ yards_gained }} yards {% if scored %} and scored! {% endif %}</th>
+                <th>{% find_player rb1 %} ( {% get_name team_1 %} ) {% cut_play_type play_type %} {% run_output yards_gained %} {% if scored %} and scored! {% endif %}</th>
             {% elif 'punt' in play_type %}
-                <th>{% find_player k1 %} ( {% get_name team_1 %} ) punted {{ yards_gained }} yards</th>
+                <th>{% find_player k1 %} ( {% get_name team_1 %} ) punts {{ yards_gained }} yards</th>
             {% elif yards_gained == 'success' %}
-                <th>{% find_player k1 %} ( {% get_name team_1 %} ) made a field goal</th>
+                <th>{% find_player k1 %} ( {% get_name team_1 %} ) makes a field goal</th>
             {% elif yards_gained == 'fail' %}
-                <th>{% find_player k1 %} ( {% get_name team_1 %} ) missed a field goal</th>
+                <th>{% find_player k1 %} ( {% get_name team_1 %} ) misses a field goal</th>
             {% endif %}
         {% elif team_2_name == offense %}
             {% if 'pass' in play_type %}
-                <th>{% find_player qb2 %} ( {% get_name team_2 %} ) passes {{ yards_gained }} yards to {% find_player wr2 %} ( {% get_name team_2 %} ) {% if scored %} and scored! {% endif %}</th>
+                <th>{% find_player qb2 %} ( {% get_name team_2 %} ) {% cut_play_type play_type %} {% pass_output yards_gained %} {% find_player wr2 %} ( {% get_name team_2 %} ) {% if scored %} and scored! {% endif %}</th>
             {% elif 'run' in play_type %}
-                <th>{% find_player rb2 %} ( {% get_name team_2 %} ) runs {{ yards_gained }} yards {% if scored %} and scored! {% endif %}</th>
+                <th>{% find_player rb2 %} ( {% get_name team_2 %} ) {% cut_play_type play_type %} {% run_output yards_gained %} {% if scored %} and scored! {% endif %}</th>
             {% elif 'punt' in play_type %}
                 <th>{% find_player k2 %} ( {% get_name team_2 %} ) punted {{ yards_gained }} yards</th>
             {% elif yards_gained == 'success' %}
