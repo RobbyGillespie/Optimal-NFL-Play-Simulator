@@ -189,7 +189,7 @@ field_pos, field_pos_cat, team_1_score, team_2_score, play_tracker, plays_df):
     # Create play
     # Could also extract and add play detail
     play = [quarter, time, down, to_go, location, team_1_score, team_2_score, \
-        optimal_play, yards_gained]
+        optimal_play, yards_gained, offense]
     play_tracker.append(play)
 
     return yards_gained, play_time, optimal_play
