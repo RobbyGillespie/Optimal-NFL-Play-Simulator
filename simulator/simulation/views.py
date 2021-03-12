@@ -3,8 +3,6 @@ from django.http import HttpResponseRedirect
 from django.urls import reverse
 import pandas as pd
 import os
-import sys
-sys.path.insert(0, '/home/cooperpowell/acjr-project/simulator/simulation/pythonfiles')
 
 from mysite import simulator
 from mysite import scraper
@@ -96,6 +94,9 @@ def simulate(request):
     return render(request, 'simulate.html', dct)
 
 def welcome(request):
+    '''
+    view for our welcome page
+    '''
     if request.method == 'POST':
         form = WelcomeForm(request.POST)
         if form.is_valid():
@@ -106,6 +107,9 @@ def welcome(request):
 
 
 def split(roster):
+    '''
+    helper function for splitting roster dictionaries into lists of players
+    '''
     qb = []
     wr = []
     rb = []
