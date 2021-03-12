@@ -9,7 +9,7 @@ TEAMS = [('Browns', 'Browns'), ('Ravens', 'Ravens'), ('Packers', 'Packers'),
 ('Dolphins', 'Dolphins'), ('Patriots', 'Patriots'), ('Colts', 'Colts'), 
 ('Jaguars', 'Jaguars'), ('Raiders', 'Raiders'), ('Panthers', 'Panthers'), 
 ('Cardinals', 'Cardinals'), ('49ers', '49ers'), ('Cowboys', 'Cowboys'), ('Rams', 'Rams'), 
-('Titans', 'Titans'), ('Broncos', 'Broncos'), ('Redskins', 'Redskins')]
+('Titans', 'Titans'), ('Broncos', 'Broncos')]
 class FootballTeamsForm(forms.Form):
     '''
     form for taking user input for two teams with team names and years
