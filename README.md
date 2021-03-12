@@ -1,6 +1,8 @@
 ACJR-project README
 A directory containing the files needed to crawl, scrape, and analyze data from pro-football-reference.com and profootballarchives.com. This data is used to help simulate a football game between any two teams within the time range our data specifies. This data is presented in the format of a django website.
 
+RUNNING THE CODE: in order to reach the right place to start the team selection and later simulation, the user must attach '/simulation' to the IP address on which the server is being hosted. From there, all other pages are linked together properly
+
 Our code has a very specific structure to allow for django framework implementation. The framework is layed out below, with an indentation indicating a level down in the tree.
 
 simulator
