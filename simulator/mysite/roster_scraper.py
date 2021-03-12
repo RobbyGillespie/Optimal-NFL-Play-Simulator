@@ -1,4 +1,8 @@
 '''
+ACJR Project
+Scraper for profootballarchives.com. Scrapes the website for information on
+starting players sorted by team and year and writes this information into a
+csv file. 
 '''
 import re
 from . import util_2
@@ -17,6 +21,14 @@ from bs4 import BeautifulSoup,Comment
 YEAR=["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"]
 
 def crawl_roster():
+    '''
+    Simultaneously crawls the given webpage for links and builds a dictionary
+    of starting players at certain positions for those links.
+
+    Output:
+     roster(dict): a nested dictionary containing all info on starting players
+      at certain positions for all teams and all years between 2010-2020. 
+    '''
     rosters = {}
     teams_page, teams_url = play_caller.create_soup_object("https://www.profootballarchives.com/teams.html")
     teams = teams_page.find_all("a")
@@ -34,6 +46,13 @@ def crawl_roster():
 
 def extractor(link):
     '''
+    Extracts players for each needed position on a webpage.
+
+    Inputs:
+     link(url)
+
+    Returns:
+     player_dict(dict)
     '''
     request_obj = util_2.get_request(link)
     document = util_2.read_request(request_obj)
@@ -61,6 +80,14 @@ def extractor(link):
 
 def find_players(player_df):
     '''
+    Sorts players in a dataframe into a dictionary with only starts from
+    certain needed positions.
+
+    Inputs:
+     player_df: a pandas dataframe containing player information
+
+    Returns:
+     player_dict(dict)
     '''
     player_dict = {}
     starting_QB = player_df[player_df['Position'] == 'QB'].nlargest(1, ['GS'])
@@ -90,6 +117,10 @@ def find_players(player_df):
 
 def dict_writer(dictionary):
     '''
+    Writes a nested dictionary of roster information into a csv file.
+
+    Inputs:
+     dictionary(dict)
     '''
     x = pd.DataFrame.from_dict({(i, j, k): dictionary[i][j][k]
                            for i in dictionary.keys()
@@ -101,11 +132,3 @@ def dict_writer(dictionary):
     del x['index']
     x.to_csv('rosters.csv')
     return x
-
-'''
-    w = csv.DictWriter(sys.stdout, ['years'] + YEAR)
-    for key,val in sorted(dictionary.items()):
-        row = {'years': key}
-        row.update(val)
-        w.writerow(row)
-'''
