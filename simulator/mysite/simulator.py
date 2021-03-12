@@ -35,10 +35,10 @@ def create_optimal_plays(team_A_info, team_B_info, all_plays_df):
     team_A, team_A_year = team_A_info
     team_B, team_B_year = team_B_info
 
-    team_A_is_offense = (all_plays_df['Offense'].isin(team_A)) & \
+    team_A_is_offense = (all_plays_df['Offense'] == team_A) & \
         (all_plays_df['Year'] == team_A_year)
     tAo_plays = all_plays_df[team_A_is_offense]
-    team_B_is_defense = (all_plays_df['Offense'].isin(team_B)) & \
+    team_B_is_defense = (all_plays_df['Offense'] == team_B)) & \
         (all_plays_df['Year'] == team_B_year)
     tBd_plays = all_plays_df[team_B_is_defense]
     tAo_means = tAo_plays.groupby(['Offense', 'Down', \
