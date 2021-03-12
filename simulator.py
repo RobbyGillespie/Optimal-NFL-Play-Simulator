@@ -1,53 +1,66 @@
 import statistics
 import random
 import datetime
+import pandas as pd
 
-def find_optimal_plays():
+def get_dataframes(team_1_info, team_2_info):
+
+    team_1, team_1_year = team_1_info
+    team_2, team_2_year = team_2_info
+
     # Get past plays dataframe
-    plays_df = pd.read_csv('out.csv', names = ['Quarter', 'Time', 'Down', \
+    all_plays_df = pd.read_csv('out.csv', names = ['Quarter', 'Time', 'Down', \
         'To go', 'To go category', 'Field position', 'EPC', 'Offense', \
         'Defense', 'Score difference', 'Play time', 'Field zone', \
         'Play type', 'Yards gained', 'Year'])
 
-    # Create dataframe of offensive plays
-    team_1_is_offense = plays_df['Offense'] == team_1
-    team_2_is_offense = plays_df['Offense'] == team_2
-    offense_df = plays_df[team_1_is_offense | team_2_is_offense]
+    # Create dataframes with each team's optimal offensive play in each scenario
+    team_1, t1_optimal_plays, t1_is_offense, t2_is_defense = \
+        create_optimal_plays(team_1_info, team_2_info, all_plays_df)
+    team_2, t2_optimal_plays, t2_is_offense, t1_is_defense = \
+        create_optimal_plays(team_2_info, team_1_info, all_plays_df)
 
-    # Create dataframe of defensive plays
-    team_1_is_defense = = plays_df['Defense'] == team_1
-    team_2_is_defense = = plays_df['Defense'] == team_2
-    defense_df = plays_df[team_1_is_defense | team_2_is_defense]
+    # Create a dataframe with all of the plays from each team in their season
+    plays_df = all_plays_df[t1_is_offense | t1_is_defense | t2_is_offense | \
+        t2_is_defense]
 
-    # Create optimal plays 
-    mean_performances = offense_df.groupby(['Offese', 'Down', \
+    return team_1, team_2, t1_optimal_plays, t2_optimal_plays, plays_df
+
+
+def create_optimal_plays(team_A_info, team_B_info, all_plays_df):
+
+    team_A, team_A_year = team_A_info
+    team_B, team_B_year = team_B_info
+
+    team_A_is_offense = (all_plays_df['Offense'] == team_A) & \
+        (all_plays_df['Year'] == team_A_year)
+    tAo_plays = all_plays_df[team_A_is_offense]
+    team_B_is_defense = (all_plays_df['Defense'] == team_B) & \
+        (all_plays_df['Year'] == team_B_year)
+    tBd_plays = all_plays_df[team_B_is_defense]
+    tAo_means = tAo_plays.groupby(['Offense', 'Down', \
         'To go category', 'Field zone', 'Play type']).mean()
-    
-    # Don't think I should actually do this
-    optimal_plays = mean_performances[mean_performances['EPC'] == \
-        mean_performances.groupby(['Offense', 'Down', \
-        'To go category', 'Field zone'])['EPC'].transform(max)]
+    tBd_means = tBd_plays.groupby(['Defense', 'Down', \
+        'To go category', 'Field zone', 'Play type']).mean()
+    tAo_v_tBd = pd.merge(tAo_means, tBd_means, on = ['Down', 'To go category', \
+        'Field zone', 'Play type'])
+    sum_EPC = tAo_v_tBd['EPC_x'] + tAo_v_tBd['EPC_y']
+    tAo_v_tBd['EPC_sum'] = sum_EPC
+    tA_optimal_plays = tAo_v_tBd[tAo_v_tBd['EPC_sum'] == \
+        tAo_v_tBd.groupby(['Down', 'To go category', \
+        'Field zone'])['EPC_sum'].transform(max)]
+
+    return team_A, tA_optimal_plays, team_A_is_offense, team_B_is_defense
 
 
-'''
-    # Create dataframe with average EPC for each play type in each situation
-    # I don't think this will work because the average doesn't exist
-    scenarios_df = plays_df[plays_df['EPC sum'] == plays_df.groupby(['Quater', \
-        'Down', 'To go category', 'Field zone', 'Score difference', \
-        'Play type']).transform(statistics.mean)]
-    
-    # Create dataframe with optimal play type for each situation
-    optimal_play_types_df = scenarios_df[scenarios_df['EPC sum'] == \
-        scenarios_df.groupby(['Quarter', 'Down', 'To go category', \
-        'Field zone', 'Score difference', 'Play type'])['EPC sum'].transform(max)]
-
-    return optimal_play_types_df
-'''
-
-def simulator(plays_df, optimal_plays_df, team_1, team_2):
+def simulator(team_1_info, team_2_info):
     '''
     Simulates game.
     '''
+    # Get dataframes and teams
+    team_1, team_2, t1_optimal_plays, t2_optimal_plays, plays_df = \
+        get_dataframes(team_1_info, team_2_info)
+
     # Coin toss
     flip = random.randint(0, 1)
     if flip == 0:
@@ -65,7 +78,6 @@ def simulator(plays_df, optimal_plays_df, team_1, team_2):
     # Initialize game situation - skip kickoff and go to 1st and 10
     team_1_score = 0
     team_2_score = 0
-    score_diff = team_2_score - team_1_score
     quarter = 1
     time = datetime.timedelta(minutes = 15)
     field_pos = 75
@@ -78,8 +90,13 @@ def simulator(plays_df, optimal_plays_df, team_1, team_2):
         field_zone = categorize_field_pos(field_pos)
 
         # Run play
-        yards_gained, play_time, play_type = run_play(optimal_play_types_df, offense, defense, \
-            quarter, down, to_go_cat, field_pos_cat, score_diff, team_1_score, \
+        if offense == team_1:
+            optimal_plays_df = t1_optimal_plays
+        else:
+            optimal_plays_df = t2_optimal_plays
+        
+        yards_gained, play_time, play_type = run_play(optimal_plays_df, offense, defense, \
+            quarter, down, to_go_cat, field_pos_cat, team_1_score, \
             team_2_score, play_tracker, plays_df)
 
         # Update simulation after play
@@ -106,32 +123,30 @@ def categorize_to_go(to_go):
 
 
 def categorize_field_pos(field_pos):
-    if field_position <= 25:
+    if field_pos <= 25:
         field_zone = 'red zone'
-    elif 25 < field_position <= 50:
+    elif 25 < field_pos <= 50:
         field_zone = 'green zone'
-    elif 50 < field_position <= 75:
+    elif 50 < field_pos <= 75:
         field_zone = 'grey zone'
-    elif field_position > 75:
+    elif field_pos > 75:
         field_zone = 'black zone'
     
     return field_zone
 
 
-def run_play(optimal_play_types_df, offense, defense, quarter, down, to_go_cat, 
-field_pos_cat, score_diff, team_1_score, team_2_score, play_tracker, plays_df):
+def run_play(optimal_plays_df, offense, defense, quarter, down, to_go_cat, 
+field_pos_cat, team_1_score, team_2_score, play_tracker, plays_df):
     # Set conditions for current situation
-    same_offense = optimal_play_types_df['Offense'] == offense
-    # same_quarter = optimal_play_types_df['Quarter'] == quarter
-    same_down = optimal_play_types_df['Down'] == down
-    same_to_go = optimal_play_types_df['To go category'] == to_go_cat
-    same_field_pos = optimal_play_types_df['Field zone'] = field_pos_cat
-    # same_score_diff = optimal_play_types_df['Score difference'] = score_diff
+    same_offense = optimal_plays_df['Offense'] == offense
+    same_down = optimal_plays_df['Down'] == down
+    same_to_go = optimal_plays_df['To go category'] == to_go_cat
+    same_field_pos = optimal_plays_df['Field zone'] = field_pos_cat
 
     # Get play optimal play type for current situation
-    optimal_play_row = optimal_play_types_df[same_offense & \
+    optimal_play_row = optimal_plays_df[same_offense & \
         same_down & same_to_go & same_field_pos]
-    optimal_play_type = optimal_play_row.iloc[0]['Play type']
+    optimal_play = optimal_play_row.iloc[0]['Play type']
 
     # Call random play of this type using outcome from offense or defense
     team_to_use = random.randint(0, 1)
@@ -147,7 +162,7 @@ field_pos_cat, score_diff, team_1_score, team_2_score, play_tracker, plays_df):
         same_field_pos]
     yards_gained = past_plays.iloc[rand.randint(0, len(plays_df) - \
         1)]['Yards gained']
-    play_time = = past_plays.iloc[rand.randint(0, len(plays_df) - \
+    play_time = past_plays.iloc[rand.randint(0, len(plays_df) - \
         1)]['Play time']
 
     # Create location
@@ -160,10 +175,10 @@ field_pos_cat, score_diff, team_1_score, team_2_score, play_tracker, plays_df):
     # Create play
     # Could also extract and add play detail
     play = [quarter, time, down, to_go, location, team_1_score, team_2_score, \
-        yards_gained, optimal_play_type]
+        yards_gained, optimal_play]
     play_tracker.append(play)
 
-    return yards_gained, play_time, optimal_play_type
+    return yards_gained, play_time, optimal_play
 
 
 def update_situation(quarter, time, play_time, to_go, yards_gained, down, 
@@ -181,9 +196,6 @@ offense, defense, team_1_score, team_2_score, team_1, team_2, play_type):
         # Next quarter
         quarter += 1
         # Simulating regular season games, so no overtime
-        if quarter == 5:
-            # Not sure if this will end the simulation
-            break
         time = datetime.timedelta(minutes = 15)
 
 
@@ -223,7 +235,7 @@ offense, defense, team_1_score, team_2_score, team_1, team_2, play_type):
     # Play was a field goal, fumble, or interception
     else:
         # Successful field goal
-        if play_type == 'field goal' and yards_gained = 'success':
+        if play_type == 'field goal' and yards_gained == 'success':
             team_1_score, team_2_score = score_change(team_1_score, \
                 team_2_score, team_1, team_2, offense, defense, 3)
             field_pos = 75
