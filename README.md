@@ -9,24 +9,44 @@ Our code has a very specific structure to allow for django framework implementat
 simulator
     mysite -- Directory that houses all of our functions for crawling, scraping and simulating a game.
         allgames.csv -- Contains the play-by-play information for every NFL game from the last 10 years.
+
         play_caller.py -- Given an initial link to the pro-football-reference.com seasons homepage, crawls all the games in the years 2010-2020. At each game, it calls scraper.py and incrementally constructs a master list containing containing every play from every game, writing them to allgames.csv.
-        roster_scraper.py
+
+        roster_scraper.py -- Scrapes profootballarchives.com for information on starting players sorted by team and year and 
+        writes this information into a csv file. 
+
         scraper.py -- Takes a (link, year) tuple corresponding to one game provided by play_caller.py and constructs and returns a play by play in the format of a list of lists. Each sub list has 15 elements, one for each column.
         settings.py (django specific file with settings for our project)
+
         simulator.py -- Takes two teams and a season for each, then returns the play-by-play of a simulated game based on the successes and failures of their plays in the given season assigned to them. The play-by-play is a list of lists with elements corresponding to each information about the play.
+
         urls.py -- Django specific file for establishing connections between our various webpages.
-        util_2.py
+
+        util_2.py -- File containing helper functions such as get_request and read_request for the BS4 inside the scrapers.
+
     simulation -- Directory that houses our simulation app, where inputs are taken and a simulation is returned.
         templates -- Houses the html formatting for our web pages.
+
             simulate.html -- Formatting for the table output of our simulation.
+
             teams.html -- Formatting for the user input form.
+
             welcome.html -- Formatting for the welcome page.
+
         templatetags -- A file used by django to create custom functions for use in the template html.
             simulation_extras.py -- This includes the functions get_name, find_player, and update_var.
+
         apps.py -- Where we configured the app for use in the project.
+
         forms.py -- The user input form is created with drop down menus for teams and int for year.
+
         models.py -- Houses the Team model, which we use to keep inputs in the database.
+
         rosters.csv -- Contains the roster of every team for the last 10 years. in simulation because it is called by views.py.
+
         urls.py -- As above, links together the urls of our webpages.
-        views.py -- This contains the bulk of the work of our django program. The functions on this page, get_teams, simulate, and welcome, as well as the helper function split, are used to create the data to fill the html templates we provide in templates.
+
+        views.py -- This contains the bulk of the work of our django program. The functions on this page, get_teams, simulate, 
+        and welcome, as well as the helper function split, are used to create the data to fill the html templates we provide in templates.
+        
     db.sqlite3 -- This is our database, which holds the two teams input by the user.
