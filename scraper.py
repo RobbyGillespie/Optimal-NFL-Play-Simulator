@@ -176,7 +176,7 @@ def scrape_rows(play_by, teams, teams_lst, possession, poss, year):
     if len(master_lst) <= 1:
         return([])
     else:
-        master_lst[-1].append(str(total_time))
+        master_lst[-1].append(str(total_time.seconds))
 
     master_lst, detail_column = add_field_position(master_lst, possession_lst)
     master_lst = play_classifier(master_lst, detail_column, year)
