@@ -2,11 +2,7 @@ import statistics
 import random
 import datetime
 import pandas as pd
-<<<<<<< Updated upstream:simulator/mysite/simulator.py
-import os
-=======
 import math
->>>>>>> Stashed changes:simulator.py
 
 def get_dataframes(team_1_info, team_2_info):
 
@@ -14,8 +10,7 @@ def get_dataframes(team_1_info, team_2_info):
     team_2, team_2_year = team_2_info
 
     # Get past plays dataframe
-    csv_path = os.path.join(os.path.dirname(__file__), 'out.csv')
-    all_plays_df = pd.read_csv(csv_path, names = ['Quarter', 'Time', 'Down', \
+    all_plays_df = pd.read_csv('out.csv', names = ['Quarter', 'Time', 'Down', \
         'To go', 'To go category', 'Field position', 'EPC', 'Offense', \
         'Defense', 'Score difference', 'Play time', 'Field zone', \
         'Play type', 'Yards gained', 'Year'])
@@ -41,7 +36,7 @@ def create_optimal_plays(team_A_info, team_B_info, all_plays_df):
     team_A_is_offense = (all_plays_df['Offense'] == team_A) & \
         (all_plays_df['Year'] == team_A_year)
     tAo_plays = all_plays_df[team_A_is_offense]
-    team_B_is_defense = (all_plays_df['Offense' == team_B]) & \
+    team_B_is_defense = (all_plays_df['Defense'] == team_B) & \
         (all_plays_df['Year'] == team_B_year)
     tBd_plays = all_plays_df[team_B_is_defense]
     tAo_means = tAo_plays.groupby(['Offense', 'Down', \
