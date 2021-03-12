@@ -50,3 +50,4 @@ simulator
         and welcome, as well as the helper function split, are used to create the data to fill the html templates we provide in templates.
         
     db.sqlite3 -- This is our database, which holds the two teams input by the user, and then deletes them after being used in views.simulate(), to not affect the next input.
+    manage.py -- helper functions for working with the server, migrating, and running it
