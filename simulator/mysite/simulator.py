@@ -11,7 +11,7 @@ def get_dataframes(team_1_info, team_2_info):
     team_2, team_2_year = team_2_info
 
     # Get past plays dataframe
-    csv_path = os.path.join(os.path.dirname(__file__), 'out.csv')
+    csv_path = os.path.join(os.path.dirname(__file__), 'allgames.csv')
     all_plays_df = pd.read_csv(csv_path, names = ['Quarter', 'Time', 'Down', \
         'To go', 'To go category', 'Field position', 'EPC', 'Offense', \
         'Defense', 'Score difference', 'Play time', 'Field zone', \
@@ -101,7 +101,7 @@ def simulator(team_1_info, team_2_info):
         else:
             optimal_plays_df = t2_optimal_plays
         
-        yards_gained, play_time, play_type = run_play(optimal_plays_df, offense, defense, \
+        yards_gained, play_time, play_type, play_tracker = run_play(optimal_plays_df, offense, defense, \
             quarter, down, time, to_go, to_go_cat, field_pos, field_pos_cat, team_1_score, \
             team_2_score, play_tracker, plays_df)
 
@@ -109,7 +109,7 @@ def simulator(team_1_info, team_2_info):
         quarter, time, to_go, field_pos, down, offense, defense, team_1_score, \
             team_2_score = update_situation(quarter, time, play_time, to_go, \
             yards_gained, down, offense, defense, team_1_score, team_2_score, \
-            team_1, team_2, play_type, field_pos, ball_first)
+            team_1, team_2, play_type, field_pos, ball_first, play_tracker)
 
     return play_tracker
 
@@ -179,25 +179,28 @@ field_pos, field_pos_cat, team_1_score, team_2_score, play_tracker, plays_df):
     yards_gained = play_outcome['Yards gained']
     play_time = play_outcome['Play time']
 
+    if type(yards_gained) is float:
+        yards_gained = 0
+
     # Create location
     if field_pos >= 50:
         # Not sure if offense is a string or list
         location = offense + ' ' + str(100 - field_pos)
     else:
         location = defense + ' ' + str(field_pos)
-    
+
     # Create play
     # Could also extract and add play detail
-    play = [quarter, time, down, to_go, location, team_1_score, team_2_score, \
-        optimal_play, yards_gained, offense]
+    play = [quarter, time, down, to_go, location, optimal_play, yards_gained, \
+        offense]
     play_tracker.append(play)
 
-    return yards_gained, play_time, optimal_play
+    return yards_gained, play_time, optimal_play, play_tracker
 
 
 def update_situation(quarter, time, play_time, to_go, yards_gained, down, 
 offense, defense, team_1_score, team_2_score, team_1, team_2, play_type,
-field_pos, ball_first):
+field_pos, ball_first, play_tracker):
     # Update time
     play_time = datetime.timedelta(seconds = int(play_time))
     time = time - play_time
@@ -217,14 +220,16 @@ field_pos, ball_first):
 
     # Update field position and score
     # Play gained or lost yards - regular offensive play or punt
+    touchdown = False
     try:
-        yards_gained = int(yards_gained)
-        field_pos = field_pos - yards_gained
+        yardage = int(yards_gained)
+        field_pos = field_pos - yardage
         if field_pos <= 0:
             # Touchdown
             if play_type != 'punt':
                 team_1_score, team_2_score = score_change(team_1_score, \
                     team_2_score, team_1, team_2, offense, defense, 7)
+                touchdown = True
             # Touchback, so switch possession and change field position
             offense, defense, down, to_go = switch_possession(team_1, team_2, offense, defense)
             field_pos = 75
@@ -234,7 +239,7 @@ field_pos, ball_first):
             field_pos = 100 - field_pos
         # Continue offensive drive
         else:
-            to_go = to_go - yards_gained
+            to_go = to_go - yardage
             if to_go <= 0:
                 # First down and 10 yards to go
                 down = 1
@@ -258,16 +263,12 @@ field_pos, ball_first):
             offense, defense, down, to_go = switch_possession (team_1, \
                 team_2, offense, defense)
             field_pos = 75
-        # No data on yards, field position and increment down
-        elif yards_gained == '':
-            down += 1
-            if down == 5:
-                offense, defense, field_pos, down, to_go = \
-                    turnover_on_downs(team_1, team_2, offense, defense, field_pos)
         # Unsuccessful field goal, fumble or interception, causing a possession change
         else:
             offense, defense, field_pos, down, to_go = turnover_on_downs(team_1, \
                 team_2, offense, defense, field_pos)
+
+    [play_tracker[-1].append(stat) for stat in [team_1_score, team_2_score, touchdown]]
 
     return quarter, time, to_go, field_pos, down, offense, defense, team_1_score, team_2_score
 
