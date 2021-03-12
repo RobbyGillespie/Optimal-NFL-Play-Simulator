@@ -2,8 +2,6 @@ import statistics
 import random
 import datetime
 import pandas as pd
-import math
-import os
 
 def get_dataframes(team_1_info, team_2_info):
 
@@ -11,7 +9,7 @@ def get_dataframes(team_1_info, team_2_info):
     team_2, team_2_year = team_2_info
 
     # Get past plays dataframe
-    all_plays_df = pd.read_csv('out.csv', names = ['Quarter', 'Time', 'Down', \
+    all_plays_df = pd.read_csv('~/acjr-project/simulator/mysite/out.csv', names = ['Quarter', 'Time', 'Down', \
         'To go', 'To go category', 'Field position', 'EPC', 'Offense', \
         'Defense', 'Score difference', 'Play time', 'Field zone', \
         'Play type', 'Yards gained', 'Year'])
@@ -41,24 +39,18 @@ def create_optimal_plays(team_A_info, team_B_info, all_plays_df):
         (all_plays_df['Year'] == team_B_year)
     tBd_plays = all_plays_df[team_B_is_defense]
     tAo_means = tAo_plays.groupby(['Offense', 'Down', \
-        'To go category', 'Field zone', 'Play type'])['EPC'].agg(['mean', 'count'])
+        'To go category', 'Field zone', 'Play type']).mean()
     tBd_means = tBd_plays.groupby(['Defense', 'Down', \
-        'To go category', 'Field zone', 'Play type'])['EPC'].agg(['mean', 'count'])
+        'To go category', 'Field zone', 'Play type']).mean()
     tAo_v_tBd = pd.merge(tAo_means, tBd_means, on = ['Down', 'To go category', \
         'Field zone', 'Play type'])
-    sum_EPC = tAo_v_tBd['mean_x'] + tAo_v_tBd['mean_y']
+    sum_EPC = tAo_v_tBd['EPC_x'] + tAo_v_tBd['EPC_y']
     tAo_v_tBd['EPC_sum'] = sum_EPC
-    sum_weighted_EPC = (tAo_v_tBd['count_x'] * tAo_v_tBd['mean_x']) + \
-        (tAo_v_tBd['count_y'] * tAo_v_tBd['mean_y'])
-    tAo_v_tBd['sum_weighted_EPC'] = sum_weighted_EPC
     tA_optimal_plays = tAo_v_tBd[tAo_v_tBd['EPC_sum'] == \
         tAo_v_tBd.groupby(['Down', 'To go category', \
         'Field zone'])['EPC_sum'].transform(max)]
-    tA_optimal_plays2 = tAo_v_tBd[tAo_v_tBd['sum_weighted_EPC'] == \
-        tAo_v_tBd.groupby(['Down', 'To go category', \
-        'Field zone'])['sum_weighted_EPC'].transform(max)]
 
-    return team_A, tA_optimal_plays2, team_A_is_offense, team_B_is_defense
+    return team_A, tA_optimal_plays, team_A_is_offense, team_B_is_defense
 
 
 def simulator(team_1_info, team_2_info):
