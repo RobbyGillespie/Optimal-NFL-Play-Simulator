@@ -1,3 +1,21 @@
+'''
+ACJR Project
+Simulate an entire game between two teams, each representing an NFL team in a
+single season. So, teams from two different seasons can play each other. This
+simulation is meant to demonstrate what would happen if each team were to call
+the best play possible in each scenario, not just choose the play they
+would have most likely run themselves. We seek to know who would win if each
+team had the best play-calling possible, not the play calling they actually had.
+
+The simulated plays are determined by finding the best play type (pass deep left,
+run middle, etc.) based on how often the team ran the play (if they ran it more
+often it is better) and how good the outcomes were (measured by the increase in
+the points the team was expected to score after the play). From there, we call the
+play and randomly choose an outcome from when the offense ran that play or the
+defense defended against that play in the past. We then update the situation
+and continue simulating until the end of the game.
+'''
+
 import statistics
 import random
 import datetime
