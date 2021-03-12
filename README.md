@@ -24,7 +24,7 @@ simulator
 
         util_2.py -- File containing helper functions such as get_request and read_request for the BS4 inside the scrapers.
 
-    simulation -- Directory that houses our simulation app, where inputs are taken and a simulation is returned.
+    simulation -- App Directory that houses our simulation app, where inputs are taken and a simulation is returned.
         templates -- Houses the html formatting for our web pages.
 
             simulate.html -- Formatting for the table output of our simulation.
