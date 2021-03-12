@@ -1,10 +1,17 @@
+ACJR-project README
+A directory containing the files needed to crawl, scrape, and analyze data from pro-football-reference.com and profootballarchives.com. This data is used to help simulate a football game between any two teams within the time range our data specifies. This data is presented in the format of a django website.
+
 Our code has a very specific structure to allow for django framework implementation. The framework is layed out below, with an indentation indicating a level down in the tree.
+
 simulator
     mysite (this houses all of our functions for crawling, scraping and simulating a game)
         allgames.csv (contains the play-by-play information for every NFL game from the last 10 years)
-        play_caller.py
+        play_caller.py -- Given an initial link to pro-football-reference.com, crawls all the games in the years 2010-2020.
+                          At each game, it calls scraper.py and incrementally constructs a master list containing all the play by plays for all the games.
+
         roster_scraper.py
-        scraper.py
+        scraper.py -- Takes a (link, year) tuple corresponding to one game provided by play_caller.py and constructs and returns
+                      a play by play of that in the format of a list of lists. Each sub list has 15 elements, one for each column.
         settings.py (django specific file with settings for our project)
         simulator.py
         urls.py (django specific file for establishing connections between our various webpages)
