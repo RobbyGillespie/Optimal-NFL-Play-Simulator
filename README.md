@@ -12,9 +12,11 @@ To run the server, the user must have the Django framework installed on their co
 
 If you have Django, make sure you are in the simulator directory, then run "python3 manage.py runserver". If you recieve some kind of error that the port is already in use, running python3 manage.py runserver 8001 should resolve the issue. After running the server, go to the IP address the port was set to on your web page. In order to reach the right place to start the team selection and later simulation, the user must attach '/simulation' to the IP address on which the server is being hosted. From there, all other pages are linked together properly.
 
+DIRECTORY CONTENTS:
+
 The code has a very specific structure to allow for Django framework implementation. The framework is layed out below, with an indentation indicating a level down in the tree.
 
-simulator
+   simulator
     mysite -- Directory that houses all of our functions for crawling, scraping and simulating a game.
         allgames.csv -- Contains the play-by-play information for every NFL game from the last 10 years.
 
