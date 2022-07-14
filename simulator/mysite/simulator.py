@@ -1,5 +1,4 @@
 '''
-ACJR Project
 Simulate an entire game between two teams, each representing an NFL team in a
 single season. So, teams from two different seasons can play each other. This
 simulation is meant to demonstrate what would happen if each team were to call
@@ -30,7 +29,7 @@ def get_dataframes(team_1_info, team_2_info):
 
     Inputs:
         team_1_info (tuple): team 1 abbreviation and season of interest
-        team_2_info (tuple): team 1 abbreviation and season of interest
+        team_2_info (tuple): team 2 abbreviation and season of interest
 
     Outputs:
         team_1 (string): team 1 abbreviation
@@ -68,14 +67,14 @@ def create_optimal_plays(team_A_info, team_B_info, all_plays_df):
 
     Inputs:
         team_A_info (tuple): team 1 abbreviation and season of interest
-        team_B_info (tuple): team 1 abbreviation and season of interest
+        team_B_info (tuple): team 2 abbreviation and season of interest
         all_plays_df: dataframe of every play in the last 11 seasons
 
     Outputs:
         team_A (string): team A abbreviation
         tA_optimal_plays: dataframe of team A's best plays vs team B's defense
-        team_A_is_offense: column of booleans that are True where Team A is off
-        team_B_is_defense: column of booleans that are True where Team B is off
+        team_A_is_offense: column of booleans that are True where Team A is offense
+        team_B_is_defense: column of booleans that are True where Team B is offense
     '''
 
     # Load in team information
@@ -90,7 +89,7 @@ def create_optimal_plays(team_A_info, team_B_info, all_plays_df):
         (all_plays_df['Year'] == team_B_year)
     tBd_plays = all_plays_df[team_B_is_defense]
 
-    # Create a column for the mean EPC per play type in each scenario for each
+    # Create a column for the mean EPA per play type in each scenario for each
     # team, as well as the count of each play type per scenario, then merge
     tAo_means = tAo_plays.groupby(['Offense', 'Down', \
         'To go category', 'Field zone', 'Play type'])['EPC'].agg(['mean', 'count'])
@@ -99,7 +98,7 @@ def create_optimal_plays(team_A_info, team_B_info, all_plays_df):
     tAo_v_tBd = pd.merge(tAo_means, tBd_means, on = ['Down', 'To go category', \
         'Field zone', 'Play type'])
     
-    # Create a column for the sum of each team's EPC, weighted by how often
+    # Create a column for the sum of each team's EPA, weighted by how often
     # that play was run, and make the optimal play the one with the highest val
     sum_weighted_EPC = ((tAo_v_tBd['count_x']**2) * tAo_v_tBd['mean_x']) + \
         ((tAo_v_tBd['count_y']**2) * tAo_v_tBd['mean_y'])
