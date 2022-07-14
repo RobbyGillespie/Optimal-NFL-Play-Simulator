@@ -1,11 +1,16 @@
-Optimal Football Simulator:
+OVERVIEW:
+This is a directory containing all of the files needed to crawl, scrape, and analyze data from pro-football-reference.com and profootballarchives.com. The data is used to simulate an NFL game between any two NFL teams within from the 2010-2020 seasons if each team had the "optimal play" called on every down. The program uses NFL play-by-play data from the past 11 seasons to determine what each team's best offensive play type would be given situational factors like field position, down, quarter, etc. The simulation then assumes that play is called and randomly outputs a real-life outcome from when that play was called either for the offense or against the defense during their seasons. The program continues to call the optimal play and simulate the subsequent game conditions until the game ends, theoretically outputting a play-by-play simulaiton of the teams if play-calling were perfect.
+
+FOOTBALL ANALYSIS SPECIFICS:
+
+
 A directory containing the files needed to crawl, scrape, and analyze data from pro-football-reference.com and profootballarchives.com. This data is used to help simulate a football game between any two NFL teams within the past 11 seasons (dating back to the 2010-2011 season). This data is presented in the format of a django website. The purpose of this project is to determine which of two teams would win an NFL game if they had the optimal play called for them in each situation throughout the game. We used past NFL data to figure out what each team's best offensive play type would be against the other team chosen for the simulation, then used random outcomes from when those plays were called for the offense or against the defense in real life. The django website displays our approximation of how a game would play out between the two given teams if they called the plays that are most likely to score them points each drive down the field.
 
 RUNNING THE CODE:
-To run the server, make sure you are in the simulator directory, then run python3 manage.py runserver. If you recieve some kind of error that the port is already in use, running python3 manage.py runserver 8001 should do the trick. After running the server, go to the IP address the port was set to on your web page.
+To run the server, make sure you are in the simulator directory, then run "python3 manage.py runserver". If you recieve some kind of error that the port is already in use, running python3 manage.py runserver 8001 should do the trick. After running the server, go to the IP address the port was set to on your web page.
 In order to reach the right place to start the team selection and later simulation, the user must attach '/simulation' to the IP address on which the server is being hosted. From there, all other pages are linked together properly.
 
-Our code has a very specific structure to allow for django framework implementation. The framework is layed out below, with an indentation indicating a level down in the tree.
+The code has a very specific structure to allow for django framework implementation. The framework is layed out below, with an indentation indicating a level down in the tree.
 
 simulator
     mysite -- Directory that houses all of our functions for crawling, scraping and simulating a game.
